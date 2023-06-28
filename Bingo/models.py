@@ -9,6 +9,11 @@ from django.core.files import File
 import logging
 from django.core.validators import MinValueValidator
 import string , random
+from django.db import models
+from django.utils import timezone
+from django.db.models import Q
+from django.utils import timezone
+from datetime import timedelta
 
 
 
@@ -213,3 +218,140 @@ class Administrators(models.Model):
 
 
 
+class DAL:
+    def get_by_id(self, model, id):
+        try:
+            return model.objects.get(id=id)
+        except model.DoesNotExist:
+            return None
+
+    def get_all(self, model):
+        try:
+            return model.objects.all()
+        except Exception as e:
+            return None
+
+    def add(self, model, **kwargs):
+        try:
+            return model.objects.create(**kwargs)
+        except Exception as e:
+            return None
+
+    def update(self, instance, **kwargs):
+        try:
+            for attr, value in kwargs.items():
+                setattr(instance, attr, value)
+            instance.save()
+            return instance
+        except Exception as e:
+            return None
+
+    def add_all(self, model, list_of_dicts):
+        try:
+            return model.objects.bulk_create([model(**kwargs) for kwargs in list_of_dicts])
+        except Exception as e:
+            return None
+
+    def remove(self, instance):
+        try:
+            instance.delete()
+        except Exception as e:
+            return None
+
+    # Additional methods
+    def getAirlinesByCountry(self, country_id):
+        try:
+            return Airline_Companies.objects.filter(country_id=country_id)
+        except Exception as e:
+            return None
+
+    def getFlightsByOriginCountryId(self, country_id):
+        try:
+            return Flights.objects.filter(origin_id=country_id)
+        except Exception as e:
+            return None
+
+    def getFlightsByDestinationCountryId(self, country_id):
+        try:
+            return Flights.objects.filter(destination_id=country_id)
+        except Exception as e:
+            return None
+
+    def getFlightsByDepartureDate(self, date):
+        try:
+            return Flights.objects.filter(departure_date=date)
+        except Exception as e:
+            return None
+
+    def getFlightsByLandingDate(self, date):
+        try:
+            return Flights.objects.filter(landing_date=date)
+        except Exception as e:
+            return None
+
+    def getFlightsByCustomer(self, customer):
+        try:
+            return Flights.objects.filter(customer=customer)
+        except Exception as e:
+            return None
+    
+    def get_airline_by_username(self, _username):
+        try:
+            return Airline_Companies.objects.get(user__username=_username)
+        except Airline_Companies.DoesNotExist:
+            return None
+
+    def get_customer_by_username(self, _username):
+        try:
+            return Customers.objects.get(user__username=_username)
+        except Customers.DoesNotExist:
+            return None
+
+    def get_user_by_username(self, _username):
+        try:
+            return Users.objects.get(username=_username)
+        except Users.DoesNotExist:
+            return None
+
+    def get_flights_by_parameters(self, _origin_country_id, _destination_country_id, _date):
+        try:
+            return Flights.objects.filter(
+                origin_id=_origin_country_id,
+                destination_id=_destination_country_id,
+                departure_date=_date
+            )
+        except Exception as e:
+            return None
+
+    def get_flights_by_airline_id(self, _airline_id):
+        try:
+            return Flights.objects.filter(airline_company_id=_airline_id)
+        except Exception as e:
+            return None
+
+    def get_arrival_flights(self, _country_id):
+        try:
+            next_12_hours = timezone.now() + timedelta(hours=12)
+            return Flights.objects.filter(
+                destination_id=_country_id,
+                landing_date__lte=next_12_hours
+            )
+        except Exception as e:
+            return None
+
+
+    def get_departure_flights(self, _country_id):
+        try:
+            next_12_hours = timezone.now() + timedelta(hours=12)
+            return Flights.objects.filter(
+                origin_id=_country_id,
+                departure_date__lte=next_12_hours
+            )
+        except Exception as e:
+            return None
+
+    def get_tickets_by_customer(self, _customer_id):
+        try:
+            return Tickets.objects.filter(customer_id=_customer_id)
+        except Exception as e:
+            return None
