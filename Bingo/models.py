@@ -14,15 +14,14 @@ from django.utils import timezone
 from django.db.models import Q
 from django.utils import timezone
 from datetime import timedelta
-
-
-
-
-
 from django.db import models
 from django.core.validators import MinValueValidator
 import string
 import random
+
+
+
+
 
 class Flights(models.Model):
     id = models.BigAutoField(primary_key=True)
