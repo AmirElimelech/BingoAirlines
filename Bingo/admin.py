@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Flights, Countries, Tickets, Airline_Companies, Customers, Users, User_Roles, Administrators
+from .models import Flights, Countries, Tickets, Airline_Companies, Customers, Users, User_Roles, Administrators , Airport
 from .models import Airline_Companies
 import requests
 from django.core.files import File
@@ -29,3 +29,5 @@ admin.site.register(Customers)
 admin.site.register(Users)
 admin.site.register(User_Roles)
 admin.site.register(Administrators)
+admin.site.register(Airport)
+

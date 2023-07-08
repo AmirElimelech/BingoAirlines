@@ -10,8 +10,12 @@ class Command(BaseCommand):
 
         for index, row in df.iterrows():
             try:
-                airport = Airport(name=row['Airport'], iata_code=row['IATA code'])
-                airport.save()
+                airport, created = Airport.objects.get_or_create(iata_code=row['IATA code'],
+                                                                  defaults={'name': row['Airport']})
+
+                if not created:
+                    print(f"Airport with IATA code {row['IATA code']} already exists. Skipped.")
+
             except Exception as e:
                 print(f"Error on row {index}: {row}")
                 print(f"Exception: {e}")

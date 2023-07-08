@@ -10,9 +10,9 @@ from django.conf import settings
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('admin/', admin.site.urls),
     path('flight_search', views.flight_search, name='flight_search'),
     path('search-flight', views.search_form, name='search_flight'),
+    path('autocomplete/', views.autocomplete, name='autocomplete'),
 
 
 
