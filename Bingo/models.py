@@ -213,6 +213,15 @@ class Administrators(models.Model):
     
     class Meta:
         verbose_name_plural = "Administrators"
+
+
+
+class Airport(models.Model):
+    name = models.CharField(max_length=255)
+    iata_code = models.CharField(max_length=3)
+
+    def __str__(self):
+        return self.name
     
 
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Search</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#departureDate1').change(function() {
+            $('#departureDate2').attr('min', $(this).val());
+        });
+
+        $('#flightType').change(function() {
+            if ($(this).val() == 'Return') {
+                $('#returnFlight').show();
+            } else {
+                $('#returnFlight').hide();
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+<h2>Flight Search</h2>
+
+<form action="/search-flight" method="post">
+  {% csrf_token %}
+  
+  <label for="flightType">Flight Type:</label><br>
+  <select id="flightType" name="flightType">
+    <option value="OneWay">One Way</option>
+    <option value="Return">Return</option>
+  </select><br>
+
+  <label for="currencyCode">Currency Code:</label><br>
+  <select id="currencyCode" name="currencyCode">
+    <option value="USD">USD</option>
+    <option value="GBP">GBP</option>
+    <option value="EUR">EUR</option>
+    <option value="ILS">ILS</option>
+  </select><br>
+  
+  <label for="numAdults">Number of Adults:</label><br>
+  <input type="number" id="numAdults" name="numAdults" min="1" value="1"><br>
+
+  <label for="numChildren">Number of Children:</label><br>
+  <input type="number" id="numChildren" name="numChildren" min="0" value="0"><br>
+
+  <label for="originLocationCode">Origin Location Code:</label><br>
+  <input type="text" id="originLocationCode" name="originLocationCode"><br>
+
+  <label for="destinationLocationCode">Destination Location Code:</label><br>
+  <input type="text" id="destinationLocationCode" name="destinationLocationCode"><br>
+
+  <label for="departureDate1">Departure Date:</label><br>
+  <input type="date" id="departureDate1" name="departureDate1" min="{{ today }}"><br>
+
+  <div id="returnFlight" style="display:none;">
+    <label for="departureDate2">Return Date:</label><br>
+    <input type="date" id="departureDate2" name="departureDate2" min="{{ today }}"><br>
+  </div>
+
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>

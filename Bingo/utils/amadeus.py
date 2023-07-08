@@ -26,56 +26,56 @@ def get_ticket_data(data):
     response = requests.request("POST", url, headers=headers, data=payload)
 
     return response.json()
-data = {
-        "currencyCode": "USD",
-        "originDestinations": [
-            {
-                "id": "1",
-                "originLocationCode": "TLV",
-                "destinationLocationCode": "ATH",
-                "departureDateTimeRange": {
-                    "date": "2023-07-26",
-                    "time": "10:00:00"
-                }
-            },
-            {
-                "id": "2",
-                "originLocationCode": "ATH",
-                "destinationLocationCode": "TLV",
-                "departureDateTimeRange": {
-                    "date": "2023-07-29",
-                    "time": "10:00:00"
-                }
-            }
-        ],
-        "travelers": [
-            {
-                "id": "1",
-                "travelerType": "ADULT"
-            }
-        ],
-        "sources": [
-            "GDS"
-        ],
-        "searchCriteria": {
-            "maxFlightOffers": 3,
-            "flightFilters": {
-                "cabinRestrictions": [
-                    {
-                        "cabin": "ECONOMY",
-                        "coverage": "MOST_SEGMENTS",
-                        "originDestinationIds": [
-                            "1"
-                        ]
-                    }
-                ],
-                "ConnectionRestriction": [
-                    {
-                        "nonStopPreferred": True
-                    }
-                ]
-            }
-        }
-    }
+# data = {
+#         "currencyCode": "USD",
+#         "originDestinations": [
+#             {
+#                 "id": "1",
+#                 "originLocationCode": "TLV",
+#                 "destinationLocationCode": "ATH",
+#                 "departureDateTimeRange": {
+#                     "date": "2023-07-26",
+#                     "time": "10:00:00"
+#                 }
+#             },
+#             {
+#                 "id": "2",
+#                 "originLocationCode": "ATH",
+#                 "destinationLocationCode": "TLV",
+#                 "departureDateTimeRange": {
+#                     "date": "2023-07-29",
+#                     "time": "10:00:00"
+#                 }
+#             }
+#         ],
+#         "travelers": [
+#             {
+#                 "id": "1",
+#                 "travelerType": "ADULT"
+#             }
+#         ],
+#         "sources": [
+#             "GDS"
+#         ],
+#         "searchCriteria": {
+#             "maxFlightOffers": 3,
+#             "flightFilters": {
+#                 "cabinRestrictions": [
+#                     {
+#                         "cabin": "ECONOMY",
+#                         "coverage": "MOST_SEGMENTS",
+#                         "originDestinationIds": [
+#                             "1"
+#                         ]
+#                     }
+#                 ],
+#                 "ConnectionRestriction": [
+#                     {
+#                         "nonStopPreferred": True
+#                     }
+#                 ]
+#             }
+#         }
+#     }
 # data_ = get_ticket_data(data)
 # print(data_)
