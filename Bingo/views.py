@@ -45,6 +45,8 @@ def search_form(request):
         if num_children > 0:
             travelers.extend([{"id": str(i+1+num_adults), "travelerType": "CHILD"} for i in range(num_children)])
 
+        cabin_type = request.POST.get('cabinType', 'ECONOMY')
+
         data = {
             "currencyCode": request.POST.get('currencyCode', 'USD'),
             "originDestinations": [
@@ -59,6 +61,20 @@ def search_form(request):
             ],
             "travelers": travelers,
             "sources": ["GDS"],
+            "searchCriteria": {
+                # "maxFlightOffers": 10, #this number is the max number of results change it to 255 if your don't want restrictions on the number of results
+                "flightFilters": {
+                    "cabinRestrictions": [
+                        {
+                            "cabin": cabin_type,
+                            "coverage": "MOST_SEGMENTS",
+                            "originDestinationIds": [
+                                "1"
+                            ]
+                        }
+                    ]
+                }
+            }
         }
 
         if request.POST.get('flightType') == 'Return':
