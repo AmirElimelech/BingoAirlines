@@ -11,7 +11,7 @@ from django.conf import settings
 urlpatterns = [
     path('', views.home, name='home'),
     path('flight_search', views.flight_search, name='flight_search'),
-    path('search-flight', views.search_form, name='search_flight'),
+    path('search-flight/', views.search_form, name='search_form'),
     path('autocomplete/', views.autocomplete, name='autocomplete'),
 
 
