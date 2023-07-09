@@ -46,7 +46,6 @@ Alexander Bay - Kortdoorn,ALJ
 Alexandria - Borg el Arab Airport,HBH
 Alexandria - El Nhouza Airport,ALY
 Alexandria - Esler Field,ESF
-Alfujairah (Fujairah),FJR
 Alghero Sassari,AHO
 "Algiers, Houari Boumediene Airport",ALG
 Al Hoceima,AHU
@@ -94,7 +93,6 @@ Arusha,ARK
 Araxos,GPA
 Arlit,RLT
 Arrecife/Lanzarote,ACE
-"Aruba - Reina Beatrix International, Oranjestad",AUA
 Asheville (NC),AVL
 Ashgabat - Saparmurat Turkmenbashy Int. Airport,ASB
 Asmara - Asmara International,ASM
@@ -128,7 +126,6 @@ Bahrain - Bahrain International Airport,BAH
 Bakersfield (CA),BFL
 Baku - Heydar Aliyev International Airport,BAK
 Ballina,BNK
-Baltimore (MD) - Washington International Airport,BWI
 Bamaga,ABM
 Bamako - Bamako-Sénou International Airport,BKO
 Bambari,BBY
@@ -142,8 +139,8 @@ Bangor (ME),BGR
 Bangui - M'Poko International Airport,BGF
 Banjul - Banjul International Airport (Yundum International),BJL
 Bannu,BNP
-Barcelona,BCN
-Barcelona,BLA
+Barcelona El Prat,BCN
+Barcelona General Jose Antonio Anzoategui International Airport,BLA
 Bardufoss,BDU
 Bari,BRI
 Barisal,BZL
@@ -237,7 +234,6 @@ Brasilia - President Juscelino Kubitschek International,BSB
 Bratislava - M. R. Štefánik Airport,BTS
 Brazzaville - Maya-Maya Airport,BZV
 Bremen - Bremen Airport (Flughafen Bremen),BRE
-"Brescia, Montichiari",VBS
 Brest,BES
 Bria,BIV
 Bridgeport (CT),BDR
@@ -324,7 +320,6 @@ Charlottesville (VA),CHO
 Charters Towers,CXT
 Chattanooga (TN),CHA
 Chengdu - Shuangliu,CTU
-Chennai (Madras),MAA
 Cheyenne (WY) - Cheyenne Regional Airport,CYS
 Chiang Mai - Chiang Mai International Airport,CNX
 Chiba City,QCB
@@ -381,7 +376,7 @@ Coober Pedy,CPD
 Cooktown,CTN
 Cooma,OOM
 Copenhagen - Copenhagen Airport,CPH
-Cordoba,COR
+Cordoba Ingeniero Aeronáutico Ambrosio L.V. Taravella International Airport,COR
 Cordoba,ODB
 Cordova (AK),CDV
 Corfu,CFU
@@ -402,7 +397,6 @@ Dalaman,DLM
 Dalby,DBY
 Dalian - Zhoushuizi International Airport,DLC
 "Dallas (TX) , Love Field",DAL
-Dallas/Ft. Worth (TX) - Dallas/Fort Worth International,DFW
 Daloa,DJO
 "Damascus, International",DAM
 "Dammam, King Fahad International",DMM
@@ -421,7 +415,6 @@ Denpasar/Bali,DPS
 Denver (CO) - Denver International Airport,DEN
 Dera Ismail Khan - Dera Ismail Khan Airport,DSK
 Derby,DRB
-Derry (Londonderry),LDY
 Des Moines (IA) - Des Moines International Airport,DSM
 "Detroit (MI) , Coleman A. Young Municipal",DET
 "Detroit (MI) , Wayne County Airport",DTW
@@ -438,7 +431,6 @@ Djerba,DJE
 Djibouti (city) - Djibouti-Ambouli International Airport,JIB
 Dodoma - Dodoma Airport,DOD
 Doha - Doha International Airport,DOH
-"Doncaster/Sheffield, Robin Hood International Airport",DSA
 Donegal (Carrickfin),CFN
 Dortmund,DTM
 Dothan (AL),DHN
@@ -481,7 +473,7 @@ El Minya,EMY
 Elmira (NY),ELM
 El Paso (TX) - El Paso International Airport,ELP
 Ely (NV),ELY
-Emerald,EDR
+Australia Edward River Airport,EDR
 Emerald,EMD
 Enontekioe,ENF
 Entebbe - Entebbe International Airport,EBB
@@ -538,7 +530,6 @@ Frankfurt/Main - Frankfurt Airport (Rhein-Main-Flughafen),FRA
 Frankfurt/Hahn,HHN
 Franklin/Oil City (PA),FKL
 Fredericton,YFC
-Freeport - Grand Bahama International Airport,FPO
 Freetown - Freetown-Lungi International Airport,FNA
 Frejus,FRJ
 Fresno (CA),FAT
@@ -609,7 +600,6 @@ Groote Eylandt - Alyangula,GTE
 Groton/New London (CT),GON
 Guadalajara,GDL
 Guadalcanal,GSI
-Guam,GUM
 Guangzhou (Canton) - Baiyun International Airport,CAN
 Sao Paulo - Guarulhos International,GRU
 Guatemala City - La Aurora International Airport,GUA
@@ -632,9 +622,9 @@ Hakodate,HKD
 Halifax International,YHZ
 Hall Beach,YUX
 Hamburg - Fuhlsbuettel,HAM
-Hamilton,HLT
-Hamilton,YHM
-Hamilton,HLZ
+"Hamilton, Victoria, Australia Airport",HLT
+John C. Munro Hamilton International Airport,YHM
+New Zealand Hamilton,HLZ
 Hamilton Island,HTI
 Hammerfest,HFT
 Hancock (MI),CMX
@@ -699,15 +689,13 @@ Ile des Pins,ILP
 Ile Ouen,IOU
 Iliamna (AK),ILI
 Imperial (CA),IPL
-Incercargill,IVC
-"Incheon, Incheon International Airport",ICN
+Invercargill Airport ,IVC
 Indianapolis (IN) International,IND
 Ingham,IGH
 Innisfail,IFL
 Innsbruck - Kranebitten,INN
 International Falls (MN),INL
 Inuvik,YEV
-Invercargill,IVC
 Inverness,INV
 Inykern (CA),IYK
 Iqaluit (Frobisher Bay),YFB
@@ -730,7 +718,6 @@ Jackson (MI) - Reynolds Municipal,JXN
 Jackson (MS) - Jackson Internationall,JAN
 Jackson (MS) - Hawkins Field   ,HKS
 Jackson (TN) - Mckellar,MKL
-Jackson Hole (WY),JAC
 Jacksonville (AR)  Little Rock AFB   ,LRF
 Jacksonville (FL) - Cecil Field NAS   ,NZC
 Jacksonville (FL) Jacksonville NAS   ,NIP
@@ -876,7 +863,6 @@ Kerry County,KIR
 Ketchikan (AK),KTN
 Key West (FL),EYW
 Khamis Mushayat,AHB
-Kharga - New Valley,UVL
 Kharkov,HRK
 Khartoum - Khartoum International Airport,KRT
 Khuzdar,KDD
@@ -897,7 +883,6 @@ Kinshasa - N'Djili,FIH
 Kiritimati (island) - Cassidy International Airport,CXI
 Kirkenes,KKN
 Kirkuk,KIK
-Kirkwall (Orkney),KOI
 Kiruna,KRN
 Kisangani,FKI
 Kittilä,KTT
@@ -910,11 +895,9 @@ Knock,NOC
 Knoxville (TN),TYS
 Kobe,UKB
 Kochi,KCZ
-"Köln, Köln/Bonn",CGN
 Kodiak (AK),ADQ
 Kohat,OHT
 Kokkola/Pietarsaari,KOK
-Kolkata (Calcutta) - Netaji Subhas Chandra,CCU
 Komatsu,KMQ
 Kona (HI),KOA
 Konya,KYA
@@ -1033,9 +1016,7 @@ Longyearbyen - Svalbard,LYR
 Loreto,LTO
 Lorient,LRT
 Los Angeles (CA) - International,LAX
-Los Cabos,SJD
 Los Mochis,LMM
-Los Rodeos,TFN
 Losinj - Losinj Arpt,LSZ
 Lourdes/Tarbes,LDE
 Louisville (KY),SDF
@@ -1095,7 +1076,6 @@ Maputo - Maputo International,MPM
 Mar del Plata,MDQ
 Maracaibo - La Chinita International,MAR
 Maradi,MFQ
-Maras,KCM
 Marathon (FL),MTH
 Mardin,MQM
 Mare,MEE
@@ -1129,7 +1109,6 @@ Medan - Polania Int'l (now Soewondo AFB),MES
 Medan - Kualanamu International,KNO
 Medellin - José María Córdova International,MDE
 Medford (OR),MFR
-Medina,MED
 Meekatharra,MKR
 Melbourne - Melbourne Airport (Tullamarine),MEL
 Melbourne (FL),MLB
@@ -1148,7 +1127,6 @@ Metz/Nancy Metz-Nancy-Lorraine,ETZ
 Mexicali,MXL
 Mexico City - Mexico City International Airport,MEX
 Mexico City - Atizapan,AZP
-Mexico City - Juarez International,MEX
 Mexico City - Santa Lucia,NLU
 Mfuwe,MFU
 Miami (FL),MIA
@@ -1160,7 +1138,6 @@ Mikkeli,MIK
 Milan,MIL
 Milan - Linate,LIN
 Milan - Malpensa,MXP
-Milan - Orio Al Serio,BGY
 Mildura,MQL
 Miles City (MT),MLS
 Milford Sound,MFN
@@ -1261,9 +1238,7 @@ Narrabri,NAA
 Narrandera,NRA
 Narsarsuaq,UAK
 Nashville (TN),BNA
-Nassau,NAS
 Natal - Augusto Severo International Airport,NAT
-Nausori,SUV
 Nawab Shah,WNS
 Naxos - Naxos Airport,JNX
 N'Djamena,NDJ
@@ -1284,8 +1259,8 @@ New York (NY),NYC
 Newburgh (NY),SWF
 Newcastle - Belmont,BEO
 Newcastle - Williamtown,NTL
-Newcastle,NCL
-Newcastle,NCS
+Newcastle International Airport,NCL
+Newcastle Municipal Airport,NCS
 Newman,ZNE
 Newport News/Williamsburg (VA),PHF
 N'Gaoundere,NGE
@@ -1333,7 +1308,6 @@ Ondangwa,OND
 Ontario (CA),ONT
 Oran (Ouahran),ORN
 Orange,OAG
-Orange County (Santa Ana) (CA),SNA
 Oranjemund,OMD
 Oranjestad - Reina Beatrix International,AUA
 Orkney - Kirkwall,KOI
@@ -1417,7 +1391,6 @@ Plettenberg Bay,PBZ
 Pocatello (ID),PIH
 Podgorica,TGD
 Pohnpei,PNI
-Pointe a Pitre,PTP
 Pointe Noire,PNR
 Poitiers - Biard,PIS
 Ponce,PSE
@@ -1472,8 +1445,8 @@ Punta Cana - Punta Cana International,PUJ
 Pu San (Busan) - Gimhae International Airport,PUS
 Pyongyang - Sunan International Airport,FNJ
 Quebec - Quebec International,YQB
-Queenstown,UEE
-Queenstown,ZQN
+Queenstown Airport,UEE
+Queenstown International Airport,ZQN
 Quetta,UET
 Qingdao,TAO
 Quimper,UIP
@@ -1499,7 +1472,6 @@ Redding (CA),RDD
 Redmond (OR),RDM
 Reggio Calabria,REG
 Regina,YQR
-Reina Sofia,TFS
 Rennes,RNS
 Reno (NV),RNO
 Resolute Bay,YRB
@@ -1549,7 +1521,6 @@ Sacramento (CA),SMF
 Sado Shima,SDS
 Saginaw/Bay City/Midland (MI),MBS
 Saidu Sharif,SDT
-Saigon (Ho Chi Minh City) - Tan Son Nhat International,SGN
 Saint Brieuc,SBK
 Saint Denis - Roland Garros Airport,RUN
 Saint John,YSJ
@@ -1584,8 +1555,8 @@ San Luis Obisco (CA),SBP
 San Luis Potosi,SLP
 San Pedro,SPY
 San Pedro Sula,SAP
-San Salvador,ZSA
-San Salvador,SAL
+San Salvador Airport ( Cockburn ),ZSA
+El Salvador International Airport,SAL
 San Sebastian,EAS
 Sanaa (Sana'a) - Sana'a International,SAH
 Sandspit,YZP
@@ -1599,11 +1570,11 @@ Santa Maria (CA),SMX
 Santander,SDR
 Santa Rosa (CA),STS
 Santa Rosa,SRB
-Santa Rosa,SRA
-Santa Rosa,RSA
+Santa Rosa (Luís Alberto Lehr Airport),SRA
+"Argentina , Santa Rosa Airport",RSA
 "Santa Rosa, Copan",SDH
 Santa Rosalia,SSL
-Santa Rosalia,SRL
+Santa Rosalia Palo Verde Airport,SRL
 Santiago - Antonio Maceo Airport,SCU
 Santiago de Chile - Arturo Merino Benitez,SCL
 Santiago de Compostela,SCQ
@@ -1612,12 +1583,10 @@ Santo Domingo,SDQ
 Sao Luis - Marechal Cunha Machado International,SLZ
 Sao Paulo,SAO
 Sao Paulo - Congonhas,CGH
-Sao Paulo - Guarulhos,GRU
 Sao Paulo - Viracopos,VCP
 Sao Tome,TMS
 Sapporo,SPK
 Sapporo - Okadama,OKD
-Sapporo - New Chitose Airport,CTS
 Sarajevo,SJJ
 Saransk - Saransk Airport,SKX
 Sarasota/Bradenton (FL),SRQ
@@ -1695,17 +1664,13 @@ St. Croix,STX
 St. Etienne,EBU
 St. George (UT),SGU
 St. John's,YYT
-St. Kitts,SKB
 St. Louis (MO) Lambert–St. Louis International Airport,STL
 St. Lucia Hewanorra,UVF
-St. Lucia Vigle,SLU
 St. Marteen,SXM
 St. Martin,SFG
 St. Petersburg (Leningrad) - Pulkovo,LED
 "St. Pierre, NF",FSP
 St. Thomas,STT
-St. Vincent,SVD
-Stansted (London),STN
 State College/Belefonte (PA),SCE
 Stavanger,SVG
 Steamboat Springs (CO),HDN
@@ -1771,7 +1736,6 @@ Terre Haute (IN),HUF
 Texarkana (AR),TXK
 Thaba'Nchu,TCU
 The Pas,YQD
-Thessaloniki - Makedonia Apt.,SKG
 Thief River Falls (MN),TVF
 Thira,JTR
 Thiruvananthapuram,TRV
@@ -1786,7 +1750,6 @@ Tioman,TOD
 Tirana - Rinas,TIA
 Tiruchirapally,TRZ
 Tivat,TIV
-Tobago,TAB
 Tokushima,TKS
 Tokyo,TYO
 Tokyo - Haneda,HND
@@ -1877,8 +1840,8 @@ Vail (CO),EGE
 Val d'Or,YVO
 Valdez (AK),VDZ
 Valdosta (GA),VLD
-Valencia,VLC
-Valencia,VLN
+"Spain , Valencia Airport",VLC
+"Venezuela ,Valencia Airport ",VLN
 Valladolid,VLL
 Valparaiso,VAP
 Valverde,VDE
@@ -1902,7 +1865,6 @@ Vidin,VID
 Vientiane - Wattay,VTE
 Vigo,VGO
 Villahermosa,VSA
-Vilnius,VNO
 Virgin Gorda,VIJ
 Visalia (CA),VIS
 Visby,VBY
@@ -1970,7 +1932,6 @@ Yakutsk,YKS
 "Yamagata, Junmachi",GAJ
 Yamoussoukro,ASK
 Yanbu,YNB
-Yangon (Rangoon) - Mingaladon,RGN
 Yaounde,YAO
 Yellowknife,YZF
 Yekaterinburg - Koltsovo Airport,SVX

@@ -4,6 +4,7 @@ from django.urls import path
 from .views import flight_search
 from django.conf.urls.static import static
 from django.conf import settings
+from django.contrib.auth.views import LoginView
 
 
 
@@ -13,6 +14,8 @@ urlpatterns = [
     path('flight_search', views.flight_search, name='flight_search'),
     path('search-flight/', views.search_form, name='search_form'),
     path('autocomplete/', views.autocomplete, name='autocomplete'),
+    path('login/', LoginView.as_view(template_name='Bingo/registration/login.html'), name='login'),
+
 
 
 

@@ -6,63 +6,66 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script>
-        $(document).ready(function() {
-            // Set default visibility of returnFlight
-            if ($("#id_flightType").val() != 'Return') {
-                $("#returnFlight").hide();
-            }
-
-            // Change visibility based on selection
-            $('#id_flightType').change(function() {
-                if ($(this).val() == 'Return') {
-                    $('#returnFlight').show();
-                } else {
-                    $('#returnFlight').hide();
-                }
-            });
-
-            // Set minimum date for departureDate2 to be the selected departure date
-            $('#id_departureDate1').datepicker({
-                dateFormat: 'yy-mm-dd',
-                minDate: 0, // Minimum date starts from today
-                onSelect: function(selectedDate) {
-                    $('#id_departureDate2').datepicker('option', 'minDate', selectedDate);
-                }
-            });
-
-            // Set minimum date for returnFlight
-            $('#id_departureDate2').datepicker({
-                dateFormat: 'yy-mm-dd'
-            });
-
-            // Validate destination airport
-            $('#id_originLocationCode, #id_destinationLocationCode').change(function() {
-                var origin = $('#id_originLocationCode').val();
-                var destination = $('#id_destinationLocationCode').val();
-
-                if (origin && destination && origin == destination) {
-                    alert('You cannot select the same airport for departure and arrival.');
-                    $('#id_destinationLocationCode').val('');
-                    $('#id_destinationLocationCode').trigger('change');
-                }
-            });
-
-            // autocomplete functions
-            function autocomplete(input_id) {
-                $(input_id).autocomplete({
-                    source: function(request, response) {
-                        $.getJSON("/autocomplete/", {
-                            q: request.term
-                        }, response);
-                    },
-                    minLength: 2,
-                });
-            }
-
-            autocomplete('#id_originLocationCode');
-            autocomplete('#id_destinationLocationCode');
-        });
-    </script>
+      $(document).ready(function() {
+          // Set default visibility of returnFlight
+          if ($("#id_flightType").val() != 'Return') {
+              $("#returnFlight").hide();
+          }
+  
+          // Change visibility based on selection
+          $('#id_flightType').change(function() {
+              if ($(this).val() == 'Return') {
+                  $('#returnFlight').show();
+              } else {
+                  $('#returnFlight').hide();
+              }
+          });
+  
+          // Set minimum date for departureDate1 to be today
+          $('#id_departureDate1').datepicker({
+              dateFormat: 'yy-mm-dd',
+              minDate: 0, // Minimum date starts from today
+              onSelect: function(selectedDate) {
+                  $('#id_departureDate2').datepicker('option', 'minDate', selectedDate);
+              }
+          });
+  
+          // Set minimum date for departureDate2 to be today
+          $('#id_departureDate2').datepicker({
+              dateFormat: 'yy-mm-dd',
+              minDate: 0, // Minimum date starts from today
+          });
+  
+          // Validate destination airport
+          $('#id_originLocationCode, #id_destinationLocationCode').change(function() {
+              var origin = $('#id_originLocationCode').val();
+              var destination = $('#id_destinationLocationCode').val();
+  
+              if (origin && destination && origin == destination) {
+                  alert('You cannot select the same airport for departure and arrival.');
+                  $('#id_destinationLocationCode').val('');
+                  $('#id_destinationLocationCode').trigger('change');
+              }
+          });
+  
+          // autocomplete functions
+          function autocomplete(input_id) {
+              $(input_id).autocomplete({
+                  source: function(request, response) {
+                      $.getJSON("/autocomplete/", {
+                          q: request.term
+                      }, response);
+                  },
+                  minLength: 2,
+              });
+          }
+  
+          autocomplete('#id_originLocationCode');
+          autocomplete('#id_destinationLocationCode');
+      });
+  </script>
+  
+  
 </head>
 <body>
     <h2>Flight Search</h2>

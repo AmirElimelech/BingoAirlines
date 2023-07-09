@@ -278,6 +278,9 @@ import datetime
 from django.views.decorators.csrf import csrf_exempt
 from django.db.models import Q
 from django.core.exceptions import ValidationError
+from django.forms.models import model_to_dict
+import traceback
+
 
 class SearchForm(forms.Form):
     numAdults = forms.IntegerField(min_value=1, initial=1 , label='Adults')
@@ -338,6 +341,212 @@ def search_form(request):
         'form': SearchForm(),
     }
     return render(request, 'Bingo/search_form.html', context)
+
+# def handle_search_form_submission(request):
+#     form = SearchForm(request.POST)
+
+#     if form.is_valid():
+#         num_adults = form.cleaned_data['numAdults']
+#         num_children = form.cleaned_data['numChildren']
+#         cabin_type = form.cleaned_data['cabinType']
+#         currency_code = form.cleaned_data['currencyCode']
+#         origin_code = get_iata_code(form.cleaned_data['originLocationCode'])
+#         destination_code = get_iata_code(form.cleaned_data['destinationLocationCode'])
+#         departure_date1 = form.cleaned_data['departureDate1']
+#         flight_type = form.cleaned_data['flightType']
+#         departure_date2 = form.cleaned_data['departureDate2'] if flight_type == 'Return' else None
+        
+#         travelers = [{"id": str(i+1), "travelerType": "ADULT"} for i in range(num_adults)]
+#         if num_children > 0:
+#             travelers.extend([{"id": str(i+1+num_adults), "travelerType": "CHILD"} for i in range(num_children)])
+
+#         data = {
+#             "currencyCode": currency_code,
+#             "originDestinations": [
+#                 {
+#                     "id": "1",
+#                     "originLocationCode": origin_code,
+#                     "destinationLocationCode": destination_code,
+#                     "departureDateTimeRange": {
+#                         "date": departure_date1.isoformat()
+#                     }
+#                 }
+#             ],
+#             "travelers": travelers,
+#             "sources": ["GDS"],
+#             "searchCriteria": {
+#                 "flightFilters": {
+#                     "cabinRestrictions": [
+#                         {
+#                             "cabin": cabin_type,
+#                             "coverage": "MOST_SEGMENTS",
+#                             "originDestinationIds": [
+#                                 "1"
+#                             ]
+#                         }
+#                     ]
+#                 }
+#             }
+#         }
+
+#         if flight_type == 'Return':
+#             data['originDestinations'].append(
+#                 {
+#                     "id": "2",
+#                     "originLocationCode": destination_code,
+#                     "destinationLocationCode": origin_code,
+#                     "departureDateTimeRange": {
+#                         "date": departure_date2.isoformat()
+#                     }
+#                 }
+#             )
+            
+#         try:
+#             response_data = get_ticket_data(data)
+#             return JsonResponse(response_data, safe=False)
+#         except Exception as e:
+#             return HttpResponseBadRequest('Error processing request')
+
+#     return HttpResponseBadRequest('Invalid form submission')
+
+# def handle_search_form_submission(request):
+#     form = SearchForm(request.POST)
+
+#     if form.is_valid():
+#         num_adults = form.cleaned_data['numAdults']
+#         num_children = form.cleaned_data['numChildren']
+#         cabin_type = form.cleaned_data['cabinType']
+#         currency_code = form.cleaned_data['currencyCode']
+#         origin_code = get_iata_code(form.cleaned_data['originLocationCode'])
+#         destination_code = get_iata_code(form.cleaned_data['destinationLocationCode'])
+#         departure_date1 = form.cleaned_data['departureDate1']
+#         flight_type = form.cleaned_data['flightType']
+#         departure_date2 = form.cleaned_data['departureDate2'] if flight_type == 'Return' else None
+        
+#         travelers = [{"id": str(i+1), "travelerType": "ADULT"} for i in range(num_adults)]
+#         if num_children > 0:
+#             travelers.extend([{"id": str(i+1+num_adults), "travelerType": "CHILD"} for i in range(num_children)])
+
+#         data = {
+#             "currencyCode": currency_code,
+#             "originDestinations": [
+#                 {
+#                     "id": "1",
+#                     "originLocationCode": origin_code,
+#                     "destinationLocationCode": destination_code,
+#                     "departureDateTimeRange": {
+#                         "date": departure_date1.isoformat()
+#                     }
+#                 }
+#             ],
+#             "travelers": travelers,
+#             "sources": ["GDS"],
+#             "searchCriteria": {
+#                 "flightFilters": {
+#                     "cabinRestrictions": [
+#                         {
+#                             "cabin": cabin_type,
+#                             "coverage": "MOST_SEGMENTS",
+#                             "originDestinationIds": [
+#                                 "1"
+#                             ]
+#                         }
+#                     ]
+#                 }
+#             }
+#         }
+
+#         if flight_type == 'Return':
+#             data['originDestinations'].append(
+#                 {
+#                     "id": "2",
+#                     "originLocationCode": destination_code,
+#                     "destinationLocationCode": origin_code,
+#                     "departureDateTimeRange": {
+#                         "date": departure_date2.isoformat()
+#                     }
+#                 }
+#             )
+            
+#         try:
+#             response_data = get_ticket_data(data)
+#             modified_response = modify_response_data(response_data, currency_code)
+#             return JsonResponse(modified_response, safe=False)
+#         except Exception as e:
+#             return HttpResponseBadRequest('Error processing request')
+
+#     return HttpResponseBadRequest('Invalid form submission')
+
+
+# def modify_response_data(response_data, currency_code):
+#     modified_response = {
+#         "meta": {
+#             "count": response_data["meta"]["count"]
+#         },
+#         "data": []
+#     }
+
+#     for flight_offer in response_data["data"]:
+#         modified_flight_offer = {
+#             "type": flight_offer["type"],
+#             "id": flight_offer["id"],
+#             "lastTicketingDate": flight_offer["lastTicketingDate"],
+#             "lastTicketingDateTime": flight_offer["lastTicketingDateTime"],
+#             "numberOfBookableSeats": flight_offer["numberOfBookableSeats"],
+#             "itineraries": [],
+#             "price": {
+#                 "currency": currency_code,
+#                 "total": flight_offer["price"]["total"],
+#                 "grandTotal": flight_offer["price"]["grandTotal"]
+#             },
+#             "travelerPricings": []
+#         }
+
+#         for itinerary in flight_offer["itineraries"]:
+#             modified_itinerary = {
+#                 "duration": itinerary["duration"],
+#                 "segments": []
+#             }
+
+#             for segment in itinerary["segments"]:
+#                 modified_segment = {
+#                     "departure": segment["departure"],
+#                     "arrival": segment["arrival"],
+#                     "carrierCode": segment["carrierCode"],
+#                     "number": segment["number"],
+#                     "duration": segment["duration"]
+#                 }
+
+#                 modified_itinerary["segments"].append(modified_segment)
+
+#             modified_flight_offer["itineraries"].append(modified_itinerary)
+
+#         for traveler_pricing in flight_offer["travelerPricings"]:
+#             modified_traveler_pricing = {
+#                 "travelerId": traveler_pricing["travelerId"],
+#                 "fareOption": traveler_pricing["fareOption"],
+#                 "travelerType": traveler_pricing["travelerType"],
+#                 "price": {
+#                     "currency": currency_code,
+#                     "total": traveler_pricing["price"]["total"]
+#                 },
+#                 "fareDetailsBySegment": []
+#             }
+
+#             for fare_detail in traveler_pricing["fareDetailsBySegment"]:
+#                 modified_fare_detail = {
+#                     "cabin": fare_detail["cabin"]
+#                 }
+
+#                 modified_traveler_pricing["fareDetailsBySegment"].append(modified_fare_detail)
+
+#             modified_flight_offer["travelerPricings"].append(modified_traveler_pricing)
+
+#         modified_response["data"].append(modified_flight_offer)
+
+#     return modified_response
+
+
 
 def handle_search_form_submission(request):
     form = SearchForm(request.POST)
@@ -400,11 +609,80 @@ def handle_search_form_submission(request):
             
         try:
             response_data = get_ticket_data(data)
-            return JsonResponse(response_data, safe=False)
+            modified_response = {
+                "meta": {
+                    "count": response_data["meta"]["count"]
+                },
+                "data": []
+            }
+
+            for flight_offer in response_data["data"]:
+                modified_flight_offer = {
+                    "type": flight_offer["type"],
+                    "id": flight_offer["id"],
+                    "lastTicketingDate": flight_offer["lastTicketingDate"],
+                    "lastTicketingDateTime": flight_offer["lastTicketingDateTime"],
+                    "numberOfBookableSeats": flight_offer["numberOfBookableSeats"],
+                    "itineraries": [],
+                    "price": {
+                        "currency": currency_code,
+                        "total": flight_offer["price"]["total"],
+                        "grandTotal": flight_offer["price"]["grandTotal"]
+                    },
+                    "travelerPricings": []
+                }
+
+                for itinerary in flight_offer["itineraries"]:
+                    modified_itinerary = {
+                        "duration": itinerary["duration"],
+                        "segments": []
+                    }
+
+                    for segment in itinerary["segments"]:
+                        modified_segment = {
+                            "departure": segment["departure"],
+                            "arrival": segment["arrival"],
+                            "carrierCode": segment["carrierCode"],
+                            "number": segment["number"],
+                            "duration": segment["duration"]
+                        }
+
+                        modified_itinerary["segments"].append(modified_segment)
+
+                    modified_flight_offer["itineraries"].append(modified_itinerary)
+
+                for traveler_pricing in flight_offer["travelerPricings"]:
+                    modified_traveler_pricing = {
+                        "travelerId": traveler_pricing["travelerId"],
+                        "fareOption": traveler_pricing["fareOption"],
+                        "travelerType": traveler_pricing["travelerType"],
+                        "price": {
+                            "currency": currency_code,
+                            "total": traveler_pricing["price"]["total"]
+                        },
+                        "fareDetailsBySegment": []
+                    }
+
+                    for fare_detail in traveler_pricing["fareDetailsBySegment"]:
+                        modified_fare_detail = {
+                            "cabin": fare_detail["cabin"]
+                        }
+
+                        modified_traveler_pricing["fareDetailsBySegment"].append(modified_fare_detail)
+
+                    modified_flight_offer["travelerPricings"].append(modified_traveler_pricing)
+
+                modified_response["data"].append(modified_flight_offer)
+
+            return JsonResponse(modified_response, safe=False)
         except Exception as e:
+            # traceback.print_exc() # needed if you want to print the the trackback information on an exception
             return HttpResponseBadRequest('Error processing request')
 
     return HttpResponseBadRequest('Invalid form submission')
+
+
+
 
 @csrf_exempt
 def flight_search(request):
