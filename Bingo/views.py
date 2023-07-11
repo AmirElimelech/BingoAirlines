@@ -280,6 +280,12 @@ from django.db.models import Q
 from django.core.exceptions import ValidationError
 from django.forms.models import model_to_dict
 import traceback
+import logging
+
+
+
+# logger 
+logger = logging.getLogger(__name__)
 
 
 class SearchForm(forms.Form):
@@ -299,6 +305,9 @@ class SearchForm(forms.Form):
         departureDate2 = cleaned_data.get('departureDate2')
         originLocationCode = cleaned_data.get('originLocationCode')
         destinationLocationCode = cleaned_data.get('destinationLocationCode')
+        cabinType = cleaned_data.get('cabinType')
+        numAdults = cleaned_data.get('numAdults')
+        numChildren = cleaned_data.get('numChildren')
 
         # Check that departure date is not in the past
         if departureDate1 and departureDate1 < datetime.date.today():
@@ -311,6 +320,17 @@ class SearchForm(forms.Form):
         # Check that origin and destination are not the same
         if originLocationCode and destinationLocationCode and originLocationCode == destinationLocationCode:
             self.add_error('destinationLocationCode', 'You cannot select the same airport for departure and arrival.')
+
+        # Check cabin type
+        if cabinType not in ['ECONOMY', 'BUSINESS', 'FIRST']:
+            self.add_error('cabinType', 'Invalid cabin type selected.')
+
+
+        # Validate number of passengers
+        if numAdults and numAdults > 9:
+            self.add_error('numAdults', 'You cannot book for more than 9 adults at once.')
+        if numChildren and numChildren > 9:
+            self.add_error('numChildren', 'You cannot book for more than 9 children at once.')
 
         return cleaned_data
 
@@ -330,6 +350,8 @@ def autocomplete(request):
     airports = Airport.objects.filter(Q(name__icontains=q) | Q(iata_code__icontains=q))
     results = [airport.name for airport in airports]
     return JsonResponse(results, safe=False)
+
+#
 
 def search_form(request):
     if request.method == "POST":
@@ -551,7 +573,10 @@ def search_form(request):
 def handle_search_form_submission(request):
     form = SearchForm(request.POST)
 
+    logger.info(f"Form data: {request.POST}")
+
     if form.is_valid():
+        logger.info("Form is valid.")
         num_adults = form.cleaned_data['numAdults']
         num_children = form.cleaned_data['numChildren']
         cabin_type = form.cleaned_data['cabinType']
@@ -678,6 +703,9 @@ def handle_search_form_submission(request):
         except Exception as e:
             # traceback.print_exc() # needed if you want to print the the trackback information on an exception
             return HttpResponseBadRequest('Error processing request')
+    else:
+        logger.info("Form is not valid.")
+        logger.info(f"Form errors: {form.errors}")
 
     return HttpResponseBadRequest('Invalid form submission')
 
