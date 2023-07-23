@@ -5,6 +5,10 @@ from .views import flight_search
 from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib.auth.views import LoginView
+from .views import login_view
+from .views import register_view
+
+
 
 
 
@@ -13,8 +17,10 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('flight_search', views.flight_search, name='flight_search'),
     path('search-flight/', views.search_form, name='search_form'),
+    path('search-results/', views.handle_search_form_submission, name='search_results'),
     path('autocomplete/', views.autocomplete, name='autocomplete'),
-    path('login/', LoginView.as_view(template_name='Bingo/registration/login.html'), name='login'),
+    path('login/', views.login_view, name='login'),
+    path('register/', views.register_view, name='register'),
 
 
 

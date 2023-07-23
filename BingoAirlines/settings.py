@@ -54,6 +54,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'BingoAirlines.urls'
 
+LOGIN_REDIRECT_URL = '/'
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -98,7 +101,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': 'logger.log',  # Or provide full path like '/var/www/django/debug.log'
+            'filename': 'logs/logger.log',  # Or provide full path like '/var/www/django/debug.log'
         },
     },
     'root': {

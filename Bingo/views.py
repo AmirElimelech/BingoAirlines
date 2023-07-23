@@ -270,7 +270,7 @@
 
 from django import forms
 from django.http import JsonResponse, HttpResponseBadRequest, HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render ,redirect
 from .utils.amadeus import get_ticket_data
 from .models import Airport
 import json
@@ -281,11 +281,45 @@ from django.core.exceptions import ValidationError
 from django.forms.models import model_to_dict
 import traceback
 import logging
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.forms import AuthenticationForm , UserCreationForm 
+
 
 
 
 # logger 
 logger = logging.getLogger(__name__)
+
+
+
+
+def login_view(request):
+    if request.method == 'POST':
+        form = AuthenticationForm(request, data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            return redirect('/')
+        else:
+            return render(request, 'login.html', {'form': form})
+    else:
+        form = AuthenticationForm()
+        return render(request, 'login.html', {'form': form})
+    
+
+def register_view(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect('/')
+        else:
+            return render(request, 'register.html', {'form': form})
+    else:
+        form = UserCreationForm()
+        return render(request, 'register.html', {'form': form})
+    
 
 
 class SearchForm(forms.Form):
@@ -576,6 +610,7 @@ def handle_search_form_submission(request):
     logger.info(f"Form data: {request.POST}")
 
     if form.is_valid():
+    
         logger.info("Form is valid.")
         num_adults = form.cleaned_data['numAdults']
         num_children = form.cleaned_data['numChildren']
@@ -699,11 +734,16 @@ def handle_search_form_submission(request):
 
                 modified_response["data"].append(modified_flight_offer)
 
-            return JsonResponse(modified_response, safe=False)
+            # return JsonResponse(modified_response, safe=False) # this is the original line used to Json response TEMP TEMP TEMP 
+            return render(request, 'Bingo/search_results.html', {'data': modified_response['data']})
+            # return render(request, 'Bingo/search_results.html', {'flights': modified_response['data']})
+
+
         except Exception as e:
-            # traceback.print_exc() # needed if you want to print the the trackback information on an exception
+            traceback.print_exc() # needed if you want to print the the trackback information on an exception
+            logger.error(f'Error processing request: {e}')
             return HttpResponseBadRequest('Error processing request')
-    else:
+    else:  
         logger.info("Form is not valid.")
         logger.info(f"Form errors: {form.errors}")
 
@@ -724,3 +764,4 @@ def flight_search(request):
 
 def home(request):
     return HttpResponse("Hello, world. You're at the Bingo Airlines home page.")
+
