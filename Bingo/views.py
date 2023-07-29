@@ -271,7 +271,7 @@
 from django import forms
 from django.http import JsonResponse, HttpResponseBadRequest, HttpResponse
 from django.shortcuts import render ,redirect
-from .utils.amadeus import get_ticket_data
+#from .utils.amadeus import get_ticket_data
 from .models import Airport
 import json
 import datetime
@@ -284,6 +284,7 @@ import logging
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import AuthenticationForm , UserCreationForm 
 
+from .models import Users
 
 
 
@@ -298,6 +299,7 @@ def login_view(request):
         form = AuthenticationForm(request, data=request.POST)
         if form.is_valid():
             user = form.get_user()
+            
             login(request, user)
             return redirect('/')
         else:
@@ -306,19 +308,29 @@ def login_view(request):
         form = AuthenticationForm()
         return render(request, 'login.html', {'form': form})
     
+from django.contrib.auth.decorators import login_required
+
+#@login_required(login_url='login')
+def customer_portal(request):
+    # Add your customer portal view logic here
+    return render(request, 'customer_portal.html')
+ 
+
+from django.shortcuts import render, redirect
+from .forms import UsersForm
 
 def register_view(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = UsersForm(request.POST, request.FILES)
         if form.is_valid():
-            user = form.save()
-            login(request, user)
-            return redirect('/')
-        else:
-            return render(request, 'register.html', {'form': form})
+            form.save()
+            return redirect('login/')
     else:
-        form = UserCreationForm()
-        return render(request, 'register.html', {'form': form})
+        form = UsersForm()
+    return render(request, 'register.html', {'form': form})
+
+
+
     
 
 

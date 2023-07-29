@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register</title>
+    <title>Create User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-image {
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h2>Register</h2>
-    <form method="post">
+    <h1>Registration</h1>
+    <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Register</button>
+        <label for="{{ form.id.id_for_label }}">ID:</label>
+        {{ form.id }}
+        <label for="{{ form.username.id_for_label }}">Username:</label>
+        {{ form.username }}
+        <label for="{{ form.password.id_for_label }}">Password:</label>
+        {{ form.password }}
+        <label for="{{ form.email.id_for_label }}">Email:</label>
+        {{ form.email }}
+        <label for="{{ form.user_role.id_for_label }}">User Role:</label>
+        {{ form.user_role }}
+        <div class="form-image">
+            <label for="{{ form.image.id_for_label }}">Image:</label>
+            {{ form.image }}
+        </div>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>

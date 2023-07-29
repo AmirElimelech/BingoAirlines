@@ -82,11 +82,11 @@ WSGI_APPLICATION = 'BingoAirlines.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bingo_air_db',
+        'NAME': 'airlines',
         'HOST': 'localhost',
         'PORT': '3306',
         'USER': 'root',
-        'PASSWORD': 'SaP#12345',
+        'PASSWORD': 'Aleesha#143',
     }
 }
 
