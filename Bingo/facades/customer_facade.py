@@ -21,6 +21,9 @@
 
 from .facade_base import FacadeBase
 from models import Customers, Tickets
+import logging
+
+logger = logging.getLogger(__name__)
 
 class CustomerFacade(FacadeBase):
     def __init__(self, user):
@@ -28,13 +31,30 @@ class CustomerFacade(FacadeBase):
         self.user = user
 
     def update_customer(self, customer):
-        return self.DAL.update(self.user.customer, **customer)
+        try:
+            return self.DAL.update(self.user.customer, **customer)
+        except Exception as e:
+            logger.error(f"Error updating customer: {e}")
+            return None
 
     def add_ticket(self, ticket):
-        return self.DAL.add(Tickets, **ticket)
+        try:
+            return self.DAL.add(Tickets, **ticket)
+        except Exception as e:
+            logger.error(f"Error adding ticket: {e}")
+            return None
+
 
     def remove_ticket(self, ticket):
-        return self.DAL.remove(ticket)
+        try:
+            return self.DAL.remove(ticket)
+        except Exception as e:
+            logger.error(f"Error removing ticket: {e}")
+            return None
 
     def get_my_tickets(self):
-        return self.DAL.get_tickets_by_customer(self.user.customer.id)
+        try:
+            return self.DAL.get_tickets_by_customer(self.user.customer.id)
+        except Exception as e:
+            logger.error(f"Error getting my tickets: {e}")
+            return None

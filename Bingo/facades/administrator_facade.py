@@ -34,6 +34,9 @@
 
 from .facade_base import FacadeBase
 from models import Customers, Administrators, Airline_Companies
+import logging
+
+logger = logging.getLogger(__name__)
 
 class AdministratorFacade(FacadeBase):
     def __init__(self, user):
@@ -41,22 +44,50 @@ class AdministratorFacade(FacadeBase):
         self.user = user
 
     def get_all_customers(self):
-        return self.DAL.get_all(Customers)
+        try:
+            return self.DAL.get_all(Customers)
+        except Exception as e:
+            logger.error(f"Error getting all customers: {e}")
+            return None
 
     def add_airline(self, airline):
-        return self.DAL.add(Airline_Companies, **airline)
+        try:
+            return self.DAL.add(Airline_Companies, **airline)
+        except Exception as e:
+            logger.error(f"Error adding airline: {e}")
+            return None
 
     def add_customer(self, customer):
-        return self.DAL.add(Customers, **customer)
+        try:
+            return self.DAL.add(Customers, **customer)
+        except Exception as e:
+            logger.error(f"Error adding customer: {e}")
+            return None
 
     def add_administrator(self, administrator):
-        return self.DAL.add(Administrators, **administrator)
+        try:
+            return self.DAL.add(Administrators, **administrator)
+        except Exception as e:
+            logger.error(f"Error adding administrator: {e}")
+            return None
 
     def remove_airline(self, airline):
-        return self.DAL.remove(airline)
+        try:
+            return self.DAL.remove(airline)
+        except Exception as e:
+            logger.error(f"Error removing airline: {e}")
+            return None
 
     def remove_customer(self, customer):
-        return self.DAL.remove(customer)
+        try:
+            return self.DAL.remove(customer)
+        except Exception as e:
+            logger.error(f"Error removing customer: {e}")
+            return None
 
     def remove_administrator(self, administrator):
-        return self.DAL.remove(administrator)
+        try:
+            return self.DAL.remove(administrator)
+        except Exception as e:
+            logger.error(f"Error removing administrator: {e}")
+            return None

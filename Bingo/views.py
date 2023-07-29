@@ -281,9 +281,10 @@ from django.core.exceptions import ValidationError
 from django.forms.models import model_to_dict
 import traceback
 import logging
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login , logout
 from django.contrib.auth.forms import AuthenticationForm , UserCreationForm 
-
+from django.contrib.auth.decorators import login_required
+from .forms import UsersForm
 
 
 
@@ -292,14 +293,33 @@ logger = logging.getLogger(__name__)
 
 
 
+# old login view
+# def login_view(request):
+#     if request.method == 'POST':
+#         form = AuthenticationForm(request, data=request.POST)
+#         if form.is_valid():
+#             user = form.get_user()
+#             login(request, user)
+#             return redirect('/')
+#         else:
+#             return render(request, 'login.html', {'form': form})
+#     else:
+#         form = AuthenticationForm()
+#         return render(request, 'login.html', {'form': form})
+    
 
 def login_view(request):
     if request.method == 'POST':
         form = AuthenticationForm(request, data=request.POST)
         if form.is_valid():
-            user = form.get_user()
-            login(request, user)
-            return redirect('/')
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            user = authenticate(username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('/')
+            else:
+                return render(request, 'login.html', {'form': form, 'error': 'Invalid username or password.'})
         else:
             return render(request, 'login.html', {'form': form})
     else:
@@ -307,18 +327,25 @@ def login_view(request):
         return render(request, 'login.html', {'form': form})
     
 
+@login_required(login_url='login')
+def customer_portal(request):
+    return render(request, 'customer_portal.html')
+
+
 def register_view(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = UsersForm(request.POST, request.FILES)
         if form.is_valid():
-            user = form.save()
-            login(request, user)
-            return redirect('/')
-        else:
-            return render(request, 'register.html', {'form': form})
+            form.save()
+            return redirect('login')
     else:
-        form = UserCreationForm()
-        return render(request, 'register.html', {'form': form})
+        form = UsersForm()
+    return render(request, 'register.html', {'form': form})
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('login')
     
 
 
@@ -763,5 +790,8 @@ def flight_search(request):
             return JsonResponse({"error": str(e)}, status=400)
 
 def home(request):
-    return HttpResponse("Hello, world. You're at the Bingo Airlines home page.")
+    if request.user.is_authenticated:
+        return HttpResponse(f"Hello, {request.user.username}. You're at the Bingo Airlines home page.")
+    else:
+        return HttpResponse("Hello, world. You're at the Bingo Airlines home page.")
 

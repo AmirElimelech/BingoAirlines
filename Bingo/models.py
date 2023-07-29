@@ -18,6 +18,8 @@ from django.db import models
 from django.core.validators import MinValueValidator
 import string
 import random
+from django.contrib.auth.hashers import make_password , check_password as django_check_password
+from django.contrib.auth.models import BaseUserManager
 
 
 
@@ -163,17 +165,66 @@ def validate_nine_digits(value):
         raise validators.ValidationError("ID must be exactly 9 digits long.")
 
 
+# this Custom user manager 
+class CustomUserManager(BaseUserManager):
+    """
+    Custom manager for Users model.
+
+    The `get_by_natural_key` method is used by Django's authentication framework
+    to retrieve a user instance by its "natural key", which is the username field
+    in this case. This method is required for Django's `authenticate` method to work
+    with the custom user model.
+    """
+    def get_by_natural_key(self, username):
+        """
+        Retrieve a user instance by its username.
+
+        Args:
+            username (str): The username of the user to retrieve.
+
+        Returns:
+            Users: The user instance matching the provided username.
+        """
+        return self.get(username=username)
+
+
 # Users model represents individual user accounts
 class Users(models.Model):
     id = models.CharField(max_length=9, primary_key=True, validators=[validate_nine_digits])
     username = models.CharField(max_length=255, unique=True, null=False)
     password = models.CharField(max_length=255, null=False)
     email = models.EmailField(max_length=255, unique=True, null=False)
-    user_role = models.ForeignKey('User_Roles', on_delete=models.CASCADE)
+    user_role = models.ForeignKey('User_Roles', on_delete=models.CASCADE , null=True)
     image = models.ImageField(upload_to='users/', default='/users/defaultuser.png', null=True)
+
+
+    USERNAME_FIELD = 'username'
+    REQUIRED_FIELDS = []
+    # REQUIRED_FIELDS = ['email', 'user_role', 'image']
+
+    objects = CustomUserManager()
+
 
     def __str__(self):
         return self.username
+    
+    def set_password(self, raw_password):
+        self.password = make_password(raw_password)
+        self.save()
+
+    def check_password(self, raw_password):
+        return django_check_password(raw_password, self.password)
+    
+    def is_active(self):
+        return True
+
+    @property
+    def is_authenticated(self):
+        return True
+
+    @property
+    def is_anonymous(self):
+        return False
     
     class Meta:
         verbose_name_plural = "Users"
@@ -265,6 +316,8 @@ class DAL:
             instance.delete()
         except Exception as e:
             return None
+
+
 
     # Additional methods
     def getAirlinesByCountry(self, country_id):
@@ -363,3 +416,22 @@ class DAL:
             return Tickets.objects.filter(customer_id=_customer_id)
         except Exception as e:
             return None
+        
+
+    # def search(self, model, field, query):
+    #     """
+    #     Search for data in a specific field of a model.
+    #     """
+    #     try:
+    #         return model.objects.filter(Q(**{f"{field}__icontains": query}))
+    #     except Exception as e:
+    #         return None
+
+    # def get_all_sorted(self, model, sort_by):
+    #     """
+    #     Get all data from a model, sorted by a specific field.
+    #     """
+    #     try:
+    #         return model.objects.all().order_by(sort_by)
+    #     except Exception as e:
+    #         return None

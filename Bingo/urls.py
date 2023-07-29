@@ -5,8 +5,8 @@ from .views import flight_search
 from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib.auth.views import LoginView
-from .views import login_view
-from .views import register_view
+from .views import login_view , register_view , logout_view , customer_portal
+
 
 
 
@@ -21,7 +21,8 @@ urlpatterns = [
     path('autocomplete/', views.autocomplete, name='autocomplete'),
     path('login/', views.login_view, name='login'),
     path('register/', views.register_view, name='register'),
-
+    path('customer_portal/', views.customer_portal, name='customer_portal'),
+    path('logout/', logout_view, name='logout'),
 
 
 

@@ -44,20 +44,31 @@ from .airline_facade import AirlineFacade
 from .administrator_facade import AdministratorFacade
 from .facade_base import FacadeBase
 from models import Customers, Users
+from werkzeug.security import check_password_hash
+import logging
+
+logger = logging.getLogger(__name__)
 
 class AnonymousFacade(FacadeBase):
+
     def login(self, username, password):
         user = self.DAL.get_user_by_username(username)
-        if user is not None and user.password == password:
+        if user is not None and check_password_hash(user.password, password):
             if user.user_role.role_name == 'Customer':
                 return CustomerFacade(user)
             elif user.user_role.role_name == 'Airline':
                 return AirlineFacade(user)
             elif user.user_role.role_name == 'Administrator':
                 return AdministratorFacade(user)
+        else:
+            logger.warning(f"Invalid login attempt for username: {username}")
         return None
 
     def add_customer(self, customer):
-        return self.DAL.add(Customers, **customer)
+        try:
+            return self.DAL.add(Customers, **customer)
+        except Exception as e:
+            logger.error(f"Error adding customer: {e}")
+            return None
 
 
