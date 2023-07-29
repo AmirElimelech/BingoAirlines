@@ -21,7 +21,8 @@ urlpatterns = [
     path('autocomplete/', views.autocomplete, name='autocomplete'),
     path('login/', views.login_view, name='login'),
     path('register/', views.register_view, name='register'),
-
+    path('customer_portal/', views.customer_portal, name='customer_portal'),
+ 
 
 
 
