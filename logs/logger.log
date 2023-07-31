@@ -1,0 +1,2520 @@
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['rEh09LStkGSYRrq8BqlxQp8T17CRuNVl9LlBT63I7WnJQetfwLgjdiUDr0CPmm5W'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Rome\xa0- Fuimicino'], 'departureDate1': ['2023-07-15'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['3'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['dD7sfE9poNJ9WHO242fonDA0ZTca0TC3VKb3ZZkEb3eUVuR9ZnaaKwmKpMc8SsME'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Rome\xa0- Fuimicino'], 'departureDate1': ['2023-07-28'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['2'], 'currencyCode': ['ILS']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['crdzLTdbg1N7awKgojY803SzYymUTQDoUyhaveoq3hiS9jNnjETUnWEjormSLpNZ'], 'flightType': ['Return'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['New York\xa0- John F. Kennedy (NY)'], 'departureDate1': ['2023-07-13'], 'departureDate2': ['2023-07-28'], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['1'], 'currencyCode': ['ILS']}>
+Form is valid.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /logi
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['ZLoZdfcP4UgRiHYf1tTMpzPbjh5e5tYMmfrvEsnB3NPC31teMg3ucsMTkobkfok1'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-20'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Bad Request: /search-flight/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['ZLoZdfcP4UgRiHYf1tTMpzPbjh5e5tYMmfrvEsnB3NPC31teMg3ucsMTkobkfok1'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-20'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\amadeus.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['TY5odcnr6UhMAJAuYK1Chp83TjqPl7WMgs8UEpyd5NQxl35tJxbk4i5LUqwVv2i1'], 'flightType': ['Return'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-26'], 'departureDate2': ['2023-08-02'], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['fp4lZ3iybbJ09DsvAxkjIzOmhcWeSZrrCT7Rqgtka4iLUXXulku1vsL4ij2k2UNG'], 'flightType': ['Return'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-26'], 'departureDate2': ['2023-08-02'], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['m8TB9WbuSgxXjqJV3FQ0VSLUQLBdoEUTJCW7A9mgR96I4KeUOs0IILICRSHjyzg8'], 'flightType': ['Return'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-20'], 'departureDate2': ['2023-07-29'], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['iXcY8HGPYdVOXAHMR7sLyOiIV0Jj5y6qFrfuzURBX6uzIUcLCUCtlHfqW7PpftsF'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Bad Request: /search-flight/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /searh
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['pjPfzk1ORbvulZ3QRuBt823RGvwfQsyCMNSL0xcAQ44f6jyPChLbVV0zHCCl0nUR'], 'flightType': ['OneWay'], 'originLocationCode': ['Abu Dhabi\xa0- Abu Dhabi International'], 'destinationLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['uz7etOJ7W8w7WNuQDW86CkmjUz4Fv9UTR3aKU1UTV15SH7ZPoJiOpdj1VGaLF4g8'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-22'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['XZFRQx6wZEzCbKycXJicFIW5PvgaLQsHktInhKhiYx8nW43bIwsUsBTNQCmgVLOW'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-22'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Bad Request: /search-flight/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['MxYm0zwQxYl4OyaIvWxSvbo0U0uLZ5v3911SrMHCwRUPzSFHgJHAi4lIV7AR90Ri'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Bad Request: /search-flight/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['MxYm0zwQxYl4OyaIvWxSvbo0U0uLZ5v3911SrMHCwRUPzSFHgJHAi4lIV7AR90Ri'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Bad Request: /search-flight/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['MxYm0zwQxYl4OyaIvWxSvbo0U0uLZ5v3911SrMHCwRUPzSFHgJHAi4lIV7AR90Ri'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Form errors: 
+Bad Request: /search-flight/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['1761c3vJcxyd3WWlXEtW7BiVROteorbdoB9xDgGvbq7YOgrkIrDEUufDSVzkymxs'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Bad Request: /search-flight/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['1761c3vJcxyd3WWlXEtW7BiVROteorbdoB9xDgGvbq7YOgrkIrDEUufDSVzkymxs'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Bad Request: /search-flight/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['foXaxDvMFfMsThkohbMmjlwCxYnyWAsiCS0GYQGyE8ldEBPn2YW46etky5tE6vOx'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Bad Request: /search-flight/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /flight_search/
+Form data: <QueryDict: {}>
+Form is not valid.
+Form errors: <ul class="errorlist"><li>numAdults<ul class="errorlist"><li>This field is required.</li></ul></li><li>numChildren<ul class="errorlist"><li>This field is required.</li></ul></li><li>cabinType<ul class="errorlist"><li>This field is required.</li><li>Invalid cabin type selected.</li></ul></li><li>currencyCode<ul class="errorlist"><li>This field is required.</li></ul></li><li>originLocationCode<ul class="errorlist"><li>This field is required.</li></ul></li><li>destinationLocationCode<ul class="errorlist"><li>This field is required.</li></ul></li><li>departureDate1<ul class="errorlist"><li>This field is required.</li></ul></li><li>flightType<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Bad Request: /search-results/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['hpCu7vzliNiJywvkLvRiNIDyzttsUHzlETF0yIK7hGRujQ0jwi10ABAgAAzy4CVA'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Bad Request: /search-flight/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['ScVsMjFXQHxibW7aN1Hp36IvKvkJTeaIfGYYdwQJPA63WgC9yOR7QZFdLCqP39wX'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Error processing request: search_form.html
+Bad Request: /search-flight/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['44nNgscGCQCfD9IkAaOeRnuTqzWZkgPzryqjHFnsBJb0otdjlXYWEgrBrG25ubbO'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['6hNUEG8i7DXpZ0h5VWEylag74JEEdwjktLQq5Tj46wwaKkM4GJOg83dP5QKKnrFz'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-21'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['VtNwACI9eKA8xzA0eW375LSBoEtx1naciXQ21PTVdD9TiT5ZZJdPSEPjpLzDbiwr'], 'flightType': ['OneWay'], 'originLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'destinationLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'departureDate1': ['2023-07-24'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['x8dIdmDgJiLNAuRGH5CU4SyoAJmyL8Y0UCgeEzO2IbkylOmFsSMCRLv6BQsEV3kf'], 'flightType': ['Return'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': ['2023-08-05'], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['4VLcmUWP7HmbWPNgjb12slNbFW47wKkXrpOIN77B6AVWH9if4YbKfeKTG3adGFGc'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['k0WujYn5Q0CWFyFu9PtSqJBydss0cVYPHuZ0KbyRPTbHqSatUCDAdCygezy6mQk4'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['ly9tFiwTcNrSiRkxvLEgHjsffAazwlgtI2cZ6vHFbG0D3bPwgyOYucpXgHgFGgCI'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-26'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['ly9tFiwTcNrSiRkxvLEgHjsffAazwlgtI2cZ6vHFbG0D3bPwgyOYucpXgHgFGgCI'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-26'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['ly9tFiwTcNrSiRkxvLEgHjsffAazwlgtI2cZ6vHFbG0D3bPwgyOYucpXgHgFGgCI'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-26'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['iYJ0mFap1mP2SkwqfNFoR0XfGroVbmgRFsMwNSlb0foNDE1p0AP6ETUXHyu1lhC6'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['RVJCk2kaLlSK6Z9lHtI5Q0VRCCW2sxOLepM8LfvWKervRjEksgSNDTSzDJ28Csa0'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['RVJCk2kaLlSK6Z9lHtI5Q0VRCCW2sxOLepM8LfvWKervRjEksgSNDTSzDJ28Csa0'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['RVJCk2kaLlSK6Z9lHtI5Q0VRCCW2sxOLepM8LfvWKervRjEksgSNDTSzDJ28Csa0'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['imdbCDhlRXOMgHtYeoQLH03N9WyMVinhFQgH3Qs7QQnx11YXZb0tuT0va3ES5dJw'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['imdbCDhlRXOMgHtYeoQLH03N9WyMVinhFQgH3Qs7QQnx11YXZb0tuT0va3ES5dJw'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['imdbCDhlRXOMgHtYeoQLH03N9WyMVinhFQgH3Qs7QQnx11YXZb0tuT0va3ES5dJw'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['li7W13pFFicxjepT16lhsVSAlTB8Qss3IMassgArEbLi4yUSMTvZfOPim0He0nOi'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['TTzNVE5RfLCsrsA7re0uNs8mOgDLtNcygnCjmRgDeEbdcM56c1acAl54PnJRDIyN'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['KPbZZwfdHsboI5n8lU2azrzwwTlO5c8C7jevqJqZGlK9tpS76HcSmkwex0rUf7uR'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['VnxUbAmJoIpsiyKaoECNDx3TeElYvGTQiRAqCNxvnBYd3Sf99rMvqq0BfLr4FBf5'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['KPbZZwfdHsboI5n8lU2azrzwwTlO5c8C7jevqJqZGlK9tpS76HcSmkwex0rUf7uR'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-25'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['NQsiqlST8csAZdYyBecZmWLrofQhfuKjakvORy3F751lKxtxm1mH9PI9pmWnpp6y'], 'flightType': ['Return'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Rajkot'], 'departureDate1': ['2023-07-29'], 'departureDate2': ['2023-07-31'], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['NQsiqlST8csAZdYyBecZmWLrofQhfuKjakvORy3F751lKxtxm1mH9PI9pmWnpp6y'], 'flightType': ['Return'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Rajkot'], 'departureDate1': ['2023-07-29'], 'departureDate2': ['2023-07-31'], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['NQsiqlST8csAZdYyBecZmWLrofQhfuKjakvORy3F751lKxtxm1mH9PI9pmWnpp6y'], 'flightType': ['Return'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Rajkot'], 'departureDate1': ['2023-07-29'], 'departureDate2': ['2023-07-31'], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['FBXblbv8WFZQ0ZRoNTM1N6UYXDOg6JOL250HMoGUVyyBLjmnyGWJAZRGYKUmgEa0']}>
+Form is not valid.
+Form errors: <ul class="errorlist"><li>numAdults<ul class="errorlist"><li>This field is required.</li></ul></li><li>numChildren<ul class="errorlist"><li>This field is required.</li></ul></li><li>cabinType<ul class="errorlist"><li>This field is required.</li><li>Invalid cabin type selected.</li></ul></li><li>currencyCode<ul class="errorlist"><li>This field is required.</li></ul></li><li>originLocationCode<ul class="errorlist"><li>This field is required.</li></ul></li><li>destinationLocationCode<ul class="errorlist"><li>This field is required.</li></ul></li><li>departureDate1<ul class="errorlist"><li>This field is required.</li></ul></li><li>flightType<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Bad Request: /search-flight/
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['MWYKHflI5FAQVZ6eRFpuE2KI9G8Uux1H9q1g8swu4y9BGjBdCszcrVHqaNe0EsnW'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-30'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['7ivzAZRe1yFB3FFlAGitMjs5nJxVmvpRGcecE9xmkHJTj2Ga6vcKkkJ27bISmx3K'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['New York\xa0- John F. Kennedy (NY)'], 'departureDate1': ['2023-07-30'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Not Found: /register/login/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /customer_porta
+Internal Server Error: /customer_portal/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in customer_portal
+    return render(request, 'customer_portal.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: customer_portal.html
+Internal Server Error: /customer_portal/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in customer_portal
+    return render(request, 'customer_portal.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: customer_portal.html
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer_portal/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in customer_portal
+    return render(request, 'customer_portal.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: customer_portal.html
+Not Found: /register/login
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /res
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden (CSRF token from POST incorrect.): /login/
+Forbidden (CSRF token from POST incorrect.): /login/
+Not Found: /favicon.ico
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 321, in register_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\models.py", line 479, in _post_clean
+    self.instance = construct_instance(
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\models.py", line 83, in construct_instance
+    f.save_form_data(instance, cleaned_data[f.name])
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1035, in save_form_data
+    setattr(instance, self.name, data)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'customer'": "Users.user_role" must be a "User_Roles" instance.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 321, in register_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\models.py", line 479, in _post_clean
+    self.instance = construct_instance(
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\models.py", line 83, in construct_instance
+    f.save_form_data(instance, cleaned_data[f.name])
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1035, in save_form_data
+    setattr(instance, self.name, data)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'customer'": "Users.user_role" must be a "User_Roles" instance.
+Watching for file changes with StatReloader
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 321, in register_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\models.py", line 479, in _post_clean
+    self.instance = construct_instance(
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\models.py", line 83, in construct_instance
+    f.save_form_data(instance, cleaned_data[f.name])
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1035, in save_form_data
+    setattr(instance, self.name, data)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'customer'": "Users.user_role" must be a "User_Roles" instance.
+Watching for file changes with StatReloader
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 321, in register_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\models.py", line 479, in _post_clean
+    self.instance = construct_instance(
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\models.py", line 83, in construct_instance
+    f.save_form_data(instance, cleaned_data[f.name])
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1035, in save_form_data
+    setattr(instance, self.name, data)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'customer'": "Users.user_role" must be a "User_Roles" instance.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in login_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 242, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Manager' object has no attribute 'get_by_natural_key'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in login_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 242, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 52, in authenticate
+    if user.check_password(password) and self.user_can_authenticate(user):
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'check_password'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in login_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 248, in clean
+    self.confirm_login_allowed(self.user_cache)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 263, in confirm_login_allowed
+    if not user.is_active:
+           ^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'is_active'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'is_staff'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /logout
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'is_staff'
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 188, in get_by_natural_key
+    return self.get(username=username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Bingo.models.Users.DoesNotExist: Users matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1048, "Column 'user_role_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in login_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 242, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 50, in authenticate
+    UserModel().set_password(password)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 212, in set_password
+    self.save()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 80, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'user_role_id' cannot be null")
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 188, in get_by_natural_key
+    return self.get(username=username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Bingo.models.Users.DoesNotExist: Users matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1048, "Column 'user_role_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in login_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 242, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 50, in authenticate
+    UserModel().set_password(password)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 212, in set_password
+    self.save()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 80, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'user_role_id' cannot be null")
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'is_staff'
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 188, in get_by_natural_key
+    return self.get(username=username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Bingo.models.Users.DoesNotExist: Users matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1048, "Column 'user_role_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in login_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 242, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 50, in authenticate
+    UserModel().set_password(password)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 212, in set_password
+    self.save()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 80, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'user_role_id' cannot be null")
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 188, in get_by_natural_key
+    return self.get(username=username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Bingo.models.Users.DoesNotExist: Users matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1048, "Column 'user_role_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in login_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 242, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 50, in authenticate
+    UserModel().set_password(password)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 213, in set_password
+    self.save()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 80, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'user_role_id' cannot be null")
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 188, in get_by_natural_key
+    return self.get(username=username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Bingo.models.Users.DoesNotExist: Users matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1048, "Column 'user_role_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in login_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 242, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 50, in authenticate
+    UserModel().set_password(password)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 213, in set_password
+    self.save()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 80, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'user_role_id' cannot be null")
+Watching for file changes with StatReloader
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 188, in get_by_natural_key
+    return self.get(username=username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Bingo.models.Users.DoesNotExist: Users matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1048, "Column 'user_role_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 314, in login_view
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 242, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 50, in authenticate
+    UserModel().set_password(password)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 213, in set_password
+    self.save()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 80, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'user_role_id' cannot be null")
+Internal Server Error: /customer_portal/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 332, in customer_portal
+    return render(request, 'customer_portal.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: customer_portal.html
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 248, in clean
+    self.confirm_login_allowed(self.user_cache)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\forms.py", line 22, in confirm_login_allowed
+    if not user.is_staff:
+           ^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'is_staff'
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 188, in get_by_natural_key
+    return self.get(username=username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Bingo.models.Users.DoesNotExist: Users matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1048, "Column 'user_role_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 242, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 50, in authenticate
+    UserModel().set_password(password)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 213, in set_password
+    self.save()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 80, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'user_role_id' cannot be null")
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 248, in clean
+    self.confirm_login_allowed(self.user_cache)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\forms.py", line 22, in confirm_login_allowed
+    if not user.is_staff:
+           ^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'is_staff'
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 188, in get_by_natural_key
+    return self.get(username=username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Bingo.models.Users.DoesNotExist: Users matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1048, "Column 'user_role_id' cannot be null")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\forms.py", line 242, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\backends.py", line 50, in authenticate
+    UserModel().set_password(password)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py", line 213, in set_password
+    self.save()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 80, in execute
+    raise IntegrityError(*tuple(e.args))
+django.db.utils.IntegrityError: (1048, "Column 'user_role_id' cannot be null")
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'is_staff'
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'is_staff'
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'is_staff'
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'is_staff'
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'is_staff'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 552, in index
+    app_list = self.get_app_list(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 536, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 478, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\options.py", line 611, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'has_module_perms'
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['9AFY7tS6GhV5ilDxV36852XZZAxkxCx5lTWdrnyjTBHFPxvAnP1cIcFpAmF4F2Oo'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-07-31'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['EUR']}>
+Form is valid.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2070, in to_python
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 793, in home
+    if request.user.is_authenticated:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2072, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be an integer.']
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2070, in to_python
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2072, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be an integer.']
+Not Found: /login/
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2070, in to_python
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2072, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be an integer.']
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2070, in to_python
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2072, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be an integer.']
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2070, in to_python
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2072, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be an integer.']
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2070, in to_python
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2072, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be an integer.']
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2070, in to_python
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2072, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be an integer.']
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2070, in to_python
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2072, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“” value must be an integer.']
+Watching for file changes with StatReloader
