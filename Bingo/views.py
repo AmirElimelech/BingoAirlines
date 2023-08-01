@@ -294,26 +294,42 @@ logger = logging.getLogger(__name__)
 
 
 
+# views.py
+from django.http import JsonResponse
+from .anonymus_fascade import *
+
+
 def login_view(request):
     if request.method == 'POST':
-        form = AuthenticationForm(request, data=request.POST)
-        if form.is_valid():
-            user = form.get_user()
-            
-            login(request, user)
-            return redirect('/')
-        else:
-            return render(request, 'login.html', {'form': form})
-    else:
-        form = AuthenticationForm()
-        return render(request, 'login.html', {'form': form})
-    
-from django.contrib.auth.decorators import login_required
+        # Assuming you receive the necessary data in the POST request
+        username = request.POST.get('username')
+        password = request.POST.get('password')
 
-#@login_required(login_url='login')
+        anonymous_facade = AnonymousFacade()
+        user_facade = anonymous_facade.login(username, password)
+      
+        if isinstance(user_facade, CustomerFacade):
+            response_data = user_facade.some_customer_function()
+            if response_data=='authorized':
+                return redirect('customer_portal')
+        elif isinstance(user_facade, AirlineFacade):
+            response_data = user_facade.some_airline_function()
+            if response_data=='authorized':
+                return redirect('airline_portal')
+        elif isinstance(user_facade, AdminFacade):
+            response_data = user_facade.some_admin_function()
+            if response_data=='authorized':
+                return redirect('admin_portal')
+        else:
+            return JsonResponse({'status': 'error', 'message': 'Invalid credentials or unauthorized.'}, status=403)
+    else:
+        return render(request, 'login.html')
+
+   
+
 def customer_portal(request):
     # Add your customer portal view logic here
-    return render(request, 'customer_portal.html')
+    return render(request, 'Bingo/customer_portal.html')
  
 
 from django.shortcuts import render, redirect

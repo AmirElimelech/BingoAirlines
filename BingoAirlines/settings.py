@@ -82,14 +82,19 @@ WSGI_APPLICATION = 'BingoAirlines.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'airlines',
+        'NAME': 'airline',
         'HOST': 'localhost',
         'PORT': '3306',
         'USER': 'root',
         'PASSWORD': 'Aleesha#143',
     }
 }
-
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 LOGGING = {
     'version': 1,

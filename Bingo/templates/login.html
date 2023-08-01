@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
-    <style>
-        /* Your CSS styles here */
-    </style>
+    <title>Admin Login</title>
 </head>
 <body>
-    <h2>Login</h2>
-    {% if error_message %}
-    <p>{{ error_message }}</p>
-    {% endif %}
-    <form method="post">
+    <h1>Admin Login</h1>
+    <form method="post" >
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <input type="submit" value="Login">
     </form>
 </body>
 </html>

@@ -18,6 +18,7 @@ from django.db import models
 from django.core.validators import MinValueValidator
 import string
 import random
+from django.core.exceptions import ObjectDoesNotExist
 
 
 
@@ -174,6 +175,14 @@ class Users(models.Model):
 
     def __str__(self):
         return self.username
+    def get_login_token(self):
+        try:
+            role_name = self.user_role.role_name
+            #return LoginToken.objects.get(name=self.username, role=role_name)
+            return LoginToken.objects.filter(name=self.username, role=role_name)
+       
+        except ObjectDoesNotExist:
+            return None
     
     class Meta:
         verbose_name_plural = "Users"
@@ -188,6 +197,15 @@ class Users(models.Model):
             url = ''
         return url
     
+
+
+class LoginToken(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=255)
+    role = models.CharField(max_length=20)  # 'customer', 'airline', or 'admin'
+
+    def __str__(self):
+        return self.name
 
 # User_Roles model represents different user roles ()
 class User_Roles(models.Model):
