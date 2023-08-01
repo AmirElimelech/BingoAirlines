@@ -1,23 +1,12 @@
-from datetime import timedelta
-from django.db import models
-import requests
-from django.core import validators
-from io import BytesIO
-from django.core.files.base import ContentFile
-import urllib
-from django.core.files import File
 import logging
-from django.core.validators import MinValueValidator
-import string , random
-from django.db import models
-from django.utils import timezone
-from django.db.models import Q
-from django.utils import timezone
+import urllib
+
 from datetime import timedelta
-from django.db import models
+from django.core import validators
+from django.core.files import File
 from django.core.validators import MinValueValidator
-import string
-import random
+from django.db import models
+from django.utils import timezone
 
 
 
@@ -187,6 +176,7 @@ class Users(models.Model):
         except:
             url = ''
         return url
+    
     
 
 # User_Roles model represents different user roles ()
