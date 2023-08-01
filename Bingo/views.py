@@ -271,7 +271,7 @@
 from django import forms
 from django.http import JsonResponse, HttpResponseBadRequest, HttpResponse
 from django.shortcuts import render ,redirect
-#from .utils.amadeus import get_ticket_data
+from .utils.amadeus import get_ticket_data
 from .models import Airport
 import json
 import datetime
