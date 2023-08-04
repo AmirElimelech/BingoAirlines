@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Bingo.apps.BingoConfig',
+    'authentication.apps.AuthenticationConfig',
     'debug_toolbar',
 ]
 
