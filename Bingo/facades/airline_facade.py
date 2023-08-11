@@ -1,46 +1,74 @@
-# from .facade_base import FacadeBase
-# from Bingo.models import Flights, Airline_Companies
-
-# class AirlineFacade(FacadeBase):
-
-#     def get_my_flights(self, airline_id):
-#         return self._dal.get_flights_by_airline_id(airline_id)
-
-#     def update_airline(self, airline):
-#         return self._dal.update(Airline_Companies, **airline)
-
-#     def add_flight(self, flight):
-#         return self._dal.add(Flights, **flight)
-
-#     def update_flight(self, flight):
-#         return self._dal.update(Flights, **flight)
-
-#     def remove_flight(self, flight):
-#         return self._dal.remove(flight)
-
-
-# ------------------------------------------------------------------------------------------------------------------------------
-
 
 from .facade_base import FacadeBase
-from models import Airline_Companies, Flights
+from ..models import Airline_Companies, Flights
+from django.core.exceptions import ValidationError
 
 class AirlineFacade(FacadeBase):
-    def __init__(self, user):
-        super().__init__()
+    def __init__(self, request, user):
+        super().__init__(request)
         self.user = user
 
+    def validate_airline_company(self):
+        self.validate_session()
+        # Fetch the airline company
+        airline_company = self.DAL.get_by_id(Airline_Companies, self.user.airline_company.iata_code)
+        
+        # Check if the airline company exists
+        if not airline_company:
+            raise ValidationError("Airline company not found.")
+
+        return airline_company
+
+    def validate_flight_data(self, flight):
+        if flight.get("remaining_tickets") <= 0:
+            raise ValidationError("Number of remaining tickets should be greater than 0.")
+        if flight.get("landing_time") <= flight.get("departure_time"):
+            raise ValidationError("Landing time can't be before or equal to departure time.")
+
     def get_my_flights(self):
+        self.validate_airline_company()
         return self.DAL.get_flights_by_airline_id(self.user.airline_company.iata_code)
 
-    def update_airline(self, airline):
-        return self.DAL.update(self.user.airline_company, **airline)
-
     def add_flight(self, flight):
+        self.validate_airline_company()
+        self.validate_flight_data(flight)
+        
+        if flight.get("airline_company_id") != self.user.airline_company.iata_code:
+            raise PermissionError("Airline companies can only add flights for their own company.")
+        
         return self.DAL.add(Flights, **flight)
 
     def update_flight(self, flight):
-        return self.DAL.update(flight)
+        flight_instance = self.DAL.get_by_id(Flights, flight.get("id"))
+        
+        # Check if the flight exists
+        if not flight_instance:
+            raise ValidationError("Flight not found.")
+
+        self.validate_airline_company()
+        self.validate_flight_data(flight)
+        
+        if flight_instance.airline_company_id.iata_code != self.user.airline_company.iata_code:
+            raise PermissionError("Airline companies can only edit their own flights.")
+        
+        for attr, value in flight.items():
+            setattr(flight_instance, attr, value)
+        flight_instance.save()
+
+        return flight_instance
 
     def remove_flight(self, flight):
-        return self.DAL.remove(flight)
+        flight_instance = self.DAL.get_by_id(Flights, flight.get("id"))
+        
+        if not flight_instance:
+            raise ValidationError("Flight not found.")
+
+        self.validate_airline_company()
+
+        if flight_instance.airline_company_id.iata_code != self.user.airline_company.iata_code:
+            raise PermissionError("Airline companies can only delete their own flights.")
+        
+        return self.DAL.remove(flight_instance)
+
+
+

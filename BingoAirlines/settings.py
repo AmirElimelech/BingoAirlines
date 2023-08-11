@@ -99,14 +99,20 @@ LOGGING = {
             'class': 'logging.StreamHandler',
         },
         'file': {
-            'level': 'INFO',
+            'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'logs/logger.log',  # Or provide full path like '/var/www/django/debug.log'
+            'filename': 'logs/logger.log', 
         },
     },
     'root': {
         'handlers': ['console', 'file'],
-        'level': 'INFO',
+        'level': 'DEBUG',
+    },
+    'loggers': {
+        'PIL': {
+            'handlers': ['console', 'file'],
+            'level': 'WARNING',  # Only log warnings and above for PIL
+        },
     },
 }
 

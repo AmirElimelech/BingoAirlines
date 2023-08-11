@@ -1,14 +1,74 @@
 <!DOCTYPE html>
-<html>
 <head>
     <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h2>Login</h2>
+    <h1>Login</h1>
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+    
+        {% if error %}
+            <div class="error-message">{{ error }}</div>
+        {% endif %}
+    
         <button type="submit">Login</button>
     </form>
+    <div class="register-prompt">
+        Don't have an account? Register as:
+        <a href="{% url 'register' %}?user_role=Customer">Customer</a> 
+    </div>
 </body>
 </html>

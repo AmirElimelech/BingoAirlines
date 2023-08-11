@@ -18,8 +18,9 @@ from django.db import models
 from django.core.validators import MinValueValidator
 import string
 import random
+import re
 
-
+logger = logging.getLogger(__name__)
 
 
 
@@ -71,7 +72,7 @@ class Tickets(models.Model):
     class Meta:
         verbose_name_plural = "Tickets"
     
-logger = logging.getLogger(__name__)
+
 
 
 class Airline_Companies(models.Model):
@@ -132,7 +133,7 @@ class Customers(models.Model):
     last_name = models.TextField(null=False)
     address = models.TextField(null=False)
     phone_no = models.CharField(max_length=15, unique=True, null=False)
-    credit_card_no = models.CharField(max_length=50, unique=True, null=False)
+    credit_card_no = models.CharField(max_length=16, unique=False, null=False)
     user_id = models.ForeignKey('Users', on_delete=models.CASCADE, unique=True)
 
     def __str__(self):
@@ -158,6 +159,15 @@ class Customers(models.Model):
     
 
 
+
+
+
+
+def validate_password_strength(value):
+    if len(value) < 6 or not re.match(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$", value):
+        raise validators.ValidationError("Password should be at least 6 characters, contain an uppercase and lowercase letter, a digit, and a special character.")
+
+
 def validate_nine_digits(value):
     if len(str(value)) != 9:
         raise validators.ValidationError("ID must be exactly 9 digits long.")
@@ -167,7 +177,7 @@ def validate_nine_digits(value):
 class Users(models.Model):
     id = models.CharField(max_length=9, primary_key=True, validators=[validate_nine_digits])
     username = models.CharField(max_length=255, unique=True, null=False)
-    password = models.CharField(max_length=255, null=False)
+    password = models.CharField(max_length=255, null=False , validators=[validate_password_strength])
     email = models.EmailField(max_length=255, unique=True, null=False)
     user_role = models.ForeignKey('User_Roles', on_delete=models.CASCADE)
     image = models.ImageField(upload_to='users/', default='/users/defaultuser.png', null=True)
@@ -241,9 +251,22 @@ class DAL:
 
     def add(self, model, **kwargs):
         try:
-            return model.objects.create(**kwargs)
+            instance = model.objects.create(**kwargs)
+            if instance:
+                logger.info(f"Successfully created {model.__name__} instance: {instance}")
+                return instance
+            else:
+                logger.error(f"Failed to create {model.__name__} instance with kwargs: {kwargs}")
+                return None
         except Exception as e:
+            logger.error(f"Error creating {model.__name__} instance with kwargs: {kwargs}. Error: {str(e)}")
             return None
+
+   
+
+
+
+
 
     def update(self, instance, **kwargs):
         try:
