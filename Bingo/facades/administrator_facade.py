@@ -1,19 +1,32 @@
 from .facade_base import FacadeBase
 from ..models import Customers, Airline_Companies, Administrators , Users
 from django.core.exceptions import ValidationError
+from ..utils.login_token import LoginToken
+
+# class AdministratorFacade(FacadeBase):
+#     def __init__(self, request, user):
+#         super().__init__()
+#         self.request = request
+#         self.user = user
+
+#     def validate_admin_privileges(self):
+#         # Validate the user role from the session
+#         user_role = self.request.session.get('user_role', None)
+#         if user_role != "administrator":
+#             raise PermissionError("You do not have the necessary privileges to perform this operation.")
 
 class AdministratorFacade(FacadeBase):
-    def __init__(self, request, user):
-        super().__init__()
+    def __init__(self, request, user, login_token: LoginToken):  # Add the login_token parameter with type annotation
+        super().__init__(request, login_token) 
         self.request = request
         self.user = user
+        self.login_token = login_token  # Store   # Store the login_token object
 
     def validate_admin_privileges(self):
-        # Validate the user role from the session
-        user_role = self.request.session.get('user_role', None)
+        # Validate the user role from the LoginToken object
+        user_role = self.login_token.user_role  # Replace session access with login_token access
         if user_role != "administrator":
             raise PermissionError("You do not have the necessary privileges to perform this operation.")
-
 
     def get_all_customers(self):
         self.validate_admin_privileges()

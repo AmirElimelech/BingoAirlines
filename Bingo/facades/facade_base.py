@@ -4,20 +4,35 @@ from django.contrib.auth.hashers import make_password
 import re
 import logging
 from django.views.decorators.csrf import csrf_exempt
+from ..utils.login_token import LoginToken
 
 
 
+
+
+
+# class FacadeBase:
+#     def __init__(self, request=None):
+#         self.DAL = DAL()
+#         self.request = request
+
+
+    # def validate_session(self):
+    #     if 'user_id' not in self.request.session:
+    #         raise PermissionError("Session expired. Please login again.")
 
 
 class FacadeBase:
-    def __init__(self, request=None):
+    def __init__(self, request=None, login_token: LoginToken=None):  # Add the login_token parameter with type annotation
         self.DAL = DAL()
         self.request = request
+        self.login_token = login_token
 
 
-    def validate_session(self):
-        if 'user_id' not in self.request.session:
-            raise PermissionError("Session expired. Please login again.")
+    def validate_login_token(self, login_token):
+        if login_token is None or login_token.user_id is None:
+            raise PermissionError("Authentication expired. Please login again.")
+
     
     def get_all_flights(self):
         return self.DAL.get_all(Flights)

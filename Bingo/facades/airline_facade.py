@@ -2,20 +2,37 @@
 from .facade_base import FacadeBase
 from ..models import Airline_Companies, Flights
 from django.core.exceptions import ValidationError
+from ..utils.login_token import LoginToken  # Import LoginToken class
+import logging
+
+
+loggin = logging.getLogger(__name__)
+
+# class AirlineFacade(FacadeBase):
+#     def __init__(self, request, user):
+#         super().__init__(request)
+#         self.user = user
 
 class AirlineFacade(FacadeBase):
-    def __init__(self, request, user):
-        super().__init__(request)
+    def __init__(self, request, user, login_token: LoginToken=None):  # Add the login_token parameter with type annotation
+        super().__init__(request, login_token)  # Pass the login_token object to the parent constructor
         self.user = user
 
+
+    # def validate_airline_company(self):
+    #     self.validate_session()
+    #     # Fetch the airline company
+    #     airline_company = self.DAL.get_by_id(Airline_Companies, self.user.airline_company.iata_code)
+
     def validate_airline_company(self):
-        self.validate_session()
+        self.validate_login_token(self.login_token) 
         # Fetch the airline company
         airline_company = self.DAL.get_by_id(Airline_Companies, self.user.airline_company.iata_code)
         
         # Check if the airline company exists
         if not airline_company:
             raise ValidationError("Airline company not found.")
+        loggin.info("Airline company found")
 
         return airline_company
 

@@ -21,9 +21,14 @@ from Bingo.facades.anonymous_facade import AnonymousFacade
 from Bingo.facades.administrator_facade import AdministratorFacade
 from .models import Users , User_Roles
 from django.http import HttpResponseForbidden
-from django.contrib.auth.decorators import login_required
 from django.db import transaction
-from django.contrib.auth import authenticate, login
+from .utils.login_token import LoginToken
+from django.contrib.auth import logout as django_logout
+from .decorators import login_required
+
+
+
+
 
 
 
@@ -38,15 +43,24 @@ logger = logging.getLogger(__name__)
 
 
 
-def home_view(request):
-    # Fetch the user using the user_id stored in the session
-    user_id = request.session.get('user_id')
-    if user_id:
-        user = Users.objects.get(id=user_id)
-    else:
-        user = None
+# def home_view(request): WORKING WITH SESSIONS 
+#     # Fetch the user using the user_id stored in the session
+#     user_id = request.session.get('user_id')
+#     if user_id:
+#         user = Users.objects.get(id=user_id)
+#     else:
+#         user = None
 
-    # Pass the user to the template context
+#     # Pass the user to the template context
+#     return render(request, 'home.html', {'user': user})
+
+
+def home_view(request):
+    login_token = request.session.get('login_token')
+    user = None
+    if login_token:
+        user_id = login_token['user_id']
+        user = Users.objects.get(id=user_id)
     return render(request, 'home.html', {'user': user})
 
 
@@ -57,8 +71,20 @@ def home_view(request):
 
 
 def user_registration_view(request):
+    # user_role_param = request.GET.get('user_role', None)
+    # user_session_role = request.session.get('user_role')
+
     user_role_param = request.GET.get('user_role', None)
-    user_session_role = request.session.get('user_role')
+
+    # Retrieve the LoginToken dictionary from the session
+    login_token_dict = request.session.get('login_token')
+    user_session_role = None
+    if login_token_dict is not None:
+        # Reconstruct the LoginToken object from the dictionary
+        login_token = LoginToken(user_id=login_token_dict['user_id'], user_role=login_token_dict['user_role'])
+        user_session_role = login_token.user_role
+
+
 
     if user_role_param is None:
         logger.info("Redirecting due to no user role specified")
@@ -168,14 +194,32 @@ def user_registration_view(request):
 
 
 
-def login_view(request):
+# def login_view(request): WORKING WITH SESSIONS ! 
     
-    logger.debug(f"Session data: {request.session.items()}")
+#     logger.debug(f"Session data: {request.session.items()}")
 
-    if 'user_id' in request.session:
-        return redirect('home')
+#     if 'user_id' in request.session:
+#         return redirect('home')
     
     
+#     error_message = None
+#     if request.method == "POST":
+#         username = request.POST['username']
+#         password = request.POST['password']
+        
+#         facade = AnonymousFacade()
+        
+#         try:
+#             user_role, user_id = facade.login(request, username, password)
+#             return redirect('home')
+#         except ValidationError as e:
+#             error_message = str(e)
+#             logger.error(f"Login error: {error_message}")
+
+#     return render(request, 'login.html', {'error': error_message})
+
+
+def login_view(request):
     error_message = None
     if request.method == "POST":
         username = request.POST['username']
@@ -184,7 +228,8 @@ def login_view(request):
         facade = AnonymousFacade()
         
         try:
-            user_role, user_id = facade.login(request, username, password)
+            login_token = facade.login(request, username, password)
+            request.session['login_token'] = {'user_id': login_token.user_id, 'user_role': login_token.user_role} # Store login_token in session
             return redirect('home')
         except ValidationError as e:
             error_message = str(e)
@@ -195,18 +240,25 @@ def login_view(request):
 
 
 
-# @login_required
-def logout_view(request):
-    # Clear the session
-    request.session.flush()
+# def logout_view(request): WORKING WITH SESSIONS !
+#     # Clear the session
+#     request.session.flush()
     
-    # Call Django's logout function to ensure any other cleanup is done
-    from django.contrib.auth import logout as django_logout
-    django_logout(request)
+#     # Call Django's logout function to ensure any other cleanup is done
+#     from django.contrib.auth import logout as django_logout
+#     django_logout(request)
     
-    # Redirect the user to the login page
-    return redirect('login')
+#     # Redirect the user to the login page
+#     return redirect('login')
 
+@login_required
+def logout_view(request):
+    if 'login_token' in request.session:
+        del request.session['login_token']
+    django_logout(request)
+    logging.info (f"User logged out successfully")
+    
+    return redirect('login')
 
 class SearchForm(forms.Form):
     numAdults = forms.IntegerField(min_value=1, initial=1 , label='Adults')

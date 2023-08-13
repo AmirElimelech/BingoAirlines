@@ -23,6 +23,7 @@ from .utils.tasks import download_airline_logo
 from datetime import datetime, timedelta
 from PIL import Image
 from Bingo.utils.scheduler import scheduler
+from django.contrib.auth.hashers import check_password
 
 
 
@@ -382,4 +383,19 @@ class DAL:
         try:
             return Tickets.objects.filter(customer_id=_customer_id)
         except Exception as e:
+            return None
+        
+
+    def authenticate_user(self, username, password):
+        try:
+            user = Users.objects.get(username=username)
+            # Assuming the password is hashed in the database
+            if check_password(password, user.password):
+                logging.info(f"User {username} authenticated successfully.")
+                return user
+            else:
+                logging.warning(f"Authentication failed for user {username}: Incorrect password.")
+                return None
+        except Users.DoesNotExist:
+            logging.warning(f"Authentication failed for user {username}: User does not exist.")
             return None

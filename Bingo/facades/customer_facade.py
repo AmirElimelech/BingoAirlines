@@ -3,12 +3,20 @@ from django.core.exceptions import ValidationError
 from .facade_base import FacadeBase
 from ..models import Customers, Tickets, Flights
 from django.utils import timezone
+from ..utils.login_token import LoginToken
 
+
+# class CustomerFacade(FacadeBase):
+#     def __init__(self, request, user):
+#         super().__init__(request)
+#         self.user = user
+#         self.validate_session()  # Ensuring the user session is valid upon instantiation
 class CustomerFacade(FacadeBase):
-    def __init__(self, request, user):
-        super().__init__(request)
+    def __init__(self, request, user, login_token: LoginToken=None):  # Add the login_token parameter with type annotation
+        super().__init__(request, login_token)  # Pass the login_token object to the parent constructor
         self.user = user
-        self.validate_session()  # Ensuring the user session is valid upon instantiation
+        self.validate_login_token(self.login_token) 
+
 
 
     def update_customer(self, customer):
