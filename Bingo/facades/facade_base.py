@@ -6,9 +6,8 @@ import logging
 from django.views.decorators.csrf import csrf_exempt
 
 
-class CustomUserCreationError(Exception):
-    def __init__(self, errors):
-        self.errors = errors
+
+
 
 class FacadeBase:
     def __init__(self, request=None):
@@ -81,12 +80,14 @@ class FacadeBase:
             logging.info(f"User data: {user_data}")
             created_user = self.DAL.add(Users, **user_data)
             
-            # Check if created_user is None or not the expected type
             if not created_user:
-                logging.error("Failed to create the user using DAL.add method.")
-                return {"status": "error", "message": "Failed to create the user."}
+                logging.error(f"Failed to create Users instance with data: {user_data}")
+                raise Exception("Failed to create the user.")
 
             return created_user
+                    
+
+            
 
         except ValidationError as ve:
             logging.error(f"Validation Error: {ve}")

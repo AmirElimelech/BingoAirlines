@@ -20,11 +20,19 @@ class AdministratorFacade(FacadeBase):
         return self.DAL.get_all(Customers)
 
     def add_airline(self, airline):
+
         self.validate_admin_privileges()
+
+        iata_code = airline['iata_code'].upper()
+        if iata_code != airline['iata_code']:
+            raise ValidationError("IATA code must be in uppercase.")
+        
         if Airline_Companies.objects.filter(name=airline['name']).exists():
             raise ValidationError("Airline with this name already exists.")
+        
         if Airline_Companies.objects.filter(iata_code=airline['iata_code']).exists():
             raise ValidationError("Airline with this IATA code already exists.")
+    
         return self.DAL.add(Airline_Companies, **airline)
 
     def add_customer(self, customer):
@@ -41,11 +49,18 @@ class AdministratorFacade(FacadeBase):
 
     def add_administrator(self, administrator):
         self.validate_admin_privileges()
-        if not administrator["first_name"].isalpha() or not administrator["last_name"].isalpha():
-            raise ValidationError("Names should only contain letters.")
+        
+        def is_valid_name(name):
+            return all(c.isalpha() or c.isspace() or c == '-' for c in name)
+
+        if not is_valid_name(administrator["first_name"]) or not is_valid_name(administrator["last_name"]):
+            raise ValidationError("Names should only contain letters, spaces, and hyphens.")
+        
         if Administrators.objects.filter(user_id=administrator['user_id']).exists():
             raise ValidationError("This user already has an administrator account.")
+        
         return self.DAL.add(Administrators, **administrator)
+
 
     def remove_airline(self, airline):
         self.validate_admin_privileges()

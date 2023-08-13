@@ -12,18 +12,18 @@ from django.core.exceptions import ValidationError
 from django.forms.models import model_to_dict
 import traceback
 import logging
-from django.contrib.auth import authenticate, login
-from django.contrib.auth.forms import AuthenticationForm , UserCreationForm 
-from .facades.facade_base import FacadeBase , CustomUserCreationError
+from .facades.facade_base import FacadeBase 
 from django.core.exceptions import ValidationError
 from .forms import UsersForm , CustomerForm , AdministratorForm , AirlineCompanyForm
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from Bingo.facades.anonymous_facade import AnonymousFacade 
 from Bingo.facades.administrator_facade import AdministratorFacade
-from django.contrib.auth import logout as django_logout
 from .models import Users , User_Roles
 from django.http import HttpResponseForbidden
+from django.contrib.auth.decorators import login_required
+from django.db import transaction
+from django.contrib.auth import authenticate, login
 
 
 
@@ -33,6 +33,10 @@ from django.http import HttpResponseForbidden
 
 # logger 
 logger = logging.getLogger(__name__)
+
+
+
+
 
 def home_view(request):
     # Fetch the user using the user_id stored in the session
@@ -48,36 +52,32 @@ def home_view(request):
 
 
 
+
+
+
+
 def user_registration_view(request):
     user_role_param = request.GET.get('user_role', None)
     user_session_role = request.session.get('user_role')
 
-    
-
-    # Redirect to home page if no user role is specified
     if user_role_param is None:
         logger.info("Redirecting due to no user role specified")
         return HttpResponseRedirect(reverse('home'))
 
-    # Redirect if the user is authenticated and not an Administrator, and they're trying to access Customer registration
     if user_role_param.lower() == 'customer' and user_session_role is not None and user_session_role != 'administrator':
         logger.info(f"Redirecting due to authenticated user {user_session_role.upper()} trying to access Customer registration without being an Administrator")
         return HttpResponseRedirect(reverse('home'))
 
-    # If the user is authenticated and their role is Customer or Airline Company, redirect to home
-    if request.user.is_authenticated and user_session_role in ['customer', 'airline company']:
-        logger.info(f"Redirecting due to authenticated user with role {user_session_role.upper()} cannot register a new user")
+    if not request.user.is_authenticated and user_role_param in ["Airline Company", "Administrator"] and user_session_role != 'administrator':
+        user_session_role_str = "None" if user_session_role is None else user_session_role.upper()
+        logger.info(f"Redirecting due to unauthenticated user {user_session_role_str} trying to register Airline Company or Administrator")
         return HttpResponseRedirect(reverse('home'))
 
-    # If the user is not authenticated and trying to register an Airline Company or Administrator,
-    # and the user is not an Administrator, redirect to home
+
     if not request.user.is_authenticated and user_role_param in ["Airline Company", "Administrator"] and user_session_role != 'administrator':
         logger.info(f"Redirecting due to unauthenticated user {user_session_role.upper()} trying to register Airline Company or Administrator")
         return HttpResponseRedirect(reverse('home'))
 
-
-
-    # Fetch the actual model instance for user_role
     user_role_instance = None
     try:
         user_role_instance = User_Roles.objects.get(role_name=user_role_param)
@@ -85,7 +85,7 @@ def user_registration_view(request):
         pass
 
     user_form = UsersForm(request.POST or None, request.FILES or None, initial={'user_role': user_role_instance})
-    entity_form = None  # This form will vary based on user role
+    entity_form = None
 
     if user_role_param == "Customer":
         entity_form = CustomerForm(request.POST or None)
@@ -96,8 +96,6 @@ def user_registration_view(request):
 
     if request.method == "POST":
         if user_form.is_valid() and (entity_form is None or entity_form.is_valid()):
-            facade = FacadeBase()
-
             user_data = {
                 "id": user_form.cleaned_data.get("id"),
                 "username": user_form.cleaned_data.get("username"),
@@ -108,53 +106,53 @@ def user_registration_view(request):
             }
 
             try:
-                user_instance = facade.create_new_user(user_data)
-                
-                # If we're registering a customer
-                if user_role_param == "Customer":
-                    customer_data = {
-                        'user_id': user_instance.id, 
-                        'first_name': entity_form.cleaned_data.get("first_name"),
-                        'last_name': entity_form.cleaned_data.get("last_name"),
-                        'address': entity_form.cleaned_data.get("address"),
-                        'phone_no': entity_form.cleaned_data.get("phone_no"),
-                        'credit_card_no': entity_form.cleaned_data.get("credit_card_no")
-                    }
-                    anonymous_facade = AnonymousFacade()
-                    anonymous_facade.add_customer(customer_data)
+                with transaction.atomic():  # Transaction block starts here
+                    facade = FacadeBase()
+                    user_instance = facade.create_new_user(user_data)
+                    
 
-                # If we're registering an airline company
-                elif user_role_param == "Airline Company":
-                    airline_data = {
-                        'user_id': user_instance,
-                        'iata_code': entity_form.cleaned_data.get("iata_code"),
-                        'name': entity_form.cleaned_data.get("name"),
-                        'country_id': entity_form.cleaned_data.get("country_id"),
-                        'logo': entity_form.cleaned_data.get("logo"),
-                    }
-                    admin_facade = AdministratorFacade(request, user_instance)
-                    admin_facade.add_airline(airline_data)
+                    if user_role_param == "Customer":
+                        customer_data = {
+                            'user_id': user_instance.id,
+                            'first_name': entity_form.cleaned_data.get("first_name"),
+                            'last_name': entity_form.cleaned_data.get("last_name"),
+                            'address': entity_form.cleaned_data.get("address"),
+                            'phone_no': entity_form.cleaned_data.get("phone_no"),
+                            'credit_card_no': entity_form.cleaned_data.get("credit_card_no")
+                        }
+                        anonymous_facade = AnonymousFacade()
+                        customer_instance = anonymous_facade.add_customer(customer_data)
+                        logging.info(f"Successfully created Customer instance: {customer_instance}")
 
-                # If we're registering an administrator
-                elif user_role_param == "Administrator":
-                    admin_data = {
-                        'user_id': user_instance.id,
-                        'first_name': entity_form.cleaned_data.get("first_name"),
-                        'last_name': entity_form.cleaned_data.get("last_name"),
-                    }
-                    anonymous_facade = AnonymousFacade()
-                    anonymous_facade.add_administrator(admin_data)
+                    elif user_role_param == "Airline Company":
+                        airline_data = {
+                            'user_id': user_instance,
+                            'iata_code': entity_form.cleaned_data.get("iata_code"),
+                            'name': entity_form.cleaned_data.get("name"),
+                            'country_id': entity_form.cleaned_data.get("country_id"),
+                            'logo': entity_form.cleaned_data.get("logo"),
+                        }
+                        admin_facade = AdministratorFacade(request, user_instance)
+                        airline_instance = admin_facade.add_airline(airline_data)
+                        logging.info(f"Successfully created Airline Company instance: {airline_instance}")
 
+
+                    elif user_role_param == "Administrator":
+                        admin_data = {
+                            'user_id': user_instance,
+                            'first_name': entity_form.cleaned_data.get("first_name"),
+                            'last_name': entity_form.cleaned_data.get("last_name"),
+                        }
+                        admin_facade = AdministratorFacade(request, user_instance)
+                        admin_instance = admin_facade.add_administrator(admin_data)
+                        logging.info(f"Successfully created Administrator instance: {admin_instance}")
+
+                logging.info(f"Successfully created Users instance: {user_instance.username}")
                 return HttpResponseRedirect(reverse('login'))
 
-            except ValidationError as ve:
-                user_form.add_error(None, ve)
-            except CustomUserCreationError as e:
-                for field, error_msg in e.errors.items():
-                    if field in user_form.fields:
-                        user_form.add_error(field, error_msg)
-                    elif entity_form and field in entity_form.fields:
-                        entity_form.add_error(field, error_msg)
+            except Exception as e:  # General exception handling
+                logger.error(f"Error during registration: {str(e)}")
+                user_form.add_error(None, "An error occurred during registration. Please try again.")
 
         else:
             logger.error("User Form errors: %s", user_form.errors.as_text())
@@ -171,6 +169,13 @@ def user_registration_view(request):
 
 
 def login_view(request):
+    
+    logger.debug(f"Session data: {request.session.items()}")
+
+    if 'user_id' in request.session:
+        return redirect('home')
+    
+    
     error_message = None
     if request.method == "POST":
         username = request.POST['username']
@@ -189,17 +194,8 @@ def login_view(request):
 
 
 
-# def logout_view(request):
-#     # Clear the session
-#     request.session.flush()
-    
-#     # Call Django's logout function to ensure any other cleanup is done
-#     django_logout(request)
-    
-#     # Redirect the user to the login page
-#     return redirect('login')
 
-
+# @login_required
 def logout_view(request):
     # Clear the session
     request.session.flush()

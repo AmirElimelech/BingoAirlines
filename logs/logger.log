@@ -4027,3 +4027,2387 @@ Entity Form errors: * iata_code
 User data: {'id': '555555555', 'username': 'airlinetest7', 'email': 'airlinetest7@mail.com', 'password': 'pbkdf2_sha256$600000$R8od1n48Zf3LFKR84nBPIk$fwB3yCzN9guKYsGcd7tc1g/5g60dwRPIREFPpEU+LYc=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
 Successfully created Users instance: airlinetest7
 Attempting to save Airline_Companies instance with iata_code: Z7
+Downloaded and saved logo for Z7 from https://content.r9cdn.net/rimg/provider-logos/airlines/v/Z7.png?crop=false&width=100&height=100
+Saved Airline_Companies instance with iata_code: Z7
+Successfully created Airline_Companies instance: Airline7
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Login error: ['Incorrect password']
+Login error: ['Incorrect password']
+Login error: ['Incorrect password']
+Forbidden (CSRF token from POST incorrect.): /login/
+Redirecting due to no user role specified
+Redirecting due to authenticated user AIRLINE COMPANY trying to access Customer registration without being an Administrator
+Forbidden (CSRF token from POST incorrect.): /logout/
+Login error: ['Incorrect password']
+Login error: ['Incorrect password']
+Login error: ['Incorrect password']
+Login error: ['Incorrect password']
+Login error: ['Incorrect password']
+Redirecting due to no user role specified
+User data: {'id': '337945182', 'username': 'madeleine', 'email': 'madeleine.benguigui@gmail.com', 'password': 'pbkdf2_sha256$600000$FzawgWuclRtTvqZ0JLy7SB$Heq2Ej0kkTeUlCcWDwwvIHudyo+pvRJWk2lcW+CN5QA=', 'user_role': <User_Roles: Administrator>, 'image': <TemporaryUploadedFile: 1685734666119.jpg (image/jpeg)>}
+Successfully created Users instance: madeleine
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 146, in user_registration_view
+    anonymous_facade.add_administrator(admin_data)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousFacade' object has no attribute 'add_administrator'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 75, in user_registration_view
+    logger.info(f"Redirecting due to unauthenticated user {user_session_role.upper()} trying to register Airline Company or Administrator")
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'upper'
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 75, in user_registration_view
+    logger.info(f"Redirecting due to unauthenticated user {user_session_role.upper()} trying to register Airline Company or Administrator")
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'upper'
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 75, in user_registration_view
+    logger.info(f"Redirecting due to unauthenticated user {user_session_role.upper()} trying to register Airline Company or Administrator")
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'upper'
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 75, in user_registration_view
+    logger.info(f"Redirecting due to unauthenticated user {user_session_role.upper()} trying to register Airline Company or Administrator")
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'upper'
+User data: {'id': '337945182', 'username': 'madeleine', 'email': 'madeleine.benguigui@gmail.com', 'password': 'pbkdf2_sha256$600000$dstxmFaO7ynLBF4msjFyGN$xKxnv9KoRvdOfDPmRyRpPHys/p3GVeK8nxRa5XO4LEo=', 'user_role': <User_Roles: Administrator>, 'image': <TemporaryUploadedFile: 1685734666119.jpg (image/jpeg)>}
+Successfully created Users instance: madeleine
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Watching for file changes with StatReloader
+User Form errors: * email
+  * Email already exists.
+Entity Form errors: 
+User data: {'id': '337945183', 'username': 'madeleine3', 'email': 'madeleine.benguigui1@gmail.com', 'password': 'pbkdf2_sha256$600000$vqPk8QeWpNVZeHiOTjsaRr$ep7jWvaXSd5Xi0nDACJ9rWgefpg4CvwEibfNfVZ6AGY=', 'user_role': <User_Roles: Administrator>, 'image': <TemporaryUploadedFile: 1685734666119.jpg (image/jpeg)>}
+Successfully created Users instance: madeleine3
+Error creating Administrators instance with kwargs: {'user_id': '337945183', 'first_name': 'Madeleine', 'last_name': 'Ben Guigui'}. Error: Cannot assign "'337945183'": "Administrators.user_id" must be a "Users" instance.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '337945182', 'username': 'madeleine', 'email': 'madeleine.benguigui@gmail.com', 'password': 'pbkdf2_sha256$600000$WLKFJnbetchV8YFcg6yJfc$dLdoAqriJUIAfQOYXET7JY+5tXcBQK1NtGWqJapl1xU=', 'user_role': <User_Roles: Administrator>, 'image': <TemporaryUploadedFile: 1685734666119.jpg (image/jpeg)>}
+Successfully created Users instance: madeleine
+Successfully created Administrators instance: Madeleine Ben Guigui
+User data: {'id': '337945181', 'username': 'madeleine1', 'email': 'madeleine.benguigui1@gmail.com', 'password': 'pbkdf2_sha256$600000$L7TEWqUkUIgtg9QC3DvOg1$mgnxVf6dpgYDkTHJ5bbdahf8L5kWvsVnBZI4Mt9HZ8o=', 'user_role': <User_Roles: Administrator>, 'image': <InMemoryUploadedFile: IMG-20230808-WA0022.jpg (image/jpeg)>}
+Successfully created Users instance: madeleine1
+Validation Error: ['Username should be between 3 and 20 characters and contain only alphanumeric characters and underscores.']
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 116, in user_registration_view
+    'user_id': user_instance.id,
+              ^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'id'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Validation Error: ['Username should be between 3 and 20 characters and contain only alphanumeric characters and underscores.']
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 124, in user_registration_view
+    anonymous_facade.add_customer(customer_data)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py", line 42, in add_customer
+    user_instance = Users.objects.get(id=customer["user_id"])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Bingo.models.Users.DoesNotExist: Users matching query does not exist.
+User data: {'id': '313131313', 'username': 'testCustomer', 'email': 'testCustomercreatedbyAdmin@mail.com', 'password': 'pbkdf2_sha256$600000$dMOYWhpwEurIRiUM32mdGZ$l8uVonP8DVI/0uBiWOwk/lRkUFA0oAEZD52qSgamOtM=', 'user_role': <User_Roles: Customer>, 'image': <InMemoryUploadedFile: IMG-20230808-WA0022.jpg (image/jpeg)>}
+Successfully created Users instance: testCustomer
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 124, in user_registration_view
+    anonymous_facade.add_customer(customer_data)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py", line 42, in add_customer
+    user_instance = Users.objects.get(id=customer["user_id"])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Bingo.models.Users.DoesNotExist: Users matching query does not exist.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+User Form errors: * username
+  * Username already exists.
+* email
+  * Email already exists.
+* id
+  * Users with this Id already exists.
+Entity Form errors: 
+User data: {'id': '313131444', 'username': 'testCustomer1', 'email': 'testCustomercreatedbyAdmin1@mail.com', 'password': 'pbkdf2_sha256$600000$34wnzidFXHauWXV4HCdlVK$Lhm39JAuL5Ge+ychzHhWbhNgwuwPU9Tf9BRvBuree2k=', 'user_role': <User_Roles: Customer>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: testCustomer1
+Successfully created Customers instance: test test
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+User data: {'id': '123123123', 'username': 'AdminnewTest', 'email': 'AdminnewTest@mail.com', 'password': 'pbkdf2_sha256$600000$CIbXBukuEK9Qygd3yEmYs7$LAF2G58JghA9rteciNZ0K9F2RlVu0gaAjvKtNcLbthY=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: AdminnewTest
+User Form errors: * email
+  * Email already exists.
+Entity Form errors: 
+User data: {'id': '123123122', 'username': 'AdminnewTest11', 'email': 'AdminnewTest1@mail.com', 'password': 'pbkdf2_sha256$600000$wLUJfGOwTTjzdrYEhxclpH$c5YD3iXwfrHCpq47dz0BJdZtLsVpOtSdw6NL7EqE1zg=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: AdminnewTest11
+Successfully created Administrators instance: Admin Ben Guigui
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+User data: {'id': '121212121', 'username': 'adminnew1', 'email': 'adminnew1@mail.com', 'password': 'pbkdf2_sha256$600000$gg2MPk4RNjBIDAXAGHeBI9$uAJ8s6AdbMZB/WcXoOuiAC3yXfpHDBbMCtAGl6ONP6Y=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: adminnew1
+Successfully created Administrators instance: Admin Ben-Guigui
+User Form errors: * password
+  * Password should be at least 6 characters, contain an uppercase and lowercase letter, a digit, and a special character.
+Entity Form errors: 
+User data: {'id': '121212122', 'username': 'adminnew2', 'email': 'adminnew11@mail.com', 'password': 'pbkdf2_sha256$600000$vTBXseyy8ZpQWxhEEWKfep$dO5aEuzclZKcOCxEwaPOdgOb3Wo9TlOkmoOkDmBQNfY=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: adminnew2
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /accounts/login/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /favicon.ico
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 240, in user_registration_view
+    user_instance = FacadeBase.create_new_user(user_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: FacadeBase.create_new_user() missing 1 required positional argument: 'user'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '313131313', 'username': 'admintest3', 'email': 'admintest3@hotmail.com', 'password': 'pbkdf2_sha256$600000$eH2LfQrG4guKf2OYXR7Vbh$Ri5DADyMKiKXDQDg7ZG1y0T6EhgL80bgkGS11+dh3j0=', 'user_role': <User_Roles: Administrator>, 'image': <InMemoryUploadedFile: IMG-20230808-WA0024.jpg (image/jpeg)>}
+Successfully created Users instance: admintest3
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+User data: {'id': '313132222', 'username': 'admintest33', 'email': 'admintest333@hotmail.com', 'password': 'pbkdf2_sha256$600000$0tt5Qbbl5ENTPzMfPJs122$uVxn0YFG1o7NYBudWxNVmZmnGyZFXQ+d86E1nk9oMa4=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: admintest33
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '313132222', 'username': 'admintest33', 'email': 'admintest333@hotmail.com', 'password': 'pbkdf2_sha256$600000$MbSEKqYx7sTmqOpE31NN8y$o9LccyT2x6mLzbrBs1GPPJI5pBJ+AlaLYWI8OM9hS30=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: admintest33
+Error during registration: ['Names should only contain letters, spaces, and hyphens.']
+Not Found: /favicon.ico
+User data: {'id': '313132222', 'username': 'admintest33', 'email': 'admintest333@hotmail.com', 'password': 'pbkdf2_sha256$600000$3xnfrk7ddtjo5EDLl5MOq4$KXF86J7NZmRGr7cREBDO5Utc2EQeybih028gxz+hb3M=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: admintest33
+Error during registration: ['Names should only contain letters, spaces, and hyphens.']
+Not Found: /favicon.ico
+User data: {'id': '313133333', 'username': 'admintest34', 'email': 'admintest333222@hotmail.com', 'password': 'pbkdf2_sha256$600000$2pHpTL31kD8GDDrVguiFhW$a1fhNvBRrB4GbvdvSjyxQgC0qyH8Fx+Yh0hFTYEdA9c=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: admintest34
+Error during registration: ['Names should only contain letters, spaces, and hyphens.']
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden (CSRF token from POST incorrect.): /register/
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 195, in user_registration_view
+    logger.info(f"Redirecting due to unauthenticated user {user_session_role.upper()} trying to register Airline Company or Administrator")
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'upper'
+User data: {'id': '342344234', 'username': 'admintest344', 'email': 'admintest3444@hotmail.com', 'password': 'pbkdf2_sha256$600000$nrQAIgwP3eYYeYNpiuiEKu$MYE25GKKtz/5TgxDvkMPc8tWe5P2GlynKB6jSz48VR4=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: admintest344
+Error during registration: ['Names should only contain letters, spaces, and hyphens.']
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+User data: {'id': '666666666', 'username': 'admintest1111', 'email': 'admintest1111@mail.com', 'password': 'pbkdf2_sha256$600000$txQ0dCx4uGoTvF9F4DYqAc$dzqVmEAMZ+7SroOK1n0Qj9auwuCiIWlvfJJz6ASw4LI=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: admintest1111
+Error during registration: ['Names should only contain letters, spaces, and hyphens.']
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '666666666', 'username': 'admintest1111', 'email': 'admintest1111@mail.com', 'password': 'pbkdf2_sha256$600000$DwcHW5g1A91CLTmhoFcNR2$MoyT86SjPt0FYKG0YuPEYvGRpHT//Ortt6USAJvB+20=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Error during registration: ['Names should only contain letters, spaces, and hyphens.']
+User data: {'id': '666666666', 'username': 'admintest1111', 'email': 'admintest1111@mail.com', 'password': 'pbkdf2_sha256$600000$cr2HmPLExU9pT2zBrls6Nh$fPN1HDG0wk13eErmDsLhXS4Z7U1NMdBZiHNLU/Upx2I=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Users instance: admintest1111
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+User data: {'id': '543453453', 'username': 'admintest999', 'email': 'admintest999@mail.com', 'password': 'pbkdf2_sha256$600000$hTNfdDgk4Vx9wBrNy25DEr$CXSu5NCot9d37trJVPPF90J+nTZ9LWn7O0VYA7HUUOM=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Administrator instance: amir ele ele
+Successfully created Users instance: admintest999
+User Form errors: * id
+  * Users with this Id already exists.
+Entity Form errors: 
+User data: {'id': '543453444', 'username': 'admintest777', 'email': 'admintest777@mail.com', 'password': 'pbkdf2_sha256$600000$XQrv6ZfFDlhBDHl7jmcYat$XwPvLJkdfo+AvFhFXu9zDjhMCHFAyXU24W06dDu6YZc=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Error during registration: ['Names should only contain letters, spaces, and hyphens.']
+User Form errors: * username
+  * Username already exists.
+Entity Form errors: 
+User data: {'id': '543453444', 'username': 'admintest443', 'email': 'admintest777@mail.com', 'password': 'pbkdf2_sha256$600000$19ZQu1yCjFoVn5dcPndqy1$M6lZN6vMqlh3vJAYdsn4RDd9uLqRuACGlI9EwrNfm4A=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Successfully created Administrator instance: amir ele
+Successfully created Users instance: admintest443
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 75, in user_registration_view
+    logger.info(f"Redirecting due to unauthenticated user {user_session_role.upper()} trying to register Airline Company or Administrator")
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'upper'
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 75, in user_registration_view
+    logger.info(f"Redirecting due to unauthenticated user {user_session_role.upper()} trying to register Airline Company or Administrator")
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'upper'
+Redirecting due to no user role specified
+Redirecting due to no user role specified
+Redirecting due to no user role specified
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 75, in user_registration_view
+    logger.info(f"Redirecting due to unauthenticated user {user_session_role.upper()} trying to register Airline Company or Administrator")
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'upper'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Redirecting due to no user role specified
+Redirecting due to unauthenticated user None trying to register Airline Company or Administrator
+Redirecting due to unauthenticated user None trying to register Airline Company or Administrator
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /accounts/login/
+User data: {'id': '123412341', 'username': 'airlinetest111', 'email': 'airlinetest111@mail.com', 'password': 'pbkdf2_sha256$600000$9KKUf6NkTCHzsAW7It33Ui$r5dpxy7L7UFrE8huv+8oUQ8YgECdWmyoPQiODc1zA5Y=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Attempting to save Airline_Companies instance with iata_code: Y1
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/Y1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Saved Airline_Companies instance with iata_code: Y1
+Successfully created Airline Company instance: Airlinetest
+Successfully created Users instance: airlinetest111
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+User data: {'id': '423432423', 'username': 'testlogoair', 'email': 'testlogoair@mail.com', 'password': 'pbkdf2_sha256$600000$AmMY96fGKrFcYLZdKAhCSp$iY1QPCWFIe9OhwnUEHLvNjCvo1BfRCmnaujepmBVWwc=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Attempting to save Airline_Companies instance with iata_code: Z2
+Successfully created Airline Company instance: TestlogoAirline
+Successfully created Users instance: testlogoair
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+User authenticated: False
+User authenticated: False
+User authenticated: False
+User authenticated: False
+Not Found: /accounts/login/
+User authenticated: False
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /accounts/login/
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+User authenticated: False
+User authenticated: False
+Login error: ['User not found or incorrect password']
+User authenticated: False
+Login error: ['User not found or incorrect password']
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Login error: User not found or incorrect password
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 186, in login_view
+    user_role, user_id = facade.login(request, username, password)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py", line 48, in login
+    login(request, user)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 144, in login
+    user_logged_in.send(sender=user.__class__, request=request, user=user)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\dispatch\dispatcher.py", line 176, in send
+    return [
+           ^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\dispatch\dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\models.py", line 23, in update_last_login
+    user.save(update_fields=["last_login"])
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 797, in save
+    raise ValueError(
+ValueError: The following fields do not exist in this model, are m2m fields, or are non-concrete fields: last_login
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 186, in login_view
+    user_role, user_id = facade.login(request, username, password)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py", line 48, in login
+    login(request, user)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 144, in login
+    user_logged_in.send(sender=user.__class__, request=request, user=user)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\dispatch\dispatcher.py", line 176, in send
+    return [
+           ^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\dispatch\dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\auth\models.py", line 23, in update_last_login
+    user.save(update_fields=["last_login"])
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\base.py", line 797, in save
+    raise ValueError(
+ValueError: The following fields do not exist in this model, are m2m fields, or are non-concrete fields: last_login
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\anonymous_facade.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Redirecting due to unauthenticated user None trying to register Airline Company or Administrator
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Session data: <django.contrib.sessions.backends.db.SessionStore object at 0x0000013B3F76F290>
+Session data: <django.contrib.sessions.backends.db.SessionStore object at 0x0000013B3FCE6450>
+Session data: <django.contrib.sessions.backends.db.SessionStore object at 0x0000013B3FB8F910>
+Session data: <django.contrib.sessions.backends.db.SessionStore object at 0x0000013B3FCCC6D0>
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Session data: dict_items([])
+Session data: dict_items([])
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Session data: dict_items([])
+Session data: dict_items([])
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Session data: dict_items([])
+Session data: dict_items([])
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Watching for file changes with StatReloader
+Session data: dict_items([])
+Session data: dict_items([])
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+
+def accumulate(self, *args, **kwargs):
+    return 1
+
+
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+
+def chunks(task, it, n):
+    return 1
+
+
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+
+def download_airline_logo(iata_code):
+    return 1
+
+
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+
+def xmap(task, it):
+    return 1
+
+
+def backend_cleanup():
+    return 1
+
+
+def chain(*args, **kwargs):
+    return 1
+
+
+def xstarmap(task, it):
+    return 1
+
+
+def accumulate(self, *args, **kwargs):
+    return 1
+
+
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+
+def chunks(task, it, n):
+    return 1
+
+
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+
+def xmap(task, it):
+    return 1
+
+
+def backend_cleanup():
+    return 1
+
+
+def download_airline_logo(iata_code):
+    return 1
+
+
+def chain(*args, **kwargs):
+    return 1
+
+
+def xstarmap(task, it):
+    return 1
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Session data: dict_items([])
+Session data: dict_items([])
+User Form errors: 
+Entity Form errors: * iata_code
+  * Airline with this IATA code already exists.
+User data: {'id': '454545454', 'username': 'Airtask1', 'email': 'Airtask1@mail.com', 'password': 'pbkdf2_sha256$600000$szdTdua4Lfnhoji1GVmj2C$Q+3rPm7CAlYlI3Js5LkgsYGqZ0f9fjFsISCJmkhCeDk=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Attempting to save Airline_Companies instance with iata_code: Z4
+Successfully created Airline Company instance: Airtask1
+Successfully created Users instance: Airtask1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+Session data: dict_items([])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+Session data: dict_items([('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Session data: dict_items([('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Redirecting due to no user role specified
+User data: {'id': '444444444', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$LqeQk5yslWRylVjnyjo384$/LLUe/c2LvSpH6kAXGPEr5VGEP6vq7OLe7dO/KeLLAk=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Attempting to save Airline_Companies instance with iata_code: Z0
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4'), ('user_id', '026598441'), ('user_role', 'administrator')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+Session data: dict_items([])
+Session data: dict_items([])
+Session data: dict_items([])
+User Form errors: 
+Entity Form errors: * iata_code
+  * Airline with this IATA code already exists.
+User data: {'id': '323232323', 'username': 'airlinetest2', 'email': 'airlinetest2@mail.com', 'password': 'pbkdf2_sha256$600000$oQ8bIudzZrMatRGUnjcZaD$7HqzkS2tfBgY8gbh8TuOUDnhSkZt9bIyzpUnMCXDReo=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Attempting to save Airline_Companies instance with iata_code: Z4
+Successfully created Airline Company instance: Airlinetest2
+Successfully created Users instance: airlinetest2
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Session data: dict_items([])
+Session data: dict_items([])
+User data: {'id': '232323232', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$LPYs9Oy3PYoVmHVeGyhlOB$iPkahCWyjNuq86PZTl9cROtKC1SOsSDkq9LQ0sSK8EE=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Attempting to save Airline_Companies instance with iata_code: Z0
+Logo not provided for Z0. Scheduling download task...
+Looking up time zone info from registry
+Error creating Airline_Companies instance with kwargs: {'user_id': <Users: airlinetest1>, 'iata_code': 'Z0', 'name': 'AirlineTest1', 'country_id': <Countries: Australia>, 'logo': '/airline_logos/airplanelogo.png'}. Error: module 'datetime' has no attribute 'now'
+Successfully created Airline Company instance: None
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Session data: dict_items([])
+Session data: dict_items([])
+User data: {'id': '121212121', 'username': 'airlinetest2', 'email': 'airlinetest2@mail.com', 'password': 'pbkdf2_sha256$600000$NsuIcceLdeRmgzM53enqr8$PD7zCwo0l8t9JnDHZQVicdWUIo2dAFh7wyugzuR6ttY=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Attempting to save Airline_Companies instance with iata_code: Z1
+Logo not provided for Z1. Scheduling download task...
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "download_airline_logo" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 01:07:37.780720+03:00 (in 4.917251 seconds)
+Successfully created Airline Company instance: airlinetest2
+Successfully created Users instance: airlinetest2
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 01:07:37 IDT], next run at: 2023-08-13 01:07:37 IDT)" (scheduled at 2023-08-13 01:07:37.780720+03:00)
+Removed job 51c0d1e596954af4b3c1f2dd0416e86e
+No jobs; waiting until a job is added
+Job "download_airline_logo (trigger: date[2023-08-13 01:07:37 IDT], next run at: 2023-08-13 01:07:37 IDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py", line 9, in download_airline_logo
+    print(f"Attempting to download logo for IATA code: {airline.iata_code}")
+                                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'iata_code'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '131411511', 'username': 'airlinetest3', 'email': 'airlinetest3@mail.com', 'password': 'pbkdf2_sha256$600000$LMYuu1tsclBVNgKsqlWFMz$iWAjt9FBsdx7MkK9Avrkor4+KP2q++g639pITEJC+4w=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Attempting to save Airline_Companies instance with iata_code: Z2
+Logo not provided for Z2. Scheduling download task...
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "download_airline_logo" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 01:19:10.462140+03:00 (in 4.921383 seconds)
+Successfully created Airline Company instance: airlinetest3
+Successfully created Users instance: airlinetest3
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 01:19:10 IDT], next run at: 2023-08-13 01:19:10 IDT)" (scheduled at 2023-08-13 01:19:10.462140+03:00)
+Removed job b659cf8b8d4f416a990bd8f3c98275ac
+No jobs; waiting until a job is added
+Job "download_airline_logo (trigger: date[2023-08-13 01:19:10 IDT], next run at: 2023-08-13 01:19:10 IDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py", line 9, in download_airline_logo
+    logging.info (f"Downloading logo for {airline.iata_code}")
+                                          ^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'iata_code'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '453453534', 'username': 'airlinetest4', 'email': 'airlinetest4@mail.com', 'password': 'pbkdf2_sha256$600000$GSoyQ9TGZ6K3C93mbtaDCv$CHsX9XH6yXZaYmo7NYzgzmWG3fumto6uUNTKm8Tuxyc=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Attempting to save Airline_Companies instance with iata_code: Z5
+Logo not provided for Z5. Scheduling download task...
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "download_airline_logo" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 01:36:28.854270+03:00 (in 4.916653 seconds)
+Successfully created Airline Company instance: Airlinetest4
+Successfully created Users instance: airlinetest4
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 01:36:28 IDT], next run at: 2023-08-13 01:36:28 IDT)" (scheduled at 2023-08-13 01:36:28.854270+03:00)
+Removed job d73965f9559d40c8a6bb2f63adf0f3eb
+No jobs; waiting until a job is added
+Attempting to save Airline_Companies instance with iata_code: Z5
+Downloaded and saved logo for Z5 from https://content.r9cdn.net/rimg/provider-logos/airlines/v/Z5.png?crop=false&width=100&height=100
+Job "download_airline_logo (trigger: date[2023-08-13 01:36:28 IDT], next run at: 2023-08-13 01:36:28 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '121212121', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$WWy5HduqCh4tzJhUum0n5o$1nbDFSCb7TVdbxYi0Elo/SmVBSH1iMIuWhB+uvPxxdE=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Attempting to save Airline_Companies instance with iata_code: Z4
+Logo not provided for Z4. Scheduling download task...
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "download_airline_logo" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 01:40:55.685752+03:00 (in 4.895170 seconds)
+Successfully created Airline Company instance: Airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 01:40:55 IDT], next run at: 2023-08-13 01:40:55 IDT)" (scheduled at 2023-08-13 01:40:55.685752+03:00)
+Removed job e317622c5243420bb95ea73e0b0269fc
+No jobs; waiting until a job is added
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['7RXxy3dsYF3x5jEAiZeic283bSnPk5xw6Bd2c4BmzKyrkRak5n8A1LbLrn0c1OIE'], 'flightType': ['OneWay'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-08-19'], 'departureDate2': [''], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['USD']}>
+Form is valid.
+Starting new HTTPS connection (1): api.amadeus.com:443
+https://api.amadeus.com:443 "POST /v1/security/oauth2/token HTTP/1.1" 200 416
+Starting new HTTPS connection (1): api.amadeus.com:443
+https://api.amadeus.com:443 "POST /v2/shopping/flight-offers HTTP/1.1" 200 None
+Attempting to save Airline_Companies instance with iata_code: Z4
+Job "download_airline_logo (trigger: date[2023-08-13 01:40:55 IDT], next run at: 2023-08-13 01:40:55 IDT)" executed successfully
+User data: {'id': '224242424', 'username': 'airlinetest2', 'email': 'airlinetest2@mail.com', 'password': 'pbkdf2_sha256$600000$vOrefVE6vhr5yaiGULC51D$WPHLZRm9wMEOaJW9JOvGuDBlw3wEgHQpkD++zxDgobg=', 'user_role': <User_Roles: Airline Company>, 'image': <InMemoryUploadedFile: WhatsApp Image 2023-04-09 at 20.57.11.jpeg (image/jpeg)>}
+Attempting to save Airline_Companies instance with iata_code: Z0
+Successfully created Airline Company instance: airlinetest2
+Successfully created Users instance: airlinetest2
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '121212121', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$48pWtqKfwkqbgeI5Ks1g92$Yf1RVbHasMeULdUr/1gk7KJYEe91ETxAXL6EvRtNduc=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Successfully created Airline Company instance: Airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+User Form errors: * password
+  * Password should be at least 6 characters, contain an uppercase and lowercase letter, a digit, and a special character.
+Entity Form errors: 
+User data: {'id': '342343242', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$MUneSeBBIC2hqwuBdCot9v$LIswxc0FeM5WQnUzxfmxfjJ5VNiRgNqFK/S4v8QZcVQ=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+User data: {'id': '342343444', 'username': 'airlinetest2', 'email': 'airlinetest2@mail.com', 'password': 'pbkdf2_sha256$600000$J0ytixPbX9zTXJ0yrC6EVx$BwJ28lWjh4+3HbNDym0tMCdHtld1qeZirw9fmU6vfGc=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest2
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '342343222', 'username': 'airlinetest3', 'email': 'airlinetest3@mail.com', 'password': 'pbkdf2_sha256$600000$YI3BMEMWk2vhgGP82yQrTW$qUM+50+fOhljzL5F0p1Q1Or76WJBdr0f/LJ85UgGSjY=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Successfully created Airline Company instance: airlinetest3
+Successfully created Users instance: airlinetest3
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+User data: {'id': '342343434', 'username': 'airlinetest4', 'email': 'airlinetest4@mail.com', 'password': 'pbkdf2_sha256$600000$eayOhrdyE8v5Is1yOntqj0$sJ5+wO+I8qPczxLfPqdVRshch22XdKO9X/wTSfNK4zg=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Successfully created Airline Company instance: airlinetest4
+Successfully created Users instance: airlinetest4
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+User data: {'id': '342399999', 'username': 'airlinetest5', 'email': 'airlinetest5@mail.com', 'password': 'pbkdf2_sha256$600000$Iuz4mtcm130WGZZds7m3C4$Zqf1RuLRLqFeQEQZIH6kpP1qJdRY9hNw1jabBLmaF/Y=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Error creating Airline_Companies instance with kwargs: {'user_id': <Users: airlinetest5>, 'iata_code': 'Z4', 'name': 'airlinetest5', 'country_id': <Countries: Barbados>, 'logo': '/airline_logos/airplanelogo.png'}. Error: The joined path (C:\airline_logos\airplanelogo.png) is located outside of the base path component (C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\static\images)
+Successfully created Airline Company instance: None
+Successfully created Users instance: airlinetest5
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+User Form errors: * password
+  * Password should be at least 6 characters, contain an uppercase and lowercase letter, a digit, and a special character.
+Entity Form errors: 
+User Form errors: * password
+  * Password should be at least 6 characters, contain an uppercase and lowercase letter, a digit, and a special character.
+Entity Form errors: 
+User Form errors: * password
+  * Password should be at least 6 characters, contain an uppercase and lowercase letter, a digit, and a special character.
+Entity Form errors: 
+User data: {'id': '342311111', 'username': 'airlinetest6', 'email': 'airlinetest6@mail.com', 'password': 'pbkdf2_sha256$600000$xVP2paaN740TaseBiwkUP8$VOBMmQiivL34A9zOhUb9x4MshtAFvS1aklMiNIloRNE=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Error creating Airline_Companies instance with kwargs: {'user_id': <Users: airlinetest6>, 'iata_code': 'Z4', 'name': 'airlinetest6', 'country_id': <Countries: Barbados>, 'logo': '/airline_logos/airplanelogo.png'}. Error: The joined path (C:\airline_logos\airplanelogo.png) is located outside of the base path component (C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\static\images)
+Successfully created Airline Company instance: None
+Successfully created Users instance: airlinetest6
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '342311111', 'username': 'airlinetest6', 'email': 'airlinetest7@mail.com', 'password': 'pbkdf2_sha256$600000$7GKMxcVKLE0TKLlOafvIrD$woNSiIlI4rFw0Ha091leNftQSoJJbvo5h7epy/5jMMA=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Error creating Airline_Companies instance with kwargs: {'user_id': <Users: airlinetest6>, 'iata_code': 'Z4', 'name': 'airlinetest6', 'country_id': <Countries: Barbados>, 'logo': '/airline_logos/airplanelogo.png'}. Error: The joined path (C:\airline_logos\airplanelogo.png) is located outside of the base path component (C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\static\images)
+Successfully created Airline Company instance: None
+Successfully created Users instance: airlinetest6
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$uFsoF6aImAxJVDvpv7SQEv$dQa2L6IkR9m9pikWx2GAlOzzevaPadal1tjFVuYa6+o=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Error creating Airline_Companies instance with kwargs: {'user_id': <Users: airlinetest1>, 'iata_code': 'Z4', 'name': 'airlinetest1', 'country_id': <Countries: Angola>, 'logo': '/airline_logos/airplanelogo.png'}. Error: The joined path (C:\airline_logos\airplanelogo.png) is located outside of the base path component (C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\static\images)
+Successfully created Airline Company instance: None
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$CnV8pmoqgIY8HsBvfRZbxI$M+ay91/n8Ay6OVIPXqivXsOu+T9GFrLLkyj017+fggQ=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Error creating Airline_Companies instance with kwargs: {'user_id': <Users: airlinetest1>, 'iata_code': 'Z4', 'name': 'airlinetest1', 'country_id': <Countries: Angola>, 'logo': '/airline_logos/airplanelogo.png'}. Error: The joined path (C:\airline_logos\airplanelogo.png) is located outside of the base path component (C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\static\images)
+Successfully created Airline Company instance: None
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$8EboSBC1s9a5NIYqWY6xIh$kFExJmOAuK0XnHQwdKwLTmEBA3dp2X/jYiQf0rzpnuY=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for Z4. Scheduling download task...
+Error creating Airline_Companies instance with kwargs: {'user_id': <Users: airlinetest1>, 'iata_code': 'Z4', 'name': 'airlinetest1', 'country_id': <Countries: Angola>, 'logo': None}. Error: 'function' object has no attribute 'apply_async'
+Successfully created Airline Company instance: None
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$k5A0fFmZQQQ34DV5vz5JMx$svg0Z1xRedCsQd/HLR2z0Adie18XHpMIVl6MP0SD3XQ=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for Z4. Scheduling download task...
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "download_airline_logo" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 02:57:22.396729+03:00 (in 4.892588 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 02:57:22 IDT], next run at: 2023-08-13 02:57:22 IDT)" (scheduled at 2023-08-13 02:57:22.396729+03:00)
+Removed job 54164e9bf36843229c6dedf15dd1bd6b
+No jobs; waiting until a job is added
+Job "download_airline_logo (trigger: date[2023-08-13 02:57:22 IDT], next run at: 2023-08-13 02:57:22 IDT)" executed successfully
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$4UkxmRwzyKk6DI1XXHA9CA$3cP40y2J94m0EDEZxlNXeLwuu7NSrIY2eYYwjeiG8wA=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$LfvNje60R4JF2wxOl6sMLJ$ErdijLOahyONPxQM9M9T1gL1f0UhXkAQ7USr+OM65AI=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for Z4. Scheduling download task...
+Error creating Airline_Companies instance with kwargs: {'user_id': <Users: airlinetest1>, 'iata_code': 'Z4', 'name': 'airlinetest1', 'country_id': <Countries: Angola>, 'logo': None}. Error: module 'Bingo.utils.scheduler' has no attribute 'add_job'
+Successfully created Airline Company instance: None
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$ZwANruK8ZKho8nUuXfXRIQ$qClWimaYgaA+WkJ20F/Z01ioXLFrwUYBeOFKoIxJIqw=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for Z4. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 03:09:57.818127+03:00 (in 4.901648 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 03:09:57 IDT], next run at: 2023-08-13 03:09:57 IDT)" (scheduled at 2023-08-13 03:09:57.818127+03:00)
+Removed job 13bb676fcda24657936a92c637eb3bbe
+No jobs; waiting until a job is added
+Job "download_airline_logo (trigger: date[2023-08-13 03:09:57 IDT], next run at: 2023-08-13 03:09:57 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$lfI4btkNZZj1Kww8TKxH2B$N5PuentlhzTjIrp6jSywEGgd9gPp2AHtcMo0Qaez9rY=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$OUCel7EAQTTtsnGv8BJDTQ$ZKb/kWo5k+OhLA2Gc/NowvUsZn0Xs8i4MjTQa86smeI=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for Z4. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 03:19:42.005594+03:00 (in 4.902319 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 03:19:42 IDT], next run at: 2023-08-13 03:19:42 IDT)" (scheduled at 2023-08-13 03:19:42.005594+03:00)
+Removed job bd89297adfa847a2a8ba97c297f320c4
+Download function called for iata_code: Z4
+No jobs; waiting until a job is added
+Job "download_airline_logo (trigger: date[2023-08-13 03:19:42 IDT], next run at: 2023-08-13 03:19:42 IDT)" executed successfully
+User data: {'id': '332323321', 'username': 'airlinetest2', 'email': 'airlinetest2@mail.com', 'password': 'pbkdf2_sha256$600000$G2rurP5GC3AGczeGNH4WYz$pezhOHOY7vRQfi5Bop5fQDVZdMUVu1UY9AHF2+x2UHg=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for Z0. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 03:23:27.341364+03:00 (in 4.997999 seconds)
+Successfully created Airline Company instance: airlinetest2
+Successfully created Users instance: airlinetest2
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Removed job 028e0f31b9a44c36a5076a80baf61770
+Running job "download_airline_logo (trigger: date[2023-08-13 03:23:27 IDT], next run at: 2023-08-13 03:23:27 IDT)" (scheduled at 2023-08-13 03:23:27.341364+03:00)
+No jobs; waiting until a job is added
+Download function called for iata_code: Z0
+Job "download_airline_logo (trigger: date[2023-08-13 03:23:27 IDT], next run at: 2023-08-13 03:23:27 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User Form errors: * password
+  * Password should be at least 6 characters, contain an uppercase and lowercase letter, a digit, and a special character.
+Entity Form errors: 
+User data: {'id': '332323321', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$vXqQPjm1q8FLmhTzjOYrVm$pN023BB/bVgjwoUzZGLhTbhbXsP4NKypaFiGcuG32to=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for Z0. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 03:28:33.805446+03:00 (in 4.899349 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 03:28:33 IDT], next run at: 2023-08-13 03:28:33 IDT)" (scheduled at 2023-08-13 03:28:33.805446+03:00)
+Removed job 04812ff31e134b20a0ed8ee0deda1396
+Download function called for iata_code: Z0
+No jobs; waiting until a job is added
+Job "download_airline_logo (trigger: date[2023-08-13 03:28:33 IDT], next run at: 2023-08-13 03:28:33 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323321', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$EMUQeoewIUHJ9lRO0rYoeP$J1CdKd4YmndFPS8Q0gu3ET3vxy4vErZkg5J7fuqLGxs=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for Z0. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 03:32:05.946685+03:00 (in 4.915596 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 03:32:05 IDT], next run at: 2023-08-13 03:32:05 IDT)" (scheduled at 2023-08-13 03:32:05.946685+03:00)
+Removed job f9c20a6ff9114b249e3eb191e4876f7b
+Download function called for iata_code: Z0
+No jobs; waiting until a job is added
+Job "download_airline_logo (trigger: date[2023-08-13 03:32:05 IDT], next run at: 2023-08-13 03:32:05 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323321', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$cHts9BdRUeT15eE3HEY36m$FQZ1TjJO/BD3yTZrK03rfG8EFV7VaHbUo7+eQD7Rr0Q=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for Z0. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 03:38:43.180921+03:00 (in 4.917640 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 03:38:43 IDT], next run at: 2023-08-13 03:38:43 IDT)" (scheduled at 2023-08-13 03:38:43.180921+03:00)
+Removed job 86b254408b854ea5adc273d57817057a
+Download function called for iata_code: Z0
+No jobs; waiting until a job is added
+Job "download_airline_logo (trigger: date[2023-08-13 03:38:43 IDT], next run at: 2023-08-13 03:38:43 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323321', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$47R17Jkm2yXmTEQniqNjfu$LerGX0LXCEN0lZC8O313w2MpElmaPuVdW4vZl6TNB/k=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for Z0. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 03:46:30.368534+03:00 (in 4.920493 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 03:46:30 IDT], next run at: 2023-08-13 03:46:30 IDT)" (scheduled at 2023-08-13 03:46:30.368534+03:00)
+Removed job aa64659a47254211a1796ec5fc8a6160
+Download function called for iata_code: Z0
+No jobs; waiting until a job is added
+Job "download_airline_logo (trigger: date[2023-08-13 03:46:30 IDT], next run at: 2023-08-13 03:46:30 IDT)" executed successfully
+User Form errors: * username
+  * Username already exists.
+* email
+  * Email already exists.
+* id
+  * Users with this Id already exists.
+Entity Form errors: 
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$jH57czzZ2TdwRvE59qchhE$W/7FBamocCImV1Gg83qddNTlg0NR/Jlj2sS45UjCjAw=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$h9zvoLuVWHdZ0foux2lEwc$6wdE6pl76HFJfa2WKSc5teovzqDqkiC6wg9UmkJpMxc=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$cA9N68xpITPtKUHH2NmPwi$45V0h0blnNN6UrtqQymXRvyvAsqG1Ydj5yKKinkZam0=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 04:00:39.835039+03:00 (in 4.920048 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 04:00:39 IDT], next run at: 2023-08-13 04:00:39 IDT)" (scheduled at 2023-08-13 04:00:39.835039+03:00)
+Removed job fb246cdd16c0418982b27b9feb4e793c
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Starting download for iata_code: F1
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Job "download_airline_logo (trigger: date[2023-08-13 04:00:39 IDT], next run at: 2023-08-13 04:00:39 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$3IhTZPGJxoTI0mAxniJLaL$y2cF44QWeCWVwB74E0sh18BiCPp15EyqQHHKNS1V5Uc=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Error during registration: ['IATA code must be in uppercase.']
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$Bi6l2xqIYf6GBCuwaDkFqa$Y0mbCYReWSeMJa6fVx25qP8KkibQVFOhoJSMT7waZos=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Error during registration: ['IATA code must be in uppercase.']
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$M3YGGY0bdTldv2lgF3ncY8$+ZpVeZnNr2BkkQOMS9WiM+DpUxRWcTme+SImXpXlPTs=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 04:14:43.319499+03:00 (in 4.925260 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 04:14:43 IDT], next run at: 2023-08-13 04:14:43 IDT)" (scheduled at 2023-08-13 04:14:43.319499+03:00)
+Removed job 24154f72df9a4218b52b264f158472ad
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Starting download for iata_code: F1
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Job "download_airline_logo (trigger: date[2023-08-13 04:14:43 IDT], next run at: 2023-08-13 04:14:43 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$5Bqdssxiz3TpHkulGMkxXD$bTgdFJUmq7GErW1nQcqjxzYtdTW3hV8ULxKFqp+ECjA=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 04:20:07.331547+03:00 (in 4.922459 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 04:20:07 IDT], next run at: 2023-08-13 04:20:07 IDT)" (scheduled at 2023-08-13 04:20:07.331547+03:00)
+Removed job a762460ebd834a86a6a1306e0d9677e5
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Starting download for iata_code: F1
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Job "download_airline_logo (trigger: date[2023-08-13 04:20:07 IDT], next run at: 2023-08-13 04:20:07 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$AJJIGry1wWKo2hOt1r5jDb$kX80D6erLLjNZzm2zHB77bghd0Ftexe3J7V38gEYDzA=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 04:25:57.025064+03:00 (in 4.913569 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 04:25:57 IDT], next run at: 2023-08-13 04:25:57 IDT)" (scheduled at 2023-08-13 04:25:57.025064+03:00)
+Removed job 3d134ea9938446fbb775cdebba5684c0
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Starting download for iata_code: F1
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Default logo path does not exist: C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo/static/images/airplanelogo.png
+Job "download_airline_logo (trigger: date[2023-08-13 04:25:57 IDT], next run at: 2023-08-13 04:25:57 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$RJNPKQEAC9MD8aGYyIanX5$CZO+mW+ktbFwfGZe2EG9PDZ6R6wOKyZVrpVuhfvBMpY=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 04:30:33.792985+03:00 (in 4.919563 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 04:30:33 IDT], next run at: 2023-08-13 04:30:33 IDT)" (scheduled at 2023-08-13 04:30:33.792985+03:00)
+Removed job 8408fd336f4d4550ac6501a1ea8c1004
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Starting download for iata_code: F1
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Default logo path does not exist: C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo/static/images/airplanelogo.png
+Job "download_airline_logo (trigger: date[2023-08-13 04:30:33 IDT], next run at: 2023-08-13 04:30:33 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$smQPm5evkQSxPxc1IKXPMg$Mb5eHtCi+lCpuaxMOuw2ypPsG20TSysXQSIzskYFOEI=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 04:35:34.018737+03:00 (in 4.917950 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 04:35:34 IDT], next run at: 2023-08-13 04:35:34 IDT)" (scheduled at 2023-08-13 04:35:34.018737+03:00)
+Removed job 5fd999a596964513af683e717517ae3f
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Starting download for iata_code: F1
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Default logo path does not exist: C:/airline_logos/airplanelogo.png
+Job "download_airline_logo (trigger: date[2023-08-13 04:35:34 IDT], next run at: 2023-08-13 04:35:34 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$Uc5jSmHsYHIgy8CIdrzjXn$rkXTjx4Glh0ZTWwau/ad5mbPGS+BuyQL9YIN7BE2ufM=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 04:42:57.941170+03:00 (in 4.925001 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 04:42:57 IDT], next run at: 2023-08-13 04:42:57 IDT)" (scheduled at 2023-08-13 04:42:57.941170+03:00)
+Removed job 17b78ef6cbf54e51ad3609aa68e10c93
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Starting download for iata_code: F1
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Set default logo for F1
+Job "download_airline_logo (trigger: date[2023-08-13 04:42:57 IDT], next run at: 2023-08-13 04:42:57 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$jJDIZzc1HYLnLGaeSLRZpr$aO/tlNp4R5qKNWeI11XqIhBwElUCjnPUsQvrRT+QEDk=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 04:51:43.669632+03:00 (in 4.921200 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 04:51:43 IDT], next run at: 2023-08-13 04:51:43 IDT)" (scheduled at 2023-08-13 04:51:43.669632+03:00)
+Removed job edbaf93f389e473f8dab90a58cc6d176
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Starting download for iata_code: F1
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Set default logo for F1
+Job "download_airline_logo (trigger: date[2023-08-13 04:51:43 IDT], next run at: 2023-08-13 04:51:43 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$cscR8IN56W3aie1qyDYKyt$Q2Br0lyhnRKGFTExVR17LFp55rffrcJrQ7tXhyW6tVE=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 05:00:55.492637+03:00 (in 4.922923 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 05:00:55 IDT], next run at: 2023-08-13 05:00:55 IDT)" (scheduled at 2023-08-13 05:00:55.492637+03:00)
+Removed job 7584d76e92d14e319470c151cc6aaae6
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Starting download for iata_code: F1
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Job "download_airline_logo (trigger: date[2023-08-13 05:00:55 IDT], next run at: 2023-08-13 05:00:55 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$nlzr5AwKdt7b1sZbyedwCO$7Nnztl/BzmF0qs2qmPVAC1Mq0cJMt90HbfrCM+MDtJw=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 05:08:13.175458+03:00 (in 4.905654 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 05:08:13 IDT], next run at: 2023-08-13 05:08:13 IDT)" (scheduled at 2023-08-13 05:08:13.175458+03:00)
+Removed job 6afe8d4ebd464557a31da26a25597211
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Starting download for iata_code: F1
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Job "download_airline_logo (trigger: date[2023-08-13 05:08:13 IDT], next run at: 2023-08-13 05:08:13 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$g6Wm5uXT96XDaE1zULFRHt$rn2nUyeaHeZHs5DHe3Fa09YXHpFekAd4Hh8FtX9BwLA=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$GMeTw3vxQiO4cRBcMeAwQg$NDSv/n2bKnBrusBin/a67QQ+RUsqQ14wggVmz7oXzH8=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 05:21:12.626259+03:00 (in 4.921676 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 05:21:12 IDT], next run at: 2023-08-13 05:21:12 IDT)" (scheduled at 2023-08-13 05:21:12.626259+03:00)
+Removed job 10a2cf4d797d47f38675a4c170752820
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Starting download for iata_code: F1
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Job "download_airline_logo (trigger: date[2023-08-13 05:21:12 IDT], next run at: 2023-08-13 05:21:12 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '332323322', 'username': 'airlinetest1', 'email': 'airlinetest1@mail.com', 'password': 'pbkdf2_sha256$600000$nygKCw0MLt60mw6zMcy84s$PKanqoHejrTsOWYKQ2bExREfa8/PL9CA7HxuqyvBYGI=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for F1. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 05:39:32.635299+03:00 (in 4.920788 seconds)
+Successfully created Airline Company instance: airlinetest1
+Successfully created Users instance: airlinetest1
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Running job "download_airline_logo (trigger: date[2023-08-13 05:39:32 IDT], next run at: 2023-08-13 05:39:32 IDT)" (scheduled at 2023-08-13 05:39:32.635299+03:00)
+Removed job 031e4e2972d24510aaa1a489eb332d01
+Download function called for iata_code: F1
+No jobs; waiting until a job is added
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100
+Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/F1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+Job "download_airline_logo (trigger: date[2023-08-13 05:39:32 IDT], next run at: 2023-08-13 05:39:32 IDT)" executed successfully
+User Form errors: * id
+  * Users with this Id already exists.
+Entity Form errors: 
+User data: {'id': '332323333', 'username': 'airlinetest2', 'email': 'airlinetest2@mail.com', 'password': 'pbkdf2_sha256$600000$V7SLVptqswKIlN5LEhJLeo$xqGkdVQVCCrRVMthH4gePAJaruLYJiookodRdhOqyqU=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Successfully created Airline Company instance: airlinetest2
+Successfully created Users instance: airlinetest2
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+User Form errors: 
+Entity Form errors: * name
+  * Airline with this name already exists.
+User data: {'id': '534545534', 'username': 'airlinetest4', 'email': 'airlinetest4@mail.com', 'password': 'pbkdf2_sha256$600000$vILfreXYUF5nOnYn3KiSAd$mOVN/1frU0AijsUXYzBm9Mby7XfdUjyWE7xetw0w0io=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Logo not provided for Z4. Scheduling download task...
+Added job "download_airline_logo" to job store "default"
+Looking for jobs to run
+Next wakeup is due at 2023-08-13 05:46:48.896454+03:00 (in 4.998049 seconds)
+Successfully created Airline Company instance: airlinetest4
+Successfully created Users instance: airlinetest4
+Session data: dict_items([('user_id', '026598441'), ('user_role', 'administrator'), ('_auth_user_id', '2'), ('_auth_user_backend', 'django.contrib.auth.backends.ModelBackend'), ('_auth_user_hash', '544d60a5d172ebf44687ff2b9f1ee9fe2369d6e736e0ac7fc75889e40953ecf4')])
+Looking for jobs to run
+Removed job 576e1e58c4fa44aabe975d023109a1cb
+Running job "download_airline_logo (trigger: date[2023-08-13 05:46:48 IDT], next run at: 2023-08-13 05:46:48 IDT)" (scheduled at 2023-08-13 05:46:48.896454+03:00)
+No jobs; waiting until a job is added
+Download function called for iata_code: Z4
+Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/Z4.png?crop=false&width=100&height=100
+Downloaded and saved logo for Z4 from https://content.r9cdn.net/rimg/provider-logos/airlines/v/Z4.png?crop=false&width=100&height=100
+Job "download_airline_logo (trigger: date[2023-08-13 05:46:48 IDT], next run at: 2023-08-13 05:46:48 IDT)" executed successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\tasks.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader

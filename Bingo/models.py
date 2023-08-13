@@ -13,12 +13,18 @@ from django.db import models
 from django.utils import timezone
 from django.db.models import Q
 from django.utils import timezone
-from datetime import timedelta
 from django.db import models
 from django.core.validators import MinValueValidator
 import string
 import random
 import re
+from apscheduler.schedulers.background import BackgroundScheduler
+from .utils.tasks import download_airline_logo
+from datetime import datetime, timedelta
+from PIL import Image
+from Bingo.utils.scheduler import scheduler
+
+
 
 logger = logging.getLogger(__name__)
 
@@ -80,7 +86,8 @@ class Airline_Companies(models.Model):
     name = models.CharField(max_length=255, unique=True)
     country_id = models.ForeignKey(Countries, on_delete=models.CASCADE)
     user_id = models.ForeignKey('Users', on_delete=models.CASCADE, unique=True)
-    logo = models.ImageField(upload_to='airline_logos/', default='/airline_logos/airplanelogo.png', null=True, blank=True)
+    logo = models.ImageField(upload_to='airline_logos/', null=True, blank=True)
+
 
     def __str__(self):
         return self.name
@@ -89,42 +96,33 @@ class Airline_Companies(models.Model):
         verbose_name_plural = "Airline Companies"
 
 
-    def save(self, *args, **kwargs):
-        logger.info(f"Attempting to save Airline_Companies instance with iata_code: {self.iata_code}")
 
-        if self.iata_code and not self.logo:
-            # Download the logo from the URL
-            url = f'https://content.r9cdn.net/rimg/provider-logos/airlines/v/{self.iata_code}.png?crop=false&width=100&height=100'
-            try:
-                response = urllib.request.urlopen(url)
-                if response.status == 200:
-                    # Save the logo to the ImageField
-                    filename = f'{self.iata_code}.png'
-                    self.logo.save(filename, File(response), save=False)
-                    logger.info(f"Downloaded and saved logo for {self.iata_code} from {url}")
-                else:
-                    self.logo = 'airplanelogo.png'
-                    logger.warning(f"Received status {response.status} when trying to download logo from {url}")
-            except Exception as e:
-                self.logo = 'airplanelogo.png'
-                logger.error(f"Error when trying to download logo from {url}: {e}")
 
-        # If logo wasn't specified and couldn't be downloaded, use the default logo
-        if not self.logo:
-            self.logo = 'airplanelogo.png'
-        
-        super().save(*args, **kwargs)
-        logger.info(f"Saved Airline_Companies instance with iata_code: {self.iata_code}")
+    def save(self, *args, **kwargs): 
+        # logo save logic
+        if self.logo and self.logo.name != f'airline_logos/{self.iata_code}.png':
+
+
+            
+            pil_image = Image.open(self.logo)
+            pil_image = pil_image.resize((100, 100), Image.ANTIALIAS)
+            buffer = BytesIO()
+            pil_image.save(buffer, format='PNG')
+            filename = f'{self.iata_code}.png'
+            self.logo.save(filename, ContentFile(buffer.getvalue()), save=False)
+            
+        # If no logo is provided and the IATA code is given, schedule a download task
+        elif self.iata_code and not self.logo:
+            logger.info(f"Logo not provided for {self.iata_code}. Scheduling download task...")
+            start_time = datetime.now() + timedelta(seconds=5)
+            scheduler.add_job(download_airline_logo, 'date', run_date=start_time, args=[self.iata_code])
+            
+        super(Airline_Companies, self).save(*args, **kwargs)
 
   
-    @property
-    def image_url(self):
-        if self.logo:
-            return self.logo.url
-        else:
-            return '/media/airplanelogo.png" style="width: 100px; height: 100px;"'
+    
 
-        
+            
 
 # Customers model represents individual customers
 class Customers(models.Model):
@@ -253,7 +251,6 @@ class DAL:
         try:
             instance = model.objects.create(**kwargs)
             if instance:
-                logger.info(f"Successfully created {model.__name__} instance: {instance}")
                 return instance
             else:
                 logger.error(f"Failed to create {model.__name__} instance with kwargs: {kwargs}")

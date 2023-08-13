@@ -4,6 +4,8 @@ from .facade_base import FacadeBase
 from ..models import Customers, Users 
 from django.contrib.auth.hashers import check_password
 from django.core.exceptions import ValidationError
+from django.contrib.auth import authenticate, login
+
 
 
 
@@ -33,6 +35,9 @@ class AnonymousFacade(FacadeBase):
         request.session['user_role'] = role
 
         return role, user.id
+    
+
+
 
 
 

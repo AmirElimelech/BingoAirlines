@@ -73,7 +73,7 @@ class AdministratorForm(forms.ModelForm):
 class AirlineCompanyForm(forms.ModelForm):
     class Meta:
         model = Airline_Companies
-        exclude = ['id', 'user_id', 'logo']  # I excluded the 'logo' assuming you'll handle it separately. If not, you can remove it from the exclude list.
+        exclude = ['id', 'user_id'] 
 
     def clean_iata_code(self):
         iata_code = self.cleaned_data.get("iata_code")
