@@ -8,21 +8,12 @@ import logging
 
 loggin = logging.getLogger(__name__)
 
-# class AirlineFacade(FacadeBase):
-#     def __init__(self, request, user):
-#         super().__init__(request)
-#         self.user = user
 
 class AirlineFacade(FacadeBase):
     def __init__(self, request, user, login_token: LoginToken=None):  # Add the login_token parameter with type annotation
         super().__init__(request, login_token)  # Pass the login_token object to the parent constructor
         self.user = user
 
-
-    # def validate_airline_company(self):
-    #     self.validate_session()
-    #     # Fetch the airline company
-    #     airline_company = self.DAL.get_by_id(Airline_Companies, self.user.airline_company.iata_code)
 
     def validate_airline_company(self):
         self.validate_login_token(self.login_token) 
@@ -31,6 +22,7 @@ class AirlineFacade(FacadeBase):
         
         # Check if the airline company exists
         if not airline_company:
+            loggin.info("Airline company not found")
             raise ValidationError("Airline company not found.")
         loggin.info("Airline company found")
 
@@ -38,12 +30,15 @@ class AirlineFacade(FacadeBase):
 
     def validate_flight_data(self, flight):
         if flight.get("remaining_tickets") <= 0:
+            loggin.info("Number of remaining tickets should be greater than 0.")
             raise ValidationError("Number of remaining tickets should be greater than 0.")
         if flight.get("landing_time") <= flight.get("departure_time"):
+            loggin.info("Landing time can't be before or equal to departure time.")
             raise ValidationError("Landing time can't be before or equal to departure time.")
 
     def get_my_flights(self):
         self.validate_airline_company()
+        loggin.info("getting flights")
         return self.DAL.get_flights_by_airline_id(self.user.airline_company.iata_code)
 
     def add_flight(self, flight):

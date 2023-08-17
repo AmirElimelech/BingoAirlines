@@ -6944,3 +6944,2912 @@ Scheduler started
 Looking for jobs to run
 No jobs; waiting until a job is added
 Watching for file changes with StatReloader
+User logged out successfully
+User not logged in, redirecting to login page.
+User not logged in, redirecting to login page.
+User not logged in, redirecting to login page.
+Form data: <QueryDict: {'csrfmiddlewaretoken': ['nFPwnCC78hWfJd5LAC1Lk0iuauaI1OdI3BouSlZAwxtmfTunFjF8QtqXT2i4RYLg'], 'flightType': ['Return'], 'originLocationCode': ['Tel Aviv\xa0- Ben Gurion International'], 'destinationLocationCode': ['Athens\xa0- Elefthérios Venizélos International Airport'], 'departureDate1': ['2023-08-17'], 'departureDate2': ['2023-08-26'], 'cabinType': ['ECONOMY'], 'numAdults': ['1'], 'numChildren': ['0'], 'currencyCode': ['ILS']}>
+Form is valid.
+Starting new HTTPS connection (1): api.amadeus.com:443
+https://api.amadeus.com:443 "POST /v1/security/oauth2/token HTTP/1.1" 200 416
+Starting new HTTPS connection (1): api.amadeus.com:443
+https://api.amadeus.com:443 "POST /v2/shopping/flight-offers HTTP/1.1" 200 None
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User data: {'id': '123412341', 'username': 'customertest1', 'email': 'customertest1@mail.com', 'password': 'pbkdf2_sha256$600000$0WSrRN1MaXpM2UmfiOKtPT$vUjP4cOP5Pg6/0RzKidncZF0VZfQqtdQxxjZEGMzwV0=', 'user_role': <User_Roles: Customer>, 'image': '/users/defaultuser.png'}
+Successfully created Customer instance: customer name customer last
+Successfully created Users instance: customertest1
+User logged out successfully
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 77, in home_view
+    facade = CustomerFacade(request, user, login_token)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py", line 18, in __init__
+    self.validate_login_token(self.login_token)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py", line 37, in validate_login_token
+    if login_token is None or login_token.user_id is None:
+                              ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'user_id'
+Redirecting due to authenticated user CUSTOMER trying to access Customer registration without being an Administrator
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 77, in home_view
+    facade = CustomerFacade(request, user, login_token)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py", line 18, in __init__
+    self.validate_login_token(self.login_token)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py", line 37, in validate_login_token
+    if login_token is None or login_token.user_id is None:
+                              ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'user_id'
+User logged out successfully
+User Form errors: 
+Entity Form errors: * iata_code
+  * Airline with this IATA code already exists.
+User data: {'id': '848388348', 'username': 'airlinetest111', 'email': 'airlinetest111@mail.com', 'password': 'pbkdf2_sha256$600000$ZxoICctA2PvORShhMnvxuk$xYy+ym2uJIzDwaucVVL4lLBvq3KjnGMsSo6IwZ4hmq8=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Error during registration: AdministratorFacade.__init__() missing 1 required positional argument: 'login_token'
+User logged out successfully
+User data: {'id': '411241414', 'username': 'customercustomer', 'email': 'customercustomer@mail.com', 'password': 'pbkdf2_sha256$600000$CJT5kXOaItVaOm87887lrW$2p69X1EVbTBpbrd9hz856/+WWg2xoxeL6r6WluVVsGE=', 'user_role': <User_Roles: Customer>, 'image': '/users/defaultuser.png'}
+Successfully created Customer instance: customer made by anonymous last anonymous
+Successfully created Users instance: customercustomer
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 77, in home_view
+    facade = CustomerFacade(request, user, login_token)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py", line 18, in __init__
+    self.validate_login_token(self.login_token)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py", line 37, in validate_login_token
+    if login_token is None or login_token.user_id is None:
+                              ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'user_id'
+User logged out successfully
+User data: {'id': '453455435', 'username': 'admincustomer1', 'email': 'admincustomer1@mail.com', 'password': 'pbkdf2_sha256$600000$Qz3W12citH8KMvlelQX1lL$hZaSwDG3rkG66V59sK+UBQ9pAYk8ZM5tbV8qTxGIc6M=', 'user_role': <User_Roles: Customer>, 'image': '/users/defaultuser.png'}
+Successfully created Customer instance: fsdf sdfsdf
+Successfully created Users instance: admincustomer1
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 77, in home_view
+    facade = CustomerFacade(request, user, login_token)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py", line 18, in __init__
+    self.validate_login_token(self.login_token)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py", line 37, in validate_login_token
+    if login_token is None or login_token.user_id is None:
+                              ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'user_id'
+User logged out successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Forbidden (CSRF token from POST incorrect.): /register/
+User logged out successfully
+User data: {'id': '333333333', 'username': 'adminairline1', 'email': 'adminairline1@mail.com', 'password': 'pbkdf2_sha256$600000$N1YtfjnE9PrukvZi1Dcq42$twoTKsMPMSb4fLFbDhN9BRFD/0o9Z+qo04XlfvDuI2w=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Error during registration: AdministratorFacade.__init__() missing 1 required positional argument: 'login_token'
+User data: {'id': '333333333', 'username': 'adminairline1', 'email': 'adminairline1@mail.com', 'password': 'pbkdf2_sha256$600000$rRR3w56fO8RpHzNJDXzN5T$u3ZYQaaZlXVNxe3zrFPvfsAO1+VdIVtGPRYX3IdGgRE=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Error during registration: AdministratorFacade.__init__() missing 1 required positional argument: 'login_token'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User logged out successfully
+User data: {'id': '333333333', 'username': 'adminairline1', 'email': 'adminairline1@mail.com', 'password': 'pbkdf2_sha256$600000$I6t5iPzr0tgeV7ZA3hQDPd$/sbU/vDNUCTLSzNsIzr3+qD7fOQf7ut2Obcngvm7xt8=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+Admin previleges validated
+Adding Airline successfully
+Successfully created Airline Company instance: Adminairline1
+Successfully created Users instance: adminairline1
+Redirecting due to unauthenticated user AIRLINE COMPANY trying to register Airline Company or Administrator
+User logged out successfully
+Redirecting due to no user role specified
+User data: {'id': '848488484', 'username': 'adminadmin1', 'email': 'adminadmin1@mail.com', 'password': 'pbkdf2_sha256$600000$IRAGE1lJXRBnv1MPbuPXRq$+TqzsruFj4ffpL8Hjqgcx5lGYPFw6PbUrjNaUzCwBEQ=', 'user_role': <User_Roles: Administrator>, 'image': '/users/defaultuser.png'}
+Admin previleges validated
+Adding Administrator successfully
+Successfully created Administrator instance: dfds fsdf
+Successfully created Users instance: adminadmin1
+User logged out successfully
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User not logged in, redirecting to login page.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User not logged in, redirecting to login page.
+Successfully logged out
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Successfully logged out
+Successfully logged out
+User not logged in, redirecting to login page.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Successfully logged out
+Welcome admin Successfully logged in as administrator
+Successfully logged out
+Welcome customercustomer Successfully logged in as customer
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 77, in home_view
+    facade = CustomerFacade(request, user, login_token)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py", line 18, in __init__
+    self.validate_login_token(self.login_token)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py", line 37, in validate_login_token
+    if login_token is None or login_token.user_id is None:
+                              ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'user_id'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Welcome customercustomer Successfully logged in as customer
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 77, in home_view
+    facade = CustomerFacade(request, user, login_token)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py", line 18, in __init__
+    self.validate_login_token(self.login_token)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py", line 37, in validate_login_token
+    if login_token is None or login_token.user_id is None:
+                              ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'user_id'
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Welcome customercustomer Successfully logged in as customer
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 77, in home_view
+    facade = CustomerFacade(request, user, login_token)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py", line 18, in __init__
+    self.validate_login_token(self.login_token)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py", line 37, in validate_login_token
+    if login_token is None or login_token.user_id is None:
+                              ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'user_id'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Successfully logged out
+Welcome customercustomer Successfully logged in as customer
+Successfully logged out
+Welcome admin Successfully logged in as administrator
+Successfully logged out
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Welcome admin Successfully logged in as administrator
+Successfully logged out
+Welcome admin Successfully logged in as administrator
+Successfully logged out
+Welcome admin Successfully logged in as administrator
+Successfully logged out
+Welcome admin Successfully logged in as administrator
+Successfully logged out
+Welcome adminairline1 Successfully logged in as airline company
+Successfully logged out
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Welcome adminairline1 Successfully logged in as airline company
+User with ID 333333333 tried to access the login page while already logged in.
+User with ID 333333333 tried to access the login page while already logged in.
+User with ID 333333333 tried to access the login page while already logged in.
+Successfully logged out
+Welcome adminairline1 Successfully logged in as airline company
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 277, in login_view
+    logging.info(f"Dear {username} you can't access the login page while already logged in.")
+                         ^^^^^^^^
+UnboundLocalError: cannot access local variable 'username' where it is not associated with a value
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 277, in login_view
+    logging.info(f"Dear {username} you can't access the login page while already logged in.")
+                         ^^^^^^^^
+UnboundLocalError: cannot access local variable 'username' where it is not associated with a value
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Dear 333333333 you can't access the login page while already logged in.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Dear adminairline1 you can't access the login page while already logged in.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User adminairline1 tried to access the login page while already logged in.
+Successfully logged out
+Welcome customercustomer Successfully logged in as customer
+User customercustomer tried to access the login page while already logged in.
+Successfully logged out
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\administrator_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\airline_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\airline_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\airline_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\airline_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\airline_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\airline_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\airline_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\airline_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\airline_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\airline_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Welcome customercustomer Successfully logged in as customer
+User customercustomer tried to access the login page while already logged in.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+User customercustomer tried to access the login page while already logged in.
+Successfully logged out
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Welcome customercustomer Successfully logged in as customer
+Successfully logged out
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\customer_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\customer_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\customer_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\customer_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Welcome customercustomer Successfully logged in as customer
+Internal Server Error: /get_all_flights/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_flights_view() missing 1 required positional argument: 'request'
+Internal Server Error: /get_all_airlines/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_airlines_view() missing 1 required positional argument: 'request'
+Internal Server Error: /get_all_countries/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_countries_view() missing 1 required positional argument: 'request'
+Internal Server Error: /get_all_flights/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_flights_view() missing 1 required positional argument: 'request'
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Internal Server Error: /get_all_flights/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_flights_view() missing 1 required positional argument: 'request'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 88, in home_view
+    return render(request, 'home.html', {'user': user, 'functions': user_functions})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_all_flights_view' not found. 'get_all_flights_view' is not a valid view function or pattern name.
+Successfully logged out
+Welcome customercustomer Successfully logged in as customer
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 88, in home_view
+    return render(request, 'home.html', {'user': user, 'functions': user_functions})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_all_flights_view' not found. 'get_all_flights_view' is not a valid view function or pattern name.
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Successfully logged out
+Welcome customercustomer Successfully logged in as customer
+Internal Server Error: /get_all_flights/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_flights_view() missing 1 required positional argument: 'request'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Successfully logged out
+Welcome customercustomer Successfully logged in as customer
+Internal Server Error: /get_all_flights/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_flights_view() missing 1 required positional argument: 'request'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\urls.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Internal Server Error: /get_all_flights/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_flights_view() missing 1 required positional argument: 'request'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 88, in home_view
+    return render(request, 'home.html', {'user': user, 'functions': user_functions})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_all_flights' not found. 'get_all_flights' is not a valid view function or pattern name.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Internal Server Error: /get_all_flights/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py", line 60, in get_all_flights_view
+    flights = cls.DAL.get_all(Flights)
+              ^^^^^^^
+AttributeError: type object 'BaseViews' has no attribute 'DAL'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Retrieved all flights.
+Retrieved all flights.
+Internal Server Error: /get_all_flights/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Flights' object has no attribute 'airline_company'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\view\base_views.py", line 65, in get_all_flights_view
+    return JsonResponse(serialized_flights.data, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+           ^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `airline_company` on serializer `FlightsSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Flights` instance.
+Original exception text was: 'Flights' object has no attribute 'airline_company'.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\utils\login_token.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 76, in home_view
+    facade = CustomerFacade(request, user, login_token)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py", line 13, in __init__
+    self.validate_login_token(self.login_token)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomerFacade' object has no attribute 'validate_login_token'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 76, in home_view
+    facade = CustomerFacade(request, user, login_token)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py", line 13, in __init__
+    self.login_token.validate_login_token(self.login_token)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'validate_login_token'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\customer_facade.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 83, in home_view
+    user_functions = facade.get_functions()
+                     ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomerFacade' object has no attribute 'get_functions'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Internal Server Error: /get_all_flights/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_flights_view() missing 1 required positional argument: 'request'
+Internal Server Error: /get_all_airlines/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_airlines_view() missing 1 required positional argument: 'request'
+Internal Server Error: /get_all_countries/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_countries_view() missing 1 required positional argument: 'request'
+Successfully logged out
+Welcome admin Successfully logged in as administrator
+Successfully logged out
+Welcome customercustomer Successfully logged in as customer
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Redirecting due to unauthenticated user CUSTOMER trying to register Airline Company or Administrator
+Successfully logged out
+Welcome admin Successfully logged in as administrator
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Redirecting due to invalid user role: gga
+Successfully logged out
+Welcome customercustomer Successfully logged in as customer
+Redirecting due to unauthenticated user CUSTOMER trying to register Airline Company or Administrator
+Redirecting due to invalid user role: None
+Redirecting due to authenticated user CUSTOMER trying to access Customer registration without being an Administrator
+Successfully logged out
+Welcome customercustomer Successfully logged in as customer
+Successfully logged out
+Login error: ['Incorrect password']
+Welcome admin Successfully logged in as administrator
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+getting All Airlines
+getting All Airlines
+User admin tried to access the login page while already logged in.
+Internal Server Error: /get_all_flights/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseViews.get_all_flights_view() missing 1 required positional argument: 'request'
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+getting Airline by id
+getting Airline by id
+getting Airline by id
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+getting Airline by id
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+getting Airline by id
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+getting Airline by id
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+getting Airline by id
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+getting Airline by id
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+getting Airline by id
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+getting Airline by id
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\facades\facade_base.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Successfully logged out
+Internal Server Error: /admin/Bingo/countries/
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'Bingo_countries.new_id' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'Bingo_countries.new_id' in 'field list'")
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Looking up time zone info from registry
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 87, in home_view
+    return render(request, 'home.html', {'user': user, 'user_role': user.user_role.role_name})
+                                                                    ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'user_role'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\views.py", line 87, in home_view
+    return render(request, 'home.html', {'user': user, 'user_role': user.user_role.role_name})
+                                                                    ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'user_role'

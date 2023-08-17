@@ -11,22 +11,42 @@
         }
     </style>
 </head>
-<body>
-    {% if user and user.username %}
-        <h1>Welcome {{ user.username }}!</h1>
-        <h1>{{ user.user_role }}</h1>
-        <img src="{{ user.image.url }}" alt="{{ user.username }}'s image" class="user-image"> <br><br>
+    <body>
+        {% if user and user.username %}
+            <h1>Welcome {{ user.username }}!</h1>
+            <h1>{{ user.user_role }}</h1>
+            <img src="{{ user.image.url }}" alt="{{ user.username }}'s image" class="user-image"> <br><br>
 
-        <a href="{% url 'search_form' %}">Search Flights</a><br><br>
+            <a href="{% url 'search_form' %}">Search Flights</a><br><br>
 
-        <form action="{% url 'logout' %}" method="post">
-            {% csrf_token %}
-            <button type="submit">Logout</button>
-        </form>
-    {% else %}
-        <h1>Welcome, Guest!</h1>
-        <a href="{% url 'search_form' %}">Search Flights</a><br><br>
-        <p>Please <a href="{% url 'login' %}">login</a> to access your account.</p>
-    {% endif %}
-</body>
+            <!-- Base functions available for all roles -->
+            <h2>Basic Functions:</h2>
+            <ul>
+                <li><a href="{% url 'get_all_flights_view' %}">View All Flights</a></li>
+                <li><a href="{% url 'get_all_airlines_view' %}">View All Airlines</a></li>
+                <li><a href="{% url 'get_all_countries_view' %}">View All Countries</a></li>
+            
+            </ul>
+
+            {% if user.user_role == "Customer" %}
+                <!-- Customer specific functions -->
+                <h2>Customer Functions:</h2>
+                <ul>
+                    <li><a href="{% url 'get_my_tickets_view' %}">View My Tickets</a></li>
+                    <li><a href="{% url 'update_customer_view' %}">Update My Information</a></li>
+                    <!-- More customer functions can be added here -->
+                </ul>
+            {% endif %}
+
+            <form action="{% url 'logout' %}" method="post">
+                {% csrf_token %}
+                <button type="submit">Logout</button>
+            </form>
+        {% else %}
+            <h1>Welcome, Guest!</h1>
+            <a href="{% url 'search_form' %}">Search Flights</a><br><br>
+            <p>Please <a href="{% url 'login' %}">login</a> to access your account.</p>
+        {% endif %}
+    </body>
+
 </html>

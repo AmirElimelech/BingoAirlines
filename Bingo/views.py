@@ -3,7 +3,7 @@ from django import forms
 from django.http import JsonResponse, HttpResponseBadRequest, HttpResponse
 from django.shortcuts import render ,redirect
 from .utils.amadeus import get_ticket_data
-from .models import Airport , User_Roles
+from .models import Airport , User_Roles , Users , User_Roles
 import json
 import datetime
 from django.views.decorators.csrf import csrf_exempt
@@ -18,8 +18,9 @@ from .forms import UsersForm , CustomerForm , AdministratorForm , AirlineCompany
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from Bingo.facades.anonymous_facade import AnonymousFacade 
+from Bingo.facades.customer_facade import CustomerFacade
+from Bingo.facades.airline_facade import AirlineFacade
 from Bingo.facades.administrator_facade import AdministratorFacade
-from .models import Users , User_Roles
 from django.http import HttpResponseForbidden
 from django.db import transaction
 from .utils.login_token import LoginToken
@@ -55,13 +56,36 @@ logger = logging.getLogger(__name__)
 #     return render(request, 'home.html', {'user': user})
 
 
+# def home_view(request):
+#     login_token = request.session.get('login_token')
+#     user = None
+#     if login_token:
+#         user_id = login_token['user_id']
+#         user = Users.objects.get(id=user_id)
+#     return render(request, 'home.html', {'user': user})
+
+
 def home_view(request):
+    # Fetch the user using the login_token stored in the session
     login_token = request.session.get('login_token')
-    user = None
+    user_functions = []
+
     if login_token:
-        user_id = login_token['user_id']
-        user = Users.objects.get(id=user_id)
-    return render(request, 'home.html', {'user': user})
+        user = Users.objects.get(id=login_token["user_id"])
+        if login_token["user_role"] == 'customer':
+            facade = CustomerFacade(request, user, login_token)
+        elif login_token["user_role"] == 'airline company':
+            facade = AirlineFacade(request, user, login_token)  # Assuming you have a similar structure for AirlineFacade
+        elif login_token["user_role"] == 'administrator':
+            facade = AdministratorFacade(request, user, login_token)  # Assuming you have a similar structure for AdministratorFacade
+        else:
+            facade = FacadeBase(request, login_token)
+    else:
+        user = None
+
+    # Pass the user and user functions to the template context
+    return render(request, 'home.html', {'user': user, 'user_role': user.user_role.role_name})
+
 
 
 
@@ -71,10 +95,14 @@ def home_view(request):
 
 
 def user_registration_view(request):
-    # user_role_param = request.GET.get('user_role', None)
-    # user_session_role = request.session.get('user_role')
+    allowed_roles = ["Customer", "Airline Company", "Administrator"]
 
     user_role_param = request.GET.get('user_role', None)
+
+    if user_role_param not in allowed_roles:  # Check if role is allowed
+        logger.info(f"Redirecting due to invalid user role: {user_role_param}")
+        return redirect('home')
+    
 
     # Retrieve the LoginToken dictionary from the session
     login_token_dict = request.session.get('login_token')
@@ -136,10 +164,12 @@ def user_registration_view(request):
                     facade = FacadeBase()
                     user_instance = facade.create_new_user(user_data)
                     
+                    
 
                     if user_role_param == "Customer":
                         customer_data = {
                             'user_id': user_instance.id,
+                            # 'user_id': user_instance,
                             'first_name': entity_form.cleaned_data.get("first_name"),
                             'last_name': entity_form.cleaned_data.get("last_name"),
                             'address': entity_form.cleaned_data.get("address"),
@@ -152,24 +182,26 @@ def user_registration_view(request):
 
                     elif user_role_param == "Airline Company":
                         airline_data = {
-                            'user_id': user_instance,
+                            # 'user_id': user_instance,
+                            'user_id': user_instance.id,
                             'iata_code': entity_form.cleaned_data.get("iata_code"),
                             'name': entity_form.cleaned_data.get("name"),
                             'country_id': entity_form.cleaned_data.get("country_id"),
                             'logo': entity_form.cleaned_data.get("logo"),
                         }
-                        admin_facade = AdministratorFacade(request, user_instance)
+                        admin_facade = AdministratorFacade(request, user_instance , login_token)
                         airline_instance = admin_facade.add_airline(airline_data)
                         logging.info(f"Successfully created Airline Company instance: {airline_instance}")
 
 
                     elif user_role_param == "Administrator":
                         admin_data = {
-                            'user_id': user_instance,
+                            # 'user_id': user_instance,
+                            'user_id': user_instance.id,
                             'first_name': entity_form.cleaned_data.get("first_name"),
                             'last_name': entity_form.cleaned_data.get("last_name"),
                         }
-                        admin_facade = AdministratorFacade(request, user_instance)
+                        admin_facade = AdministratorFacade(request, user_instance , login_token )
                         admin_instance = admin_facade.add_administrator(admin_data)
                         logging.info(f"Successfully created Administrator instance: {admin_instance}")
 
@@ -184,6 +216,9 @@ def user_registration_view(request):
             logger.error("User Form errors: %s", user_form.errors.as_text())
             if entity_form:
                 logger.error("Entity Form errors: %s", entity_form.errors.as_text())
+
+
+  
 
     return render(request, "register.html", {
         "user_form": user_form,
@@ -219,7 +254,35 @@ def user_registration_view(request):
 #     return render(request, 'login.html', {'error': error_message})
 
 
+# def login_view(request):
+#     error_message = None
+#     if request.method == "POST":
+#         username = request.POST['username']
+#         password = request.POST['password']
+        
+#         facade = AnonymousFacade()
+        
+#         try:
+#             login_token = facade.login(request, username, password)
+#             request.session['login_token'] = {'user_id': login_token.user_id, 'user_role': login_token.user_role} # Store login_token in session
+#             logging.info(f"Welcome {username} Successfully logged in as {login_token.user_role}")
+#             return redirect('home')
+#         except ValidationError as e:
+#             error_message = str(e)
+#             logger.error(f"Login error: {error_message}")
+
+#     return render(request, 'login.html', {'error': error_message})
+
+
 def login_view(request):
+    login_token = request.session.get('login_token')
+    if login_token and login_token.get('user_id'):
+        user_id = login_token['user_id']
+        user = Users.objects.get(id=user_id)
+
+        logging.info(f"User {user.username} tried to access the login page while already logged in.")
+        return redirect('home')
+
     error_message = None
     if request.method == "POST":
         username = request.POST['username']
@@ -230,6 +293,7 @@ def login_view(request):
         try:
             login_token = facade.login(request, username, password)
             request.session['login_token'] = {'user_id': login_token.user_id, 'user_role': login_token.user_role} # Store login_token in session
+            logging.info(f"Welcome {username} Successfully logged in as {login_token.user_role}")
             return redirect('home')
         except ValidationError as e:
             error_message = str(e)
@@ -255,9 +319,9 @@ def login_view(request):
 def logout_view(request):
     if 'login_token' in request.session:
         del request.session['login_token']
-    django_logout(request)
-    logging.info (f"User logged out successfully")
-    
+        django_logout(request)
+        logging.info(f"Successfully logged out")
+
     return redirect('login')
 
 class SearchForm(forms.Form):

@@ -55,6 +55,7 @@ class Countries(models.Model):
     id = models.BigAutoField(primary_key=True)
     name = models.CharField(max_length=255, unique=True)
     country_code = models.CharField(max_length=2, unique=True)
+    
 
     def __str__(self):
         return self.name
@@ -227,7 +228,7 @@ class Administrators(models.Model):
 
 class Airport(models.Model):
     name = models.CharField(max_length=255)
-    iata_code = models.CharField(max_length=3)
+    iata_code = models.CharField(max_length=3 , primary_key=True)
 
     def __str__(self):
         return self.name
@@ -236,10 +237,24 @@ class Airport(models.Model):
 
 
 class DAL:
-    def get_by_id(self, model, id):
+    # def get_by_id(self, model, id):
+    #     try:
+    #         return model.objects.get(id=id)
+    #     except model.DoesNotExist:
+    #         logger.error(f"Error fetching all isinstance of {model.__name__}")
+    #         return None
+
+    def get_by_id(self, model, identifier):
         try:
-            return model.objects.get(id=id)
+            # Dynamically get the name of the primary key field for the model
+            primary_key_name = model._meta.pk.name
+            
+            # Create a dictionary to hold the query parameters
+            query = {primary_key_name: identifier}
+            
+            return model.objects.get(**query)
         except model.DoesNotExist:
+            logger.error(f"Error fetching instance of {model.__name__} with {primary_key_name}={identifier}")
             return None
 
     def get_all(self, model):
@@ -273,12 +288,14 @@ class DAL:
             instance.save()
             return instance
         except Exception as e:
+            logger.error(f"Error updating instance {instance}. Error: {str(e)}")
             return None
 
     def add_all(self, model, list_of_dicts):
         try:
             return model.objects.bulk_create([model(**kwargs) for kwargs in list_of_dicts])
         except Exception as e:
+            logger.error(f"Error bulk creating {model.__name__} instances with kwargs: {list_of_dicts}. Error: {str(e)}")
             return None
 
     def remove(self, instance):
@@ -389,7 +406,6 @@ class DAL:
     def authenticate_user(self, username, password):
         try:
             user = Users.objects.get(username=username)
-            # Assuming the password is hashed in the database
             if check_password(password, user.password):
                 logging.info(f"User {username} authenticated successfully.")
                 return user
