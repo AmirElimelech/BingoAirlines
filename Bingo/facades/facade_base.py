@@ -5,6 +5,7 @@ import re
 import logging
 from django.views.decorators.csrf import csrf_exempt
 
+
 from ..utils.login_token import LoginToken
 
 import logging
@@ -13,19 +14,34 @@ import logging
 logger = logging.getLogger(__name__)
 
 
+
+
+# class FacadeBase:
+#     def __init__(self, request, login_token: LoginToken=None):
+#         self.request = request
+#         self.login_token = LoginToken.validate_login_token(request)
+#         self.user = self.request.user
+
+
+
+# class FacadeBase:   # WOOOOOOOOOOOOOORKING !!! ROLL BACK TO IT IF NEEDED ! 
+#     def __init__(self, request=None, login_token: LoginToken=None):  # Add the login_token parameter with type annotation
+#         self.DAL = DAL()
+#         self.request = request
+#         self.login_token = login_token
+
+# class FacadeBase:
+#     def __init__(self, request, login_token: LoginToken):
+#         self.DAL = DAL()
+#         self.request = request
+#         self.login_token = login_token
+
 class FacadeBase:
-    def __init__(self, request=None, login_token: LoginToken=None):  # Add the login_token parameter with type annotation
+    def __init__(self, request, login_token: LoginToken=None):   
         self.DAL = DAL()
         self.request = request
         self.login_token = login_token
-
-
-    # def validate_login_token(self, login_token):
-    #     user_id = login_token.user_id if isinstance(login_token, LoginToken) else login_token.get('user_id', None)
-    #     if login_token is None or user_id is None:
-    #         logging.info("Authentication expired. Please login again.")
-    #         raise PermissionError("Authentication expired. Please login again.")
-
+        
 
     def get_all_flights(self):
         logging.info("getting All Flights")
@@ -55,7 +71,9 @@ class FacadeBase:
 
     def get_country_by_id(self, country_code):
         logging.info("getting Country by id")
-        return self.DAL.get_by_id(Countries, country_code)
+        # return self.DAL.get_by_id(Countries, country_code)
+        return self.DAL.get_by_id(Countries, country_code, field_name='country_code')
+
 
     @csrf_exempt
     def create_new_user(self, user):
@@ -74,6 +92,7 @@ class FacadeBase:
             if Users.objects.filter(email=user.get("email")).exists():
                 logging.error("Email already exists")
                 raise ValidationError("Email already exists")
+            
 
             # Password Strength
             password_pattern = r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$"

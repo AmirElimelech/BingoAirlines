@@ -3,7 +3,7 @@ from django import forms
 from django.http import JsonResponse, HttpResponseBadRequest, HttpResponse
 from django.shortcuts import render ,redirect
 from .utils.amadeus import get_ticket_data
-from .models import Airport , User_Roles , Users , User_Roles
+from .models import Airport , User_Roles , Users , User_Roles , DAL
 import json
 import datetime
 from django.views.decorators.csrf import csrf_exempt
@@ -37,41 +37,22 @@ from .decorators import login_required
 
 
 
+
 # logger 
 logger = logging.getLogger(__name__)
 
 
 
 
-
-# def home_view(request): WORKING WITH SESSIONS 
-#     # Fetch the user using the user_id stored in the session
-#     user_id = request.session.get('user_id')
-#     if user_id:
-#         user = Users.objects.get(id=user_id)
-#     else:
-#         user = None
-
-#     # Pass the user to the template context
-#     return render(request, 'home.html', {'user': user})
-
-
-# def home_view(request):
-#     login_token = request.session.get('login_token')
-#     user = None
-#     if login_token:
-#         user_id = login_token['user_id']
-#         user = Users.objects.get(id=user_id)
-#     return render(request, 'home.html', {'user': user})
-
-
 def home_view(request):
     # Fetch the user using the login_token stored in the session
     login_token = request.session.get('login_token')
-    user_functions = []
+    
 
     if login_token:
-        user = Users.objects.get(id=login_token["user_id"])
+        dal_instance = DAL()
+        user = dal_instance.get_by_id(Users, login_token["user_id"])
+
         if login_token["user_role"] == 'customer':
             facade = CustomerFacade(request, user, login_token)
         elif login_token["user_role"] == 'airline company':
@@ -84,9 +65,7 @@ def home_view(request):
         user = None
 
     # Pass the user and user functions to the template context
-    return render(request, 'home.html', {'user': user, 'user_role': user.user_role.role_name})
-
-
+    return render(request, 'home.html', {'user': user})
 
 
 
@@ -149,73 +128,82 @@ def user_registration_view(request):
         entity_form = AdministratorForm(request.POST or None)
 
     if request.method == "POST":
-        if user_form.is_valid() and (entity_form is None or entity_form.is_valid()):
-            user_data = {
-                "id": user_form.cleaned_data.get("id"),
-                "username": user_form.cleaned_data.get("username"),
-                "email": user_form.cleaned_data.get("email"),
-                "password": user_form.cleaned_data.get("password"),
-                "user_role": user_form.cleaned_data.get("user_role"),
-                "image": user_form.cleaned_data.get("image"),
-            }
 
-            try:
-                with transaction.atomic():  # Transaction block starts here
-                    facade = FacadeBase()
-                    user_instance = facade.create_new_user(user_data)
-                    
-                    
+        try:
 
-                    if user_role_param == "Customer":
-                        customer_data = {
-                            'user_id': user_instance.id,
-                            # 'user_id': user_instance,
-                            'first_name': entity_form.cleaned_data.get("first_name"),
-                            'last_name': entity_form.cleaned_data.get("last_name"),
-                            'address': entity_form.cleaned_data.get("address"),
-                            'phone_no': entity_form.cleaned_data.get("phone_no"),
-                            'credit_card_no': entity_form.cleaned_data.get("credit_card_no")
-                        }
-                        anonymous_facade = AnonymousFacade()
-                        customer_instance = anonymous_facade.add_customer(customer_data)
-                        logging.info(f"Successfully created Customer instance: {customer_instance}")
+            if user_form.is_valid() and (entity_form is None or entity_form.is_valid()):
+                user_data = {
+                    "id": user_form.cleaned_data.get("id"),
+                    "username": user_form.cleaned_data.get("username"),
+                    "email": user_form.cleaned_data.get("email"),
+                    "password": user_form.cleaned_data.get("password"),
+                    "user_role": user_form.cleaned_data.get("user_role"),
+                    "image": user_form.cleaned_data.get("image"),
+                }
 
-                    elif user_role_param == "Airline Company":
-                        airline_data = {
-                            # 'user_id': user_instance,
-                            'user_id': user_instance.id,
-                            'iata_code': entity_form.cleaned_data.get("iata_code"),
-                            'name': entity_form.cleaned_data.get("name"),
-                            'country_id': entity_form.cleaned_data.get("country_id"),
-                            'logo': entity_form.cleaned_data.get("logo"),
-                        }
-                        admin_facade = AdministratorFacade(request, user_instance , login_token)
-                        airline_instance = admin_facade.add_airline(airline_data)
-                        logging.info(f"Successfully created Airline Company instance: {airline_instance}")
+                try:
+                    with transaction.atomic():  # Transaction block starts here
+                        facade = FacadeBase(request)
+                        user_instance = facade.create_new_user(user_data)
+                        
+                        
+
+                        if user_role_param == "Customer":
+                            customer_data = {
+                                'user_id': user_instance.id,
+                                'first_name': entity_form.cleaned_data.get("first_name"),
+                                'last_name': entity_form.cleaned_data.get("last_name"),
+                                'address': entity_form.cleaned_data.get("address"),
+                                'phone_no': entity_form.cleaned_data.get("phone_no"),
+                                'credit_card_no': entity_form.cleaned_data.get("credit_card_no")
+                            }
+                            anonymous_facade = AnonymousFacade(request)
+                            customer_instance = anonymous_facade.add_customer(customer_data)
+                            logging.info(f"Successfully created Customer instance: {customer_instance}")
+
+                        elif user_role_param == "Airline Company":
+                            airline_data = {
+
+                                # 'user_id': user_instance.id,
+                                'user_id': user_instance,
+                                'iata_code': entity_form.cleaned_data.get("iata_code"),
+                                'name': entity_form.cleaned_data.get("name"),
+                                'country_id': entity_form.cleaned_data.get("country_id"),
+                                'logo': entity_form.cleaned_data.get("logo"),
+                            }
+                            admin_facade = AdministratorFacade(request, user_instance , login_token)
+                            airline_instance = admin_facade.add_airline(airline_data)
+                            logging.info(f"Successfully created Airline Company instance: {airline_instance}")
 
 
-                    elif user_role_param == "Administrator":
-                        admin_data = {
-                            # 'user_id': user_instance,
-                            'user_id': user_instance.id,
-                            'first_name': entity_form.cleaned_data.get("first_name"),
-                            'last_name': entity_form.cleaned_data.get("last_name"),
-                        }
-                        admin_facade = AdministratorFacade(request, user_instance , login_token )
-                        admin_instance = admin_facade.add_administrator(admin_data)
-                        logging.info(f"Successfully created Administrator instance: {admin_instance}")
+                        elif user_role_param == "Administrator":
+                            admin_data = {
+                            
+                                # 'user_id': user_instance.id,
+                                'user_id': user_instance,
+                                'first_name': entity_form.cleaned_data.get("first_name"),
+                                'last_name': entity_form.cleaned_data.get("last_name"),
+                            }
+                            admin_facade = AdministratorFacade(request, user_instance , login_token )
+                            admin_instance = admin_facade.add_administrator(admin_data)
+                            logging.info(f"Successfully created Administrator instance: {admin_instance}")
 
-                logging.info(f"Successfully created Users instance: {user_instance.username}")
-                return HttpResponseRedirect(reverse('login'))
+                    logging.info(f"Successfully created Users instance: {user_instance.username}")
+                    return HttpResponseRedirect(reverse('login'))
 
-            except Exception as e:  # General exception handling
-                logger.error(f"Error during registration: {str(e)}")
-                user_form.add_error(None, "An error occurred during registration. Please try again.")
+                except Exception as e:  # General exception handling
+                    logger.error(f"Error during registration: {str(e)}")
+                    user_form.add_error(None, "An error occurred during registration. Please try againnnnn.")
 
-        else:
-            logger.error("User Form errors: %s", user_form.errors.as_text())
-            if entity_form:
-                logger.error("Entity Form errors: %s", entity_form.errors.as_text())
+            else:
+                logger.error("User Form errors: %s", user_form.errors.as_text())
+                if entity_form:
+                    logger.error("Entity Form errors: %s", entity_form.errors.as_text())
+
+        except Exception as e:
+            logger.error(f"Exception occurred during user registration: {e}")
+            traceback.print_exc()  # Print the traceback to the console
+            user_form.add_error(None, "An unexpected error occurred during registration. Please try again.")
 
 
   
@@ -226,52 +214,6 @@ def user_registration_view(request):
         "user_role": user_role_param
     })
 
-
-
-
-# def login_view(request): WORKING WITH SESSIONS ! 
-    
-#     logger.debug(f"Session data: {request.session.items()}")
-
-#     if 'user_id' in request.session:
-#         return redirect('home')
-    
-    
-#     error_message = None
-#     if request.method == "POST":
-#         username = request.POST['username']
-#         password = request.POST['password']
-        
-#         facade = AnonymousFacade()
-        
-#         try:
-#             user_role, user_id = facade.login(request, username, password)
-#             return redirect('home')
-#         except ValidationError as e:
-#             error_message = str(e)
-#             logger.error(f"Login error: {error_message}")
-
-#     return render(request, 'login.html', {'error': error_message})
-
-
-# def login_view(request):
-#     error_message = None
-#     if request.method == "POST":
-#         username = request.POST['username']
-#         password = request.POST['password']
-        
-#         facade = AnonymousFacade()
-        
-#         try:
-#             login_token = facade.login(request, username, password)
-#             request.session['login_token'] = {'user_id': login_token.user_id, 'user_role': login_token.user_role} # Store login_token in session
-#             logging.info(f"Welcome {username} Successfully logged in as {login_token.user_role}")
-#             return redirect('home')
-#         except ValidationError as e:
-#             error_message = str(e)
-#             logger.error(f"Login error: {error_message}")
-
-#     return render(request, 'login.html', {'error': error_message})
 
 
 def login_view(request):
@@ -288,10 +230,14 @@ def login_view(request):
         username = request.POST['username']
         password = request.POST['password']
         
-        facade = AnonymousFacade()
+        # facade = AnonymousFacade()
+        facade = AnonymousFacade(request)
         
         try:
-            login_token = facade.login(request, username, password)
+            # login_token = facade.login(request, username, password)
+            login_token = facade.login(username, password)
+            request.session['login_token'] = {'user_id': login_token.user_id, 'user_role': login_token.user_role}
+
             request.session['login_token'] = {'user_id': login_token.user_id, 'user_role': login_token.user_role} # Store login_token in session
             logging.info(f"Welcome {username} Successfully logged in as {login_token.user_role}")
             return redirect('home')
@@ -302,18 +248,34 @@ def login_view(request):
     return render(request, 'login.html', {'error': error_message})
 
 
+# def login_view(request):
+#     login_token = request.session.get('login_token')
+#     if login_token and login_token.get('user_id'):
+#         user_id = login_token['user_id']
+#         user = Users.objects.get(id=user_id)
 
+#         logging.info(f"User {user.username} tried to access the login page while already logged in.")
+#         return redirect('home')
 
-# def logout_view(request): WORKING WITH SESSIONS !
-#     # Clear the session
-#     request.session.flush()
-    
-#     # Call Django's logout function to ensure any other cleanup is done
-#     from django.contrib.auth import logout as django_logout
-#     django_logout(request)
-    
-#     # Redirect the user to the login page
-#     return redirect('login')
+#     error_message = None
+#     if request.method == "POST":
+#         username = request.POST['username']
+#         password = request.POST['password']
+        
+#         facade = AnonymousFacade()
+#         # facade = AnonymousFacade(request)
+        
+#         try:
+#             login_token = facade.login(request, username, password)
+#             request.session['login_token'] = {'user_id': login_token.user_id, 'user_role': login_token.user_role} # Store login_token in session
+#             logging.info(f"Welcome {username} Successfully logged in as {login_token.user_role}")
+#             return redirect('home')
+#         except ValidationError as e:
+#             error_message = str(e)
+#             logger.error(f"Login error: {error_message}")
+
+#     return render(request, 'login.html', {'error': error_message})
+
 
 @login_required
 def logout_view(request):
@@ -324,7 +286,13 @@ def logout_view(request):
 
     return redirect('login')
 
+
+
+
+
+
 class SearchForm(forms.Form):
+    logging.info("Starting the clean method of SearchForm.")
     numAdults = forms.IntegerField(min_value=1, initial=1 , label='Adults')
     numChildren = forms.IntegerField(min_value=0, initial=0 , label='Children')
     cabinType = forms.ChoiceField(choices=[('ECONOMY', 'Economy'), ('BUSINESS', 'Business'), ('FIRST', 'First')] , label='Cabin Type')
@@ -347,25 +315,31 @@ class SearchForm(forms.Form):
 
         # Check that departure date is not in the past
         if departureDate1 and departureDate1 < datetime.date.today():
+            logging.error("Error: Departure date is in the past.")
             self.add_error('departureDate1', 'Departure date cannot be in the past.')
 
         # Check that return date is not before the departure date
         if departureDate2 and departureDate1 and departureDate2 < departureDate1:
+            logging.error("Error: Return date is before the departure date.")
             self.add_error('departureDate2', 'Return date cannot be before the departure date.')
 
         # Check that origin and destination are not the same
         if originLocationCode and destinationLocationCode and originLocationCode == destinationLocationCode:
+            logging.error("Error: Origin and destination are the same.")
             self.add_error('destinationLocationCode', 'You cannot select the same airport for departure and arrival.')
 
         # Check cabin type
         if cabinType not in ['ECONOMY', 'BUSINESS', 'FIRST']:
+            logging.error("Error: Invalid cabin type selected.")
             self.add_error('cabinType', 'Invalid cabin type selected.')
 
 
         # Validate number of passengers
         if numAdults and numAdults > 9:
+            logging.error("Error: Too many adults selected.")
             self.add_error('numAdults', 'You cannot book for more than 9 adults at once.')
         if numChildren and numChildren > 9:
+            logging.error("Error: Too many children selected.")
             self.add_error('numChildren', 'You cannot book for more than 9 children at once.')
 
         return cleaned_data
@@ -379,15 +353,17 @@ def get_iata_code(user_input):
             airport = Airport.objects.get(iata_code__iexact=user_input)
             return airport.iata_code
         except Airport.DoesNotExist:
+            logging.warning(f"Could not find airport with name or IATA code: {user_input}")
             return user_input
 
 def autocomplete(request):
     q = request.GET.get('q', '')
     airports = Airport.objects.filter(Q(name__icontains=q) | Q(iata_code__icontains=q))
     results = [airport.name for airport in airports]
+    logging.info(f"Found {len(results)} airports matching query: {q}")
     return JsonResponse(results, safe=False)
 
-#
+
 
 def search_form(request):
     if request.method == "POST":
@@ -398,6 +374,7 @@ def search_form(request):
         'today': today.isoformat(),
         'form': SearchForm(),
     }
+    logging.info("Rendering search form.")
     return render(request, 'Bingo/search_form.html', context)
 
 
@@ -532,6 +509,7 @@ def handle_search_form_submission(request):
                 modified_response["data"].append(modified_flight_offer)
 
             # return JsonResponse(modified_response, safe=False) # this is the original line used to Json response TEMP TEMP TEMP 
+            logging.info("Rendering search results...")
             return render(request, 'Bingo/search_results.html', {'data': modified_response['data']})
             # return render(request, 'Bingo/search_results.html', {'flights': modified_response['data']})
 
@@ -541,8 +519,8 @@ def handle_search_form_submission(request):
             logger.error(f'Error processing request: {e}')
             return HttpResponseBadRequest('Error processing request')
     else:  
-        logger.info("Form is not valid.")
-        logger.info(f"Form errors: {form.errors}")
+        logger.warning("Form is not valid.")
+        logger.warning(f"Form errors: {form.errors}")
 
     return HttpResponseBadRequest('Invalid form submission')
 

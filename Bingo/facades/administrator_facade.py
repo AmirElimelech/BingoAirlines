@@ -1,5 +1,5 @@
 from .facade_base import FacadeBase
-from ..models import Customers, Airline_Companies, Administrators , Users
+from ..models import Customers, Airline_Companies, Administrators , Users , Countries
 from django.core.exceptions import ValidationError
 from ..utils.login_token import LoginToken
 import logging
@@ -7,25 +7,52 @@ import logging
 logger = logging.getLogger(__name__)
 
 
+
+# class AdministratorFacade(FacadeBase):
+#     def __init__(self, request, user, login_token: LoginToken):  # Add the login_token parameter with type annotation
+#         super().__init__(request, login_token) 
+#         self.request = request
+#         self.user = user
+#         self.login_token = login_token  # Store   # Store the login_token object
+
+#     def validate_admin_privileges(self):
+#         # Validate the user role from the LoginToken object
+#         user_role = self.login_token.user_role  # Replace session access with login_token access
+#         if user_role != "administrator":
+#             logging.info("User does not have the necessary privileges to perform this operation.")
+#             raise PermissionError("You do not have the necessary privileges to perform this operation.")
+
 class AdministratorFacade(FacadeBase):
-    def __init__(self, request, user, login_token: LoginToken):  # Add the login_token parameter with type annotation
+    def __init__(self, request, user, login_token: LoginToken=None):
         super().__init__(request, login_token) 
-        self.request = request
         self.user = user
-        self.login_token = login_token  # Store   # Store the login_token object
+
+    
 
     def validate_admin_privileges(self):
-        # Validate the user role from the LoginToken object
-        user_role = self.login_token.user_role  # Replace session access with login_token access
+        if not self.login_token:
+            logging.error("Login token is missing.")
+            raise PermissionError("Login token is missing.")
+    
+        user_role = self.login_token.user_role
         if user_role != "administrator":
             logging.info("User does not have the necessary privileges to perform this operation.")
             raise PermissionError("You do not have the necessary privileges to perform this operation.")
-        
+
+
+
+
 
     def get_all_customers(self):
         self.validate_admin_privileges()
         logging.info("getting All Customers")
         return self.DAL.get_all(Customers)
+    
+
+
+
+
+
 
     def add_airline(self, airline):
 
@@ -45,8 +72,26 @@ class AdministratorFacade(FacadeBase):
             logging.error("Airline with this IATA code already exists.")
             raise ValidationError("Airline with this IATA code already exists.")
         
+
+        
+        # Retrieve the Countries instance using the provided ID
+        country_instance = Countries.objects.get(pk=airline['country_id'])
+
+        # Replace the 'country_id' in the airline dictionary with the actual instance
+        airline['country_id'] = country_instance
+
+        # Retrieve the Users instance using the provided ID
+        user_instance = Users.objects.get(id=airline['user_id'])
+
+        # Replace the 'user_id' in the airline dictionary with the actual instance
+        airline['user_id'] = user_instance
+        
         logging.info("Adding Airline successfully")
         return self.DAL.add(Airline_Companies, **airline)
+    
+
+
+
 
     def add_customer(self, customer):
         self.validate_admin_privileges()
@@ -57,14 +102,22 @@ class AdministratorFacade(FacadeBase):
             logging.error("Customer with this phone number already exists.")
             raise ValidationError("Customer with this phone number already exists.")
         
-        # Validate email
-        if Users.objects.filter(email=customer['email']).exists():
-            logging.error("User with this email address already exists.")
-            raise ValidationError("User with this email address already exists.")
         
+        
+
+        # Retrieve the Users instance using the provided ID
+        user_instance = Users.objects.get(id=customer['user_id'])
+
+        # Replace the 'user_id' in the customer dictionary with the actual instance
+        customer['user_id'] = user_instance
+            
 
         logging.info("Adding Customer successfully")
         return self.DAL.add(Customers, **customer)
+    
+
+
+
 
     def add_administrator(self, administrator):
         self.validate_admin_privileges()
@@ -82,8 +135,24 @@ class AdministratorFacade(FacadeBase):
             raise ValidationError("This user already has an administrator account.")
         
 
+        
+
+        # Retrieve the Users instance using the provided ID
+        user_instance = Users.objects.get(id=administrator['user_id'])
+
+        # Replace the 'user_id' in the administrator dictionary with the actual instance
+        administrator['user_id'] = user_instance
+
+
+
         logging.info("Adding Administrator successfully")
         return self.DAL.add(Administrators, **administrator)
+
+
+
+
+
+
 
 
     def remove_airline(self, airline):

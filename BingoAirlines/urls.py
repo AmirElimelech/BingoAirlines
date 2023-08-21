@@ -23,6 +23,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Bingo.urls')),
+    path('Api/', include('Api.urls')),
 ]
 
 

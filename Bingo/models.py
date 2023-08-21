@@ -131,7 +131,7 @@ class Customers(models.Model):
     id = models.BigAutoField(primary_key=True)
     first_name = models.TextField(null=False)
     last_name = models.TextField(null=False)
-    address = models.TextField(null=False)
+    address = models.TextField(null=False , max_length=255)
     phone_no = models.CharField(max_length=15, unique=True, null=False)
     credit_card_no = models.CharField(max_length=16, unique=False, null=False)
     user_id = models.ForeignKey('Users', on_delete=models.CASCADE, unique=True)
@@ -155,6 +155,7 @@ class Customers(models.Model):
     # Method to retrieve a masked version of the customer's credit card number leaving only the last 4 digits
     @property
     def masked_credit_card(self):
+        logging.info(f"Masking credit card number {self.credit_card_no}")
         return '*' * (len(self.credit_card_no) - 4) + self.credit_card_no[-4:]
     
 
@@ -165,11 +166,13 @@ class Customers(models.Model):
 
 def validate_password_strength(value):
     if len(value) < 6 or not re.match(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$", value):
+        logging.error("Password should be at least 6 characters, contain an uppercase and lowercase letter, a digit, and a special character.")
         raise validators.ValidationError("Password should be at least 6 characters, contain an uppercase and lowercase letter, a digit, and a special character.")
 
 
 def validate_nine_digits(value):
     if len(str(value)) != 9:
+        logging.error("ID must be exactly 9 digits long.")
         raise validators.ValidationError("ID must be exactly 9 digits long.")
 
 
@@ -181,6 +184,7 @@ class Users(models.Model):
     email = models.EmailField(max_length=255, unique=True, null=False)
     user_role = models.ForeignKey('User_Roles', on_delete=models.CASCADE)
     image = models.ImageField(upload_to='users/', default='/users/defaultuser.png', null=True)
+    is_active = models.BooleanField(default=True)
 
     def __str__(self):
         return self.username
@@ -197,6 +201,12 @@ class Users(models.Model):
         except:
             url = ''
         return url
+    
+    @property
+    def is_authenticated(self):
+        print('property called successfully')
+        return True
+    
     
 
 # User_Roles model represents different user roles ()
@@ -236,32 +246,53 @@ class Airport(models.Model):
 
 
 
-class DAL:
-    # def get_by_id(self, model, id):
-    #     try:
-    #         return model.objects.get(id=id)
-    #     except model.DoesNotExist:
-    #         logger.error(f"Error fetching all isinstance of {model.__name__}")
-    #         return None
+# class DAL:
+ 
+# CRUD functions 
 
-    def get_by_id(self, model, identifier):
+
+
+
+                    # this is working old get_by_id but made a new one to be more flexible to fetch also from field names ! 
+    # def get_by_id(self, model, identifier):
+    #     try:
+    #         # Dynamically get the name of the primary key field for the model
+    #         primary_key_name = model._meta.pk.name
+            
+    #         # Create a dictionary to hold the query parameters
+    #         query = {primary_key_name: identifier}
+            
+    #         return model.objects.get(**query)
+    #     except model.DoesNotExist:
+    #         logger.error(f"Error fetching instance of {model.__name__} with {primary_key_name}={identifier}")
+    #         return None
+class DAL:
+
+    
+    def get_by_id(self, model, value, field_name=None):
         try:
-            # Dynamically get the name of the primary key field for the model
-            primary_key_name = model._meta.pk.name
-            
+            # If field_name isn't provided, default to the primary key field
+            if not field_name:
+                field_name = model._meta.pk.name
+
             # Create a dictionary to hold the query parameters
-            query = {primary_key_name: identifier}
-            
+            query = {field_name: value}
+
             return model.objects.get(**query)
         except model.DoesNotExist:
-            logger.error(f"Error fetching instance of {model.__name__} with {primary_key_name}={identifier}")
+            logger.error(f"Error fetching instance of {model.__name__} with {field_name}={value}")
             return None
+
+
 
     def get_all(self, model):
         try:
             return model.objects.all()
         except Exception as e:
+            logger.error(f"Error fetching all instances of {model.__name__}. Error: {str(e)}")
             return None
+
+
 
     def add(self, model, **kwargs):
         try:
@@ -275,11 +306,7 @@ class DAL:
             logger.error(f"Error creating {model.__name__} instance with kwargs: {kwargs}. Error: {str(e)}")
             return None
 
-   
-
-
-
-
+  
 
     def update(self, instance, **kwargs):
         try:
@@ -301,107 +328,140 @@ class DAL:
     def remove(self, instance):
         try:
             instance.delete()
+            logger.info(f"Successfully deleted instance {instance}")
+            return True
         except Exception as e:
+            logger.error(f"Error deleting instance {instance}. Error: {str(e)}")
             return None
 
     # Additional methods
-    def getAirlinesByCountry(self, country_id):
+
+
+    def get_airlines_by_country(self, country_id):
         try:
             return Airline_Companies.objects.filter(country_id=country_id)
         except Exception as e:
+            logger.error(f"Error fetching airlines for country ID {country_id}. Error: {str(e)}")
             return None
 
-    def getFlightsByOriginCountryId(self, country_id):
+    def get_flights_by_origin_country_id(self, country_id):
         try:
-            return Flights.objects.filter(origin_id=country_id)
+            return Flights.objects.filter(origin_country_id=country_id)
         except Exception as e:
+            logger.error(f"Error fetching flights with origin country ID {country_id}. Error: {str(e)}")
             return None
 
-    def getFlightsByDestinationCountryId(self, country_id):
+    def get_flights_by_destination_country_id(self, country_id):
         try:
-            return Flights.objects.filter(destination_id=country_id)
+            return Flights.objects.filter(destination_country_id=country_id)
         except Exception as e:
+            logger.error(f"Error fetching flights with destination country ID {country_id}. Error: {str(e)}")
             return None
 
-    def getFlightsByDepartureDate(self, date):
+    def get_flights_by_departure_date(self, date):
         try:
-            return Flights.objects.filter(departure_date=date)
+            return Flights.objects.filter(departure_time=date)
         except Exception as e:
+            logger.error(f"Error fetching flights with departure date {date}. Error: {str(e)}")
             return None
 
-    def getFlightsByLandingDate(self, date):
+    def get_flights_by_landing_date(self, date):
         try:
-            return Flights.objects.filter(landing_date=date)
+            return Flights.objects.filter(landing_time=date)
         except Exception as e:
+            logger.error(f"Error fetching flights with landing date {date}. Error: {str(e)}")
             return None
 
-    def getFlightsByCustomer(self, customer):
+    def get_flights_by_customer(self, customer_id):
         try:
-            return Flights.objects.filter(customer=customer)
+            return Flights.objects.filter(customer_id=customer_id)
         except Exception as e:
+            logger.error(f"Error fetching flights for customer ID {customer_id}. Error: {str(e)}")
             return None
-    
-    def get_airline_by_username(self, _username):
+
+    def get_airline_by_username(self, username):
         try:
-            return Airline_Companies.objects.get(user__username=_username)
+            return Airline_Companies.objects.get(user__username=username)
         except Airline_Companies.DoesNotExist:
+            logger.error(f"Airline company not found with username {username}")
             return None
 
-    def get_customer_by_username(self, _username):
+    def get_customer_by_username(self, username):
         try:
-            return Customers.objects.get(user__username=_username)
+            return Customers.objects.get(user__username=username)
         except Customers.DoesNotExist:
+            logger.error(f"Customer not found with username {username}")
             return None
 
-    def get_user_by_username(self, _username):
+    def get_user_by_username(self, username):
         try:
-            return Users.objects.get(username=_username)
+            return Users.objects.get(username=username)
         except Users.DoesNotExist:
+            logger.error(f"User not found with username {username}")
             return None
 
-    def get_flights_by_parameters(self, _origin_country_id, _destination_country_id, _date):
+    def get_flights_by_parameters(self, origin_country_id, destination_country_id, date):
         try:
             return Flights.objects.filter(
-                origin_id=_origin_country_id,
-                destination_id=_destination_country_id,
-                departure_date=_date
+                origin_country_id=origin_country_id,
+                destination_country_id=destination_country_id,
+                departure_time=date
             )
         except Exception as e:
+            logger.error(f"Error fetching flights with origin country ID {origin_country_id}, destination country ID {destination_country_id}, and departure date {date}. Error: {str(e)}")
             return None
 
-    def get_flights_by_airline_id(self, _airline_id):
+    # def get_flights_by_airline_id(self, airline_id):
+    #     try:
+    #         return Flights.objects.filter(airline_company_id=airline_id)
+    #     except Exception as e:
+    #         logger.error(f"Error fetching flights for airline ID {airline_id}. Error: {str(e)}")
+    #         return None
+
+    def get_flights_by_airline_id(self, airline_id):
         try:
-            return Flights.objects.filter(airline_company_id=_airline_id)
+            return Flights.objects.filter(airline_company_id=airline_id)
         except Exception as e:
+            logger.error(f"Error fetching flights for airline ID {airline_id}. Error: {str(e)}")
             return None
 
-    def get_arrival_flights(self, _country_id):
+    def get_arrival_flights(self, country_id):
         try:
             next_12_hours = timezone.now() + timedelta(hours=12)
             return Flights.objects.filter(
-                destination_id=_country_id,
-                landing_date__lte=next_12_hours
+                destination_country_id=country_id,
+                landing_time__lte=next_12_hours
             )
         except Exception as e:
+            logger.error(f"Error fetching arrival flights for country ID {country_id} within the next 12 hours. Error: {str(e)}")
             return None
 
-
-    def get_departure_flights(self, _country_id):
+    def get_departure_flights(self, country_id):
         try:
             next_12_hours = timezone.now() + timedelta(hours=12)
             return Flights.objects.filter(
-                origin_id=_country_id,
-                departure_date__lte=next_12_hours
+                origin_country_id=country_id,
+                departure_time__lte=next_12_hours
             )
         except Exception as e:
+            logger.error(f"Error fetching departure flights for country ID {country_id} within the next 12 hours. Error: {str(e)}")
             return None
 
-    def get_tickets_by_customer(self, _customer_id):
+    def get_tickets_by_customer(self, customer_id):
         try:
-            return Tickets.objects.filter(customer_id=_customer_id)
+            return Tickets.objects.filter(customer_id=customer_id)
         except Exception as e:
+            logger.error(f"Error fetching tickets for customer ID {customer_id}. Error: {str(e)}")
             return None
+
         
+
+
+
+
+
+
+# Authentication methods 
 
     def authenticate_user(self, username, password):
         try:

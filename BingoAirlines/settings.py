@@ -42,17 +42,39 @@ INSTALLED_APPS = [
     'Bingo.apps.BingoConfig',
     'debug_toolbar',
     'rest_framework',
+    'Api.apps.ApiConfig',
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',  
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'Bingo.middleware.custom_auth_middleware.CustomAuthMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware'
+    
 ]
+
+# MIDDLEWARE = [
+#     'django.middleware.security.SecurityMiddleware',
+#     'django.contrib.sessions.middleware.SessionMiddleware',
+#     'django.middleware.common.CommonMiddleware',
+#     'django.middleware.csrf.CsrfViewMiddleware',
+#     'Bingo.middleware.custom_auth_middleware.CustomAuthMiddleware',
+#     'django.contrib.auth.middleware.AuthenticationMiddleware',  
+#     'django.contrib.messages.middleware.MessageMiddleware',
+#     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+#     'debug_toolbar.middleware.DebugToolbarMiddleware'
+    
+# ]
+
+
+
 
 ROOT_URLCONF = 'BingoAirlines.urls'
 
@@ -92,31 +114,81 @@ DATABASES = {
     }
 }
 
+# old loggin working but made a few changes to show the log levelname in console as well as in the file
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'console': {
+#             'class': 'logging.StreamHandler',
+#         },
+#         'file': {
+#             'level': 'DEBUG',
+#             'class': 'logging.FileHandler',
+#             'filename': 'logs/logger.log', 
+#         },
+#     },
+#     'root': {
+#         'handlers': ['console', 'file'],
+#         'level': 'DEBUG',
+#     },
+#     'loggers': {
+#         'PIL': {
+#             'handlers': ['console', 'file'],
+#             'level': 'WARNING',  # Only log warnings and above for PIL
+#         },
+#     },
+# }
+
 
 LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
+        'version': 1,
+        'disable_existing_loggers': False,
+        'formatters': {
+            'verbose': {
+                'format': '{levelname} - {asctime} - {module} - {message}',
+                'style': '{',
+            },
+            'simple': {
+                'format': '{levelname} - {message}',
+                'style': '{',
+            },
         },
-        'file': {
+        'handlers': {
+            'console': {
+                'class': 'logging.StreamHandler',
+                'formatter': 'verbose',
+            },
+            'file': {
+                'level': 'DEBUG',
+                'class': 'logging.FileHandler',
+                'filename': 'logs/logger.log',
+                'formatter': 'verbose',
+            },
+        },
+        'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': False, 
+        },
+        'Bingo': {
+            'handlers': ['console', 'file'],
             'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': 'logs/logger.log', 
+            'propagate': False,
         },
-    },
-    'root': {
-        'handlers': ['console', 'file'],
-        'level': 'DEBUG',
-    },
-    'loggers': {
         'PIL': {
             'handlers': ['console', 'file'],
-            'level': 'WARNING',  # Only log warnings and above for PIL
+            'level': 'WARNING',
         },
-    },
+        'root': {
+        'handlers': ['console', 'file'],
+        'level': 'DEBUG',
+        },
+    }
 }
+
+
 
 
 # Password validation

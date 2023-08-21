@@ -11,42 +11,100 @@
         }
     </style>
 </head>
-    <body>
-        {% if user and user.username %}
-            <h1>Welcome {{ user.username }}!</h1>
-            <h1>{{ user.user_role }}</h1>
-            <img src="{{ user.image.url }}" alt="{{ user.username }}'s image" class="user-image"> <br><br>
+<body>
 
-            <a href="{% url 'search_form' %}">Search Flights</a><br><br>
+    {% if user and user.username %}
+        <h1>Welcome {{ user.username }}!</h1>
+        <h1>{{ user.user_role }}</h1>
+        <img src="{{ user.image.url }}" alt="{{ user.username }}'s image" class="user-image"> <br><br>
 
-            <!-- Base functions available for all roles -->
-            <h2>Basic Functions:</h2>
-            <ul>
-                <li><a href="{% url 'get_all_flights_view' %}">View All Flights</a></li>
-                <li><a href="{% url 'get_all_airlines_view' %}">View All Airlines</a></li>
-                <li><a href="{% url 'get_all_countries_view' %}">View All Countries</a></li>
-            
-            </ul>
+        <!-- Base views (Available for all logged in users) -->
+        <!-- Base views (Available for all logged in users) -->
+        <h2>General Views:</h2>
+        <a href="{% url 'get_all_flights' %}">All Flights</a><br>
+        <a href="{% url 'get_all_countries' %}">All Countries</a><br>
+        <a href="{% url 'get_all_airlines' %}">All Airlines</a><br>
 
-            {% if user.user_role == "Customer" %}
-                <!-- Customer specific functions -->
-                <h2>Customer Functions:</h2>
-                <ul>
-                    <li><a href="{% url 'get_my_tickets_view' %}">View My Tickets</a></li>
-                    <li><a href="{% url 'update_customer_view' %}">Update My Information</a></li>
-                    <!-- More customer functions can be added here -->
-                </ul>
-            {% endif %}
+        <!-- Form for retrieving a flight by ID -->
+        <form data-action="{% url 'get_all_flights' %}" onsubmit="return handleSubmit(event, 'flight_id')">
+            <label for="flight_id">Enter Flight ID:</label>
+            <input type="number" id="flight_id" name="flight_id" required>
+            <input type="submit" value="Get Flight by ID">
+        </form>
+        
+        
+        
 
-            <form action="{% url 'logout' %}" method="post">
-                {% csrf_token %}
-                <button type="submit">Logout</button>
-            </form>
-        {% else %}
-            <h1>Welcome, Guest!</h1>
-            <a href="{% url 'search_form' %}">Search Flights</a><br><br>
-            <p>Please <a href="{% url 'login' %}">login</a> to access your account.</p>
+        <!-- Form for retrieving an airline by IATA code -->
+        <form data-action="{% url 'get_all_airlines' %}" onsubmit="return handleSubmit(event, 'iata_code')">
+            <label for="iata_code">Enter Airline IATA Code:</label>
+            <input type="text" id="iata_code" name="iata_code" required>
+            <input type="submit" value="Get Airline by IATA Code">
+        </form>
+        
+
+        
+
+        <!-- Form for retrieving a country by code -->
+        <form data-action="{% url 'get_all_countries' %}" onsubmit="return handleSubmit(event, 'country_code')">
+            <label for="country_code">Enter Country Code:</label>
+            <input type="text" id="country_code" name="country_code" required>
+            <input type="submit" value="Get Country by Code">
+        </form>
+    
+
+        <!-- Customer views -->
+        {% if user.user_role.role_name == "Customer" %}
+            <h2>Customer Views:</h2>
+            <a href="{% url 'update_customer' %}">Update Profile</a><br>
+            <a href="{% url 'add_ticket' %}">Add Ticket</a><br>
+            <a href="{% url 'get_my_tickets' %}">My Tickets</a><br>
+            <br>
         {% endif %}
-    </body>
+
+        <!-- Administrator views -->
+        {% if user.user_role.role_name == "Administrator" %}
+            <h2>Administrator Views:</h2>
+            <a href="{% url 'get_all_customers' %}">All Customers</a><br>
+            <a href="{% url 'add_airline' %}">Add Airline</a><br>
+            <a href="{% url 'add_customer' %}">Add Customer</a><br>
+            <a href="{% url 'add_administrator' %}">Add Administrator</a><br>
+            <br>
+        {% endif %}
+
+        <!-- Airline Company views -->
+        {% if user.user_role.role_name == "Airline Company" %}
+            <h2>Airline Company Views:</h2>
+            <a href="{% url 'get_my_flights' %}">My Flights</a><br>
+            <a href="{% url 'add_flight' %}">Add Flight</a><br>
+            <br>
+        {% endif %}
+
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    {% else %}
+        <h1>Welcome, Guest!</h1>
+        <a href="{% url 'search_form' %}">Search Flights</a><br><br>
+        <p>Please <a href="{% url 'login' %}">login</a> to access your account.</p>
+    {% endif %}
+
+
+    <script>
+        function handleSubmit(event, inputId) {
+            event.preventDefault();
+            const form = event.target;
+            const input = document.getElementById(inputId);
+            const baseUrl = form.getAttribute('data-action');
+            const targetUrl = `${baseUrl}${input.value}/`;
+            window.location.href = targetUrl;
+            return false;
+        }
+        </script>
+
+
+</body>
+
 
 </html>
