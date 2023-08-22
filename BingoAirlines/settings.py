@@ -60,20 +60,6 @@ MIDDLEWARE = [
     
 ]
 
-# MIDDLEWARE = [
-#     'django.middleware.security.SecurityMiddleware',
-#     'django.contrib.sessions.middleware.SessionMiddleware',
-#     'django.middleware.common.CommonMiddleware',
-#     'django.middleware.csrf.CsrfViewMiddleware',
-#     'Bingo.middleware.custom_auth_middleware.CustomAuthMiddleware',
-#     'django.contrib.auth.middleware.AuthenticationMiddleware',  
-#     'django.contrib.messages.middleware.MessageMiddleware',
-#     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-#     'debug_toolbar.middleware.DebugToolbarMiddleware'
-    
-# ]
-
-
 
 
 ROOT_URLCONF = 'BingoAirlines.urls'
@@ -113,32 +99,6 @@ DATABASES = {
         'PASSWORD': 'SaP#12345',
     }
 }
-
-# old loggin working but made a few changes to show the log levelname in console as well as in the file
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'handlers': {
-#         'console': {
-#             'class': 'logging.StreamHandler',
-#         },
-#         'file': {
-#             'level': 'DEBUG',
-#             'class': 'logging.FileHandler',
-#             'filename': 'logs/logger.log', 
-#         },
-#     },
-#     'root': {
-#         'handlers': ['console', 'file'],
-#         'level': 'DEBUG',
-#     },
-#     'loggers': {
-#         'PIL': {
-#             'handlers': ['console', 'file'],
-#             'level': 'WARNING',  # Only log warnings and above for PIL
-#         },
-#     },
-# }
 
 
 LOGGING = {
@@ -233,7 +193,6 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/Bingo/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'Bingo/static/images/')
 
-# MEDIA_ROOT = os.path.join(BASE_DIR ,'static/images/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

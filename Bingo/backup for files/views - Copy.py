@@ -248,33 +248,6 @@ def login_view(request):
     return render(request, 'login.html', {'error': error_message})
 
 
-# def login_view(request):
-#     login_token = request.session.get('login_token')
-#     if login_token and login_token.get('user_id'):
-#         user_id = login_token['user_id']
-#         user = Users.objects.get(id=user_id)
-
-#         logging.info(f"User {user.username} tried to access the login page while already logged in.")
-#         return redirect('home')
-
-#     error_message = None
-#     if request.method == "POST":
-#         username = request.POST['username']
-#         password = request.POST['password']
-        
-#         facade = AnonymousFacade()
-#         # facade = AnonymousFacade(request)
-        
-#         try:
-#             login_token = facade.login(request, username, password)
-#             request.session['login_token'] = {'user_id': login_token.user_id, 'user_role': login_token.user_role} # Store login_token in session
-#             logging.info(f"Welcome {username} Successfully logged in as {login_token.user_role}")
-#             return redirect('home')
-#         except ValidationError as e:
-#             error_message = str(e)
-#             logger.error(f"Login error: {error_message}")
-
-#     return render(request, 'login.html', {'error': error_message})
 
 
 @login_required

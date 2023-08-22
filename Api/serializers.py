@@ -4,6 +4,8 @@ from Bingo.models import (
     Customers, Users, User_Roles, Administrators, Airport
 )
 
+
+
 class UserRolesSerializer(serializers.ModelSerializer):
     class Meta:
         model = User_Roles

@@ -15,10 +15,10 @@
 
     {% if user and user.username %}
         <h1>Welcome {{ user.username }}!</h1>
+        <a href="{% url 'search_form' %}">Search Flights</a><br><br>
         <h1>{{ user.user_role }}</h1>
         <img src="{{ user.image.url }}" alt="{{ user.username }}'s image" class="user-image"> <br><br>
 
-        <!-- Base views (Available for all logged in users) -->
         <!-- Base views (Available for all logged in users) -->
         <h2>General Views:</h2>
         <a href="{% url 'get_all_flights' %}">All Flights</a><br>

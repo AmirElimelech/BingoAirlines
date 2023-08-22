@@ -1,82 +1,116 @@
-from ..models import DAL, Users, Airline_Companies, Flights, Countries , User_Roles , Administrators , Customers
-from django.core.exceptions import ValidationError
-from django.contrib.auth.hashers import make_password
-import re
-import logging
-from django.views.decorators.csrf import csrf_exempt
-
-
+import re , logging
 from ..utils.login_token import LoginToken
+from django.core.exceptions import ValidationError
+from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.hashers import make_password
+from ..models import DAL, Users, Airline_Companies, Flights, Countries , User_Roles , Administrators , Customers
 
-import logging
+
 
 
 logger = logging.getLogger(__name__)
 
 
 
-
-# class FacadeBase:
-#     def __init__(self, request, login_token: LoginToken=None):
-#         self.request = request
-#         self.login_token = LoginToken.validate_login_token(request)
-#         self.user = self.request.user
-
-
-
-# class FacadeBase:   # WOOOOOOOOOOOOOORKING !!! ROLL BACK TO IT IF NEEDED ! 
-#     def __init__(self, request=None, login_token: LoginToken=None):  # Add the login_token parameter with type annotation
-#         self.DAL = DAL()
-#         self.request = request
-#         self.login_token = login_token
-
-# class FacadeBase:
-#     def __init__(self, request, login_token: LoginToken):
-#         self.DAL = DAL()
-#         self.request = request
-#         self.login_token = login_token
-
 class FacadeBase:
     def __init__(self, request, login_token: LoginToken=None):   
+
+        """
+        Initialize the FacadeBase object with request, a DAL instance, and an optional login token.
+        """
+
         self.DAL = DAL()
         self.request = request
         self.login_token = login_token
         
 
     def get_all_flights(self):
+
+        """
+        Retrieve all flight records from the database.
+        """
+
         logging.info("getting All Flights")
         return self.DAL.get_all(Flights)
         
 
+
     def get_flight_by_id(self, id):
+
+        """
+        Retrieve a specific flight record from the database based on its ID.
+        """
+         
         logging.info("getting Flight by id")
         return self.DAL.get_by_id(Flights, id)
 
+
+
     def get_flights_by_parameters(self, origin_country_id, destination_country_id, date):
+
+        """
+        Retrieve flight records from the database based on origin country, destination country, and date.
+        """
+
         logging.info("getting Flights by parameters")
         return self.DAL.get_flights_by_parameters(origin_country_id, destination_country_id, date)
 
+
+
     def get_all_airlines(self):
+
+        """
+        Retrieve all airline company records from the database.
+        """
+
         logging.info("getting All Airlines")
         return self.DAL.get_all(Airline_Companies)
 
+
+
     def get_airline_by_id(self, iata_code):
+
+        """
+        Retrieve a specific airline record from the database based on its IATA code.
+        """
+
         logging.info("getting Airline by id")
         return self.DAL.get_by_id(Airline_Companies, iata_code)
 
 
+
     def get_all_countries(self):
+
+        """
+        Retrieve all country records from the database.
+        """
+
         logging.info("getting All Countries")
         return self.DAL.get_all(Countries)
 
+
+
     def get_country_by_id(self, country_code):
+
+        """
+        Retrieve a specific country record from the database based on its country code.
+        """
+
         logging.info("getting Country by id")
         # return self.DAL.get_by_id(Countries, country_code)
         return self.DAL.get_by_id(Countries, country_code, field_name='country_code')
 
 
+
+
     @csrf_exempt
     def create_new_user(self, user):
+
+        """
+        Validate user input data and create a new user record in the database.
+        Ensures the ID, username, email, password, user role, and phone number are valid before creating the user.
+        """
+
         try:
             # ID Validity
             if not re.match(r"^\d{9}$", user.get("id")):

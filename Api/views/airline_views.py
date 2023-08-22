@@ -1,21 +1,33 @@
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from rest_framework import status
+
+import  logging
+from rest_framework import    status
 from ..serializers import FlightsSerializer
-from Bingo.facades.airline_facade import AirlineFacade
-from django.views.decorators.csrf import csrf_exempt
+from rest_framework.response import   Response
+from Api.permissions     import    IsAirlineCompany
+from rest_framework.decorators     import     api_view
+from Bingo.facades.airline_facade  import    AirlineFacade
 from Bingo.decorators import check_permissions , login_required
-from Api.permissions import IsAirlineCompany
-import logging
+
+
+
+
 
 
 logger = logging.getLogger(__name__)
+
+
+
 
 
 @login_required
 @api_view(['GET'])
 @check_permissions(IsAirlineCompany)
 def get_my_flights_api(request):
+
+    """
+    Get all flights of the logged in Airline Company .
+    """
+
     logger.info(f"In get_my_flights_api with user: {request.user}")
     
     try:
@@ -38,6 +50,11 @@ def get_my_flights_api(request):
 @api_view(['POST'])
 @check_permissions(IsAirlineCompany)
 def add_flight_api(request):
+
+    """
+    Add a flight to the database of the logged in Airline Company .
+    """
+
     try:
         # Extract login token or user details from the request
         login_token_dict = request.session.get('login_token')
@@ -56,6 +73,11 @@ def add_flight_api(request):
 @api_view(['PUT'])
 @check_permissions(IsAirlineCompany)
 def update_flight_api(request):
+
+    """
+    Update a flight in the database of the logged in Airline Company .
+    """
+
     try:
         # Extract login token or user details from the request
         login_token_dict = request.session.get('login_token')
@@ -68,10 +90,17 @@ def update_flight_api(request):
         logger.error(f"Error updating flight: {str(e)}")
         return Response({"error": "Error updating flight."}, status=status.HTTP_400_BAD_REQUEST)
 
+
+
 @login_required
 @api_view(['DELETE'])
 @check_permissions(IsAirlineCompany)
 def remove_flight_api(request, flight_id):
+
+    """
+    Remove a flight from the database of the logged in Airline Company .
+    """
+
     try:
         login_token_dict = request.session.get('login_token')
         facade = AirlineFacade(request, request.user , login_token_dict)

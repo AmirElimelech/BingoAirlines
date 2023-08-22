@@ -1,9 +1,9 @@
+
+import logging
 import urllib.request
 from django.core.files import File
-import logging
 from tempfile import NamedTemporaryFile
-import os
-from django.conf import settings
+
 
 
 
@@ -12,6 +12,21 @@ logger = logging.getLogger(__name__)
 
 
 def download_airline_logo(iata_code):
+
+    """
+    Download and save the logo for a given airline specified by its IATA code.
+    
+    The function tries to fetch the airline logo from a specific URL. If the download is 
+    successful, it saves the logo associated with the airline's database record. If there's 
+    an error during the download, the logo is set to a default image.
+
+    according to django method of saving if the iata.png exists it will be added with same name beginning of the IATA code
+    and the rest will be filled with random characters to avoid overwriting the existing logo .
+    
+    Parameters:
+    - iata_code (str): The IATA code of the airline.
+    """
+
     from Bingo.models import Airline_Companies
     logger.info(f"Download function called for iata_code: {iata_code}")
     
