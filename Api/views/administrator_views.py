@@ -6,6 +6,7 @@ from Api.permissions import IsAdministrator
 from rest_framework.response import   Response
 from rest_framework.decorators   import  api_view
 from Bingo.utils.login_token     import    LoginToken
+
 from Bingo.decorators import check_permissions , login_required
 from Bingo.facades.administrator_facade import      AdministratorFacade
 from ..serializers import AirlineCompaniesSerializer, CustomersSerializer, AdministratorsSerializer
@@ -43,17 +44,23 @@ def get_login_token_from_request(request):
 def get_all_customers_api(request):
 
     """
-    Get all customers from the database
+    Get all customers from the database.
     """
     try:
         facade = AdministratorFacade(request, request.user, get_login_token_from_request(request))
         customers = facade.get_all_customers()
+        
         serializer = CustomersSerializer(customers, many=True)
+        if not customers:
+            logger.info("No customers found in the database.")
+            return Response({"message": "No customers found in the database."}, status=status.HTTP_200_OK)
+        
         logger.info("Successfully fetched all customers.")
         return Response(serializer.data, status=status.HTTP_200_OK)
     except Exception as e:
         logger.error(f"Error fetching customers: {str(e)}")
-        return Response({"error": "Error fetching customers."}, status=status.HTTP_400_BAD_REQUEST)
+        return Response({"error": "Error fetching customers."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 
 
 
@@ -93,9 +100,6 @@ def add_airline_api(request):
         serializer = AirlineCompaniesSerializer(airline)
 
 
-        facade = AdministratorFacade(request, request.user, get_login_token_from_request(request))
-        airline = facade.add_airline(request.data)
-        serializer = AirlineCompaniesSerializer(airline)
         logger.info("Successfully added airline.")
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     except Exception as e:

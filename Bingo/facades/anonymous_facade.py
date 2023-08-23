@@ -48,12 +48,18 @@
 #         return self.DAL.add(Customers, **customer)
 
 
-import logging
+import logging 
 from .facade_base import FacadeBase
 from ..models import Customers, Users 
+from django.core.mail import send_mail
 from ..utils.login_token import LoginToken
 from django.core.exceptions import ValidationError
 from django.contrib.auth.hashers import check_password
+
+
+
+
+
 
 logger = logging.getLogger(__name__)
 
@@ -96,15 +102,41 @@ class AnonymousFacade(FacadeBase):
             logging.error(f"Unexpected error during login: {e}")
             raise
 
-    def add_customer(self, customer):
+
+
+
+    def add_customer(self, customer): 
         """
         Add a new customer after validating the provided information.
         """
+        new_customer = None
         try:
             user_instance = self.DAL.get_by_id(Users, customer["user_id"])
             customer["user_id"] = user_instance
-            return self.DAL.add(Customers, **customer)
+            new_customer = self.DAL.add(Customers, **customer)  # Assuming this method returns the newly created customer object
+
+            # Personalized welcome email
+            subject = 'Welcome to BingoAirlines!'
+            message = f"Hello {new_customer.first_name},\n\n"  # Use first_name from the new customer object
+            message += "Thank you for registering with BingoAirlines! We are thrilled to have you on board. "
+            message += "Our team is dedicated to providing you with the best experience. If you have any questions or need assistance, feel free to reach out to us.\n\n"
+            message += "Warm Regards,\nThe BingoAirlines Team"
+
+            send_mail(
+                subject,
+                message,
+                'Bingo Airlines Info <BingoAirlines.info@gmail.com>',
+                [customer["user_id"].email],
+                fail_silently=False,
+            )
+
+            # Log the successful email send action
+            logging.info(f"Successfully sent email to {new_customer.first_name}, email sent to {customer['user_id'].email}")
+
 
         except Exception as e:
             logging.error(f"Error adding customer: {e}")
             raise
+
+        return new_customer
+

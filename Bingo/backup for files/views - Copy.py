@@ -193,7 +193,7 @@ def user_registration_view(request):
 
                 except Exception as e:  # General exception handling
                     logger.error(f"Error during registration: {str(e)}")
-                    user_form.add_error(None, "An error occurred during registration. Please try againnnnn.")
+                    user_form.add_error(None, "An error occurred during registration. Please try again.")
 
             else:
                 logger.error("User Form errors: %s", user_form.errors.as_text())

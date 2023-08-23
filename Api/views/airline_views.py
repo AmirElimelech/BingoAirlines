@@ -19,31 +19,58 @@ logger = logging.getLogger(__name__)
 
 
 
+# @login_required
+# @api_view(['GET'])
+# @check_permissions(IsAirlineCompany)
+# def get_my_flights_api(request):
+
+#     """
+#     Get all flights of the logged in Airline Company .
+#     """
+
+#     logger.info(f"In get_my_flights_api with user: {request.user}")
+    
+#     try:
+#         login_token = request.session.get('login_token')  # Extract the login token from the session
+#         facade = AirlineFacade(request, request.user, login_token)  # Initialize the facade with the login token
+#         flights = facade.get_my_flights()
+
+#         if not flights:
+#             return Response({"erorr": "Could not fetch flights for the user."}, status=status.HTTP_400_BAD_REQUEST)
+        
+#         serializer = FlightsSerializer(flights, many=True)
+#         logger.info("Successfully fetched airline's flights.")
+#         return Response(serializer.data, status=status.HTTP_200_OK)
+#     except Exception as e:
+#         logger.error(f"Error fetching flights: {str(e)}")
+#         return Response({"error": "Error fetching flights."}, status=status.HTTP_400_BAD_REQUEST)
+
+
 @login_required
 @api_view(['GET'])
 @check_permissions(IsAirlineCompany)
 def get_my_flights_api(request):
 
     """
-    Get all flights of the logged in Airline Company .
+    Get all flights of the logged in Airline Company.
     """
-
-    logger.info(f"In get_my_flights_api with user: {request.user}")
     
     try:
         login_token = request.session.get('login_token')  # Extract the login token from the session
         facade = AirlineFacade(request, request.user, login_token)  # Initialize the facade with the login token
         flights = facade.get_my_flights()
 
-        if not flights:
-            return Response({"erorr": "Could not fetch flights for the user."}, status=status.HTTP_400_BAD_REQUEST)
-        
         serializer = FlightsSerializer(flights, many=True)
-        logger.info("Successfully fetched airline's flights.")
+        if not flights:
+            logger.info(f"No flights found for airline company {request.user}.")
+            return Response({"message": f"No flights found for airline company {request.user}."}, status=status.HTTP_200_OK)
+        
+        logger.info(f"Successfully fetched flights for airline company {request.user}.")
         return Response(serializer.data, status=status.HTTP_200_OK)
     except Exception as e:
         logger.error(f"Error fetching flights: {str(e)}")
-        return Response({"error": "Error fetching flights."}, status=status.HTTP_400_BAD_REQUEST)
+        return Response({"error": "Error fetching flights."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 
 
 @login_required

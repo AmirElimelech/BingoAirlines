@@ -1,19 +1,20 @@
 # IMPORTS ________________________________________________________________
 
-import re
+
+import re 
 import logging
 from PIL import Image
 from io import BytesIO
 from django.db import models
 from datetime import timedelta
-from django.utils import timezone
-from django.core import validators
-from datetime import datetime, timedelta
+from django.db.models   import Q
+from django.utils import  timezone
+from django.core import   validators
 from Bingo.utils.scheduler import scheduler
 from .utils.tasks import download_airline_logo
 from django.core.files.base  import  ContentFile
-from django.core.validators import MinValueValidator
-from django.contrib.auth.hashers import check_password
+from django.core.validators import MinValueValidator, MaxValueValidator
+
 
 
 
@@ -22,6 +23,12 @@ from django.contrib.auth.hashers import check_password
 
 logger = logging.getLogger(__name__)
 
+
+# Choices ________________________________________________________________
+
+CURRENCY_CHOICES = [('USD', 'USD'), ('EUR', 'EUR'), ('GBP', 'GBP'), ('ILS', 'ILS')]
+CABIN_CHOICES = [('ECONOMY', 'Economy'), ('BUSINESS', 'Business'), ('FIRST', 'First Class')]
+TERMINAL_CHOICES = [('1', '1'), ('2', '2'), ('3', '3')]
 
 
 
@@ -166,12 +173,53 @@ class Flights(models.Model):
     departure_time = models.DateTimeField(null=False)
     landing_time = models.DateTimeField(null=False)
     remaining_tickets = models.IntegerField(null=False, validators=[MinValueValidator(0)])
-
+    
     def __str__(self):
         return f'Flight {self.id}'
     
     class Meta:
         verbose_name_plural = "Flights"
+
+
+
+# class Flights(models.Model):
+#     id = models.BigAutoField(primary_key=True)
+#     airline_company_id = models.ForeignKey('Airline_Companies', to_field='iata_code', on_delete=models.CASCADE)
+#     origin_country_id = models.ForeignKey('Countries', on_delete=models.CASCADE, related_name='origin_flights')
+#     destination_country_id = models.ForeignKey('Countries', on_delete=models.CASCADE, related_name='destination_flights')
+#     departure_time = models.DateTimeField(null=False)
+#     landing_time = models.DateTimeField(null=False)
+#     remaining_tickets = models.IntegerField(null=False, validators=[MinValueValidator(0)])
+#     flight_number = models.CharField(max_length=10)  
+#     departure_terminal = models.CharField(max_length=1, choices=TERMINAL_CHOICES, null=True, blank=True)
+#     arrival_terminal = models.CharField(max_length=1, choices=TERMINAL_CHOICES, null=True, blank=True)
+#     itinerary = models.ForeignKey('Itinerary', on_delete=models.CASCADE, null=True, blank=True)
+
+#     def __str__(self):
+#         return f'Flight {self.id}'
+    
+#     class Meta:
+#         verbose_name_plural = "Flights"
+
+
+# class Itinerary(models.Model):
+#     customer = models.ForeignKey('Customers', on_delete=models.CASCADE)
+#     booking_date = models.DateTimeField(auto_now_add=True)  # The date when the customer made the booking.
+#     total_price = models.DecimalField(max_digits=9, decimal_places=2)  # Total price for the whole itinerary.
+
+#     # Journey details
+#     currency = models.CharField(max_length=4, choices=CURRENCY_CHOICES, default='USD')
+#     cabin = models.CharField(max_length=10, choices=CABIN_CHOICES, default='ECONOMY')
+#     adult_traveler_count = models.PositiveIntegerField(validators=[MinValueValidator(1), MaxValueValidator(9)], default=1)
+#     child_traveler_count = models.PositiveIntegerField(validators=[MinValueValidator(0), MaxValueValidator(9)], default=0)
+
+#     # Any other relevant fields that pertain to the overall journey.
+
+#     def __str__(self):
+#         return f'Itinerary {self.id} for Customer {self.customer_id}'
+
+#     class Meta:
+#         verbose_name_plural = "Itineraries"
 
 
 
@@ -223,28 +271,50 @@ class Airline_Companies(models.Model):
 
 
 
+    # def save(self, *args, **kwargs): 
+    #     # logo save logic
+    #     if self.logo and self.logo.name != f'airline_logos/{self.iata_code}.png':
+
+
+            
+    #         pil_image = Image.open(self.logo)
+    #         pil_image = pil_image.resize((100, 100), Image.ANTIALIAS)
+    #         buffer = BytesIO()
+    #         pil_image.save(buffer, format='PNG')
+    #         filename = f'{self.iata_code}.png'
+    #         self.logo.save(filename, ContentFile(buffer.getvalue()), save=False)
+            
+    #     # If no logo is provided and the IATA code is given, schedule a download task
+    #     elif self.iata_code and not self.logo:
+    #         logger.info(f"Logo not provided for {self.iata_code}. Scheduling download task...")
+    #         start_time = datetime.now() + timedelta(seconds=5)
+    #         scheduler.add_job(download_airline_logo, 'date', run_date=start_time, args=[self.iata_code])
+            
+    #     super(Airline_Companies, self).save(*args, **kwargs)
+
     def save(self, *args, **kwargs): 
-        # logo save logic
-        if self.logo and self.logo.name != f'airline_logos/{self.iata_code}.png':
-
-
+        try:
+            # logo save logic
+            if self.logo and self.logo.name != f'airline_logos/{self.iata_code}.png':
+                pil_image = Image.open(self.logo)
+                pil_image = pil_image.resize((100, 100), Image.ANTIALIAS)
+                buffer = BytesIO()
+                pil_image.save(buffer, format='PNG')
+                filename = f'{self.iata_code}.png'
+                self.logo.save(filename, ContentFile(buffer.getvalue()), save=False)
             
-            pil_image = Image.open(self.logo)
-            pil_image = pil_image.resize((100, 100), Image.ANTIALIAS)
-            buffer = BytesIO()
-            pil_image.save(buffer, format='PNG')
-            filename = f'{self.iata_code}.png'
-            self.logo.save(filename, ContentFile(buffer.getvalue()), save=False)
-            
-        # If no logo is provided and the IATA code is given, schedule a download task
-        elif self.iata_code and not self.logo:
-            logger.info(f"Logo not provided for {self.iata_code}. Scheduling download task...")
-            start_time = datetime.now() + timedelta(seconds=5)
-            scheduler.add_job(download_airline_logo, 'date', run_date=start_time, args=[self.iata_code])
-            
-        super(Airline_Companies, self).save(*args, **kwargs)
+            # First, save the Airline_Companies record to the database
+            super(Airline_Companies, self).save(*args, **kwargs)
 
-  
+            # After saving, if no logo is provided and the IATA code is given, schedule a download task
+            if self.iata_code and not self.logo:
+                logger.info(f"Logo not provided for {self.iata_code}. Scheduling download task...")
+                scheduler.add_job(download_airline_logo, args=[self.iata_code])
+
+        except Exception as e:
+            logger.error(f"An error occurred while saving the Airline_Companies model: {e}")
+
+    
     
 
             
@@ -425,6 +495,31 @@ class DAL:
         except Exception as e:
             logger.error(f"Error fetching flights for customer ID {customer_id}. Error: {str(e)}")
             return None
+        
+        
+
+    # def get_flights_by_customer(self, customer_id):
+    #     """
+    #     Get all flights for a given customer ID
+    #     """
+    #     try:
+    #         # Fetch all itineraries for the customer
+    #         itineraries = Itinerary.objects.filter(customer_id=customer_id)
+
+    #         # Fetch all tickets that are part of these itineraries
+    #         tickets = Tickets.objects.filter(itinerary__in=itineraries)
+
+    #         # Extract flight IDs from the tickets
+    #         flight_ids = [ticket.flight_id.id for ticket in tickets]
+
+    #         # Fetch all flights using the extracted flight IDs
+    #         flights = Flights.objects.filter(id__in=flight_ids)
+
+    #         return flights
+    #     except Exception as e:
+    #         logger.error(f"Error fetching flights for customer ID {customer_id}. Error: {str(e)}")
+    #         return None
+
 
 
 
@@ -468,25 +563,64 @@ class DAL:
             logger.error(f"User not found with username {username}")
             return None
 
+    # #v1
+    # # this function is uselles since i'm goin to be using my own search flight function based on Amadeus API
 
-    # this function is uselles since i'm goin to be using my own search flight function based on Amadeus API
+    # def get_flights_by_parameters(self, origin_country_id, destination_country_id, date):
 
-    def get_flights_by_parameters(self, origin_country_id, destination_country_id, date):
+    #     """
+    #     Get all flights with a given origin country ID, destination country ID, and departure date
+    #     """
 
-        """
-        Get all flights with a given origin country ID, destination country ID, and departure date
-        """
+    #     try:
+    #         return Flights.objects.filter(
+    #             origin_country_id=origin_country_id,
+    #             destination_country_id=destination_country_id,
+    #             departure_time=date
+    #         )
+    #     except Exception as e:
+    #         logger.error(f"Error fetching flights with origin country ID {origin_country_id}, destination country ID {destination_country_id}, and departure date {date}. Error: {str(e)}")
+    #         return None
 
-        try:
-            return Flights.objects.filter(
-                origin_country_id=origin_country_id,
-                destination_country_id=destination_country_id,
-                departure_time=date
+
+
+    #V2
+
+    def get_flights_by_parameters(self, parameters):
+        # Extracting parameters
+        origin_location_code = parameters.get('origin_location_code')
+        destination_location_code = parameters.get('destination_location_code')
+        departure_date = parameters.get('departure_date')
+        return_date = parameters.get('return_date', None)
+        
+        # Building the query for departure flights
+        departure_query = Q(
+            origin_country__country_code=origin_location_code, 
+            destination_country__country_code=destination_location_code,
+            departure_time__date=departure_date
+        )
+        
+        if return_date:
+            # Building the query for return flights
+            return_query = Q(
+                origin_country__country_code=destination_location_code, 
+                destination_country__country_code=origin_location_code,
+                departure_time__date=return_date
             )
-        except Exception as e:
-            logger.error(f"Error fetching flights with origin country ID {origin_country_id}, destination country ID {destination_country_id}, and departure date {date}. Error: {str(e)}")
-            return None
-
+            # Combining both departure and return flight queries
+            combined_query = departure_query | return_query
+        else:
+            combined_query = departure_query
+        
+        # Querying the database
+        flights = Flights.objects.filter(combined_query).values(
+            'origin_country_id__country_code',
+            'destination_country_id__country_code',
+            'departure_time',
+            'landing_time'
+        )
+        
+        return flights
 
 
 
@@ -519,7 +653,7 @@ class DAL:
         except Exception as e:
             logger.error(f"Error fetching arrival flights for country ID {country_id} within the next 12 hours. Error: {str(e)}")
             return None
-        
+
 
 
     def get_departure_flights(self, country_id):

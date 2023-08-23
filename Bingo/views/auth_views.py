@@ -174,10 +174,12 @@ def user_registration_view(request):
                             airline_data = {
 
                                 
-                                'user_id': user_instance,
+                                # 'user_id': user_instance, here it's working only with API add airline 
+                                'user_id': user_instance.id,
                                 'iata_code': entity_form.cleaned_data.get("iata_code"),
                                 'name': entity_form.cleaned_data.get("name"),
-                                'country_id': entity_form.cleaned_data.get("country_id"),
+                                # 'country_id': entity_form.cleaned_data.get("country_id"), here it's working only with API add airline 
+                                'country_id': entity_form.cleaned_data.get("country_id").id,
                                 'logo': entity_form.cleaned_data.get("logo"),
                             }
                             admin_facade = AdministratorFacade(request, user_instance , login_token)
@@ -189,7 +191,8 @@ def user_registration_view(request):
                             admin_data = {
                             
                                 
-                                'user_id': user_instance,
+                                # 'user_id': user_instance,
+                                'user_id': user_instance.id,
                                 'first_name': entity_form.cleaned_data.get("first_name"),
                                 'last_name': entity_form.cleaned_data.get("last_name"),
                             }
@@ -202,7 +205,7 @@ def user_registration_view(request):
 
                 except Exception as e:  # General exception handling
                     logger.error(f"Error during registration: {str(e)}")
-                    user_form.add_error(None, "An error occurred during registration. Please try againnnnn.")
+                    user_form.add_error(None, "An error occurred during registration. Please try again.")
 
             else:
                 logger.error("User Form errors: %s", user_form.errors.as_text())

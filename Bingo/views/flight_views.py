@@ -155,172 +155,190 @@ def search_form(request):
     except Exception as e:
         logger.error(f"Error while rendering search form: {str(e)}")
         # Optionally, return a response indicating an error occurred, for example:
-        return render(request, 'error_page.html', {'error_message': 'Error rendering search form.'})
+        # return render(request, 'error_page.html', {'error_message': 'Error rendering search form.'}) << i need to finish this as well ! 
+
 
 
 
 # def handle_search_form_submission(request):
-#     form = SearchForm(request.POST)
 
-#     logger.info(f"Form data: {request.POST}")
+#     """
+#     Handle the form submission for searching flight tickets.
 
-#     if form.is_valid():
-    
-#         logger.info("Form is valid.")
-#         num_adults = form.cleaned_data['numAdults']
-#         num_children = form.cleaned_data['numChildren']
-#         cabin_type = form.cleaned_data['cabinType']
-#         currency_code = form.cleaned_data['currencyCode']
-#         origin_code = get_iata_code(form.cleaned_data['originLocationCode'])
-#         destination_code = get_iata_code(form.cleaned_data['destinationLocationCode'])
-#         departure_date1 = form.cleaned_data['departureDate1']
-#         flight_type = form.cleaned_data['flightType']
-#         departure_date2 = form.cleaned_data['departureDate2'] if flight_type == 'Return' else None
-        
-#         travelers = [{"id": str(i+1), "travelerType": "ADULT"} for i in range(num_adults)]
-#         if num_children > 0:
-#             travelers.extend([{"id": str(i+1+num_adults), "travelerType": "CHILD"} for i in range(num_children)])
+#     This function processes the submitted search form data to look for available flights.
+#     It validates the form data, constructs the appropriate search query, and then fetches 
+#     flight offers based on the criteria provided in the form. The results are then 
+#     transformed into a more concise format and rendered as needed .
 
-#         data = {
-#             "currencyCode": currency_code,
-#             "originDestinations": [
-#                 {
-#                     "id": "1",
-#                     "originLocationCode": origin_code,
-#                     "destinationLocationCode": destination_code,
-#                     "departureDateTimeRange": {
-#                         "date": departure_date1.isoformat()
-#                     }
-#                 }
-#             ],
-#             "travelers": travelers,
-#             "sources": ["GDS"],
-#             "searchCriteria": {
-#                 "flightFilters": {
-#                     "cabinRestrictions": [
-#                         {
-#                             "cabin": cabin_type,
-#                             "coverage": "MOST_SEGMENTS",
-#                             "originDestinationIds": [
-#                                 "1"
-#                             ]
+#     If the form is not valid, it returns an error. If there's an exception during the 
+#     process of fetching or handling the flight data, it logs the error and returns an 
+#     appropriate error message.
+
+
+#     """
+
+#     try:
+#         form = SearchForm(request.POST)
+
+#         logger.info(f"Form data: {request.POST}")
+
+#         if form.is_valid():
+#             logger.info("Form is valid.")
+#             num_adults = form.cleaned_data['numAdults']
+#             num_children = form.cleaned_data['numChildren']
+#             cabin_type = form.cleaned_data['cabinType']
+#             currency_code = form.cleaned_data['currencyCode']
+#             origin_code = get_iata_code(form.cleaned_data['originLocationCode'])
+#             destination_code = get_iata_code(form.cleaned_data['destinationLocationCode'])
+#             departure_date1 = form.cleaned_data['departureDate1']
+#             flight_type = form.cleaned_data['flightType']
+#             departure_date2 = form.cleaned_data['departureDate2'] if flight_type == 'Return' else None
+
+#             travelers = [{"id": str(i+1), "travelerType": "ADULT"} for i in range(num_adults)]
+#             if num_children > 0:
+#                 travelers.extend([{"id": str(i+1+num_adults), "travelerType": "CHILD"} for i in range(num_children)])
+
+#             data = {
+#                 "currencyCode": currency_code,
+#                 "originDestinations": [
+#                     {
+#                         "id": "1",
+#                         "originLocationCode": origin_code,
+#                         "destinationLocationCode": destination_code,
+#                         "departureDateTimeRange": {
+#                             "date": departure_date1.isoformat()
 #                         }
-#                     ]
-#                 }
-#             }
-#         }
-
-#         if flight_type == 'Return':
-#             data['originDestinations'].append(
-#                 {
-#                     "id": "2",
-#                     "originLocationCode": destination_code,
-#                     "destinationLocationCode": origin_code,
-#                     "departureDateTimeRange": {
-#                         "date": departure_date2.isoformat()
+#                     }
+#                 ],
+#                 "travelers": travelers,
+#                 "sources": ["GDS"],
+#                 "searchCriteria": {
+#                     "flightFilters": {
+#                         "cabinRestrictions": [
+#                             {
+#                                 "cabin": cabin_type,
+#                                 "coverage": "MOST_SEGMENTS",
+#                                 "originDestinationIds": [
+#                                     "1"
+#                                 ]
+#                             }
+#                         ]
 #                     }
 #                 }
-#             )
-            
-#         try:
-#             response_data = get_ticket_data(data)
-#             modified_response = {
-#                 "meta": {
-#                     "count": response_data["meta"]["count"]
-#                 },
-#                 "data": []
 #             }
 
-#             for flight_offer in response_data["data"]:
-#                 modified_flight_offer = {
-#                     "type": flight_offer["type"],
-#                     "id": flight_offer["id"],
-#                     "lastTicketingDate": flight_offer["lastTicketingDate"],
-#                     "lastTicketingDateTime": flight_offer["lastTicketingDateTime"],
-#                     "numberOfBookableSeats": flight_offer["numberOfBookableSeats"],
-#                     "itineraries": [],
-#                     "price": {
-#                         "currency": currency_code,
-#                         "total": flight_offer["price"]["total"],
-#                         "grandTotal": flight_offer["price"]["grandTotal"]
+#             if flight_type == 'Return':
+#                 data['originDestinations'].append(
+#                     {
+#                         "id": "2",
+#                         "originLocationCode": destination_code,
+#                         "destinationLocationCode": origin_code,
+#                         "departureDateTimeRange": {
+#                             "date": departure_date2.isoformat()
+#                         }
+#                     }
+#                 )
+
+#             try:
+#                 response_data = get_ticket_data(data)
+#                 modified_response = {
+#                     "meta": {
+#                         "count": response_data["meta"]["count"]
 #                     },
-#                     "travelerPricings": []
+#                     "data": []
 #                 }
 
-#                 for itinerary in flight_offer["itineraries"]:
-#                     modified_itinerary = {
-#                         "duration": itinerary["duration"],
-#                         "segments": []
-#                     }
-
-#                     for segment in itinerary["segments"]:
-#                         modified_segment = {
-#                             "departure": segment["departure"],
-#                             "arrival": segment["arrival"],
-#                             "carrierCode": segment["carrierCode"],
-#                             "number": segment["number"],
-#                             "duration": segment["duration"]
-#                         }
-
-#                         modified_itinerary["segments"].append(modified_segment)
-
-#                     modified_flight_offer["itineraries"].append(modified_itinerary)
-
-#                 for traveler_pricing in flight_offer["travelerPricings"]:
-#                     modified_traveler_pricing = {
-#                         "travelerId": traveler_pricing["travelerId"],
-#                         "fareOption": traveler_pricing["fareOption"],
-#                         "travelerType": traveler_pricing["travelerType"],
+#                 for flight_offer in response_data["data"]:
+#                     modified_flight_offer = {
+#                         "type": flight_offer["type"],
+#                         "id": flight_offer["id"],
+#                         "lastTicketingDate": flight_offer["lastTicketingDate"],
+#                         "lastTicketingDateTime": flight_offer["lastTicketingDateTime"],
+#                         "numberOfBookableSeats": flight_offer["numberOfBookableSeats"],
+#                         "itineraries": [],
 #                         "price": {
 #                             "currency": currency_code,
-#                             "total": traveler_pricing["price"]["total"]
+#                             "total": flight_offer["price"]["total"],
+#                             "grandTotal": flight_offer["price"]["grandTotal"]
 #                         },
-#                         "fareDetailsBySegment": []
+#                         "travelerPricings": []
 #                     }
 
-#                     for fare_detail in traveler_pricing["fareDetailsBySegment"]:
-#                         modified_fare_detail = {
-#                             "cabin": fare_detail["cabin"]
+#                     for itinerary in flight_offer["itineraries"]:
+#                         modified_itinerary = {
+#                             "duration": itinerary["duration"],
+#                             "segments": []
 #                         }
 
-#                         modified_traveler_pricing["fareDetailsBySegment"].append(modified_fare_detail)
+#                         for segment in itinerary["segments"]:
+#                             modified_segment = {
+#                                 "departure": segment["departure"],
+#                                 "arrival": segment["arrival"],
+#                                 "carrierCode": segment["carrierCode"],
+#                                 "number": segment["number"],
+#                                 "duration": segment["duration"]
+#                             }
 
-#                     modified_flight_offer["travelerPricings"].append(modified_traveler_pricing)
+#                             modified_itinerary["segments"].append(modified_segment)
 
-#                 modified_response["data"].append(modified_flight_offer)
+#                         modified_flight_offer["itineraries"].append(modified_itinerary)
 
-#             # return JsonResponse(modified_response, safe=False) # this is the original line used to Json response TEMP TEMP TEMP 
-#             logging.info("Rendering search results...")
-#             return render(request, 'Bingo/search_results.html', {'data': modified_response['data']})
-#             # return render(request, 'Bingo/search_results.html', {'flights': modified_response['data']})
+#                     for traveler_pricing in flight_offer["travelerPricings"]:
+#                         modified_traveler_pricing = {
+#                             "travelerId": traveler_pricing["travelerId"],
+#                             "fareOption": traveler_pricing["fareOption"],
+#                             "travelerType": traveler_pricing["travelerType"],
+#                             "price": {
+#                                 "currency": currency_code,
+#                                 "total": traveler_pricing["price"]["total"]
+#                             },
+#                             "fareDetailsBySegment": []
+#                         }
+
+#                         for fare_detail in traveler_pricing["fareDetailsBySegment"]:
+#                             modified_fare_detail = {
+#                                 "cabin": fare_detail["cabin"]
+#                             }
+
+#                             modified_traveler_pricing["fareDetailsBySegment"].append(modified_fare_detail)
+
+#                         modified_flight_offer["travelerPricings"].append(modified_traveler_pricing)
+
+#                     modified_response["data"].append(modified_flight_offer)
+
+#                 logging.info("Rendering search results...")
+#                 return render(request, 'Bingo/search_results.html', {'data': modified_response['data']})
+
+#             except Exception as e:
+#                 traceback.print_exc()
+#                 logger.error(f'Error processing request: {e}')
+#                 return HttpResponseBadRequest('Error processing request')
+
+#         else:
+#             logger.warning("Form is not valid.")
+#             logger.warning(f"Form errors: {form.errors}")
+#             return HttpResponseBadRequest('Invalid form submission')
+
+#     except Exception as e:
+#         logger.error(f"Unexpected error occurred: {str(e)}")
+#         return HttpResponseBadRequest('An unexpected error occurred')
 
 
-#         except Exception as e:
-#             traceback.print_exc() # needed if you want to print the the trackback information on an exception
-#             logger.error(f'Error processing request: {e}')
-#             return HttpResponseBadRequest('Error processing request')
-#     else:  
-#         logger.warning("Form is not valid.")
-#         logger.warning(f"Form errors: {form.errors}")
 
-#     return HttpResponseBadRequest('Invalid form submission')
-
+from django.http import JsonResponse, HttpResponseBadRequest
 
 def handle_search_form_submission(request):
-
     """
     Handle the form submission for searching flight tickets.
 
     This function processes the submitted search form data to look for available flights.
     It validates the form data, constructs the appropriate search query, and then fetches 
     flight offers based on the criteria provided in the form. The results are then 
-    transformed into a more concise format and rendered as needed .
+    transformed into a more concise format and rendered as a JSON response.
 
     If the form is not valid, it returns an error. If there's an exception during the 
     process of fetching or handling the flight data, it logs the error and returns an 
     appropriate error message.
-
-
     """
 
     try:
@@ -452,8 +470,14 @@ def handle_search_form_submission(request):
 
                     modified_response["data"].append(modified_flight_offer)
 
-                logging.info("Rendering search results...")
-                return render(request, 'Bingo/search_results.html', {'data': modified_response['data']})
+                # Create a dictionary containing the payload and the results
+                json_response = {
+                    "payload": data,
+                    "results": modified_response
+                }
+
+                # Return the dictionary as a JSON response
+                return JsonResponse(json_response)
 
             except Exception as e:
                 traceback.print_exc()
@@ -468,20 +492,6 @@ def handle_search_form_submission(request):
     except Exception as e:
         logger.error(f"Unexpected error occurred: {str(e)}")
         return HttpResponseBadRequest('An unexpected error occurred')
-
-
-
-
-# @csrf_exempt
-# def flight_search(request):
-#     if request.method == "POST":
-#         try:
-#             json_data = json.loads(request.body)
-#             ret_data = get_ticket_data(json_data)
-#             return JsonResponse(ret_data, safe=False)
-#         except Exception as e:
-#             return JsonResponse({"error": str(e)}, status=400)
-        
 
 
 

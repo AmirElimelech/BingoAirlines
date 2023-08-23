@@ -56,8 +56,6 @@
         <!-- Customer views -->
         {% if user.user_role.role_name == "Customer" %}
             <h2>Customer Views:</h2>
-            <a href="{% url 'update_customer' %}">Update Profile</a><br>
-            <a href="{% url 'add_ticket' %}">Add Ticket</a><br>
             <a href="{% url 'get_my_tickets' %}">My Tickets</a><br>
             <br>
         {% endif %}
@@ -66,9 +64,6 @@
         {% if user.user_role.role_name == "Administrator" %}
             <h2>Administrator Views:</h2>
             <a href="{% url 'get_all_customers' %}">All Customers</a><br>
-            <a href="{% url 'add_airline' %}">Add Airline</a><br>
-            <a href="{% url 'add_customer' %}">Add Customer</a><br>
-            <a href="{% url 'add_administrator' %}">Add Administrator</a><br>
             <br>
         {% endif %}
 
@@ -76,7 +71,6 @@
         {% if user.user_role.role_name == "Airline Company" %}
             <h2>Airline Company Views:</h2>
             <a href="{% url 'get_my_flights' %}">My Flights</a><br>
-            <a href="{% url 'add_flight' %}">Add Flight</a><br>
             <br>
         {% endif %}
 

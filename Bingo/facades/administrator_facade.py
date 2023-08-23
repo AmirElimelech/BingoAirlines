@@ -119,95 +119,7 @@ class AdministratorFacade(FacadeBase):
 
 
 
-
-    # def add_airline(self, airline):
-
-    #     self.validate_admin_privileges()
-    #     logging.info("Admin previleges validated")
-
-    #     iata_code = airline['iata_code'].upper()
-    #     if iata_code != airline['iata_code']:
-    #         logging.error("IATA code must be in uppercase.")
-    #         raise ValidationError("IATA code must be in uppercase.")
-        
-    #     if Airline_Companies.objects.filter(name=airline['name']).exists():
-    #         logging.error("Airline with this name already exists.")
-    #         raise ValidationError("Airline with this name already exists.")
-        
-    #     if Airline_Companies.objects.filter(iata_code=airline['iata_code']).exists():
-    #         logging.error("Airline with this IATA code already exists.")
-    #         raise ValidationError("Airline with this IATA code already exists.")
-        
-
-        
-    #     # Retrieve the Countries instance using the provided ID
-    #     country_instance = Countries.objects.get(pk=airline['country_id'])
-
-    #     # Replace the 'country_id' in the airline dictionary with the actual instance
-    #     airline['country_id'] = country_instance
-
-    #     # Retrieve the Users instance using the provided ID
-    #     user_instance = Users.objects.get(id=airline['user_id'])
-
-    #     # Replace the 'user_id' in the airline dictionary with the actual instance
-    #     airline['user_id'] = user_instance
-        
-    #     logging.info("Adding Airline successfully")
-    #     return self.DAL.add(Airline_Companies, **airline)
-
-
-    # def add_airline(self, airline): # corrected version with DAL methods instead of ORM
-    #     """
-    #     Add a new airline company after validating the provided information and ensuring
-    #     that the user has administrative privileges.
-
-    #     :param airline: A dictionary containing the details of the airline company to be added.
-    #     :return: The newly created Airline_Companies instance.
-    #     """
-    #     try:
-    #         # Validate if the user has administrative privileges
-    #         self.validate_admin_privileges()
-    #         logging.info("Admin privileges validated")
-
-    #         # Validate the format of the IATA code
-    #         iata_code = airline['iata_code'].upper()
-    #         if iata_code != airline['iata_code']:
-    #             logging.error("IATA code must be in uppercase.")
-    #             raise ValidationError("IATA code must be in uppercase.")
-
-    #         # Check for existing airlines with the same name or IATA code
-    #         if self.DAL.get_by_id(Airline_Companies, airline['name'], 'name'):
-    #             logging.error("Airline with this name already exists.")
-    #             raise ValidationError("Airline with this name already exists.")
-    #         if self.DAL.get_by_id(Airline_Companies, airline['iata_code'], 'iata_code'):
-    #             logging.error("Airline with this IATA code already exists.")
-    #             raise ValidationError("Airline with this IATA code already exists.")
-
-    #         # Retrieve the Countries instance using the DAL
-    #         country_instance = self.DAL.get_by_id(Countries, airline['country_id'])
-    #         if not country_instance:
-    #             raise ValidationError("Invalid country ID.")
-    #         # Replace the 'country_id' in the airline dictionary with the actual instance
-    #         airline['country_id'] = country_instance
-
-    #         # Retrieve the Users instance using the DAL
-    #         user_instance = self.DAL.get_by_id(Users, airline['user_id'])
-    #         if not user_instance:
-    #             raise ValidationError("Invalid user ID.")
-    #         # Replace the 'user_id' in the airline dictionary with the actual instance
-    #         airline['user_id'] = user_instance
-
-    #         logging.info("Adding Airline successfully")
-    #         return self.DAL.add(Airline_Companies, **airline)
-
-    #     except ValidationError as ve:
-    #         logging.error(f"Validation error while adding airline: {ve}")
-    #         raise ve
-    #     except Exception as e:
-    #         logging.error(f"Unexpected error while adding airline: {e}")
-    #         raise
-
-
+    
     def add_airline(self, airline):
         """
         Add a new airline to the database after validating the provided information and ensuring
@@ -258,6 +170,58 @@ class AdministratorFacade(FacadeBase):
         except Exception as e:
             logging.error(f"Unexpected error while adding airline: {e}")
             raise
+
+    # def add_airline(self, airline):
+    #     """
+    #     Add a new airline to the database after validating the provided information and ensuring
+    #     that the user has administrative privileges.
+        
+    #     :param airline: A dictionary containing the details of the airline to be added.
+    #     :return: The newly created airline instance.
+    #     """
+    #     try:
+    #         # Validate administrative privileges
+    #         self.validate_admin_privileges()
+    #         logging.info("Admin privileges validated")
+
+    #         # Convert the IATA code to uppercase and validate
+    #         iata_code = airline['iata_code'].upper()
+    #         if iata_code != airline['iata_code']:
+    #             logging.error("IATA code must be in uppercase.")
+    #             raise ValidationError("IATA code must be in uppercase.")
+            
+    #         # Check for existing airlines with the same name
+    #         if Airline_Companies.objects.filter(name=airline['name']).exists():
+    #             logging.error("Airline with this name already exists.")
+    #             raise ValidationError("Airline with this name already exists.")
+            
+    #         # Check for existing airlines with the same IATA code
+    #         if Airline_Companies.objects.filter(iata_code=airline['iata_code']).exists():
+    #             logging.error("Airline with this IATA code already exists.")
+    #             raise ValidationError("Airline with this IATA code already exists.")
+            
+    #         # Fetch the associated country instance for the provided ID and assign its ID to airline['country_id']
+    #         country_instance = Countries.objects.get(pk=airline['country_id'])
+    #         airline['country_id'] = country_instance.id
+            
+    #         # Fetch the associated user instance for the provided ID and assign its ID to airline['user_id']
+    #         user_instance = Users.objects.get(id=airline['user_id'])
+    #         airline['user_id'] = user_instance.id
+            
+    #         # Finally, add the airline to the database
+    #         logging.info("Adding Airline successfully")
+    #         return self.DAL.add(Airline_Companies, **airline)
+
+    #     # Handle specific validation errors
+    #     except ValidationError as ve:
+    #         logging.error(f"Validation error while adding airline: {ve}")
+    #         raise ve
+        
+    #     # Handle all other unexpected errors
+    #     except Exception as e:
+    #         logging.error(f"Unexpected error while adding airline: {e}")
+    #         raise
+
 
     
 

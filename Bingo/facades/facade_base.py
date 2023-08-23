@@ -45,15 +45,27 @@ class FacadeBase:
         return self.DAL.get_by_id(Flights, id)
 
 
+    # V1
+    # def get_flights_by_parameters(self, origin_country_id, destination_country_id, date):
 
-    def get_flights_by_parameters(self, origin_country_id, destination_country_id, date):
+    #     """
+    #     Retrieve flight records from the database based on origin country, destination country, and date.
+    #     """
 
-        """
-        Retrieve flight records from the database based on origin country, destination country, and date.
-        """
+    #     logging.info("getting Flights by parameters")
+    #     return self.DAL.get_flights_by_parameters(origin_country_id, destination_country_id, date)
 
-        logging.info("getting Flights by parameters")
-        return self.DAL.get_flights_by_parameters(origin_country_id, destination_country_id, date)
+
+    #V2
+    def get_flights_by_parameters(self, data):
+        logging.info("Processing search criteria...")
+
+        try:
+            flights = self.DAL.get_flights_by_parameters(data)
+            return flights
+        except Exception as e:
+            logging.error(f"Error processing flight search criteria: {e}")
+            return None
 
 
 

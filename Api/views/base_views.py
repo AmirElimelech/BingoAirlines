@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from Bingo.facades.facade_base import FacadeBase
 from django.views.decorators.csrf import csrf_exempt
+from rest_framework.pagination import PageNumberPagination
 from ..serializers import FlightsSerializer, AirlineCompaniesSerializer, CountriesSerializer
 
 
@@ -16,17 +17,23 @@ logger = logging.getLogger(__name__)
 @csrf_exempt
 @api_view(['GET'])
 def get_all_flights_api(request):
-        
+
     """
-    Get all flights from the database
+    Get all flights from the database with pagination
     """
 
     try:
         facade = FacadeBase(request)
         flights = facade.get_all_flights()
-        serializer = FlightsSerializer(flights, many=True)
+
+        # Use DRF's paginator
+        paginator = PageNumberPagination()
+        paginated_flights = paginator.paginate_queryset(flights, request)
+        
+        serializer = FlightsSerializer(paginated_flights, many=True)
+
         logger.info("Successfully fetched all flights.")
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        return paginator.get_paginated_response(serializer.data)
     except Exception as e:
         logger.error(f"Error fetching all flights: {str(e)}")
         return Response({"error": "Error fetching flights."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
@@ -63,15 +70,21 @@ def get_flight_by_id_api(request, id):
 def get_all_airlines_api(request):
 
     """
-    Get all airlines from the database
+    Get all airlines from the database with pagination
     """
 
     try:
         facade = FacadeBase(request)
         airlines = facade.get_all_airlines()
-        serializer = AirlineCompaniesSerializer(airlines, many=True)
+
+        # Use DRF's paginator
+        paginator = PageNumberPagination()
+        paginated_airlines = paginator.paginate_queryset(airlines, request)
+        
+        serializer = AirlineCompaniesSerializer(paginated_airlines, many=True)
+
         logger.info("Successfully fetched all airlines.")
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        return paginator.get_paginated_response(serializer.data)
     except Exception as e:
         logger.error(f"Error fetching all airlines: {str(e)}")
         return Response({"error": "Error fetching airlines."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
@@ -119,15 +132,21 @@ def get_airline_by_id_api(request, iata_code):
 def get_all_countries_api(request):
 
     """
-    Get all countries from the database
+    Get all countries from the database with pagination
     """
 
     try:
         facade = FacadeBase(request)
         countries = facade.get_all_countries()
-        serializer = CountriesSerializer(countries, many=True)
+
+        # Use DRF's paginator
+        paginator = PageNumberPagination()
+        paginated_countries = paginator.paginate_queryset(countries, request)
+        
+        serializer = CountriesSerializer(paginated_countries, many=True)
+
         logger.info("Successfully fetched all countries.")
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        return paginator.get_paginated_response(serializer.data)
     except Exception as e:
         logger.error(f"Error fetching all countries: {str(e)}")
         return Response({"error": "Error fetching countries."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

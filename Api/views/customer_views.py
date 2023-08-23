@@ -91,19 +91,20 @@ def get_my_tickets_api(request):
     Get all tickets of the logged in customer.
     """
     
-    logger.info(f"In get_my_tickets_api with user: {request.user}")
     
     try:
         login_token = request.session.get('login_token')  # Extract the login token from the session
         facade = CustomerFacade(request, request.user, login_token)  # Initialize the facade with the login token
         tickets = facade.get_my_tickets()
 
-        if not tickets:
-            return Response({"error": "Could not fetch tickets for the user."}, status=status.HTTP_400_BAD_REQUEST)
-
         serializer = TicketsSerializer(tickets, many=True)
-        logger.info("Successfully fetched customer's tickets.")
+        if not tickets:
+            logger.info("No tickets found for the customer.")
+            return Response({"message": f"No tickets found for {request.user}"}, status=status.HTTP_200_OK)
+        
+        logger.info(f"Successfully fetched customer {request.user} tickets.")
         return Response(serializer.data, status=status.HTTP_200_OK)
     except Exception as e:
         logger.error(f"Error fetching tickets: {str(e)}")
         return Response({"error": "Error fetching tickets."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
