@@ -7,11 +7,13 @@ urlpatterns = [
     # Base views
     path('flights/', base_views.get_all_flights_api, name='get_all_flights'),
     path('flights/<int:id>/', base_views.get_flight_by_id_api, name='get_flight_by_id'),
+    path('flights/search/', base_views.get_flights_by_parameters_api, name='get_flights_by_parameters'),
     path('airlines/', base_views.get_all_airlines_api, name='get_all_airlines'),
     path('airlines/<str:iata_code>/', base_views.get_airline_by_id_api, name='get_airline_by_id'),
     path('countries/', base_views.get_all_countries_api, name='get_all_countries'),
     path('countries/<str:country_code>/', base_views.get_country_by_id_api, name='get_country_by_id'),
-
+    
+    
     # Customer views
     path('customer/update/', customer_views.update_customer_api, name='update_customer'),
     path('customer/tickets/add/', customer_views.add_ticket_api, name='add_ticket'),

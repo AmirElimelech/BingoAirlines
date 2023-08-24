@@ -33245,3 +33245,2062 @@ DEBUG - 2023-08-23 20:37:58,907 - base - Looking for jobs to run
 DEBUG - 2023-08-23 20:37:58,908 - base - No jobs; waiting until a job is added
 INFO - 2023-08-23 20:37:59,035 - autoreload - Watching for file changes with StatReloader
 INFO - 2023-08-23 20:37:59,085 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 21:02:06,996 - basehttp - "GET /admin/ HTTP/1.1" 200 12283
+INFO - 2023-08-23 22:10:33,353 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 22:10:33,354 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 22:10:33,354 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 22:10:33,408 - basehttp - "GET / HTTP/1.1" 200 2863
+INFO - 2023-08-23 22:10:33,454 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 22:10:33,454 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 22:10:33,455 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 22:10:33,517 - basehttp - "GET /Bingo/users/IMG-20230628-WA0065.jpg HTTP/1.1" 200 259862
+INFO - 2023-08-23 22:10:36,991 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 22:10:36,991 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 22:10:36,991 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 22:10:36,992 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 22:10:36,997 - auth_views - Successfully logged out
+INFO - 2023-08-23 22:10:36,998 - basehttp - "POST /logout/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:10:37,003 - custom_auth_middleware - No login token found in the session.
+INFO - 2023-08-23 22:10:37,013 - basehttp - "GET /login/ HTTP/1.1" 200 1728
+INFO - 2023-08-23 22:10:38,722 - custom_auth_middleware - No login token found in the session.
+ERROR - 2023-08-23 22:10:38,728 - models - User not found with username admin
+ERROR - 2023-08-23 22:10:38,728 - anonymous_facade - Validation error during login: ['User not found']
+ERROR - 2023-08-23 22:10:38,729 - auth_views - Login error: ['User not found']
+INFO - 2023-08-23 22:10:38,730 - basehttp - "POST /login/ HTTP/1.1" 200 1811
+INFO - 2023-08-23 22:10:48,150 - custom_auth_middleware - No login token found in the session.
+INFO - 2023-08-23 22:10:48,371 - auth_views - Welcome TheAdmin! Successfully logged in as administrator.
+INFO - 2023-08-23 22:10:48,379 - basehttp - "POST /login/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:10:48,389 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-23 22:10:48,389 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-23 22:10:48,390 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-23 22:10:48,393 - basehttp - "GET / HTTP/1.1" 200 2865
+INFO - 2023-08-23 22:10:48,413 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-23 22:10:48,413 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-23 22:10:48,414 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-23 22:10:48,416 - basehttp - "GET /Bingo/users/defaultuser.png HTTP/1.1" 200 3655
+DEBUG - 2023-08-23 22:23:18,549 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:23:18,560 - base - Scheduler started
+DEBUG - 2023-08-23 22:23:18,562 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:23:18,564 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 22:23:18,812 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-23 22:28:41,394 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:28:41,402 - base - Scheduler started
+DEBUG - 2023-08-23 22:28:41,404 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:28:41,404 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 22:28:41,608 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-23 22:30:47,639 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:30:47,644 - base - Scheduler started
+DEBUG - 2023-08-23 22:30:47,646 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:30:47,647 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 22:30:47,884 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-23 22:31:23,768 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:31:23,774 - base - Scheduler started
+DEBUG - 2023-08-23 22:31:23,776 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:31:23,776 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 22:31:23,981 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-23 22:33:37,528 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:33:37,534 - base - Scheduler started
+DEBUG - 2023-08-23 22:33:37,535 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:33:37,536 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-23 22:33:38,318 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:33:38,323 - base - Scheduler started
+DEBUG - 2023-08-23 22:33:38,325 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:33:38,325 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 22:33:38,450 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 22:33:38,504 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 22:33:40,483 - basehttp - "GET /admin/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:33:40,569 - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4185
+INFO - 2023-08-23 22:33:40,597 - basehttp - "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO - 2023-08-23 22:33:44,712 - basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:33:44,744 - basehttp - "GET /admin/ HTTP/1.1" 200 12283
+INFO - 2023-08-23 22:33:55,142 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\admin.py changed, reloading.
+DEBUG - 2023-08-23 22:33:55,957 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:33:55,963 - base - Scheduler started
+DEBUG - 2023-08-23 22:33:55,964 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:33:55,965 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 22:33:56,098 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 22:33:56,150 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 22:33:59,842 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\admin.py changed, reloading.
+DEBUG - 2023-08-23 22:34:00,671 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:34:00,676 - base - Scheduler started
+DEBUG - 2023-08-23 22:34:00,677 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:34:00,678 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 22:34:00,706 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 22:34:00,926 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 22:34:10,367 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\admin.py changed, reloading.
+DEBUG - 2023-08-23 22:34:11,166 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:34:11,172 - base - Scheduler started
+DEBUG - 2023-08-23 22:34:11,172 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:34:11,174 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 22:34:11,205 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 22:34:11,439 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 22:34:12,716 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\admin.py changed, reloading.
+DEBUG - 2023-08-23 22:34:13,477 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:34:13,481 - base - Scheduler started
+DEBUG - 2023-08-23 22:34:13,482 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:34:13,484 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 22:34:13,614 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 22:34:13,665 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 22:34:22,588 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\admin.py changed, reloading.
+DEBUG - 2023-08-23 22:34:23,417 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:34:23,422 - base - Scheduler started
+DEBUG - 2023-08-23 22:34:23,423 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:34:23,424 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 22:34:23,555 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 22:34:23,613 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 22:34:24,050 - basehttp - "GET /admin/ HTTP/1.1" 200 12716
+INFO - 2023-08-23 22:34:26,408 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 10183
+INFO - 2023-08-23 22:34:26,440 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:34:28,324 - basehttp - "GET /admin/Bingo/itinerary/add/ HTTP/1.1" 200 13068
+INFO - 2023-08-23 22:34:28,353 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:34:50,259 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 11939
+INFO - 2023-08-23 22:34:50,287 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:34:51,708 - basehttp - "GET /admin/Bingo/flights/8/change/ HTTP/1.1" 200 81741
+INFO - 2023-08-23 22:34:51,737 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:35:07,001 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11523
+INFO - 2023-08-23 22:35:07,029 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:35:09,706 - basehttp - "GET /admin/Bingo/tickets/6/change/ HTTP/1.1" 200 18892
+INFO - 2023-08-23 22:35:09,735 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:35:16,670 - basehttp - "GET /admin/Bingo/itinerary/add/?_to_field=id&_popup=1 HTTP/1.1" 200 6537
+INFO - 2023-08-23 22:35:16,706 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:35:30,810 - basehttp - "POST /admin/Bingo/itinerary/add/?_to_field=id&_popup=1 HTTP/1.1" 200 347
+INFO - 2023-08-23 22:35:30,884 - basehttp - "GET /static/admin/js/popup_response.js HTTP/1.1" 200 551
+INFO - 2023-08-23 22:35:33,503 - basehttp - "POST /admin/Bingo/tickets/6/change/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:35:33,532 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11726
+INFO - 2023-08-23 22:35:33,563 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:35:38,670 - basehttp - "GET /admin/Bingo/tickets/3/change/ HTTP/1.1" 200 18950
+INFO - 2023-08-23 22:35:38,697 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:35:53,383 - basehttp - "POST /admin/Bingo/tickets/3/change/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:35:53,433 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11726
+INFO - 2023-08-23 22:35:53,460 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:35:55,094 - basehttp - "GET /admin/Bingo/tickets/3/change/ HTTP/1.1" 200 18950
+INFO - 2023-08-23 22:35:55,124 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:35:58,754 - basehttp - "POST /admin/Bingo/tickets/3/change/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:35:58,778 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11726
+INFO - 2023-08-23 22:35:58,804 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:35:59,686 - basehttp - "GET /admin/Bingo/tickets/6/change/ HTTP/1.1" 200 18950
+INFO - 2023-08-23 22:35:59,709 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:02,360 - basehttp - "POST /admin/Bingo/tickets/6/change/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:36:02,384 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11726
+INFO - 2023-08-23 22:36:02,409 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:07,147 - basehttp - "GET /admin/Bingo/tickets/6/change/ HTTP/1.1" 200 18950
+INFO - 2023-08-23 22:36:07,175 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:11,178 - basehttp - "POST /admin/Bingo/tickets/6/change/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:36:11,204 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11726
+INFO - 2023-08-23 22:36:11,234 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:12,245 - basehttp - "GET /admin/Bingo/tickets/3/change/ HTTP/1.1" 200 18950
+INFO - 2023-08-23 22:36:12,272 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:14,277 - basehttp - "POST /admin/Bingo/tickets/3/change/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:36:14,300 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11726
+INFO - 2023-08-23 22:36:14,329 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:20,466 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 11358
+INFO - 2023-08-23 22:36:20,495 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:27,828 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13525
+INFO - 2023-08-23 22:36:27,848 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:29,854 - basehttp - "GET /admin/Bingo/customers/42/change/ HTTP/1.1" 200 62456
+INFO - 2023-08-23 22:36:29,879 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:31,921 - basehttp - "GET /admin/Bingo/customers/45/change/ HTTP/1.1" 200 62460
+INFO - 2023-08-23 22:36:31,949 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:47,507 - basehttp - "GET /admin/Bingo/users/ HTTP/1.1" 200 34538
+INFO - 2023-08-23 22:36:47,537 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:51,575 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11523
+INFO - 2023-08-23 22:36:51,600 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:53,461 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 11358
+INFO - 2023-08-23 22:36:53,485 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:36:55,842 - basehttp - "GET /admin/Bingo/itinerary/add/ HTTP/1.1" 200 13068
+INFO - 2023-08-23 22:36:55,864 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:03,562 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 11358
+INFO - 2023-08-23 22:37:03,588 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:06,883 - basehttp - "POST /admin/Bingo/itinerary/ HTTP/1.1" 200 10452
+INFO - 2023-08-23 22:37:08,325 - basehttp - "POST /admin/Bingo/itinerary/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:37:08,346 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 10322
+INFO - 2023-08-23 22:37:08,369 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:11,499 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 10165
+INFO - 2023-08-23 22:37:11,522 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:18,880 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13525
+INFO - 2023-08-23 22:37:18,907 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:22,749 - basehttp - "GET /admin/Bingo/customers/45/change/ HTTP/1.1" 200 62460
+INFO - 2023-08-23 22:37:22,771 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:26,219 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13525
+INFO - 2023-08-23 22:37:31,767 - basehttp - "GET /admin/Bingo/customers/44/change/ HTTP/1.1" 200 62436
+INFO - 2023-08-23 22:37:31,797 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:36,919 - basehttp - "GET /admin/Bingo/users/337945182/change/?_to_field=id&_popup=1 HTTP/1.1" 200 9471
+INFO - 2023-08-23 22:37:36,947 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:43,328 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13525
+INFO - 2023-08-23 22:37:43,359 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:45,813 - basehttp - "GET /admin/Bingo/customers/44/change/ HTTP/1.1" 200 62436
+INFO - 2023-08-23 22:37:45,842 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:49,537 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13525
+INFO - 2023-08-23 22:37:49,560 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:53,405 - basehttp - "GET /admin/Bingo/customers/45/change/ HTTP/1.1" 200 62460
+INFO - 2023-08-23 22:37:53,428 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:37:58,143 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13525
+INFO - 2023-08-23 22:37:59,710 - basehttp - "GET /admin/Bingo/customers/44/change/ HTTP/1.1" 200 62436
+INFO - 2023-08-23 22:37:59,735 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:38:02,895 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13525
+INFO - 2023-08-23 22:38:05,715 - basehttp - "POST /admin/Bingo/customers/ HTTP/1.1" 200 10243
+INFO - 2023-08-23 22:38:06,819 - basehttp - "POST /admin/Bingo/customers/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:38:06,847 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13448
+INFO - 2023-08-23 22:38:06,873 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:38:08,190 - basehttp - "GET /admin/Bingo/customers/44/change/ HTTP/1.1" 200 62436
+INFO - 2023-08-23 22:38:08,214 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:38:30,970 - basehttp - "POST /admin/Bingo/customers/44/change/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:38:31,028 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13539
+INFO - 2023-08-23 22:38:31,051 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:38:40,663 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 10183
+INFO - 2023-08-23 22:38:40,690 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:38:42,302 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 10165
+INFO - 2023-08-23 22:38:42,332 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:38:46,396 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 10183
+INFO - 2023-08-23 22:38:46,423 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:38:47,166 - basehttp - "GET /admin/Bingo/itinerary/add/ HTTP/1.1" 200 13035
+INFO - 2023-08-23 22:38:47,190 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:39:44,380 - basehttp - "POST /admin/Bingo/itinerary/add/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:39:44,406 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 11582
+INFO - 2023-08-23 22:39:44,435 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:39:46,394 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 10165
+INFO - 2023-08-23 22:39:46,426 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:39:47,807 - basehttp - "GET /admin/Bingo/tickets/add/ HTTP/1.1" 200 18708
+INFO - 2023-08-23 22:39:47,836 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:40:19,971 - basehttp - "POST /admin/Bingo/tickets/add/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:40:19,998 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11516
+INFO - 2023-08-23 22:40:20,024 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:40:23,028 - basehttp - "GET /admin/Bingo/tickets/add/ HTTP/1.1" 200 18708
+INFO - 2023-08-23 22:40:23,065 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:40:29,864 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11315
+INFO - 2023-08-23 22:40:31,525 - basehttp - "GET /admin/Bingo/tickets/add/ HTTP/1.1" 200 18708
+INFO - 2023-08-23 22:40:31,550 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:41:12,387 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11315
+INFO - 2023-08-23 22:41:12,422 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:41:20,617 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 11939
+INFO - 2023-08-23 22:41:20,647 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:41:22,098 - basehttp - "GET /admin/Bingo/flights/8/change/ HTTP/1.1" 200 81741
+INFO - 2023-08-23 22:41:22,120 - basehttp - "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO - 2023-08-23 22:41:22,127 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:41:22,130 - basehttp - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO - 2023-08-23 22:41:22,130 - basehttp - "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO - 2023-08-23 22:41:22,137 - basehttp - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO - 2023-08-23 22:41:22,137 - basehttp - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO - 2023-08-23 22:41:22,148 - basehttp - "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO - 2023-08-23 22:41:50,985 - basehttp - "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+INFO - 2023-08-23 22:42:07,007 - basehttp - "POST /admin/Bingo/flights/8/change/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:42:07,036 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 12142
+INFO - 2023-08-23 22:42:07,068 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:42:10,371 - basehttp - "GET /admin/Bingo/flights/8/change/ HTTP/1.1" 200 81741
+INFO - 2023-08-23 22:42:10,408 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:42:11,930 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 11939
+INFO - 2023-08-23 22:42:21,712 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13320
+INFO - 2023-08-23 22:42:21,739 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:42:23,362 - basehttp - "GET /admin/Bingo/customers/44/change/ HTTP/1.1" 200 62491
+INFO - 2023-08-23 22:42:23,390 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:42:29,036 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 11358
+INFO - 2023-08-23 22:42:29,059 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:43:18,226 - basehttp - "GET /admin/Bingo/itinerary/2/change/ HTTP/1.1" 200 13316
+INFO - 2023-08-23 22:43:18,266 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:43:23,091 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 11358
+INFO - 2023-08-23 22:43:25,588 - basehttp - "GET /admin/Bingo/itinerary/add/ HTTP/1.1" 200 13035
+INFO - 2023-08-23 22:43:25,617 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:43:32,590 - basehttp - "POST /admin/Bingo/itinerary/add/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:43:32,615 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 11813
+INFO - 2023-08-23 22:43:32,645 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:43:37,697 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11315
+INFO - 2023-08-23 22:43:37,722 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:43:42,501 - basehttp - "GET /admin/Bingo/tickets/add/ HTTP/1.1" 200 18766
+INFO - 2023-08-23 22:43:42,526 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:44:01,068 - basehttp - "POST /admin/Bingo/tickets/add/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:44:01,095 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11724
+INFO - 2023-08-23 22:44:01,123 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:45:12,333 - basehttp - "GET /admin/Bingo/tickets/8/change/ HTTP/1.1" 200 18975
+INFO - 2023-08-23 22:45:12,368 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:45:14,134 - basehttp - "GET /admin/Bingo/flights/8/change/?_to_field=id&_popup=1 HTTP/1.1" 200 74988
+INFO - 2023-08-23 22:45:14,162 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:45:20,638 - basehttp - "POST /admin/Bingo/flights/8/change/?_to_field=id&_popup=1 HTTP/1.1" 200 406
+INFO - 2023-08-23 22:45:22,152 - basehttp - "POST /admin/Bingo/tickets/8/change/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:45:22,173 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11726
+INFO - 2023-08-23 22:45:22,210 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:45:25,276 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13320
+INFO - 2023-08-23 22:45:25,303 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:45:28,082 - basehttp - "GET /admin/Bingo/customers/44/change/ HTTP/1.1" 200 62491
+INFO - 2023-08-23 22:45:28,104 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:45:30,632 - basehttp - "POST /admin/Bingo/customers/44/change/ HTTP/1.1" 302 0
+INFO - 2023-08-23 22:45:30,662 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13539
+INFO - 2023-08-23 22:45:30,692 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:45:33,282 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 11589
+INFO - 2023-08-23 22:45:33,305 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:45:41,695 - basehttp - "GET /admin/Bingo/itinerary/3/change/ HTTP/1.1" 200 13316
+INFO - 2023-08-23 22:45:41,724 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:46:10,269 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13320
+INFO - 2023-08-23 22:46:10,296 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:46:11,734 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11523
+INFO - 2023-08-23 22:46:11,761 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:46:12,892 - basehttp - "GET /admin/Bingo/tickets/8/change/ HTTP/1.1" 200 18975
+INFO - 2023-08-23 22:46:12,917 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:47:31,733 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11523
+INFO - 2023-08-23 22:47:31,767 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:47:32,932 - basehttp - "GET /admin/Bingo/tickets/7/change/ HTTP/1.1" 200 18975
+INFO - 2023-08-23 22:47:32,962 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:48:12,134 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 11589
+INFO - 2023-08-23 22:48:12,171 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:48:15,881 - basehttp - "GET /admin/Bingo/itinerary/2/change/ HTTP/1.1" 200 13316
+INFO - 2023-08-23 22:48:15,913 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:48:58,695 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 11589
+INFO - 2023-08-23 22:49:01,217 - basehttp - "GET /admin/Bingo/itinerary/3/change/ HTTP/1.1" 200 13316
+INFO - 2023-08-23 22:49:01,246 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:49:47,155 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11523
+INFO - 2023-08-23 22:49:47,193 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:49:49,723 - basehttp - "GET /admin/Bingo/tickets/8/change/ HTTP/1.1" 200 18975
+INFO - 2023-08-23 22:49:49,754 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:49:55,999 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11523
+INFO - 2023-08-23 22:49:58,301 - basehttp - "GET /admin/Bingo/tickets/7/change/ HTTP/1.1" 200 18975
+INFO - 2023-08-23 22:49:58,325 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:52:43,468 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 11939
+INFO - 2023-08-23 22:52:43,507 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 22:52:45,281 - basehttp - "GET /admin/Bingo/flights/add/ HTTP/1.1" 200 81438
+INFO - 2023-08-23 22:52:45,325 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+DEBUG - 2023-08-23 22:58:53,026 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 22:58:53,042 - base - Scheduler started
+DEBUG - 2023-08-23 22:58:53,049 - base - Looking for jobs to run
+DEBUG - 2023-08-23 22:58:53,050 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 22:58:53,246 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-23 23:00:28,207 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:00:28,207 - base - Scheduler started
+DEBUG - 2023-08-23 23:00:28,214 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:00:28,215 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-23 23:00:29,028 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:00:29,035 - base - Scheduler started
+DEBUG - 2023-08-23 23:00:29,036 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:00:29,037 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:00:29,162 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:00:29,215 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:00:30,182 - basehttp - "GET /admin/ HTTP/1.1" 200 13077
+INFO - 2023-08-23 23:00:30,214 - basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO - 2023-08-23 23:00:30,241 - basehttp - "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO - 2023-08-23 23:00:31,730 - basehttp - "GET /admin/Bingo/itinerary/ HTTP/1.1" 200 11589
+INFO - 2023-08-23 23:00:31,766 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:00:32,957 - basehttp - "GET /admin/Bingo/itinerary/3/change/ HTTP/1.1" 200 13316
+INFO - 2023-08-23 23:00:32,984 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+DEBUG - 2023-08-23 23:01:57,721 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:01:57,721 - base - Scheduler started
+DEBUG - 2023-08-23 23:01:57,721 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:01:57,721 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:01:57,913 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-23 23:02:23,276 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:02:23,282 - base - Scheduler started
+DEBUG - 2023-08-23 23:02:23,283 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:02:23,284 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-23 23:02:24,150 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:02:24,155 - base - Scheduler started
+DEBUG - 2023-08-23 23:02:24,156 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:02:24,157 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:02:24,283 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:02:24,340 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:02:25,259 - basehttp - "GET /admin/Bingo/itinerary/3/change/ HTTP/1.1" 200 13316
+INFO - 2023-08-23 23:02:25,290 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:02:27,693 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11523
+INFO - 2023-08-23 23:02:27,723 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:02:28,746 - basehttp - "GET /admin/Bingo/tickets/8/change/ HTTP/1.1" 200 18975
+INFO - 2023-08-23 23:02:28,769 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:02:31,798 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13320
+INFO - 2023-08-23 23:02:31,825 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:02:35,513 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 11939
+INFO - 2023-08-23 23:02:35,537 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:02:36,909 - basehttp - "GET /admin/Bingo/flights/8/change/ HTTP/1.1" 200 81741
+INFO - 2023-08-23 23:02:36,933 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:02:43,638 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 11939
+INFO - 2023-08-23 23:02:45,356 - basehttp - "GET /admin/Bingo/flights/7/change/ HTTP/1.1" 200 81741
+INFO - 2023-08-23 23:02:45,384 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:02:49,365 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 11939
+INFO - 2023-08-23 23:02:50,653 - basehttp - "GET /admin/Bingo/flights/6/change/ HTTP/1.1" 200 81741
+INFO - 2023-08-23 23:02:50,680 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:02:52,725 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 11939
+INFO - 2023-08-23 23:02:53,710 - basehttp - "GET /admin/Bingo/flights/5/change/ HTTP/1.1" 200 81741
+INFO - 2023-08-23 23:02:53,734 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:02:55,297 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 11939
+INFO - 2023-08-23 23:02:56,417 - basehttp - "GET /admin/Bingo/flights/8/change/ HTTP/1.1" 200 81741
+INFO - 2023-08-23 23:02:56,443 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:03:00,094 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 11939
+INFO - 2023-08-23 23:03:13,232 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13320
+INFO - 2023-08-23 23:03:13,260 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:03:15,636 - basehttp - "GET /admin/Bingo/customers/44/change/ HTTP/1.1" 200 62491
+INFO - 2023-08-23 23:03:15,660 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:03:16,936 - basehttp - "GET /admin/Bingo/customers/ HTTP/1.1" 200 13320
+INFO - 2023-08-23 23:03:18,698 - basehttp - "GET /admin/Bingo/users/ HTTP/1.1" 200 34538
+INFO - 2023-08-23 23:03:18,722 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:03:21,294 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11523
+INFO - 2023-08-23 23:03:21,320 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:04:26,538 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11523
+INFO - 2023-08-23 23:04:26,568 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:04:27,459 - basehttp - "GET /admin/Bingo/tickets/8/change/ HTTP/1.1" 200 18975
+INFO - 2023-08-23 23:04:27,490 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:04:31,357 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11523
+INFO - 2023-08-23 23:04:32,491 - basehttp - "GET /admin/Bingo/tickets/7/change/ HTTP/1.1" 200 18975
+INFO - 2023-08-23 23:04:32,518 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:04:58,234 - basehttp - "POST /admin/Bingo/tickets/7/change/ HTTP/1.1" 302 0
+INFO - 2023-08-23 23:04:58,255 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11726
+INFO - 2023-08-23 23:04:58,277 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:05:11,997 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-23 23:05:11,997 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-23 23:05:11,997 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-23 23:05:12,003 - basehttp - "GET / HTTP/1.1" 200 2865
+INFO - 2023-08-23 23:05:12,040 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-23 23:05:12,041 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-23 23:05:12,041 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-23 23:05:12,099 - basehttp - "GET /Bingo/users/defaultuser.png HTTP/1.1" 200 3655
+INFO - 2023-08-23 23:05:13,743 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-23 23:05:13,743 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-23 23:05:13,743 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-23 23:05:13,744 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-23 23:05:13,748 - auth_views - Successfully logged out
+INFO - 2023-08-23 23:05:13,749 - basehttp - "POST /logout/ HTTP/1.1" 302 0
+INFO - 2023-08-23 23:05:13,755 - custom_auth_middleware - No login token found in the session.
+INFO - 2023-08-23 23:05:13,756 - basehttp - "GET /login/ HTTP/1.1" 200 1728
+INFO - 2023-08-23 23:05:27,033 - custom_auth_middleware - No login token found in the session.
+ERROR - 2023-08-23 23:05:27,253 - anonymous_facade - Validation error during login: ['Incorrect password']
+ERROR - 2023-08-23 23:05:27,254 - auth_views - Login error: ['Incorrect password']
+INFO - 2023-08-23 23:05:27,255 - basehttp - "POST /login/ HTTP/1.1" 200 1815
+INFO - 2023-08-23 23:05:55,650 - custom_auth_middleware - No login token found in the session.
+INFO - 2023-08-23 23:05:55,869 - auth_views - Welcome Madeleine! Successfully logged in as customer.
+INFO - 2023-08-23 23:05:55,875 - basehttp - "POST /login/ HTTP/1.1" 302 0
+INFO - 2023-08-23 23:05:55,885 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:05:55,886 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:05:55,886 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:05:55,891 - basehttp - "GET / HTTP/1.1" 200 2863
+INFO - 2023-08-23 23:05:55,913 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:05:55,914 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:05:55,914 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:05:55,918 - basehttp - "GET /Bingo/users/IMG-20230628-WA0065.jpg HTTP/1.1" 200 259862
+INFO - 2023-08-23 23:05:59,888 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:05:59,888 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:05:59,888 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:05:59,889 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:05:59,891 - decorators - Permission granted to user role Customer .
+INFO - 2023-08-23 23:05:59,894 - customer_views - Successfully fetched customer madeleine tickets.
+INFO - 2023-08-23 23:05:59,960 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:05:59,964 - basehttp - "GET /Api/customer/tickets/ HTTP/1.1" 200 10652
+INFO - 2023-08-23 23:05:59,991 - basehttp - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO - 2023-08-23 23:05:59,993 - basehttp - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO - 2023-08-23 23:05:59,996 - basehttp - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO - 2023-08-23 23:05:59,997 - basehttp - "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO - 2023-08-23 23:05:59,998 - basehttp - "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO - 2023-08-23 23:05:59,999 - basehttp - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO - 2023-08-23 23:06:00,000 - basehttp - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO - 2023-08-23 23:06:00,001 - basehttp - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO - 2023-08-23 23:06:00,002 - basehttp - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO - 2023-08-23 23:06:00,004 - basehttp - "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO - 2023-08-23 23:06:00,011 - basehttp - "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO - 2023-08-23 23:07:21,627 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:07:21,628 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:07:21,628 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:07:21,629 - facade_base - getting All Countries
+INFO - 2023-08-23 23:07:21,634 - base_views - Successfully fetched all countries.
+INFO - 2023-08-23 23:07:21,636 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:07:21,639 - basehttp - "GET /Api/countries/ HTTP/1.1" 200 7191
+INFO - 2023-08-23 23:07:27,210 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:07:27,211 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:07:27,211 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:07:27,213 - facade_base - getting All Flights
+INFO - 2023-08-23 23:07:27,220 - base_views - Successfully fetched all flights.
+INFO - 2023-08-23 23:07:27,306 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:07:27,331 - basehttp - "GET /Api/flights/ HTTP/1.1" 200 14683
+INFO - 2023-08-23 23:07:35,000 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:07:35,001 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:07:35,001 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:07:35,003 - facade_base - getting All Airlines
+INFO - 2023-08-23 23:07:35,009 - base_views - Successfully fetched all airlines.
+INFO - 2023-08-23 23:07:35,056 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:07:35,067 - basehttp - "GET /Api/airlines/ HTTP/1.1" 200 17701
+INFO - 2023-08-23 23:07:41,440 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:07:41,441 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:07:41,441 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:07:41,442 - facade_base - getting Flight by id
+ERROR - 2023-08-23 23:07:41,443 - models - Error fetching instance of Flights with id=4
+WARNING - 2023-08-23 23:07:41,443 - base_views - Flight with id 4 not found.
+INFO - 2023-08-23 23:07:41,445 - models - Checking if user madeleine is authenticated.
+WARNING - 2023-08-23 23:07:41,446 - log - Not Found: /Api/flights/4/
+WARNING - 2023-08-23 23:07:41,447 - basehttp - "GET /Api/flights/4/ HTTP/1.1" 404 5508
+INFO - 2023-08-23 23:07:46,043 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:07:46,044 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:07:46,044 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:07:46,045 - facade_base - getting Flight by id
+ERROR - 2023-08-23 23:07:46,047 - models - Error fetching instance of Flights with id=44
+WARNING - 2023-08-23 23:07:46,048 - base_views - Flight with id 44 not found.
+INFO - 2023-08-23 23:07:46,052 - models - Checking if user madeleine is authenticated.
+WARNING - 2023-08-23 23:07:46,055 - log - Not Found: /Api/flights/44/
+WARNING - 2023-08-23 23:07:46,056 - basehttp - "GET /Api/flights/44/ HTTP/1.1" 404 5514
+INFO - 2023-08-23 23:07:58,125 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:07:58,125 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:07:58,126 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:07:58,126 - facade_base - getting Flight by id
+INFO - 2023-08-23 23:07:58,128 - base_views - Successfully fetched flight with id: 7
+INFO - 2023-08-23 23:07:58,137 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:07:58,141 - basehttp - "GET /Api/flights/7/ HTTP/1.1" 200 7358
+INFO - 2023-08-23 23:08:54,035 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:08:54,036 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:08:54,036 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:08:54,037 - facade_base - getting Flight by id
+INFO - 2023-08-23 23:08:54,038 - base_views - Successfully fetched flight with id: 7
+INFO - 2023-08-23 23:08:54,049 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:08:54,051 - basehttp - "GET /Api/flights/7/ HTTP/1.1" 200 7358
+INFO - 2023-08-23 23:16:44,915 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-23 23:16:46,772 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:16:46,792 - base - Scheduler started
+DEBUG - 2023-08-23 23:16:46,796 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:16:46,798 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:16:47,137 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:16:47,263 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:16:51,689 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-23 23:16:54,460 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:16:54,476 - base - Scheduler started
+DEBUG - 2023-08-23 23:16:54,490 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:16:54,491 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:16:54,809 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:16:54,983 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:16:59,839 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-23 23:17:00,641 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:17:00,646 - base - Scheduler started
+DEBUG - 2023-08-23 23:17:00,648 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:17:00,648 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:17:00,770 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:17:00,825 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:17:03,247 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-23 23:17:04,054 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:17:04,054 - base - Scheduler started
+DEBUG - 2023-08-23 23:17:04,069 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:17:04,069 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:17:04,188 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:17:04,243 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-23 23:17:24,756 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:17:24,771 - base - Scheduler started
+DEBUG - 2023-08-23 23:17:24,778 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:17:24,779 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:17:25,001 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-23 23:17:31,433 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:17:31,433 - base - Scheduler started
+DEBUG - 2023-08-23 23:17:31,440 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:17:31,442 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-23 23:17:32,171 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:17:32,171 - base - Scheduler started
+DEBUG - 2023-08-23 23:17:32,181 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:17:32,182 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:17:32,315 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:17:32,375 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:17:38,744 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:17:38,744 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:17:38,744 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:17:38,747 - basehttp - "GET / HTTP/1.1" 200 2863
+INFO - 2023-08-23 23:17:40,914 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:17:40,914 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:17:40,914 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:17:40,914 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:17:40,914 - decorators - Permission granted to user role Customer .
+INFO - 2023-08-23 23:17:40,931 - customer_views - Successfully fetched customer madeleine tickets.
+INFO - 2023-08-23 23:17:40,958 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:17:40,967 - basehttp - "GET /Api/customer/tickets/ HTTP/1.1" 200 10652
+INFO - 2023-08-23 23:18:38,836 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\views\base_views.py changed, reloading.
+DEBUG - 2023-08-23 23:18:39,643 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:18:39,649 - base - Scheduler started
+DEBUG - 2023-08-23 23:18:39,650 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:18:39,651 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:18:39,809 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:18:39,876 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:18:42,556 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\views\base_views.py changed, reloading.
+DEBUG - 2023-08-23 23:18:43,361 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:18:43,368 - base - Scheduler started
+DEBUG - 2023-08-23 23:18:43,369 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:18:43,370 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:18:43,490 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:18:43,542 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:27:35,237 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+INFO - 2023-08-23 23:27:35,934 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:27:40,509 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-23 23:27:45,905 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:27:45,932 - base - Scheduler started
+DEBUG - 2023-08-23 23:27:45,935 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:27:45,937 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:27:46,670 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:27:46,918 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:28:06,343 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:28:06,343 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:28:06,343 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:28:06,344 - facade_base - getting All Flights
+INFO - 2023-08-23 23:28:06,347 - base_views - Successfully fetched all flights.
+INFO - 2023-08-23 23:28:06,383 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:28:06,401 - basehttp - "GET /Api/flights/ HTTP/1.1" 200 14683
+INFO - 2023-08-23 23:28:08,626 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:28:08,626 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:28:08,627 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:28:08,627 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:28:08,628 - decorators - Permission granted to user role Customer .
+INFO - 2023-08-23 23:28:08,632 - customer_views - Successfully fetched customer madeleine tickets.
+INFO - 2023-08-23 23:28:08,649 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:28:08,655 - basehttp - "GET /Api/customer/tickets/ HTTP/1.1" 200 10652
+INFO - 2023-08-23 23:28:13,517 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:28:13,517 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:28:13,517 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:28:13,519 - facade_base - getting Flight by id
+INFO - 2023-08-23 23:28:13,519 - base_views - Successfully fetched flight with id: 7
+INFO - 2023-08-23 23:28:13,534 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:28:13,538 - basehttp - "GET /Api/flights/7/ HTTP/1.1" 200 7358
+INFO - 2023-08-23 23:28:18,420 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:28:18,421 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:28:18,421 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:28:18,421 - facade_base - getting Airline by id
+INFO - 2023-08-23 23:28:18,422 - base_views - Successfully fetched airline with IATA code: A0
+INFO - 2023-08-23 23:28:18,428 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:28:18,431 - basehttp - "GET /Api/airlines/A0/ HTTP/1.1" 200 6475
+INFO - 2023-08-23 23:28:23,272 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:28:23,273 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:28:23,273 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:28:23,274 - facade_base - getting Country by id
+INFO - 2023-08-23 23:28:23,276 - base_views - Successfully fetched country with code: IL
+INFO - 2023-08-23 23:28:23,278 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:28:23,281 - basehttp - "GET /Api/countries/IL/ HTTP/1.1" 200 5600
+INFO - 2023-08-23 23:29:14,654 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-23 23:29:15,425 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:29:15,430 - base - Scheduler started
+DEBUG - 2023-08-23 23:29:15,431 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:29:15,432 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:29:15,549 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:29:15,601 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:29:47,769 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-23 23:29:48,586 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:29:48,586 - base - Scheduler started
+DEBUG - 2023-08-23 23:29:48,596 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:29:48,596 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:29:48,715 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:29:48,767 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:29:59,843 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-23 23:30:00,691 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:30:00,698 - base - Scheduler started
+DEBUG - 2023-08-23 23:30:00,699 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:30:00,699 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:30:00,859 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:30:00,929 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-23 23:33:22,579 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:33:22,585 - base - Scheduler started
+DEBUG - 2023-08-23 23:33:22,586 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:33:22,587 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-23 23:33:23,361 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:33:23,361 - base - Scheduler started
+DEBUG - 2023-08-23 23:33:23,372 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:33:23,373 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:33:23,492 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:33:23,545 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:34:07,681 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-23 23:34:07,681 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-23 23:34:07,681 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-23 23:34:07,682 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-23 23:34:07,686 - auth_views - Successfully logged out
+INFO - 2023-08-23 23:34:07,702 - basehttp - "POST /logout/ HTTP/1.1" 302 0
+INFO - 2023-08-23 23:34:07,717 - custom_auth_middleware - No login token found in the session.
+INFO - 2023-08-23 23:34:07,723 - basehttp - "GET /login/ HTTP/1.1" 200 1728
+INFO - 2023-08-23 23:34:15,298 - custom_auth_middleware - No login token found in the session.
+INFO - 2023-08-23 23:34:15,299 - basehttp - "GET /login/ HTTP/1.1" 200 1728
+INFO - 2023-08-23 23:34:29,261 - custom_auth_middleware - No login token found in the session.
+INFO - 2023-08-23 23:34:29,486 - auth_views - Welcome customercustomer! Successfully logged in as customer.
+INFO - 2023-08-23 23:34:29,500 - basehttp - "POST /login/?username=admin&password=admin1234A1! HTTP/1.1" 302 0
+INFO - 2023-08-23 23:34:29,516 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:34:29,516 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:34:29,517 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:34:29,523 - basehttp - "GET / HTTP/1.1" 200 2869
+INFO - 2023-08-23 23:36:06,582 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:36:06,583 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:36:06,583 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:36:06,584 - facade_base - getting All Airlines
+INFO - 2023-08-23 23:36:06,590 - base_views - Successfully fetched all airlines.
+INFO - 2023-08-23 23:36:06,620 - basehttp - "GET /Api/airlines/ HTTP/1.1" 200 4859
+INFO - 2023-08-23 23:36:20,245 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:36:20,245 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:36:20,246 - custom_auth_middleware - customercustomer Is authenticated ? : True
+WARNING - 2023-08-23 23:36:20,247 - log - Method Not Allowed: /Api/flights/search/
+WARNING - 2023-08-23 23:36:20,247 - basehttp - "GET /Api/flights/search/ HTTP/1.1" 405 40
+INFO - 2023-08-23 23:36:36,440 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:36:36,440 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:36:36,441 - custom_auth_middleware - customercustomer Is authenticated ? : True
+WARNING - 2023-08-23 23:36:36,442 - log - Forbidden: /Api/flights/search/
+WARNING - 2023-08-23 23:36:36,442 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 403 45
+INFO - 2023-08-23 23:37:57,961 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:37:57,962 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:37:57,963 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:37:57,963 - facade_base - Processing search criteria...
+WARNING - 2023-08-23 23:37:57,966 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-23 23:37:57,967 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-23 23:37:57,968 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-23 23:38:54,446 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:38:54,447 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:38:54,447 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:38:54,448 - facade_base - Processing search criteria...
+WARNING - 2023-08-23 23:38:54,450 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-23 23:38:54,451 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-23 23:38:54,452 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-23 23:39:48,213 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:39:48,213 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:39:48,214 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:39:48,214 - facade_base - Processing search criteria...
+ERROR - 2023-08-23 23:39:48,215 - facade_base - Error processing flight search criteria: ['“2023-08-21T16:24:46+03:00” value has an invalid date format. It must be in YYYY-MM-DD format.']
+WARNING - 2023-08-23 23:39:48,216 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-23 23:39:48,216 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-23 23:39:48,217 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-23 23:42:09,582 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:42:09,583 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:42:09,583 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:42:09,584 - facade_base - Processing search criteria...
+WARNING - 2023-08-23 23:42:09,587 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-23 23:42:09,587 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-23 23:42:09,588 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-23 23:46:11,507 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+INFO - 2023-08-23 23:46:19,434 - autoreload - Watching for file changes with StatReloader
+DEBUG - 2023-08-23 23:46:27,901 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:46:27,908 - base - Scheduler started
+DEBUG - 2023-08-23 23:46:27,910 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:46:27,911 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-23 23:46:29,044 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:46:29,044 - base - Scheduler started
+DEBUG - 2023-08-23 23:46:29,059 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:46:29,061 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:46:29,236 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:46:29,317 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:46:33,725 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:46:33,727 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:46:33,728 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:46:33,731 - facade_base - Processing search criteria...
+ERROR - 2023-08-23 23:46:33,733 - facade_base - Error processing flight search criteria: Cannot resolve keyword 'destination_country' into field. Choices are: airline_company_id, airline_company_id_id, arrival_terminal, departure_terminal, departure_time, destination_country_id, destination_country_id_id, flight_number, id, landing_time, origin_country_id, origin_country_id_id, remaining_tickets, tickets
+WARNING - 2023-08-23 23:46:33,735 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-23 23:46:33,738 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-23 23:46:33,744 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-23 23:49:04,633 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+INFO - 2023-08-23 23:49:05,300 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:49:09,657 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-23 23:49:10,383 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:49:10,386 - base - Scheduler started
+DEBUG - 2023-08-23 23:49:10,390 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:49:10,390 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:49:10,506 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:49:10,558 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:49:14,654 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:49:14,655 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:49:14,655 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:49:14,656 - facade_base - Processing search criteria...
+WARNING - 2023-08-23 23:49:14,657 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-23 23:49:14,658 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-23 23:49:14,659 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-23 23:50:02,727 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-23 23:50:02,728 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:50:02,728 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-23 23:50:02,729 - facade_base - getting Flight by id
+INFO - 2023-08-23 23:50:02,731 - base_views - Successfully fetched flight with id: 8
+INFO - 2023-08-23 23:50:02,752 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-23 23:50:02,768 - basehttp - "GET /Api/flights/8/ HTTP/1.1" 200 7296
+INFO - 2023-08-23 23:50:35,336 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:50:35,337 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:50:35,337 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:50:35,338 - facade_base - Processing search criteria...
+WARNING - 2023-08-23 23:50:35,340 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-23 23:50:35,341 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-23 23:50:35,342 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-23 23:51:26,996 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-23 23:51:28,060 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:51:28,065 - base - Scheduler started
+DEBUG - 2023-08-23 23:51:28,067 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:51:28,067 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:51:28,202 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:51:28,263 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:51:30,928 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+INFO - 2023-08-23 23:51:31,593 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:51:47,154 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-23 23:51:47,972 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:51:47,979 - base - Scheduler started
+DEBUG - 2023-08-23 23:51:47,980 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:51:47,981 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:51:48,116 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:51:48,173 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:51:49,787 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+INFO - 2023-08-23 23:51:50,493 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:51:52,782 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+INFO - 2023-08-23 23:51:53,411 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:51:54,719 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+INFO - 2023-08-23 23:51:55,350 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:52:01,699 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-23 23:52:02,460 - win32 - Looking up time zone info from registry
+INFO - 2023-08-23 23:52:02,467 - base - Scheduler started
+DEBUG - 2023-08-23 23:52:02,468 - base - Looking for jobs to run
+DEBUG - 2023-08-23 23:52:02,469 - base - No jobs; waiting until a job is added
+INFO - 2023-08-23 23:52:02,593 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-23 23:52:02,648 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-23 23:52:09,755 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:52:09,756 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:52:09,756 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:52:09,757 - facade_base - Processing search criteria...
+INFO - 2023-08-23 23:52:09,757 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 86, Departure Date: 2023-08-24, Return Date: None
+INFO - 2023-08-23 23:52:09,758 - models - Constructed Query: (AND: ('departure_time__date', '2023-08-24'), ('destination_country_id_id', 86), ('origin_country_id_id', 109))
+INFO - 2023-08-23 23:52:09,762 - models - Number of flights found: 0
+WARNING - 2023-08-23 23:52:09,762 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-23 23:52:09,763 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-23 23:52:09,764 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-23 23:52:41,710 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:52:41,711 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:52:41,711 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:52:41,712 - facade_base - Processing search criteria...
+INFO - 2023-08-23 23:52:41,712 - models - Received Parameters: Origin Country ID: 96, Destination Country ID: 86, Departure Date: 2023-08-21, Return Date: None
+INFO - 2023-08-23 23:52:41,713 - models - Constructed Query: (AND: ('departure_time__date', '2023-08-21'), ('destination_country_id_id', 86), ('origin_country_id_id', 96))
+INFO - 2023-08-23 23:52:41,716 - models - Number of flights found: 0
+WARNING - 2023-08-23 23:52:41,717 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-23 23:52:41,717 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-23 23:52:41,718 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-23 23:54:54,948 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:54:54,948 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:54:54,949 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:54:54,949 - facade_base - getting Flight by id
+INFO - 2023-08-23 23:54:54,952 - base_views - Successfully fetched flight with id: 7
+INFO - 2023-08-23 23:54:54,963 - basehttp - "GET /Api/flights/7/ HTTP/1.1" 200 788
+INFO - 2023-08-23 23:56:03,293 - basehttp - "GET /admin/ HTTP/1.1" 302 0
+INFO - 2023-08-23 23:56:03,333 - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4185
+INFO - 2023-08-23 23:56:08,791 - basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO - 2023-08-23 23:56:08,825 - basehttp - "GET /admin/ HTTP/1.1" 200 13116
+INFO - 2023-08-23 23:56:11,426 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 11939
+INFO - 2023-08-23 23:56:11,461 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:56:13,538 - basehttp - "GET /admin/Bingo/flights/add/ HTTP/1.1" 200 81438
+INFO - 2023-08-23 23:56:13,562 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:57:11,141 - basehttp - "POST /admin/Bingo/flights/add/ HTTP/1.1" 302 0
+INFO - 2023-08-23 23:57:11,169 - basehttp - "GET /admin/Bingo/flights/ HTTP/1.1" 200 12353
+INFO - 2023-08-23 23:57:11,195 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:57:15,501 - basehttp - "GET /admin/Bingo/flights/10/change/ HTTP/1.1" 200 81746
+INFO - 2023-08-23 23:57:15,533 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-23 23:57:23,540 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:57:23,541 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:57:23,541 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:57:23,542 - facade_base - getting Flight by id
+INFO - 2023-08-23 23:57:23,544 - base_views - Successfully fetched flight with id: 10
+INFO - 2023-08-23 23:57:23,553 - basehttp - "GET /Api/flights/10/ HTTP/1.1" 200 783
+INFO - 2023-08-23 23:58:28,809 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:58:28,810 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:58:28,811 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:58:28,811 - facade_base - getting Flight by id
+INFO - 2023-08-23 23:58:28,814 - base_views - Successfully fetched flight with id: 10
+INFO - 2023-08-23 23:58:28,825 - basehttp - "GET /Api/flights/10/ HTTP/1.1" 200 783
+INFO - 2023-08-23 23:58:55,145 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-23 23:58:55,145 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-23 23:58:55,146 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-23 23:58:55,146 - facade_base - Processing search criteria...
+INFO - 2023-08-23 23:58:55,147 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-23 23:58:55,147 - models - Constructed Query: (AND: ('departure_time__date', '2023-08-25'), ('destination_country_id_id', 66), ('origin_country_id_id', 109))
+INFO - 2023-08-23 23:58:55,149 - models - Number of flights found: 0
+WARNING - 2023-08-23 23:58:55,149 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-23 23:58:55,150 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-23 23:58:55,150 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+DEBUG - 2023-08-24 00:04:20,524 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:04:20,524 - base - Scheduler started
+DEBUG - 2023-08-24 00:04:20,533 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:04:20,534 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:04:20,752 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-24 00:04:25,020 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:04:25,020 - base - Scheduler started
+DEBUG - 2023-08-24 00:04:25,020 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:04:25,033 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:04:25,225 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-24 00:12:06,313 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:12:06,328 - base - Scheduler started
+DEBUG - 2023-08-24 00:12:06,331 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:12:06,331 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:12:06,540 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-24 00:12:09,294 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:12:09,294 - base - Scheduler started
+DEBUG - 2023-08-24 00:12:09,303 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:12:09,304 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-24 00:12:10,107 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:12:10,123 - base - Scheduler started
+DEBUG - 2023-08-24 00:12:10,128 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:12:10,129 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:12:10,266 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:12:10,317 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:12:16,505 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:12:16,505 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:12:16,506 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:12:16,506 - facade_base - Processing search criteria...
+WARNING - 2023-08-24 00:12:16,508 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 00:12:16,509 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 00:12:16,509 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 00:12:36,867 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:12:36,867 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:12:36,868 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:12:36,868 - facade_base - Processing search criteria...
+WARNING - 2023-08-24 00:12:36,870 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 00:12:36,870 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 00:12:36,871 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 00:17:50,294 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:17:51,081 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:17:51,097 - base - Scheduler started
+DEBUG - 2023-08-24 00:17:51,097 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:17:51,100 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:17:51,222 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:17:51,275 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:17:59,212 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:17:59,998 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:18:00,014 - base - Scheduler started
+DEBUG - 2023-08-24 00:18:00,018 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:18:00,018 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:18:00,127 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:18:00,190 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:18:20,787 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:18:21,766 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:18:21,772 - base - Scheduler started
+DEBUG - 2023-08-24 00:18:21,773 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:18:21,774 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:18:21,886 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:18:21,937 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-24 00:18:46,355 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:18:46,370 - base - Scheduler started
+DEBUG - 2023-08-24 00:18:46,370 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:18:46,376 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-24 00:18:51,833 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:18:51,838 - base - Scheduler started
+DEBUG - 2023-08-24 00:18:51,839 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:18:51,840 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-24 00:18:52,584 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:18:52,589 - base - Scheduler started
+DEBUG - 2023-08-24 00:18:52,590 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:18:52,592 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:18:52,696 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:18:52,766 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:18:57,108 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:18:57,109 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:18:57,109 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:18:57,110 - facade_base - Processing search criteria...
+WARNING - 2023-08-24 00:18:57,113 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 00:18:57,114 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 00:18:57,115 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 00:19:09,944 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:19:09,945 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:19:09,946 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:19:09,948 - facade_base - Processing search criteria...
+WARNING - 2023-08-24 00:19:09,951 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 00:19:09,952 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 00:19:09,952 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 00:19:29,145 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 00:19:29,145 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:19:29,146 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 00:19:29,169 - basehttp - "GET / HTTP/1.1" 200 2863
+INFO - 2023-08-24 00:19:29,212 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 00:19:29,212 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:19:29,213 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 00:19:29,272 - basehttp - "GET /Bingo/users/IMG-20230628-WA0065.jpg HTTP/1.1" 200 259862
+INFO - 2023-08-24 00:19:30,605 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 00:19:30,606 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:19:30,606 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 00:19:30,607 - facade_base - getting All Flights
+INFO - 2023-08-24 00:19:30,611 - base_views - Successfully fetched all flights.
+ERROR - 2023-08-24 00:19:30,613 - base_views - Error fetching all flights: Got AttributeError when attempting to get a value for field `iata_code` on serializer `AirlineCompaniesSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `str` instance.
+Original exception text was: 'str' object has no attribute 'iata_code'.
+INFO - 2023-08-24 00:19:30,622 - models - Checking if user madeleine is authenticated.
+ERROR - 2023-08-24 00:19:30,627 - log - Internal Server Error: /Api/flights/
+ERROR - 2023-08-24 00:19:30,628 - basehttp - "GET /Api/flights/ HTTP/1.1" 500 5400
+INFO - 2023-08-24 00:19:48,921 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:19:49,688 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:19:49,688 - base - Scheduler started
+DEBUG - 2023-08-24 00:19:49,701 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:19:49,702 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:19:49,820 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:19:49,871 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:19:51,249 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 00:19:51,250 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:19:51,250 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 00:19:51,251 - facade_base - getting All Flights
+INFO - 2023-08-24 00:19:51,254 - base_views - Successfully fetched all flights.
+ERROR - 2023-08-24 00:19:51,264 - base_views - Error fetching all flights: Got AttributeError when attempting to get a value for field `name` on serializer `CountriesSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'name'.
+INFO - 2023-08-24 00:19:51,277 - models - Checking if user madeleine is authenticated.
+ERROR - 2023-08-24 00:19:51,293 - log - Internal Server Error: /Api/flights/
+ERROR - 2023-08-24 00:19:51,295 - basehttp - "GET /Api/flights/ HTTP/1.1" 500 5400
+INFO - 2023-08-24 00:19:57,055 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:19:57,883 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:19:57,889 - base - Scheduler started
+DEBUG - 2023-08-24 00:19:57,890 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:19:57,891 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:19:58,033 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:19:58,091 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:19:59,744 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:20:00,604 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:20:00,610 - base - Scheduler started
+DEBUG - 2023-08-24 00:20:00,611 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:20:00,612 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:20:00,731 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:20:00,784 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:20:01,425 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 00:20:01,426 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:20:01,426 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 00:20:01,427 - facade_base - getting All Flights
+INFO - 2023-08-24 00:20:01,431 - base_views - Successfully fetched all flights.
+INFO - 2023-08-24 00:20:01,472 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:20:01,493 - basehttp - "GET /Api/flights/ HTTP/1.1" 200 16981
+INFO - 2023-08-24 00:21:37,509 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:21:37,510 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:21:37,510 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:21:37,511 - facade_base - Processing search criteria...
+WARNING - 2023-08-24 00:21:37,512 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 00:21:37,513 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 00:21:37,513 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 00:23:00,075 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:23:00,899 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:23:00,904 - base - Scheduler started
+DEBUG - 2023-08-24 00:23:00,906 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:23:00,906 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:23:01,034 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:23:01,088 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:23:03,772 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:23:04,601 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:23:04,606 - base - Scheduler started
+DEBUG - 2023-08-24 00:23:04,607 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:23:04,608 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:23:04,733 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:23:04,786 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:23:10,602 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:23:11,384 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:23:11,388 - base - Scheduler started
+DEBUG - 2023-08-24 00:23:11,390 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:23:11,390 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:23:11,522 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:23:11,576 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:23:14,244 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:23:15,020 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:23:15,025 - base - Scheduler started
+DEBUG - 2023-08-24 00:23:15,026 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:23:15,027 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:23:15,140 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:23:15,197 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:23:19,988 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:23:20,954 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:23:20,969 - base - Scheduler started
+DEBUG - 2023-08-24 00:23:20,975 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:23:20,976 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:23:21,149 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:23:21,245 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:23:30,857 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 00:23:30,858 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:23:30,858 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 00:23:30,859 - facade_base - getting All Flights
+INFO - 2023-08-24 00:23:30,863 - base_views - Successfully fetched all flights.
+ERROR - 2023-08-24 00:23:30,865 - base_views - Error fetching all flights: Got AttributeError when attempting to get a value for field `airline_company` on serializer `FlightsSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Flights` instance.
+Original exception text was: 'Flights' object has no attribute 'airline_company'.
+INFO - 2023-08-24 00:23:30,879 - models - Checking if user madeleine is authenticated.
+ERROR - 2023-08-24 00:23:30,897 - log - Internal Server Error: /Api/flights/
+ERROR - 2023-08-24 00:23:30,898 - basehttp - "GET /Api/flights/ HTTP/1.1" 500 5400
+INFO - 2023-08-24 00:23:50,688 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:23:54,381 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:23:54,413 - base - Scheduler started
+DEBUG - 2023-08-24 00:23:54,418 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:23:54,421 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:23:54,849 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:23:54,975 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:23:57,480 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 00:23:57,481 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:23:57,481 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 00:23:57,506 - basehttp - "GET / HTTP/1.1" 200 2863
+INFO - 2023-08-24 00:23:58,766 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 00:23:58,766 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:23:58,766 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 00:23:58,766 - facade_base - getting All Flights
+INFO - 2023-08-24 00:23:58,766 - base_views - Successfully fetched all flights.
+ERROR - 2023-08-24 00:23:58,766 - base_views - Error fetching all flights: Got AttributeError when attempting to get a value for field `airline_company` on serializer `FlightsSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Flights` instance.
+Original exception text was: 'Flights' object has no attribute 'airline_company'.
+INFO - 2023-08-24 00:23:58,786 - models - Checking if user madeleine is authenticated.
+ERROR - 2023-08-24 00:23:58,792 - log - Internal Server Error: /Api/flights/
+ERROR - 2023-08-24 00:23:58,793 - basehttp - "GET /Api/flights/ HTTP/1.1" 500 5400
+INFO - 2023-08-24 00:24:19,316 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:24:19,316 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:24:19,317 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:24:19,318 - facade_base - Processing search criteria...
+WARNING - 2023-08-24 00:24:19,320 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 00:24:19,321 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 00:24:19,321 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 00:25:42,787 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 00:25:46,850 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:25:46,879 - base - Scheduler started
+DEBUG - 2023-08-24 00:25:46,882 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:25:46,883 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:25:47,401 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:25:47,704 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:29:46,082 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+INFO - 2023-08-24 00:29:46,763 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:29:51,077 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:29:51,824 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:29:51,824 - base - Scheduler started
+DEBUG - 2023-08-24 00:29:51,837 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:29:51,837 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:29:51,954 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:29:52,007 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:29:54,851 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:29:54,851 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:29:54,851 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:29:54,852 - facade_base - Processing search criteria...
+INFO - 2023-08-24 00:29:54,852 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 00:29:54,856 - models - Number of flights found: 0
+WARNING - 2023-08-24 00:29:54,856 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 00:29:54,857 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 00:29:54,857 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 00:32:37,557 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+DEBUG - 2023-08-24 00:32:38,418 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:32:38,423 - base - Scheduler started
+DEBUG - 2023-08-24 00:32:38,424 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:32:38,425 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:32:38,562 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:32:38,622 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:32:40,262 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+DEBUG - 2023-08-24 00:32:41,061 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:32:41,061 - base - Scheduler started
+DEBUG - 2023-08-24 00:32:41,075 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:32:41,075 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:32:41,208 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:32:41,268 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:33:01,444 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:33:01,444 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:33:01,445 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:33:01,445 - facade_base - Processing search criteria...
+INFO - 2023-08-24 00:33:01,446 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 00:33:01,465 - models - Number of flights found: 0
+WARNING - 2023-08-24 00:33:01,465 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 00:33:01,466 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 00:33:01,467 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 00:34:11,836 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+INFO - 2023-08-24 00:34:12,596 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:34:15,935 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:34:16,698 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:34:16,698 - base - Scheduler started
+DEBUG - 2023-08-24 00:34:16,698 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:34:16,698 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:34:16,814 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:34:16,877 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:34:25,877 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+DEBUG - 2023-08-24 00:34:26,709 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:34:26,725 - base - Scheduler started
+DEBUG - 2023-08-24 00:34:26,726 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:34:26,727 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:34:26,870 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:34:26,934 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:34:28,516 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+DEBUG - 2023-08-24 00:34:29,453 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:34:29,458 - base - Scheduler started
+DEBUG - 2023-08-24 00:34:29,459 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:34:29,460 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:34:29,603 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:34:29,664 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:34:30,382 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:34:30,383 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:34:30,383 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:34:30,384 - facade_base - Processing search criteria...
+INFO - 2023-08-24 00:34:30,384 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 00:34:30,387 - models - Number of flights found: 0
+WARNING - 2023-08-24 00:34:30,387 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 00:34:30,388 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 00:34:30,388 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 00:36:23,412 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:36:24,497 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:36:24,502 - base - Scheduler started
+DEBUG - 2023-08-24 00:36:24,503 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:36:24,503 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:36:24,628 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:36:24,688 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:36:28,602 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:36:29,387 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:36:29,393 - base - Scheduler started
+DEBUG - 2023-08-24 00:36:29,394 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:36:29,395 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:36:29,502 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:36:29,569 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:36:38,423 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:36:38,423 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:36:38,423 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:36:38,424 - facade_base - Processing search criteria...
+INFO - 2023-08-24 00:36:38,428 - models - Number of flights found: 0
+WARNING - 2023-08-24 00:36:38,428 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 00:36:38,429 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 00:36:38,430 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 00:37:19,666 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 00:37:19,666 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:37:19,666 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 00:37:19,667 - facade_base - getting All Flights
+INFO - 2023-08-24 00:37:19,671 - base_views - Successfully fetched all flights.
+INFO - 2023-08-24 00:37:19,713 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:37:19,734 - basehttp - "GET /Api/flights/ HTTP/1.1" 200 16981
+INFO - 2023-08-24 00:37:40,546 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 00:37:40,547 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:37:40,547 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 00:37:40,548 - facade_base - getting All Airlines
+INFO - 2023-08-24 00:37:40,552 - base_views - Successfully fetched all airlines.
+INFO - 2023-08-24 00:37:40,587 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:37:40,594 - basehttp - "GET /Api/airlines/ HTTP/1.1" 200 17701
+INFO - 2023-08-24 00:37:51,241 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 00:37:51,242 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:37:51,242 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 00:37:51,243 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:37:51,244 - decorators - Permission granted to user role Customer .
+INFO - 2023-08-24 00:37:51,248 - customer_views - Successfully fetched customer madeleine tickets.
+INFO - 2023-08-24 00:37:51,272 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 00:37:51,277 - basehttp - "GET /Api/customer/tickets/ HTTP/1.1" 200 10728
+INFO - 2023-08-24 00:38:19,365 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\BingoAirlines\settings.py changed, reloading.
+DEBUG - 2023-08-24 00:38:20,162 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:38:20,178 - base - Scheduler started
+DEBUG - 2023-08-24 00:38:20,179 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:38:20,179 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:38:20,281 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:38:20,348 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:40:01,148 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:40:02,040 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:40:02,045 - base - Scheduler started
+DEBUG - 2023-08-24 00:40:02,047 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:40:02,047 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:40:02,172 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:40:02,229 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:40:04,861 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:40:05,656 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:40:05,660 - base - Scheduler started
+DEBUG - 2023-08-24 00:40:05,661 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:40:05,662 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:40:05,762 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:40:05,829 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:40:37,939 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:40:37,939 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:40:37,940 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:40:37,940 - facade_base - Processing search criteria...
+INFO - 2023-08-24 00:40:37,941 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 00:40:37,943 - models - Number of flights found: 0
+WARNING - 2023-08-24 00:40:37,943 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 00:40:37,944 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 00:40:37,945 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 00:41:43,808 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:41:44,700 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:41:44,704 - base - Scheduler started
+DEBUG - 2023-08-24 00:41:44,705 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:41:44,706 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:41:44,840 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:41:44,895 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:41:47,599 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:41:48,427 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:41:48,427 - base - Scheduler started
+DEBUG - 2023-08-24 00:41:48,437 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:41:48,438 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:41:48,556 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:41:48,593 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:41:51,335 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:41:52,270 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:41:52,278 - base - Scheduler started
+DEBUG - 2023-08-24 00:41:52,279 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:41:52,280 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:41:52,393 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:41:52,443 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:41:55,097 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:41:55,893 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:41:55,898 - base - Scheduler started
+DEBUG - 2023-08-24 00:41:55,899 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:41:55,900 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:41:56,018 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:41:56,060 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:42:05,034 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:42:05,864 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:42:05,869 - base - Scheduler started
+DEBUG - 2023-08-24 00:42:05,870 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:42:05,871 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:42:05,991 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:42:06,033 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:42:10,783 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:42:11,565 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:42:11,570 - base - Scheduler started
+DEBUG - 2023-08-24 00:42:11,571 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:42:11,571 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:42:11,701 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:42:11,738 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:42:39,830 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:42:39,830 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:42:39,831 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:42:39,831 - facade_base - Processing search criteria...
+INFO - 2023-08-24 00:42:39,832 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 00:42:39,832 - models - Number of flights found: 1
+INFO - 2023-08-24 00:42:39,833 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 00:42:39,834 - base_views - Error fetching flights based on search criteria: Got AttributeError when attempting to get a value for field `airline_company` on serializer `FlightsSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `tuple` instance.
+Original exception text was: 'tuple' object has no attribute 'airline_company_id'.
+ERROR - 2023-08-24 00:42:39,834 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 00:42:39,835 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 00:44:16,170 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+INFO - 2023-08-24 00:44:16,817 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:44:18,131 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+INFO - 2023-08-24 00:44:18,772 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:44:21,068 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 00:44:21,807 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 00:44:21,807 - base - Scheduler started
+DEBUG - 2023-08-24 00:44:21,817 - base - Looking for jobs to run
+DEBUG - 2023-08-24 00:44:21,817 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 00:44:21,936 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 00:44:21,975 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 00:44:28,890 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 00:44:28,890 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 00:44:28,891 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 00:44:28,892 - facade_base - Processing search criteria...
+INFO - 2023-08-24 00:44:28,892 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 00:44:28,893 - models - Number of flights found: 1
+INFO - 2023-08-24 00:44:28,893 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 00:44:28,894 - base_views - Error fetching flights based on search criteria: "Got KeyError when attempting to get a value for field `airline_company` on serializer `FlightsSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'airline_company_id'."
+ERROR - 2023-08-24 00:44:28,895 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 00:44:28,895 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 01:02:04,192 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 01:02:04,192 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 01:02:04,193 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 01:02:04,193 - facade_base - getting All Flights
+INFO - 2023-08-24 01:02:04,198 - base_views - Successfully fetched all flights.
+INFO - 2023-08-24 01:02:04,241 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 01:02:04,263 - basehttp - "GET /Api/flights/ HTTP/1.1" 200 16981
+INFO - 2023-08-24 01:06:04,626 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:06:05,449 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:06:05,453 - base - Scheduler started
+DEBUG - 2023-08-24 01:06:05,454 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:06:05,455 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:06:05,565 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:06:05,634 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:06:11,420 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:06:12,175 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:06:12,175 - base - Scheduler started
+DEBUG - 2023-08-24 01:06:12,175 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:06:12,175 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:06:12,295 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:06:12,358 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:06:23,437 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:06:24,232 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:06:24,247 - base - Scheduler started
+DEBUG - 2023-08-24 01:06:24,247 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:06:24,250 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:06:24,358 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:06:24,419 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:06:29,278 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:06:30,081 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:06:30,081 - base - Scheduler started
+DEBUG - 2023-08-24 01:06:30,094 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:06:30,095 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:06:30,205 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:06:30,267 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:06:32,871 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:06:33,706 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:06:33,713 - base - Scheduler started
+DEBUG - 2023-08-24 01:06:33,714 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:06:33,715 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:06:33,841 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:06:33,891 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:06:49,212 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:06:49,997 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:06:49,997 - base - Scheduler started
+DEBUG - 2023-08-24 01:06:49,997 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:06:50,011 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:06:50,144 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:06:50,205 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:06:51,810 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:06:52,574 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:06:52,574 - base - Scheduler started
+DEBUG - 2023-08-24 01:06:52,582 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:06:52,583 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:06:52,699 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:06:52,762 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:06:56,417 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:06:57,264 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:06:57,269 - base - Scheduler started
+DEBUG - 2023-08-24 01:06:57,270 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:06:57,270 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:06:57,392 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:06:57,459 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:07:02,235 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:07:03,025 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:07:03,025 - base - Scheduler started
+DEBUG - 2023-08-24 01:07:03,034 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:07:03,034 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:07:03,143 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:07:03,212 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:07:16,393 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:07:17,206 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:07:17,213 - base - Scheduler started
+DEBUG - 2023-08-24 01:07:17,214 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:07:17,215 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:07:17,348 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:07:17,400 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:07:22,287 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:07:22,287 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:07:22,287 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:07:22,289 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:07:22,289 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:07:22,290 - models - Number of flights found: 1
+INFO - 2023-08-24 01:07:22,291 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 01:07:22,291 - base_views - Error fetching flights based on search criteria: "Got KeyError when attempting to get a value for field `airline_company` on serializer `FlightsSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'airline_company_id'."
+ERROR - 2023-08-24 01:07:22,292 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 01:07:22,293 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 01:08:30,960 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:08:31,834 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:08:31,840 - base - Scheduler started
+DEBUG - 2023-08-24 01:08:31,841 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:08:31,842 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:08:31,970 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:08:32,023 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:08:34,752 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:08:35,513 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:08:35,513 - base - Scheduler started
+DEBUG - 2023-08-24 01:08:35,522 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:08:35,523 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:08:35,644 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:08:35,707 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:08:40,181 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:08:41,016 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:08:41,021 - base - Scheduler started
+DEBUG - 2023-08-24 01:08:41,022 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:08:41,023 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:08:41,144 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:08:41,199 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:08:45,964 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:08:46,816 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:08:46,822 - base - Scheduler started
+DEBUG - 2023-08-24 01:08:46,823 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:08:46,823 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:08:46,959 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:08:47,027 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:08:49,765 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:08:49,765 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:08:49,765 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:08:49,766 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:08:49,766 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:08:49,767 - models - Number of flights found: 1
+INFO - 2023-08-24 01:08:49,767 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 01:08:49,768 - base_views - Error fetching flights based on search criteria: The field 'airline_company' was declared on serializer FlightsSerializer, but has not been included in the 'fields' option.
+ERROR - 2023-08-24 01:08:49,769 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 01:08:49,769 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+DEBUG - 2023-08-24 01:09:18,075 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:09:18,075 - base - Scheduler started
+DEBUG - 2023-08-24 01:09:18,087 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:09:18,087 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-24 01:09:18,811 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:09:18,811 - base - Scheduler started
+DEBUG - 2023-08-24 01:09:18,811 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:09:18,811 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:09:18,947 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:09:19,002 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:09:34,409 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:09:34,410 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:09:34,410 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:09:34,411 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:09:34,412 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:09:34,413 - models - Number of flights found: 1
+INFO - 2023-08-24 01:09:34,413 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 01:09:34,413 - base_views - Error fetching flights based on search criteria: The field 'airline_company' was declared on serializer FlightsSerializer, but has not been included in the 'fields' option.
+ERROR - 2023-08-24 01:09:34,414 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 01:09:34,414 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 01:09:43,007 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:09:43,751 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:09:43,767 - base - Scheduler started
+DEBUG - 2023-08-24 01:09:43,769 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:09:43,769 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:09:43,889 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:09:43,948 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:09:46,602 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:09:47,433 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:09:47,433 - base - Scheduler started
+DEBUG - 2023-08-24 01:09:47,443 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:09:47,444 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:09:47,555 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:09:47,615 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:11:01,048 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:11:01,818 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:11:01,822 - base - Scheduler started
+DEBUG - 2023-08-24 01:11:01,823 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:11:01,824 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:11:01,946 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:11:01,999 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:11:33,232 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:11:34,151 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:11:34,158 - base - Scheduler started
+DEBUG - 2023-08-24 01:11:34,159 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:11:34,159 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:11:34,290 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:11:34,345 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:11:38,031 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:11:38,861 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:11:38,866 - base - Scheduler started
+DEBUG - 2023-08-24 01:11:38,868 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:11:38,868 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:11:38,996 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:11:39,050 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:12:09,102 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\views\base_views.py changed, reloading.
+DEBUG - 2023-08-24 01:12:09,957 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:12:09,962 - base - Scheduler started
+DEBUG - 2023-08-24 01:12:09,964 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:12:09,964 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:12:10,089 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:12:10,141 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:12:11,740 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\views\base_views.py changed, reloading.
+DEBUG - 2023-08-24 01:12:12,600 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:12:12,605 - base - Scheduler started
+DEBUG - 2023-08-24 01:12:12,606 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:12:12,607 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:12:12,706 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:12:12,784 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:12:21,792 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\views\base_views.py changed, reloading.
+DEBUG - 2023-08-24 01:12:22,586 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:12:22,591 - base - Scheduler started
+DEBUG - 2023-08-24 01:12:22,592 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:12:22,593 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:12:22,720 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:12:22,779 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:12:47,025 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:12:47,026 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:12:47,026 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:12:47,027 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:12:47,027 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:12:47,030 - models - Number of flights found: 0
+WARNING - 2023-08-24 01:12:47,031 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 01:12:47,031 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 01:12:47,032 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 01:14:35,456 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:14:36,597 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:14:36,603 - base - Scheduler started
+DEBUG - 2023-08-24 01:14:36,604 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:14:36,605 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:14:36,781 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:14:36,835 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:14:40,550 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:14:41,410 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:14:41,416 - base - Scheduler started
+DEBUG - 2023-08-24 01:14:41,418 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:14:41,418 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:14:41,539 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:14:41,609 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:14:53,870 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:14:53,870 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:14:53,870 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:14:53,871 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:14:53,872 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:14:53,876 - models - Number of flights found: 1
+INFO - 2023-08-24 01:14:53,876 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 01:14:53,876 - base_views - Error fetching flights based on search criteria: "Got KeyError when attempting to get a value for field `id` on serializer `FlightsRawSQLSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'id'."
+ERROR - 2023-08-24 01:14:53,877 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 01:14:53,878 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 01:16:06,791 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:16:07,697 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:16:07,702 - base - Scheduler started
+DEBUG - 2023-08-24 01:16:07,703 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:16:07,704 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:16:07,825 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:16:07,895 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:16:12,660 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:16:12,661 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:16:12,661 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:16:12,662 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:16:12,663 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:16:12,666 - models - Number of flights found: 1
+INFO - 2023-08-24 01:16:12,666 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 01:16:12,667 - base_views - Error fetching flights based on search criteria: "Got KeyError when attempting to get a value for field `id` on serializer `FlightsRawSQLSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'id'."
+ERROR - 2023-08-24 01:16:12,668 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 01:16:12,668 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 01:17:08,932 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:17:09,696 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:17:09,700 - base - Scheduler started
+DEBUG - 2023-08-24 01:17:09,701 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:17:09,702 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:17:09,824 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:17:09,875 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:17:14,364 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:17:14,365 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:17:14,365 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:17:14,365 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:17:14,366 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:17:14,369 - models - Number of flights found: 1
+INFO - 2023-08-24 01:17:14,369 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 01:17:14,369 - base_views - Error fetching flights based on search criteria: "Got KeyError when attempting to get a value for field `remaining_tickets` on serializer `FlightsRawSQLSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'remaining_tickets'."
+ERROR - 2023-08-24 01:17:14,370 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 01:17:14,371 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 01:17:38,810 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:17:48,525 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:17:48,610 - base - Scheduler started
+DEBUG - 2023-08-24 01:17:48,616 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:17:48,619 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:17:49,441 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:17:49,836 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:18:04,454 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:18:04,455 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:18:04,455 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:18:04,457 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:18:04,458 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:18:04,465 - models - Number of flights found: 1
+INFO - 2023-08-24 01:18:04,465 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 01:18:04,466 - base_views - Error fetching flights based on search criteria: "Got KeyError when attempting to get a value for field `flight_number` on serializer `FlightsRawSQLSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'flight_number'."
+ERROR - 2023-08-24 01:18:04,468 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 01:18:04,469 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 01:18:14,059 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:18:14,909 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:18:14,923 - base - Scheduler started
+DEBUG - 2023-08-24 01:18:14,924 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:18:14,925 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:18:15,052 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:18:15,105 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:18:17,519 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:18:17,520 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:18:17,520 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:18:17,521 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:18:17,521 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+ERROR - 2023-08-24 01:18:17,523 - facade_base - Error processing flight search criteria: Cannot resolve keyword 'flight_numberorigin_country_id_id' into field. Choices are: airline_company_id, airline_company_id_id, arrival_terminal, departure_terminal, departure_time, destination_country_id, destination_country_id_id, flight_number, id, landing_time, origin_country_id, origin_country_id_id, remaining_tickets, tickets
+WARNING - 2023-08-24 01:18:17,523 - base_views - No flights found based on search criteria.
+WARNING - 2023-08-24 01:18:17,524 - log - Not Found: /Api/flights/search/
+WARNING - 2023-08-24 01:18:17,524 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 404 29
+INFO - 2023-08-24 01:19:27,837 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:19:28,659 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:19:28,664 - base - Scheduler started
+DEBUG - 2023-08-24 01:19:28,665 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:19:28,666 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:19:28,817 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:19:28,880 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:19:34,695 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:19:35,478 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:19:35,478 - base - Scheduler started
+DEBUG - 2023-08-24 01:19:35,487 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:19:35,487 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:19:35,609 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:19:35,665 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:19:37,302 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:19:38,064 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:19:38,079 - base - Scheduler started
+DEBUG - 2023-08-24 01:19:38,083 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:19:38,083 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:19:38,202 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:19:38,255 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:19:41,937 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:19:42,764 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:19:42,770 - base - Scheduler started
+DEBUG - 2023-08-24 01:19:42,771 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:19:42,772 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:19:42,894 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:19:42,945 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:19:48,738 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:19:49,632 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:19:49,639 - base - Scheduler started
+DEBUG - 2023-08-24 01:19:49,640 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:19:49,640 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:19:49,772 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:19:49,824 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:19:53,523 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:19:54,341 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:19:54,347 - base - Scheduler started
+DEBUG - 2023-08-24 01:19:54,348 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:19:54,348 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:19:54,471 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:19:54,525 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:19:56,128 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:19:57,003 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:19:57,010 - base - Scheduler started
+DEBUG - 2023-08-24 01:19:57,011 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:19:57,011 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:19:57,139 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:19:57,196 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:19:59,358 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:19:59,359 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:19:59,359 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:19:59,360 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:19:59,360 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:19:59,366 - models - Number of flights found: 1
+INFO - 2023-08-24 01:19:59,366 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 01:19:59,367 - base_views - Error fetching flights based on search criteria: "Got KeyError when attempting to get a value for field `airline_company_id` on serializer `FlightsRawSQLSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'airline_company_id'."
+ERROR - 2023-08-24 01:19:59,368 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 01:19:59,369 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 01:20:22,299 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:20:23,110 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:20:23,115 - base - Scheduler started
+DEBUG - 2023-08-24 01:20:23,116 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:20:23,116 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:20:23,235 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:20:23,289 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:20:25,991 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:20:25,991 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:20:25,992 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:20:25,992 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:20:25,993 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:20:25,996 - models - Number of flights found: 1
+INFO - 2023-08-24 01:20:25,997 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 01:20:25,998 - base_views - Error fetching flights based on search criteria: invalid literal for int() with base 10: '8I'
+ERROR - 2023-08-24 01:20:25,998 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 01:20:25,999 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 01:24:55,752 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:25:00,638 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:25:00,677 - base - Scheduler started
+DEBUG - 2023-08-24 01:25:00,684 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:25:00,686 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:25:01,290 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:25:01,518 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:25:05,621 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:25:05,622 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:25:05,622 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:25:05,623 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:25:05,624 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:25:05,634 - models - Number of flights found: 1
+INFO - 2023-08-24 01:25:05,636 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 01:25:05,638 - base_views - Error fetching flights based on search criteria: "Got KeyError when attempting to get a value for field `airline_company_id_id` on serializer `FlightsRawSQLSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'airline_company_id_id'."
+ERROR - 2023-08-24 01:25:05,641 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 01:25:05,643 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 01:26:17,615 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:26:18,484 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:26:18,491 - base - Scheduler started
+DEBUG - 2023-08-24 01:26:18,493 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:26:18,493 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:26:18,633 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:26:18,694 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:26:20,568 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:26:20,569 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:26:20,569 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:26:20,570 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:26:20,570 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:26:20,574 - models - Number of flights found: 1
+INFO - 2023-08-24 01:26:20,575 - base_views - Successfully fetched flights based on search criteria.
+ERROR - 2023-08-24 01:26:20,576 - base_views - Error fetching flights based on search criteria: "Got KeyError when attempting to get a value for field `origin_country_id` on serializer `FlightsRawSQLSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'origin_country_id'."
+ERROR - 2023-08-24 01:26:20,577 - log - Internal Server Error: /Api/flights/search/
+ERROR - 2023-08-24 01:26:20,577 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 500 57
+INFO - 2023-08-24 01:27:07,148 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:27:07,983 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:27:07,989 - base - Scheduler started
+DEBUG - 2023-08-24 01:27:07,990 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:27:07,991 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:27:08,126 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:27:08,185 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:27:13,054 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 01:27:13,989 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:27:13,994 - base - Scheduler started
+DEBUG - 2023-08-24 01:27:13,995 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:27:13,996 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:27:14,132 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:27:14,190 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:27:18,729 - custom_auth_middleware - User customercustomer authenticated via token.
+INFO - 2023-08-24 01:27:18,729 - models - Checking if user customercustomer is authenticated.
+INFO - 2023-08-24 01:27:18,729 - custom_auth_middleware - customercustomer Is authenticated ? : True
+INFO - 2023-08-24 01:27:18,730 - facade_base - Processing search criteria...
+INFO - 2023-08-24 01:27:18,730 - models - Received Parameters: Origin Country ID: 109, Destination Country ID: 66, Departure Date: 2023-08-25, Return Date: None
+INFO - 2023-08-24 01:27:18,735 - models - Number of flights found: 1
+INFO - 2023-08-24 01:27:18,736 - base_views - Successfully fetched flights based on search criteria.
+INFO - 2023-08-24 01:27:18,737 - basehttp - "POST /Api/flights/search/ HTTP/1.1" 200 275
+INFO - 2023-08-24 01:29:11,286 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:29:12,121 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:29:12,128 - base - Scheduler started
+DEBUG - 2023-08-24 01:29:12,129 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:29:12,129 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:29:12,241 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:29:12,312 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:29:18,106 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:29:18,970 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:29:18,975 - base - Scheduler started
+DEBUG - 2023-08-24 01:29:18,976 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:29:18,976 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:29:19,107 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:29:19,169 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:29:22,825 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:29:23,619 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:29:23,625 - base - Scheduler started
+DEBUG - 2023-08-24 01:29:23,627 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:29:23,627 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:29:23,747 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:29:23,799 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:30:18,166 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 01:30:19,118 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 01:30:19,118 - base - Scheduler started
+DEBUG - 2023-08-24 01:30:19,118 - base - Looking for jobs to run
+DEBUG - 2023-08-24 01:30:19,118 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:30:19,255 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 01:30:19,313 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 01:30:50,552 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 01:30:50,552 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 01:30:50,552 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 01:30:50,553 - facade_base - getting All Flights
+INFO - 2023-08-24 01:30:50,558 - base_views - Successfully fetched all flights.
+INFO - 2023-08-24 01:30:50,602 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 01:30:50,620 - basehttp - "GET /Api/flights/ HTTP/1.1" 200 16981
+INFO - 2023-08-24 01:30:57,106 - custom_auth_middleware - User madeleine authenticated via token.
+INFO - 2023-08-24 01:30:57,106 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 01:30:57,107 - custom_auth_middleware - madeleine Is authenticated ? : True
+INFO - 2023-08-24 01:30:57,108 - models - Checking if user madeleine is authenticated.
+INFO - 2023-08-24 01:30:57,114 - auth_views - Successfully logged out
+INFO - 2023-08-24 01:30:57,115 - basehttp - "POST /logout/ HTTP/1.1" 302 0
+INFO - 2023-08-24 01:30:57,119 - custom_auth_middleware - No login token found in the session.
+INFO - 2023-08-24 01:30:57,121 - basehttp - "GET /login/ HTTP/1.1" 200 1728
+INFO - 2023-08-24 01:31:02,181 - custom_auth_middleware - No login token found in the session.
+INFO - 2023-08-24 01:31:02,427 - auth_views - Welcome TheAdmin! Successfully logged in as administrator.
+INFO - 2023-08-24 01:31:02,440 - basehttp - "POST /login/ HTTP/1.1" 302 0
+INFO - 2023-08-24 01:31:02,448 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-24 01:31:02,448 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:31:02,448 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-24 01:31:02,452 - basehttp - "GET / HTTP/1.1" 200 2865
+INFO - 2023-08-24 01:31:02,489 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-24 01:31:02,489 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:31:02,490 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-24 01:31:02,541 - basehttp - "GET /Bingo/users/defaultuser.png HTTP/1.1" 200 3655
+INFO - 2023-08-24 01:31:08,671 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-24 01:31:08,672 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:31:08,672 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-24 01:31:08,672 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:31:08,673 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:31:08,731 - basehttp - "GET /register/?user_role=Airline%20Company HTTP/1.1" 200 14435
+INFO - 2023-08-24 01:32:14,325 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-24 01:32:14,326 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:32:14,326 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-24 01:32:14,328 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:32:14,328 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:32:14,570 - facade_base - User data: {'id': '832748973', 'username': 'anotheradminairline1', 'email': 'anotheradminairline1@mail.com', 'password': 'pbkdf2_sha256$600000$8iFuzqv1w9Ddt8Dz4NmSdH$GjyCNdrFSqiffs3bARytRNlcAUJY7SwUCmhVEDtzaHE=', 'user_role': <User_Roles: Airline Company>, 'image': '/users/defaultuser.png'}
+INFO - 2023-08-24 01:32:14,572 - administrator_facade - Admin privileges validated
+INFO - 2023-08-24 01:32:14,575 - administrator_facade - Adding Airline successfully
+INFO - 2023-08-24 01:32:14,576 - models - Logo not provided for Z1. Scheduling download task...
+INFO - 2023-08-24 01:32:14,734 - base - Added job "download_airline_logo" to job store "default"
+INFO - 2023-08-24 01:32:14,734 - auth_views - Successfully created Airline Company instance: Z1 airline test
+DEBUG - 2023-08-24 01:32:14,734 - base - Looking for jobs to run
+INFO - 2023-08-24 01:32:14,736 - base - Running job "download_airline_logo (trigger: date[2023-08-24 01:32:14 IDT], next run at: 2023-08-24 01:32:14 IDT)" (scheduled at 2023-08-24 01:32:14.733118+03:00)
+INFO - 2023-08-24 01:32:14,736 - base - Removed job cfd30b2814544e18ae75e5d25ca773d5
+INFO - 2023-08-24 01:32:14,736 - tasks - Download function called for iata_code: Z1
+DEBUG - 2023-08-24 01:32:14,736 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 01:32:14,737 - auth_views - Successfully created Users instance: anotheradminairline1
+INFO - 2023-08-24 01:32:14,738 - basehttp - "POST /register/?user_role=Airline%20Company HTTP/1.1" 302 0
+INFO - 2023-08-24 01:32:14,740 - tasks - Attempting to download logo from URL: https://content.r9cdn.net/rimg/provider-logos/airlines/v/Z1.png?crop=false&width=100&height=100
+INFO - 2023-08-24 01:32:14,762 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-24 01:32:14,762 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:32:14,763 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-24 01:32:14,764 - auth_views - User theadmin tried to access the login page while already logged in.
+INFO - 2023-08-24 01:32:14,766 - basehttp - "GET /login/ HTTP/1.1" 302 0
+INFO - 2023-08-24 01:32:14,775 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-24 01:32:14,776 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:32:14,776 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-24 01:32:14,780 - basehttp - "GET / HTTP/1.1" 200 2865
+INFO - 2023-08-24 01:32:34,139 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-24 01:32:34,139 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:32:34,140 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-24 01:32:34,141 - facade_base - getting All Flights
+INFO - 2023-08-24 01:32:34,144 - base_views - Successfully fetched all flights.
+INFO - 2023-08-24 01:32:34,174 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:32:34,181 - basehttp - "GET /Api/flights/ HTTP/1.1" 200 16980
+INFO - 2023-08-24 01:32:36,769 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-24 01:32:36,769 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:32:36,769 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-24 01:32:36,770 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:32:36,771 - decorators - Permission granted to user role Administrator .
+INFO - 2023-08-24 01:32:36,771 - administrator_facade - Fetching all customers.
+INFO - 2023-08-24 01:32:36,773 - administrator_views - Successfully fetched all customers.
+INFO - 2023-08-24 01:32:36,794 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:32:36,799 - basehttp - "GET /Api/admin/customers/ HTTP/1.1" 200 15612
+INFO - 2023-08-24 01:33:39,265 - tasks - Error when trying to download logo from https://content.r9cdn.net/rimg/provider-logos/airlines/v/Z1.png?crop=false&width=100&height=100: HTTP Error 410: Gone
+INFO - 2023-08-24 01:33:39,313 - base - Job "download_airline_logo (trigger: date[2023-08-24 01:32:14 IDT], next run at: 2023-08-24 01:32:14 IDT)" executed successfully
+INFO - 2023-08-24 01:34:11,701 - basehttp - "GET /admin/ HTTP/1.1" 302 0
+INFO - 2023-08-24 01:34:11,720 - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4185
+INFO - 2023-08-24 01:34:16,725 - basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO - 2023-08-24 01:34:16,759 - basehttp - "GET /admin/ HTTP/1.1" 200 13099
+INFO - 2023-08-24 01:34:19,479 - basehttp - "GET /admin/Bingo/users/ HTTP/1.1" 200 34540
+INFO - 2023-08-24 01:34:19,509 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-24 01:34:23,416 - basehttp - "GET /admin/Bingo/users/832748973/change/ HTTP/1.1" 200 16262
+INFO - 2023-08-24 01:34:23,445 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-24 01:34:25,629 - basehttp - "GET /admin/Bingo/users/832748973/delete/ HTTP/1.1" 200 10306
+INFO - 2023-08-24 01:34:26,737 - basehttp - "GET /admin/Bingo/airline_companies/Z1/change/ HTTP/1.1" 200 73840
+INFO - 2023-08-24 01:34:26,761 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-24 01:34:28,004 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-24 01:34:28,005 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:34:28,005 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-24 01:34:28,012 - basehttp - "GET /Bingo/airline_logos/Z1.png HTTP/1.1" 200 1625
+INFO - 2023-08-24 01:34:31,433 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-24 01:34:31,434 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:34:31,434 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-24 01:34:31,435 - facade_base - getting Flight by id
+INFO - 2023-08-24 01:34:31,437 - base_views - Successfully fetched flight with id: 7
+INFO - 2023-08-24 01:34:31,447 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:34:31,450 - basehttp - "GET /Api/flights/7/ HTTP/1.1" 200 7357
+INFO - 2023-08-24 01:34:33,278 - basehttp - "GET /admin/Bingo/tickets/ HTTP/1.1" 200 11523
+INFO - 2023-08-24 01:34:33,324 - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO - 2023-08-24 01:34:57,517 - custom_auth_middleware - User theadmin authenticated via token.
+INFO - 2023-08-24 01:34:57,518 - models - Checking if user theadmin is authenticated.
+INFO - 2023-08-24 01:34:57,518 - custom_auth_middleware - theadmin Is authenticated ? : True
+INFO - 2023-08-24 01:34:57,520 - models - Checking if user theadmin is authenticated.
+WARNING - 2023-08-24 01:34:57,535 - log - Method Not Allowed: /Api/flights/search/
+WARNING - 2023-08-24 01:34:57,536 - basehttp - "GET /Api/flights/search/ HTTP/1.1" 405 5936
+INFO - 2023-08-24 01:55:37,269 - basehttp - "GET /admin/ HTTP/1.1" 200 13099
+INFO - 2023-08-24 02:55:11,422 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:55:13,843 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:55:13,875 - base - Scheduler started
+DEBUG - 2023-08-24 02:55:13,880 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:55:13,882 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:55:14,129 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:55:18,534 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:55:21,101 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:55:21,123 - base - Scheduler started
+DEBUG - 2023-08-24 02:55:21,125 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:55:21,126 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:55:21,153 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:55:28,847 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:55:32,917 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:55:33,140 - base - Scheduler started
+DEBUG - 2023-08-24 02:55:33,144 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:55:33,146 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:55:33,349 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:55:33,968 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:55:36,308 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:55:37,162 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:55:37,169 - base - Scheduler started
+DEBUG - 2023-08-24 02:55:37,170 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:55:37,170 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:55:37,193 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:55:37,421 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:56:05,344 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:56:06,104 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:56:06,109 - base - Scheduler started
+DEBUG - 2023-08-24 02:56:06,110 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:56:06,111 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:56:06,136 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:56:06,345 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:56:08,639 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:56:09,517 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:56:09,523 - base - Scheduler started
+DEBUG - 2023-08-24 02:56:09,524 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:56:09,525 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:56:09,550 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:56:09,761 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:56:19,213 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:56:20,080 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:56:20,080 - base - Scheduler started
+DEBUG - 2023-08-24 02:56:20,096 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:56:20,096 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:56:20,119 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:56:20,324 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:56:21,567 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:56:22,389 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:56:22,396 - base - Scheduler started
+DEBUG - 2023-08-24 02:56:22,397 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:56:22,397 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:56:22,424 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:56:22,639 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:56:26,951 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:56:27,735 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:56:27,735 - base - Scheduler started
+DEBUG - 2023-08-24 02:56:27,746 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:56:27,746 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:56:27,773 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:56:27,990 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:56:30,303 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:56:31,062 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:56:31,068 - base - Scheduler started
+DEBUG - 2023-08-24 02:56:31,069 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:56:31,069 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:56:31,097 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:56:31,319 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:56:54,094 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:56:55,000 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:56:55,000 - base - Scheduler started
+DEBUG - 2023-08-24 02:56:55,007 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:56:55,007 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:56:55,030 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:56:55,245 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:57:28,309 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:57:29,253 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:57:29,253 - base - Scheduler started
+DEBUG - 2023-08-24 02:57:29,262 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:57:29,262 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:57:29,287 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:57:29,548 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:57:31,969 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:57:32,875 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:57:32,880 - base - Scheduler started
+DEBUG - 2023-08-24 02:57:32,881 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:57:32,881 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:57:32,907 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:57:33,162 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:57:41,638 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:57:42,408 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:57:42,423 - base - Scheduler started
+DEBUG - 2023-08-24 02:57:42,430 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:57:42,430 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:57:42,458 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:57:42,671 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:57:44,960 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:57:45,801 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:57:45,809 - base - Scheduler started
+DEBUG - 2023-08-24 02:57:45,811 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:57:45,811 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:57:45,844 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:57:46,054 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:57:48,356 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:57:49,191 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:57:49,206 - base - Scheduler started
+DEBUG - 2023-08-24 02:57:49,211 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:57:49,211 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:57:49,236 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:57:49,467 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:57:52,764 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\models.py changed, reloading.
+DEBUG - 2023-08-24 02:57:53,508 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:57:53,522 - base - Scheduler started
+DEBUG - 2023-08-24 02:57:53,529 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:57:53,530 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:57:53,558 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:57:53,779 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-24 02:58:13,390 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:58:13,406 - base - Scheduler started
+DEBUG - 2023-08-24 02:58:13,411 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:58:13,411 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-24 02:58:14,159 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:58:14,159 - base - Scheduler started
+DEBUG - 2023-08-24 02:58:14,167 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:58:14,168 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:58:14,201 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:58:14,409 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:58:31,051 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\admin.py changed, reloading.
+DEBUG - 2023-08-24 02:58:31,783 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:58:31,783 - base - Scheduler started
+DEBUG - 2023-08-24 02:58:31,794 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:58:31,795 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:58:31,901 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:58:32,062 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:58:33,364 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Bingo\admin.py changed, reloading.
+DEBUG - 2023-08-24 02:58:34,130 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:58:34,135 - base - Scheduler started
+DEBUG - 2023-08-24 02:58:34,136 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:58:34,136 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:58:34,268 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:58:34,318 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:58:50,616 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 02:58:51,426 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:58:51,432 - base - Scheduler started
+DEBUG - 2023-08-24 02:58:51,433 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:58:51,434 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:58:51,556 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:58:51,608 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:59:03,699 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 02:59:04,529 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:59:04,533 - base - Scheduler started
+DEBUG - 2023-08-24 02:59:04,534 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:59:04,536 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:59:04,643 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:59:04,717 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:59:07,420 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 02:59:08,203 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:59:08,208 - base - Scheduler started
+DEBUG - 2023-08-24 02:59:08,209 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:59:08,210 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:59:08,326 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:59:08,382 - flight_views - Starting the clean method of SearchForm.
+INFO - 2023-08-24 02:59:23,383 - autoreload - C:\Users\Urb4llZ\Desktop\BingoAir\BingoAirlines\Api\serializers.py changed, reloading.
+DEBUG - 2023-08-24 02:59:24,131 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 02:59:24,146 - base - Scheduler started
+DEBUG - 2023-08-24 02:59:24,150 - base - Looking for jobs to run
+DEBUG - 2023-08-24 02:59:24,151 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 02:59:24,268 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 02:59:24,326 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-24 03:01:52,602 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 03:01:52,619 - base - Scheduler started
+DEBUG - 2023-08-24 03:01:52,620 - base - Looking for jobs to run
+DEBUG - 2023-08-24 03:01:52,621 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 03:01:52,819 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-24 03:02:16,609 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 03:02:16,624 - base - Scheduler started
+DEBUG - 2023-08-24 03:02:16,630 - base - Looking for jobs to run
+DEBUG - 2023-08-24 03:02:16,631 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 03:02:16,842 - flight_views - Starting the clean method of SearchForm.
+DEBUG - 2023-08-24 03:02:26,155 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 03:02:26,155 - base - Scheduler started
+DEBUG - 2023-08-24 03:02:26,169 - base - Looking for jobs to run
+DEBUG - 2023-08-24 03:02:26,169 - base - No jobs; waiting until a job is added
+DEBUG - 2023-08-24 03:02:26,960 - win32 - Looking up time zone info from registry
+INFO - 2023-08-24 03:02:26,965 - base - Scheduler started
+DEBUG - 2023-08-24 03:02:26,966 - base - Looking for jobs to run
+DEBUG - 2023-08-24 03:02:26,966 - base - No jobs; waiting until a job is added
+INFO - 2023-08-24 03:02:27,094 - autoreload - Watching for file changes with StatReloader
+INFO - 2023-08-24 03:02:27,147 - flight_views - Starting the clean method of SearchForm.

@@ -7,7 +7,8 @@ from PIL import Image
 from io import BytesIO
 from django.db import models
 from datetime import timedelta
-from django.db.models   import Q
+from django.db import connection
+from django.db.models    import Q
 from django.utils import  timezone
 from django.core import   validators
 from Bingo.utils.scheduler import scheduler
@@ -165,23 +166,6 @@ class Countries(models.Model):
 
         
 
-class Flights(models.Model):
-    id = models.BigAutoField(primary_key=True)
-    airline_company_id = models.ForeignKey('Airline_Companies', to_field='iata_code', on_delete=models.CASCADE)
-    origin_country_id = models.ForeignKey('Countries', on_delete=models.CASCADE, related_name='origin_flights')
-    destination_country_id = models.ForeignKey('Countries', on_delete=models.CASCADE, related_name='destination_flights')
-    departure_time = models.DateTimeField(null=False)
-    landing_time = models.DateTimeField(null=False)
-    remaining_tickets = models.IntegerField(null=False, validators=[MinValueValidator(0)])
-    
-    def __str__(self):
-        return f'Flight {self.id}'
-    
-    class Meta:
-        verbose_name_plural = "Flights"
-
-
-
 # class Flights(models.Model):
 #     id = models.BigAutoField(primary_key=True)
 #     airline_company_id = models.ForeignKey('Airline_Companies', to_field='iata_code', on_delete=models.CASCADE)
@@ -190,11 +174,7 @@ class Flights(models.Model):
 #     departure_time = models.DateTimeField(null=False)
 #     landing_time = models.DateTimeField(null=False)
 #     remaining_tickets = models.IntegerField(null=False, validators=[MinValueValidator(0)])
-#     flight_number = models.CharField(max_length=10)  
-#     departure_terminal = models.CharField(max_length=1, choices=TERMINAL_CHOICES, null=True, blank=True)
-#     arrival_terminal = models.CharField(max_length=1, choices=TERMINAL_CHOICES, null=True, blank=True)
-#     itinerary = models.ForeignKey('Itinerary', on_delete=models.CASCADE, null=True, blank=True)
-
+    
 #     def __str__(self):
 #         return f'Flight {self.id}'
     
@@ -202,10 +182,30 @@ class Flights(models.Model):
 #         verbose_name_plural = "Flights"
 
 
+
+class Flights(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    airline_company_id = models.ForeignKey('Airline_Companies', to_field='iata_code', on_delete=models.CASCADE)
+    origin_country_id = models.ForeignKey('Countries', on_delete=models.CASCADE, related_name='origin_flights')
+    destination_country_id = models.ForeignKey('Countries', on_delete=models.CASCADE, related_name='destination_flights')
+    departure_time = models.DateTimeField(null=False)
+    landing_time = models.DateTimeField(null=False)
+    remaining_tickets = models.IntegerField(null=False, validators=[MinValueValidator(0)])
+    flight_number = models.CharField(max_length=10)  
+    departure_terminal = models.CharField(max_length=1, choices=TERMINAL_CHOICES, null=True, blank=True)
+    arrival_terminal = models.CharField(max_length=1, choices=TERMINAL_CHOICES, null=True, blank=True)
+
+    def __str__(self):
+        return f'Flight {self.id}'
+    
+    class Meta:
+        verbose_name_plural = "Flights"
+
+
 # class Itinerary(models.Model):
 #     customer = models.ForeignKey('Customers', on_delete=models.CASCADE)
 #     booking_date = models.DateTimeField(auto_now_add=True)  # The date when the customer made the booking.
-#     total_price = models.DecimalField(max_digits=9, decimal_places=2)  # Total price for the whole itinerary.
+#     total_price = models.DecimalField(max_digits=9, decimal_places=2)  # Total price for the whole booking.
 
 #     # Journey details
 #     currency = models.CharField(max_length=4, choices=CURRENCY_CHOICES, default='USD')
@@ -223,6 +223,19 @@ class Flights(models.Model):
 
 
 
+class Booking(models.Model):
+    customer = models.ForeignKey('Customers', on_delete=models.CASCADE)
+    booking_date = models.DateTimeField(auto_now_add=True)
+    total_price = models.DecimalField(max_digits=9, decimal_places=2)
+    
+    def __str__(self):
+        return f'Booking {self.id} for Customer {self.customer_id}'
+    
+    class Meta:
+        verbose_name_plural = "Bookings"
+
+
+
 
 
 
@@ -230,17 +243,39 @@ class Flights(models.Model):
         
 
 
-# Tickets model represents individual flight tickets
+# # Tickets model represents individual flight tickets
+# class Tickets(models.Model):
+#     id = models.BigAutoField(primary_key=True)
+#     flight_id = models.ForeignKey(Flights, on_delete=models.CASCADE)
+#     customer_id = models.ForeignKey('Customers', on_delete=models.CASCADE)
+
+#     def __str__(self):
+#         return f'Ticket {self.id}'
+    
+#     class Meta:
+#         verbose_name_plural = "Tickets"
+
+
 class Tickets(models.Model):
     id = models.BigAutoField(primary_key=True)
     flight_id = models.ForeignKey(Flights, on_delete=models.CASCADE)
     customer_id = models.ForeignKey('Customers', on_delete=models.CASCADE)
-
+    Booking = models.ForeignKey(Booking, on_delete=models.CASCADE)
+    
+    # Segment-specific details
+    currency = models.CharField(max_length=4, choices=CURRENCY_CHOICES, default='USD')
+    cabin = models.CharField(max_length=10, choices=CABIN_CHOICES, default='ECONOMY')
+    adult_traveler_count = models.PositiveIntegerField(validators=[MinValueValidator(1), MaxValueValidator(9)], default=1)
+    child_traveler_count = models.PositiveIntegerField(validators=[MinValueValidator(0), MaxValueValidator(9)], default=0)
+    
     def __str__(self):
         return f'Ticket {self.id}'
     
     class Meta:
         verbose_name_plural = "Tickets"
+    
+
+
     
 
 
@@ -484,41 +519,41 @@ class DAL:
 
 
 
-    def get_flights_by_customer(self, customer_id):
-
-        """
-        Get all flights for a given customer ID
-        """
-
-        try:
-            return Flights.objects.filter(customer_id=customer_id)
-        except Exception as e:
-            logger.error(f"Error fetching flights for customer ID {customer_id}. Error: {str(e)}")
-            return None
-        
-        
-
     # def get_flights_by_customer(self, customer_id):
+
     #     """
     #     Get all flights for a given customer ID
     #     """
+
     #     try:
-    #         # Fetch all itineraries for the customer
-    #         itineraries = Itinerary.objects.filter(customer_id=customer_id)
-
-    #         # Fetch all tickets that are part of these itineraries
-    #         tickets = Tickets.objects.filter(itinerary__in=itineraries)
-
-    #         # Extract flight IDs from the tickets
-    #         flight_ids = [ticket.flight_id.id for ticket in tickets]
-
-    #         # Fetch all flights using the extracted flight IDs
-    #         flights = Flights.objects.filter(id__in=flight_ids)
-
-    #         return flights
+    #         return Flights.objects.filter(customer_id=customer_id)
     #     except Exception as e:
     #         logger.error(f"Error fetching flights for customer ID {customer_id}. Error: {str(e)}")
     #         return None
+        
+
+
+    def get_flights_by_customer(self, customer_id):
+        """
+        Get all flights for a given customer ID
+        """
+        try:
+            # Fetch all itineraries for the customer
+            bookings = Booking.objects.filter(customer_id=customer_id)
+
+            # Fetch all tickets that are part of these itineraries
+            tickets = Tickets.objects.filter(booking__in=bookings)
+
+            # Extract flight IDs from the tickets
+            flight_ids = [ticket.flight_id.id for ticket in tickets]
+
+            # Fetch all flights using the extracted flight IDs
+            flights = Flights.objects.filter(id__in=flight_ids)
+
+            return flights
+        except Exception as e:
+            logger.error(f"Error fetching flights for customer ID {customer_id}. Error: {str(e)}")
+            return None
 
 
 
@@ -586,41 +621,142 @@ class DAL:
 
     #V2
 
+    # def get_flights_by_parameters(self, parameters):
+    #     # Extracting parameters
+    #     origin_country_id = parameters.get('origin_country_id')
+    #     destination_country_id = parameters.get('destination_country_id')
+    #     departure_date = parameters.get('departure_date')
+    #     return_date = parameters.get('return_date', None)
+        
+    #     # Building the query for departure flights
+    #     departure_query = Q(
+    #         origin_country_id=origin_country_id, 
+    #         destination_country_id=destination_country_id,
+    #         departure_time__date=departure_date
+    #     )
+        
+    #     if return_date:
+    #         # Building the query for return flights
+    #         return_query = Q(
+    #             origin_country_id=destination_country_id, 
+    #             destination_country_id=origin_country_id,
+    #             departure_time__date=return_date
+    #         )
+    #         # Combining both departure and return flight queries
+    #         combined_query = departure_query | return_query
+    #     else:
+    #         combined_query = departure_query
+        
+    #     # Querying the database
+    #     flights = Flights.objects.filter(combined_query).values(
+    #         'origin_country_id',
+    #         'destination_country_id',
+    #         'departure_time',
+    #         'landing_time'
+    #     )
+        
+    #     return flights
+
+
+
+
     def get_flights_by_parameters(self, parameters):
         # Extracting parameters
-        origin_location_code = parameters.get('origin_location_code')
-        destination_location_code = parameters.get('destination_location_code')
+        origin_country_id = parameters.get('origin_country_id')
+        destination_country_id = parameters.get('destination_country_id')
         departure_date = parameters.get('departure_date')
         return_date = parameters.get('return_date', None)
         
-        # Building the query for departure flights
+        # Logging the received parameters
+        logging.info(f"Received Parameters: Origin Country ID: {origin_country_id}, Destination Country ID: {destination_country_id}, Departure Date: {departure_date}, Return Date: {return_date}")
+        
+
         departure_query = Q(
-            origin_country__country_code=origin_location_code, 
-            destination_country__country_code=destination_location_code,
-            departure_time__date=departure_date
+            origin_country_id_id=origin_country_id, 
+            destination_country_id_id=destination_country_id,
+            departure_time__contains=departure_date
         )
         
         if return_date:
             # Building the query for return flights
             return_query = Q(
-                origin_country__country_code=destination_location_code, 
-                destination_country__country_code=origin_location_code,
-                departure_time__date=return_date
+                origin_country_id_id=destination_country_id, 
+                destination_country_id_id=origin_country_id,
+                departure_time__contains=departure_date
+
             )
             # Combining both departure and return flight queries
             combined_query = departure_query | return_query
         else:
             combined_query = departure_query
         
-        # Querying the database
-        flights = Flights.objects.filter(combined_query).values(
-            'origin_country_id__country_code',
-            'destination_country_id__country_code',
+        # Preparing the query (not executing it yet)
+        flights_query = Flights.objects.filter(combined_query)
+        
+        # Printing the SQL query
+        print(str(flights_query.query))
+        
+        flights = flights_query.values(
+            'id',
+            'origin_country_id_id',
+            'destination_country_id_id',
             'departure_time',
-            'landing_time'
+            'landing_time',
+            'remaining_tickets',
+            'flight_number',  
+            'airline_company_id',
+            'arrival_terminal',
+            'departure_terminal'
         )
+
+        print(flights)
+        
+        # Logging the results
+        logging.info(f"Number of flights found: {len(flights)}")
         
         return flights
+
+
+    
+
+    
+
+    # def get_flights_by_parameters(self, parameters):
+    #     # Extracting parameters
+    #     origin_country_id = parameters.get('origin_country_id')
+    #     destination_country_id = parameters.get('destination_country_id')
+    #     departure_date = parameters.get('departure_date')
+    #     return_date = parameters.get('return_date', None)
+        
+    #     # Logging the received parameters
+    #     logging.info(f"Received Parameters: Origin Country ID: {origin_country_id}, Destination Country ID: {destination_country_id}, Departure Date: {departure_date}, Return Date: {return_date}")
+        
+    #     # Constructing raw SQL query
+    #     query = f"""
+    #     SELECT * 
+    #     FROM bingo_air_db.bingo_flights 
+    #     WHERE origin_country_id_id = {origin_country_id}
+    #     AND destination_country_id_id = {destination_country_id}
+    #     AND DATE(departure_time) = '{departure_date}'
+    #     """
+        
+    #     flights = []
+    #     with connection.cursor() as cursor:
+    #         cursor.execute(query)
+    #         columns = [col[0] for col in cursor.description]
+    #         for row in cursor.fetchall():
+    #             flights.append(dict(zip(columns, row)))
+
+    #     # Logging the results
+    #     logging.info(f"Number of flights found: {len(flights)}")
+        
+    #     return flights
+
+
+
+
+
+
 
 
 

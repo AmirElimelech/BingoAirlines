@@ -6,7 +6,7 @@ from rest_framework.decorators import api_view
 from Bingo.facades.facade_base import FacadeBase
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.pagination import PageNumberPagination
-from ..serializers import FlightsSerializer, AirlineCompaniesSerializer, CountriesSerializer
+from ..serializers import FlightsSerializer, AirlineCompaniesSerializer, CountriesSerializer , FlightsRawSQLSerializer
 
 
 
@@ -125,6 +125,34 @@ def get_airline_by_id_api(request, iata_code):
     except Exception as e:
         logger.error(f"Error fetching airline with IATA code {iata_code}: {str(e)}")
         return Response({"error": "An error occurred while fetching the airline."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+@csrf_exempt
+@api_view(['POST'])
+def get_flights_by_parameters_api(request):
+    """
+    Get flights from the database based on search criteria
+    """
+    try:
+        # Extract parameters from the request body
+        data = request.data
+        
+        facade = FacadeBase(request)
+        flights = facade.get_flights_by_parameters(data)
+        
+        if flights:
+            # serializer = FlightsSerializer(flights, many=True)
+            serializer = FlightsRawSQLSerializer(flights, many=True)
+
+            logger.info(f"Successfully fetched flights based on search criteria.")
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        
+        logger.warning(f"No flights found based on search criteria.")
+        return Response({"error": "No flights found."}, status=status.HTTP_404_NOT_FOUND)
+
+    except Exception as e:
+        logger.error(f"Error fetching flights based on search criteria: {str(e)}")
+        return Response({"error": "An error occurred while fetching the flights."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 
 
 @csrf_exempt
