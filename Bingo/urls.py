@@ -3,7 +3,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from .views import login_view , home_view , logout_view , user_registration_view 
-from .views import flight_search , search_form , handle_search_form_submission , autocomplete
+from .views import search_form , handle_search_form_submission , autocomplete
 
 
 
@@ -21,8 +21,6 @@ urlpatterns = [
     path('search-flight/', search_form, name='search_form'),
     path('search-results/', handle_search_form_submission, name='search_results'),
     path('autocomplete/', autocomplete, name='autocomplete'),
-    path('flight_search', flight_search, name='flight_search'),
-    
     
    
     

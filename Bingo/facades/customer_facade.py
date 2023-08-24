@@ -3,9 +3,8 @@ import logging
 from django.utils import timezone
 from .facade_base import FacadeBase
 from ..utils.login_token import LoginToken
-from ..models import Customers, Tickets, Flights
 from django.core.exceptions import ValidationError
-
+from ..models import Customers, Tickets, Flights , Booking
 
 
 
@@ -73,54 +72,119 @@ class CustomerFacade(FacadeBase):
 
         return existing_customer
 
-    # def add_ticket(self, ticket):
-    #     flight = self.DAL.get_by_id(Flights, ticket["flight_id"])
-    #     if flight.remaining_tickets <= 0:
-    #         raise ValidationError("Sorry, this flight is fully booked.")
-        
-    #     # Ensure customer doesn't have a ticket for the same flight
-    #     existing_ticket = Tickets.objects.filter(customer_id=self.user.customer.id, flight_id=ticket["flight_id"]).first()
-    #     if existing_ticket:
-    #         raise ValidationError("You already have a ticket for this flight.")
-        
-    #     return self.DAL.add(Tickets, **ticket)
 
-    
+
+
+
+    # def add_ticket(self, ticket):
+    #     """
+    #     Add a new flight ticket for the customer after ensuring flight availability and validating the ticket information.
+    #     """
+    #     try:
+    #         # Retrieve the Flights instance using the provided flight number
+    #         flight_instance = self.DAL.get_by_id(Flights, ticket["flight_number_ref"], field_name="flight_number")
+
+    #         logging.info(f"Flight instance: {flight_instance}")
+            
+    #         if not flight_instance:
+    #             raise ValidationError("Flight not found.")
+                
+    #         if flight_instance.remaining_tickets <= 0:
+    #             raise ValidationError("Sorry, this flight is fully booked.")
+            
+    #         # Get the customer instance associated with the user
+    #         customer_instance = Customers.objects.get(user_id=self.user)
+    #         if not customer_instance:
+    #             raise ValidationError("Associated customer record not found for the authenticated user.")
+            
+    #         # Ensure customer doesn't have a ticket for the same flight
+    #         existing_ticket = self.DAL.get_tickets_by_customer(customer_instance.id).filter(flight_number_ref=flight_instance).first()
+    #         if existing_ticket:
+    #             raise ValidationError("You already have a ticket for this flight.")
+                
+    #         # Retrieve the Booking instance using the provided booking ID
+    #         booking_instance = self.DAL.get_by_id(Booking, ticket["Booking"])
+    #         if not booking_instance:
+    #             raise ValidationError("Associated booking record not found.")
+            
+    #         # Replace the 'flight_number_ref' in the ticket dictionary with the flight instance
+    #         ticket["flight_number_ref"] = flight_instance
+    #         # Replace the 'Booking' in the ticket dictionary with the booking instance
+    #         ticket["Booking"] = booking_instance
+            
+    #         # Add the customer instance to the ticket dictionary
+    #         ticket["customer_id"] = customer_instance
+
+    #         return self.DAL.add(Tickets, **ticket)
+            
+    #     except ValidationError as ve:
+    #         logger.error(f"Validation Error: {ve}")
+    #         raise ve
+            
+    #     except Exception as e:
+    #         logger.error(f"Unexpected error while adding ticket: {e}")
+    #         raise e
+
+
     def add_ticket(self, ticket):
         """
         Add a new flight ticket for the customer after ensuring flight availability and validating the ticket information.
+        function also checks if the flight has already departed , if so it will raise an error , if not it will add the ticket ,
+        and deduct the number of tickets being bought from the flight's remaining tickets ( it will check if there is enough tickets available
+        for the flight) , if not it will raise an error.
         """
-        
         try:
-            # Retrieve the Flights instance using the provided ID
-            # flight_instance = Flights.objects.get(pk=ticket["flight_id"])
-            flight_instance = self.DAL.get_by_id(Flights, ticket["flight_id"])
+            # Retrieve the Flights instance using the provided flight number
+            flight_instance = self.DAL.get_by_id(Flights, ticket["flight_number_ref"], field_name="flight_number")
 
-            if flight_instance.remaining_tickets <= 0:
+            logging.info(f"Flight instance: {flight_instance}")
+            
+            if not flight_instance:
+                raise ValidationError("Flight not found.")
+            
+            # Calculate total tickets being bought
+            total_tickets_bought = ticket.get("adult_traveler_count", 0) + ticket.get("child_traveler_count", 0)
+
+            # Ensure there are enough remaining tickets
+            if flight_instance.remaining_tickets < total_tickets_bought:
+                raise ValidationError(f"Sorry, only {flight_instance.remaining_tickets} tickets are available for this flight.")
+            
+            # Deduct the number of tickets being bought from the flight's remaining tickets
+            flight_instance.remaining_tickets -= total_tickets_bought
+            flight_instance.save()
+            
+            if flight_instance.remaining_tickets < 0:
                 raise ValidationError("Sorry, this flight is fully booked.")
             
             # Get the customer instance associated with the user
-            # customer_instance = Customers.objects.get(user_id=self.user)
-            customer_instance = self.DAL.get_by_id(Customers, self.user.id)
-
+            customer_instance = Customers.objects.get(user_id=self.user)
+            if not customer_instance:
+                raise ValidationError("Associated customer record not found for the authenticated user.")
             
             # Ensure customer doesn't have a ticket for the same flight
-            # existing_ticket = Tickets.objects.filter(customer_id=customer_instance.id, flight_id=flight_instance.id).first()
-            existing_ticket = self.DAL.get_tickets_by_customer(customer_instance.id).filter(flight_id=flight_instance.id).first()
-
+            existing_ticket = self.DAL.get_tickets_by_customer(customer_instance.id).filter(flight_number_ref=flight_instance).first()
             if existing_ticket:
                 raise ValidationError("You already have a ticket for this flight.")
+                
+            # Retrieve the Booking instance using the provided booking ID
+            booking_instance = self.DAL.get_by_id(Booking, ticket["Booking"])
+            if not booking_instance:
+                raise ValidationError("Associated booking record not found.")
             
-            # Replace the 'flight_id' and 'customer_id' in the ticket dictionary with the actual instances
-            ticket["flight_id"] = flight_instance
+            # Replace the 'flight_number_ref' in the ticket dictionary with the flight instance
+            ticket["flight_number_ref"] = flight_instance
+            # Replace the 'Booking' in the ticket dictionary with the booking instance
+            ticket["Booking"] = booking_instance
+            
+            # Add the customer instance to the ticket dictionary
             ticket["customer_id"] = customer_instance
 
             return self.DAL.add(Tickets, **ticket)
-        
+            
         except ValidationError as ve:
             logger.error(f"Validation Error: {ve}")
             raise ve
-        
+            
         except Exception as e:
             logger.error(f"Unexpected error while adding ticket: {e}")
             raise e
@@ -129,26 +193,13 @@ class CustomerFacade(FacadeBase):
 
 
 
-    # def remove_ticket(self, ticket):
-    #     ticket_instance = self.DAL.get_by_id(Tickets, ticket.get("id"))
-
-    #     # Check if ticket exists
-    #     if not ticket_instance:
-    #         raise ValidationError("Ticket not found.")
-
-    #     # Validate that the ticket belongs to the user
-    #     if ticket_instance.customer_id != self.user.customer.id:
-    #         raise PermissionError("You can only remove your own tickets.")
-
-    #     # Check if flight has already departed
-    #     if ticket_instance.flight.departure_time <= timezone.now():
-    #         raise ValidationError("You can't remove a ticket after the flight's departure.")
-
-    #     return self.DAL.remove(ticket)
-
     def remove_ticket(self, ticket_id):
+
+
         """
-        Remove a flight ticket associated with the customer. Ensures the ticket exists, belongs to the user, and the flight hasn't departed.
+        Remove a flight ticket associated with the customer. Ensures the ticket exists, belongs to the user, and the flight hasn't 
+        departed, and increment the number of tickets on the flight, and save the flight . 
+    
         """
         try:
             ticket_instance = self.DAL.get_by_id(Tickets, ticket_id)
@@ -158,15 +209,20 @@ class CustomerFacade(FacadeBase):
                 raise ValidationError("Ticket not found.")
 
             # Validate that the ticket belongs to the user
-            # customer_instance = Customers.objects.get(user_id=self.user.id)
             customer_instance = self.DAL.get_by_id(Customers, self.user.id, field_name="user_id")
 
             if ticket_instance.customer_id.id != customer_instance.id:
                 raise PermissionError("You can only remove your own tickets.")
 
             # Check if flight has already departed
-            if ticket_instance.flight_id.departure_time <= timezone.now():
+            if ticket_instance.flight_number_ref.departure_time <= timezone.now():
                 raise ValidationError("You can't remove a ticket after the flight's departure.")
+
+            # Increment the number of tickets on the flight
+            flight_instance = ticket_instance.flight_number_ref
+            total_tickets_being_refunded = ticket_instance.adult_traveler_count + ticket_instance.child_traveler_count
+            flight_instance.remaining_tickets += total_tickets_being_refunded
+            flight_instance.save()
 
             return self.DAL.remove(ticket_instance)
 
@@ -179,6 +235,7 @@ class CustomerFacade(FacadeBase):
         except Exception as e:
             logging.error(f"Unexpected error while removing ticket: {e}")
             raise
+
 
 
 
