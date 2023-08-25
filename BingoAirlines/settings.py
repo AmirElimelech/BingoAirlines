@@ -86,7 +86,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'BingoAirlines.wsgi.application'
 
 
-# Database
+# Real DATABASE
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
@@ -99,6 +99,21 @@ DATABASES = {
         'PASSWORD': 'SaP#12345',
     }
 }
+
+
+
+# #TESTING DATABASE
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'bingotests',   
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#         'USER': 'root',
+#         'PASSWORD': 'SaP#12345',
+#     }
+# }
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -113,32 +128,87 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10  # Set the number of items per page
 }
 
+# LOGGING = {
+#         'version': 1,
+#         'disable_existing_loggers': False,
+#         'formatters': {
+#             'verbose': {
+#                 'format': '{levelname} - {asctime} - {module} - {message}',
+#                 'style': '{',
+#             },
+#             'simple': {
+#                 'format': '{levelname} - {message}',
+#                 'style': '{',
+#             },
+#         },
+#         'handlers': {
+#             'console': {
+#                 'class': 'logging.StreamHandler',
+#                 'formatter': 'verbose',
+#             },
+#             'file': {
+#                 'level': 'DEBUG',
+#                 'class': 'logging.FileHandler',
+#                 'filename': 'logs/logger.log',
+#                 'formatter': 'verbose',
+#             },
+#         },
+#         'loggers': {
+#         'django': {
+#             'handlers': ['console', 'file'],
+#             'level': 'INFO',
+#             'propagate': False, 
+#         },
+#         'Bingo': {
+#             'handlers': ['console', 'file'],
+#             'level': 'DEBUG',
+#             'propagate': False,
+#         },
+#         'PIL': {
+#             'handlers': ['console', 'file'],
+#             'level': 'WARNING',
+#         },
+#         'root': {
+#         'handlers': ['console', 'file'],
+#         'level': 'DEBUG',
+#         },
+#     }
+# }
+
 LOGGING = {
-        'version': 1,
-        'disable_existing_loggers': False,
-        'formatters': {
-            'verbose': {
-                'format': '{levelname} - {asctime} - {module} - {message}',
-                'style': '{',
-            },
-            'simple': {
-                'format': '{levelname} - {message}',
-                'style': '{',
-            },
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} - {asctime} - {module} - {message}',
+            'style': '{',
         },
-        'handlers': {
-            'console': {
-                'class': 'logging.StreamHandler',
-                'formatter': 'verbose',
-            },
-            'file': {
-                'level': 'DEBUG',
-                'class': 'logging.FileHandler',
-                'filename': 'logs/logger.log',
-                'formatter': 'verbose',
-            },
+        'simple': {
+            'format': '{levelname} - {message}',
+            'style': '{',
         },
-        'loggers': {
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'logs/logger.log',
+            'formatter': 'verbose',
+        },
+        'testfile': {  # Test handler
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': 'logs/testlogger.log',
+            'maxBytes': 5*1024*1024,  # 5 MB
+            'backupCount': 5,
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
         'django': {
             'handlers': ['console', 'file'],
             'level': 'INFO',
@@ -154,13 +224,15 @@ LOGGING = {
             'level': 'WARNING',
         },
         'root': {
-        'handlers': ['console', 'file'],
-        'level': 'DEBUG',
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+        },
+        'testlogger': {  # Test logger
+            'handlers': ['testfile'],
+            'level': 'DEBUG',
         },
     }
 }
-
-
 
 
 # Password validation

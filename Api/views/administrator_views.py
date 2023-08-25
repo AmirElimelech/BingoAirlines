@@ -6,7 +6,6 @@ from Api.permissions import IsAdministrator
 from rest_framework.response import   Response
 from rest_framework.decorators   import  api_view
 from Bingo.utils.login_token     import    LoginToken
-
 from Bingo.decorators import check_permissions , login_required
 from Bingo.facades.administrator_facade import      AdministratorFacade
 from ..serializers import AirlineCompaniesSerializer, CustomersSerializer, AdministratorsSerializer

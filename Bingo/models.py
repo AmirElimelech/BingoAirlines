@@ -16,7 +16,9 @@ from Bingo.utils.scheduler import scheduler
 from .utils.tasks import download_airline_logo
 from django.core.files.base  import  ContentFile
 from django.core.exceptions import ValidationError
+from django.contrib.auth.hashers import make_password
 from django.core.validators import MinValueValidator, MaxValueValidator
+
 
 
 
@@ -31,7 +33,7 @@ logger = logging.getLogger(__name__)
 
 CURRENCY_CHOICES = [('USD', 'USD'), ('EUR', 'EUR'), ('GBP', 'GBP'), ('ILS', 'ILS')]
 CABIN_CHOICES = [('ECONOMY', 'Economy'), ('BUSINESS', 'Business'), ('FIRST', 'First Class')]
-TERMINAL_CHOICES = [('1', '1'), ('2', '2'), ('3', '3')]
+TERMINAL_CHOICES = [('1', '1'), ('2', '2'), ('3', '3') , ('4', '4')]
 
 
 
@@ -69,21 +71,7 @@ class Users(models.Model):
     class Meta:
         verbose_name_plural = "Users"
 
-    def clean(self):
-        # Check ID length
-        if len(str(self.id)) != 9:
-            raise ValidationError("ID must be exactly 9 digits long.")
-        
-        # Password strength check
-        if len(self.password) < 6 or not re.match(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$", self.password):
-            raise ValidationError("Password should be at least 6 characters, contain an uppercase and lowercase letter, a digit, and a special character.")
-        
-
-    def save(self, *args, **kwargs):
-        self.full_clean()
-        super(Users, self).save(*args, **kwargs)
-
-
+   
 
     # Method to retrieve the image URL of the user's profile picture if none exists returns default image
     @property
@@ -99,7 +87,7 @@ class Users(models.Model):
         logging.info(f"Checking if user {self.username} is authenticated.")
         return True
     
-    
+
 
 # User_Roles model represents different user roles ()
 class User_Roles(models.Model):
@@ -236,8 +224,8 @@ class Flights(models.Model):
     departure_time = models.DateTimeField(null=False)
     landing_time = models.DateTimeField(null=False)
     remaining_tickets = models.IntegerField(null=False, validators=[MinValueValidator(0)])
-    departure_terminal = models.CharField(max_length=1, choices=TERMINAL_CHOICES, null=True, blank=True)
-    arrival_terminal = models.CharField(max_length=1, choices=TERMINAL_CHOICES, null=True, blank=True)
+    departure_terminal = models.CharField(max_length=2, choices=TERMINAL_CHOICES, null=True, blank=True)
+    arrival_terminal = models.CharField(max_length=2, choices=TERMINAL_CHOICES, null=True, blank=True)
 
     def __str__(self):
         return f'Flight {self.flight_number}'
@@ -528,17 +516,6 @@ class DAL:
         
 
 
-    # def get_flights_by_origin_country_id(self, country_id):
-
-    #     """
-    #     Get all flights with a given origin country ID
-    #     """
-
-    #     try:
-    #         return Flights.objects.filter(origin_country_id=country_id)
-    #     except Exception as e:
-    #         logger.error(f"Error fetching flights with origin country ID {country_id}. Error: {str(e)}")
-    #         return None
 
     def get_flights_by_origin_country_id(self, country_code):
         """
@@ -551,18 +528,6 @@ class DAL:
             return None
 
 
-
-    # def get_flights_by_destination_country_id(self, country_id):
-
-    #     """
-    #     Get all flights with a given destination country ID
-    #     """
-
-    #     try:
-    #         return Flights.objects.filter(destination_country_id=country_id)
-    #     except Exception as e:
-    #         logger.error(f"Error fetching flights with destination country ID {country_id}. Error: {str(e)}")
-    #         return None
 
 
     def get_flights_by_destination_country_id(self, country_code):
@@ -604,17 +569,7 @@ class DAL:
 
 
 
-    # def get_flights_by_customer(self, customer_id):
-
-    #     """
-    #     Get all flights for a given customer ID
-    #     """
-
-    #     try:
-    #         return Flights.objects.filter(customer_id=customer_id)
-    #     except Exception as e:
-    #         logger.error(f"Error fetching flights for customer ID {customer_id}. Error: {str(e)}")
-    #         return None
+  
         
 
 
@@ -723,7 +678,7 @@ class DAL:
 
         flights = flights_query.values(
             'id',
-            'flight_number'
+            'flight_number',
             'origin_airport__iata_code',
             'destination_airport__iata_code',
             'departure_time',
@@ -768,21 +723,7 @@ class DAL:
 
 
 
-    # def get_arrival_flights(self, country_id):
-
-    #     """
-    #     Get all arrival flights in the next 12 hours for a given country ID
-    #     """
-
-    #     try:
-    #         next_12_hours = timezone.now() + timedelta(hours=12)
-    #         return Flights.objects.filter(
-    #             destination_country_id=country_id,
-    #             landing_time__lte=next_12_hours
-    #         )
-    #     except Exception as e:
-    #         logger.error(f"Error fetching arrival flights for country ID {country_id} within the next 12 hours. Error: {str(e)}")
-    #         return None
+    
 
     def get_arrival_flights(self, country_code):
         """
@@ -799,22 +740,6 @@ class DAL:
             return None
 
 
-
-    # def get_departure_flights(self, country_id):
-
-    #     """
-    #     Get all departure flights in the next 12 hours for a given country ID
-    #     """
-
-    #     try:
-    #         next_12_hours = timezone.now() + timedelta(hours=12)
-    #         return Flights.objects.filter(
-    #             origin_country_id=country_id,
-    #             departure_time__lte=next_12_hours
-    #         )
-    #     except Exception as e:
-    #         logger.error(f"Error fetching departure flights for country ID {country_id} within the next 12 hours. Error: {str(e)}")
-    #         return None
 
 
     def get_departure_flights(self, country_code):
@@ -833,8 +758,6 @@ class DAL:
     
 
 
-
-    
 
 
 

@@ -89,17 +89,7 @@ def get_all_airlines_api(request):
         logger.error(f"Error fetching all airlines: {str(e)}")
         return Response({"error": "Error fetching airlines."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-# @csrf_exempt
-# @api_view(['GET'])
-# def get_airline_by_id_api(request, iata_code):
-#         facade = FacadeBase(request)
-#         airline = facade.get_airline_by_id(iata_code)
-#         if airline:
-#             serializer = AirlineCompaniesSerializer(airline)
-#             logger.info(f"Successfully fetched airline with IATA code: {iata_code}")
-#             return Response(serializer.data, status=status.HTTP_200_OK)
-#         logger.warning(f"Airline with IATA code {iata_code} not found.")
-#         return Response({"error": "Airline not found."}, status=status.HTTP_404_NOT_FOUND)
+
 
 @csrf_exempt
 @api_view(['GET'])
@@ -181,20 +171,6 @@ def get_all_countries_api(request):
 
 
 
-# @csrf_exempt
-# @api_view(['GET'])
-# def get_country_by_id_api(request, country_code):
-#     if not (len(country_code) == 2 and country_code.isalpha()):
-#         return Response({"error": "Invalid country code format. It should be a 2-character alphabetic code."}, status=status.HTTP_400_BAD_REQUEST)
-
-#     facade = FacadeBase(request)
-#     country = facade.get_country_by_id(country_code)
-#     if country:
-#         serializer = CountriesSerializer(country)
-#         logger.info(f"Successfully fetched country with code: {country_code}")
-#         return Response(serializer.data, status=status.HTTP_200_OK)
-#     logger.warning(f"Country with code {country_code} not found.")
-#     return Response({"error": "Country not found."}, status=status.HTTP_404_NOT_FOUND)
 
 
 @csrf_exempt

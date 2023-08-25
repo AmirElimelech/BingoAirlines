@@ -1,0 +1,89 @@
+Instructions ! : 
+
+go to BingoAirlines.settings.py and comment out this database first like so ! :
+
+
+DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'bingo_air_db',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#         'USER': 'root',
+#         'PASSWORD': 'SaP#12345',
+#     }
+# }
+
+
+
+and then uncomment this TESTING DATABASE like this please : 
+
+ #TESTING DATABASE
+ DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.mysql',
+         'NAME': 'bingotests',   
+         'HOST': 'localhost',
+         'PORT': '3306',
+         'USER': 'root',
+         'PASSWORD': 'SaP#12345',
+     }
+ }
+
+ 
+
+
+
+test_models commands : 
+
+
+python manage.py test Bingo.tests.test_models.test_UsersModel    
+python manage.py test Bingo.tests.test_models.test_BookingModel
+python manage.py test Bingo.tests.test_models.test_FlightsModel
+python manage.py test Bingo.tests.test_models.test_TicketsModel
+python manage.py test Bingo.tests.test_models.test_AirportsModel
+python manage.py test Bingo.tests.test_models.test_CountriesModel
+python manage.py test Bingo.tests.test_models.test_CustomersModel
+python manage.py test Bingo.tests.test_models.test_UserRolesModel
+python manage.py test Bingo.tests.test_models.test_AdministratorsModel
+python manage.py test Bingo.tests.test_models.test_AirlineCompaniesModel
+
+
+
+
+
+test_DAL commands : 
+python manage.py test Bingo.tests.test_DAL.test_add
+python manage.py test Bingo.tests.test_DAL.test_update
+python manage.py test Bingo.tests.test_DAL.test_addall
+python manage.py test Bingo.tests.test_DAL.test_getall
+python manage.py test Bingo.tests.test_DAL.test_remove
+python manage.py test Bingo.tests.test_DAL.test_getbyid
+python manage.py test Bingo.tests.test_DAL.test_getflightbyparameters
+
+
+
+
+
+test utils commands :
+python manage.py test Bingo.tests.test_utils.test_logintoken
+
+
+
+
+test API commands : 
+python manage.py test Api.tests.test_getallflights
+python manage.py test Api.tests.test_getflightbyid
+python manage.py test Api.tests.test_getcountrybyid
+python manage.py test Api.tests.test_getallcountries
+
+
+
+
+
+	
+
+
+
+
+

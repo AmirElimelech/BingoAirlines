@@ -1,0 +1,1016 @@
+{
+	"info": {
+		"_postman_id": "7e403657-7412-4c46-b138-32ed64de0009",
+		"name": "Amir BingoAirlines API",
+		"description": "This is my system to perform all available API calls on my system\n\nif you have any questions please feel free to contact me !\n\nthere are 3 User Roles in my system and each Role has multiple available functions\n\n---\n\nto be able to log in into _**Administrator**_ user role use :\n\n**username = admin**\n\n**password = admin1234A1!**\n\n---\n\nto be able to log in into _**Airline Company**_ user role use :\n\n**username = adminairline1**\n\n**password = adminairline1!**\n\n---\n\nto be able to log in into _**Customer**_ user role use :\n\n**username = customercustomer**\n\n**password = Customer1!**\n\n---",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25619269"
+	},
+	"item": [
+		{
+			"name": "Base Api",
+			"item": [
+				{
+					"name": "Get All Flights",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/flights/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"flights",
+								""
+							]
+						},
+						"description": "Get all Flights from Data Base"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Counties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/countries/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"countries",
+								""
+							]
+						},
+						"description": "Get all Countries from Data Base"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Airlines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/airlines/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"airlines",
+								""
+							]
+						},
+						"description": "Get all Airline Companies from Data Base"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Airline By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/airlines/Z0/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"airlines",
+								"Z0",
+								""
+							]
+						},
+						"description": "Get specific Airline Company from Data Base by Id"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Country By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/countries/IL/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"countries",
+								"IL",
+								""
+							]
+						},
+						"description": "Get specific Customer from Data Base by Id"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Flight By ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "C8zqtnRgfTUtcIgMlKqdKXeEiGLa2BDvb7ddm6Cau1VM2L0Pyq6pN6uDnX5qyxF3",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"origin_country_id\": 96,\r\n    \"destination_country_id\": 86,\r\n    \"departure_date\": \"2023-08-21\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/flights/10/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"flights",
+								"10",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Flight By Params",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "C8zqtnRgfTUtcIgMlKqdKXeEiGLa2BDvb7ddm6Cau1VM2L0Pyq6pN6uDnX5qyxF3",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"origin_country_id\": 109,\r\n    \"destination_country_id\": 66,\r\n    \"departure_date\": \"2023-08-25\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/flights/search/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"flights",
+								"search",
+								""
+							]
+						},
+						"description": "Get specific Flight from Data Base by Id"
+					},
+					"response": []
+				}
+			],
+			"description": "these functions are available to all logged in users and none logged in users !\n\navailable functions are :\n\n**get all flights**\n\n**get all customers**\n\n**get all airlines**\n\n**get flight by id**\n\n**get airline by id**\n\n**get country by id**"
+		},
+		{
+			"name": "Administrator API",
+			"item": [
+				{
+					"name": "Get CSRF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login",
+								""
+							]
+						},
+						"description": "used this get request to get my CSRF token which is later used in all the call requests to perform Tasks ."
+					},
+					"response": []
+				},
+				{
+					"name": "Administrator Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "7Ia7olxQn2hTAJnlm8625btbqPCwObeeGHOUh4iKCaicqM7ozOMe8kJav6WMk7gM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin1234A1!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login",
+								""
+							]
+						},
+						"description": "once i've required the CSRF i can add the login credentials to be able to login into an Administrator account to perform various takses as ADD / DELETE\n\nuse these credentials if you want to log in into an Administrator account to perform it's dedicated tasks ! :\n\n**username = admin**\n\n**password = admin1234A1!**"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Airline",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "7Ia7olxQn2hTAJnlm8625btbqPCwObeeGHOUh4iKCaicqM7ozOMe8kJav6WMk7gM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"iata_code\": \"Y7\",\r\n    \"name\": \"Y7 api\",\r\n    \"country_id\": 400,\r\n    \"user_id\": \"858885858\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/admin/airlines/add/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"admin",
+								"airlines",
+								"add",
+								""
+							]
+						},
+						"description": "adding Airline Company according to an existing user with the country_id = 400 , and related to it a user_id of 858885858 , and assigned to it the iata_code ( 2 char airline companies international coding system ) of = Y7 ."
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "7Ia7olxQn2hTAJnlm8625btbqPCwObeeGHOUh4iKCaicqM7ozOMe8kJav6WMk7gM",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Danny\",\r\n    \"last_name\": \"Aram\",\r\n    \"address\": \"Haifa , MataM \",\r\n    \"phone_no\": \"054991631143\",\r\n    \"credit_card_no\": \"4111111111111111\",\r\n    \"user_id\": \"898989898\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/admin/customers/add/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"admin",
+								"customers",
+								"add",
+								""
+							]
+						},
+						"description": "Administrator - Add Customer to Data Base"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Administrator",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "7Ia7olxQn2hTAJnlm8625btbqPCwObeeGHOUh4iKCaicqM7ozOMe8kJav6WMk7gM",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Rick\",\r\n    \"last_name\": \"Morty\",\r\n    \"user_id\": \"777777777\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/admin/administrators/add/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"admin",
+								"administrators",
+								"add",
+								""
+							]
+						},
+						"description": "Administrator - Add Administrator to Data Base"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Administrator",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "7Ia7olxQn2hTAJnlm8625btbqPCwObeeGHOUh4iKCaicqM7ozOMe8kJav6WMk7gM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/admin/administrators/19/remove/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"admin",
+								"administrators",
+								"19",
+								"remove",
+								""
+							]
+						},
+						"description": "removed my admistrator with the used_id = 18"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "7Ia7olxQn2hTAJnlm8625btbqPCwObeeGHOUh4iKCaicqM7ozOMe8kJav6WMk7gM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/admin/customers/27/remove/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"admin",
+								"customers",
+								"27",
+								"remove",
+								""
+							]
+						},
+						"description": "removed my customer with the used_id = 27"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Airline",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "7Ia7olxQn2hTAJnlm8625btbqPCwObeeGHOUh4iKCaicqM7ozOMe8kJav6WMk7gM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/admin/airlines/Y7/remove/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"admin",
+								"airlines",
+								"Y7",
+								"remove",
+								""
+							]
+						},
+						"description": "removed my airline company with the iata_code = Y7"
+					},
+					"response": []
+				}
+			],
+			"description": "In this Administrator API , Authenticated logged in Administrators will have the options to :\n\n**get_all_customers()  \nadd_airline  \nadd_customer  \nadd_administrator  \nremove_airline (airline)**\n\n**remove_customer(customer)**\n\n**remove_administrator(administrator)**"
+		},
+		{
+			"name": "Airline API",
+			"item": [
+				{
+					"name": "Get CSRF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login",
+								""
+							]
+						},
+						"description": "used this get request to get my CSRF token which is later used in all the call requests to perform Tasks ."
+					},
+					"response": []
+				},
+				{
+					"name": "Airline Company Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "aZdIxqkzIFwwpwOeYOf6qAvBA8fu9stcJYRvq95tXNxPfzyhbuVitJLAFpzKFovK",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "adminairline1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Adminairline1!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login",
+								""
+							]
+						},
+						"description": "once i've required the CSRF i can add the login credentials to be able to login into an Airline Company account to perform various takses as ADD / DELETE / UPDATE / GET\n\nuse these credentials if you want to log in into an Airline Company account to perform it's dedicated tasks ! :\n\n**username = adminairline1**\n\n**password = Adminairline1!**"
+					},
+					"response": []
+				},
+				{
+					"name": "Get my Flights",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "aZdIxqkzIFwwpwOeYOf6qAvBA8fu9stcJYRvq95tXNxPfzyhbuVitJLAFpzKFovK",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/airline/flights/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"airline",
+								"flights",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Flight",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "aZdIxqkzIFwwpwOeYOf6qAvBA8fu9stcJYRvq95tXNxPfzyhbuVitJLAFpzKFovK",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"airline_company_id\": \"Z0\",\r\n    \"origin_airport\": \"JFK\",      \r\n    \"destination_airport\": \"MAD\", \r\n    \"departure_time\": \"2023-08-26T19:45:00Z\",\r\n    \"landing_time\": \"2023-08-29T22:15:00Z\",\r\n    \"remaining_tickets\": 2,\r\n    \"flight_number\": \"Z0999\",\r\n    \"departure_terminal\": \"3\",\r\n    \"arrival_terminal\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/airline/flights/add/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"airline",
+								"flights",
+								"add",
+								""
+							]
+						},
+						"description": "Add a Flight to a logged in Airline Company"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Flight",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "aZdIxqkzIFwwpwOeYOf6qAvBA8fu9stcJYRvq95tXNxPfzyhbuVitJLAFpzKFovK",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 16,\r\n    \"flight_number\": \"Z02222\"  ,\r\n    \"airline_company_id\": \"Z0\",\r\n    \"origin_airport\": \"JFK\",  \r\n    \"destination_airport\": \"FCO\",  \r\n    \"departure_time\": \"2023-08-25T19:45:00Z\",\r\n    \"landing_time\": \"2023-08-26T22:15:00Z\",\r\n    \"remaining_tickets\": 2 , \r\n    \"departure_terminal\": 3,\r\n    \"arrival_terminal\": 1\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/airline/flights/update/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"airline",
+								"flights",
+								"update",
+								""
+							]
+						},
+						"description": "Update selected Flight of logged in Airline Company"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Flight",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "aZdIxqkzIFwwpwOeYOf6qAvBA8fu9stcJYRvq95tXNxPfzyhbuVitJLAFpzKFovK",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/airline/flights/9/remove/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"airline",
+								"flights",
+								"9",
+								"remove",
+								""
+							]
+						},
+						"description": "Remove selected Flight of logged in Airline Company"
+					},
+					"response": []
+				}
+			],
+			"description": "these functions are available to all _**Airline Companies**_ :\n\n**get my flights**\n\n**update airline**\n\n**add flight**\n\n**update flight**\n\n**remove flight**\n\n______________________________________________________\n\nto be able to log in into _**Airline Company**_ user role use :\n\n**username = adminairline1**\n\n**password = adminairline1!**"
+		},
+		{
+			"name": "Customer API",
+			"item": [
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/logout/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"logout",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get CSRF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login",
+								""
+							]
+						},
+						"description": "used this get request to get my CSRF token which is later used in all the call requests to perform Tasks ."
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "XehnJ2TYG6kyXg3vAH6gzuwySKTIJv3fwdVaCLESVelRNjNyNnMsCDMxX1dYfr5N",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "customercustomer",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Customer1!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/login/?username=admin&password=admin1234A1!",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login",
+								""
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "admin"
+								},
+								{
+									"key": "password",
+									"value": "admin1234A1!"
+								}
+							]
+						},
+						"description": "once i've required the CSRF i can add the login credentials to be able to login into an Customer account to perform various takses as ADD / DELETE / UPDATE / GET\n\nuse these credentials if you want to log in into an Customer account to perform it's dedicated tasks ! :\n\n**username = customercustomer**\n\n**password = Customer1!**"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "XehnJ2TYG6kyXg3vAH6gzuwySKTIJv3fwdVaCLESVelRNjNyNnMsCDMxX1dYfr5N",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 22,\r\n    \"first_name\": \"UpFirstName\",\r\n    \"last_name\": \"UpLastName\",\r\n    \"address\": \"Updated Address, Example City , updated 2 \",\r\n    \"phone_no\": \"05551234999\",\r\n    \"credit_card_no\": \"4111111111111222\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/customer/update/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"customer",
+								"update",
+								""
+							]
+						},
+						"description": "Update logged in Customer details"
+					},
+					"response": []
+				},
+				{
+					"name": "Get my Tickets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "XehnJ2TYG6kyXg3vAH6gzuwySKTIJv3fwdVaCLESVelRNjNyNnMsCDMxX1dYfr5N",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/customer/tickets/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"customer",
+								"tickets",
+								""
+							]
+						},
+						"description": "Get logged in Customer current Tickets"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Ticket",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "XehnJ2TYG6kyXg3vAH6gzuwySKTIJv3fwdVaCLESVelRNjNyNnMsCDMxX1dYfr5N",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    // no need to define the customer since it will take the logged in user instance ! // \r\n\r\n    \"flight_number_ref\": \"Z0999\" ,\r\n    \"Booking\" : 2 ,\r\n    \"currency\": \"USD\",\r\n    \"cabin\" :   \"ECONOMY\" ,\r\n    \"adult_traveler_count\" : 1,\r\n    \"child_traveler_count\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/customer/tickets/add/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"customer",
+								"tickets",
+								"add",
+								""
+							]
+						},
+						"description": "Add a Ticket to a logged in Custmer"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Ticket",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "XehnJ2TYG6kyXg3vAH6gzuwySKTIJv3fwdVaCLESVelRNjNyNnMsCDMxX1dYfr5N",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/Api/customer/tickets/6/remove/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Api",
+								"customer",
+								"tickets",
+								"6",
+								"remove",
+								""
+							]
+						},
+						"description": "Remove seleced Ticket of logged in Cutomer"
+					},
+					"response": []
+				}
+			],
+			"description": "these functions are available to all logged in _**Customers**_ !\n\n**update customer**\n\n**add ticket**\n\n**remove ticket**\n\n**get my tickets**\n\n___________________________________________________\n\nto be able to log in into _**Customer**_ user role use :\n\n**username = customercustomer**\n\n**password = Customer1!**"
+		}
+	]
+}

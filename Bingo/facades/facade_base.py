@@ -3,7 +3,7 @@ from ..utils.login_token import LoginToken
 from django.core.exceptions import ValidationError
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.hashers import make_password
-from ..models import DAL, Users, Airline_Companies, Flights, Countries , User_Roles , Administrators , Customers
+from ..models import DAL, Users, Airline_Companies, Flights, Countries , User_Roles  , Customers
 
 
 
@@ -45,18 +45,7 @@ class FacadeBase:
         return self.DAL.get_by_id(Flights, id)
 
 
-    # V1
-    # def get_flights_by_parameters(self, origin_country_id, destination_country_id, date):
-
-    #     """
-    #     Retrieve flight records from the database based on origin country, destination country, and date.
-    #     """
-
-    #     logging.info("getting Flights by parameters")
-    #     return self.DAL.get_flights_by_parameters(origin_country_id, destination_country_id, date)
-
-
-    #V2
+    
     def get_flights_by_parameters(self, data):
         logging.info("Processing search criteria...")
 
@@ -109,7 +98,7 @@ class FacadeBase:
         """
 
         logging.info("getting Country by id")
-        # return self.DAL.get_by_id(Countries, country_code)
+    
         return self.DAL.get_by_id(Countries, country_code, field_name='country_code')
 
 
@@ -156,7 +145,8 @@ class FacadeBase:
                 logging.error("Phone number already exists.")
                 raise ValidationError("Phone number already exists.")
             
-            password = make_password(user.get("password"))  # hash the password before saving
+            # hash the password before saving
+            password = make_password(user.get("password"))  
             user_data = {
                 'id': user.get("id"),
                 'username': user.get("username"),

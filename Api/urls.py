@@ -1,13 +1,17 @@
 from django.urls import path
 from .views import base_views, customer_views, administrator_views, airline_views
+from Bingo.views import handle_search_form_submission
 
 
 
 urlpatterns = [
+    
+
     # Base views
     path('flights/', base_views.get_all_flights_api, name='get_all_flights'),
-    path('flights/<int:id>/', base_views.get_flight_by_id_api, name='get_flight_by_id'),
     path('flights/search/', base_views.get_flights_by_parameters_api, name='get_flights_by_parameters'),
+    path('flights/search_form_submission/', handle_search_form_submission, name='handle_search_form_submission'),
+    path('flights/<int:id>/', base_views.get_flight_by_id_api, name='get_flight_by_id'),
     path('airlines/', base_views.get_all_airlines_api, name='get_all_airlines'),
     path('airlines/<str:iata_code>/', base_views.get_airline_by_id_api, name='get_airline_by_id'),
     path('countries/', base_views.get_all_countries_api, name='get_all_countries'),
@@ -16,9 +20,10 @@ urlpatterns = [
     
     # Customer views
     path('customer/update/', customer_views.update_customer_api, name='update_customer'),
+    path('customer/tickets/', customer_views.get_my_tickets_api, name='get_my_tickets'),
     path('customer/tickets/add/', customer_views.add_ticket_api, name='add_ticket'),
     path('customer/tickets/<int:ticket_id>/remove/', customer_views.remove_ticket_api, name='remove_ticket'),
-    path('customer/tickets/', customer_views.get_my_tickets_api, name='get_my_tickets'),
+    
 
     # Administrator views
     path('admin/customers/', administrator_views.get_all_customers_api, name='get_all_customers'),
@@ -28,6 +33,7 @@ urlpatterns = [
     path('admin/airlines/<str:iata_code>/remove/', administrator_views.remove_airline_api, name='remove_airline'),
     path('admin/customers/<int:customer_id>/remove/', administrator_views.remove_customer_api, name='remove_customer'),
     path('admin/administrators/<int:admin_id>/remove/', administrator_views.remove_administrator_api, name='remove_administrator'),
+    
 
     # Airline Company views
     path('airline/flights/', airline_views.get_my_flights_api, name='get_my_flights'),

@@ -247,7 +247,8 @@ class CustomerFacade(FacadeBase):
         """
   
         try:
-            customer = self.user.customers_set.first()  # Get the related Customers record
+            # Get the related Customers record
+            customer = self.user.customers_set.first()  
             return self.DAL.get_tickets_by_customer(customer.id)
         except Exception as e:
             logging.error(f"Error fetching tickets for the customer: {e}")
