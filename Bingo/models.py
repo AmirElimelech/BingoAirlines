@@ -65,6 +65,14 @@ class Users(models.Model):
     image = models.ImageField(upload_to='users/', default='/users/defaultuser.png', null=True)
     is_active = models.BooleanField(default=True)
 
+
+    # superuser fields
+    REQUIRED_FIELDS = [] # >>>> if i want to be able to use createsuperuser command i would have to populate it , pay attention to this <<<<< 
+    USERNAME_FIELD = 'username'
+    is_anonymous = False
+    is_authenticated = True
+    
+
     def __str__(self):
         return self.username
     
@@ -82,11 +90,9 @@ class Users(models.Model):
             url = ''
         return url
     
-    @property
-    def is_authenticated(self):
-        logging.info(f"Checking if user {self.username} is authenticated.")
-        return True
-    
+
+
+
 
 
 # User_Roles model represents different user roles ()
@@ -419,19 +425,31 @@ class DAL:
 
 
 # CRUD methods
-    
+ 
+
     def get_by_id(self, model, value, field_name=None):
+        logger.debug(f"get_by_id - Starting get_by_id for model {model.__name__} with value: {value}")
+
         try:
             # If field_name isn't provided, default to the primary key field
             if not field_name:
                 field_name = model._meta.pk.name
+                logger.debug(f"get_by_id - No field_name provided. Defaulting to primary key: {field_name}")
 
             # Create a dictionary to hold the query parameters
             query = {field_name: value}
 
-            return model.objects.get(**query)
+            # Log the query being executed
+            logger.debug(f"get_by_id - Executing get_by_id for model {model.__name__} with query: {query}")
+
+            instance = model.objects.get(**query)
+            logger.debug(f"get_by_id - Found instance of {model.__name__} with {field_name}={value}: {instance}")
+            return instance
         except model.DoesNotExist:
-            logger.error(f"Error fetching instance of {model.__name__} with {field_name}={value}")
+            logger.error(f"get_by_id - Error fetching instance of {model.__name__} with {field_name}={value}")
+            return None
+        except Exception as e:
+            logger.error(f"get_by_id - Unexpected error in get_by_id for model {model.__name__}. Error: {str(e)}")
             return None
 
 
@@ -461,13 +479,26 @@ class DAL:
 
     def update(self, instance, **kwargs):
         try:
+
+            logger.debug(f"Start of DAL update - instance: {instance}")
+
             for attr, value in kwargs.items():
+                logger.debug(f"Before updating attribute {attr} - instance: {instance}")
                 setattr(instance, attr, value)
+                logger.debug(f"After updating attribute {attr} - instance: {instance}")
+
+
+            logger.debug(f"Before saving instance to database - instance: {instance}")
             instance.save()
+            logger.debug(f"After saving instance to database - instance: {instance}")
+
             return instance
         except Exception as e:
             logger.error(f"Error updating instance {instance}. Error: {str(e)}")
             return None
+
+
+
 
     def add_all(self, model, list_of_dicts):
         try:
@@ -502,6 +533,20 @@ class DAL:
             logger.error(f"Error fetching instances of {model.__name__} based on query. Error: {str(e)}")
             return None
     
+    def get_airport_by_iata_code(iata_code: str) -> Optional[Airport]:
+        """
+        Fetches an Airport by its iata_code.
+
+        :param iata_code: The IATA code of the airport to fetch.
+        :return: The Airport object if found, otherwise None.
+        """
+        try:
+            airport = Airport.objects.get(iata_code=iata_code)
+            return airport
+        except Airport.DoesNotExist:
+            return None
+        
+        
 
     def get_airlines_by_country(self, country_id):
 
@@ -700,6 +745,63 @@ class DAL:
             
 
         
+    def get_bookings_by_customer(self, customer_id):
+
+        """
+        Get all bookings and their associated details for a given customer ID
+        """
+
+        try:
+            # Fetch bookings
+            bookings = Booking.objects.filter(customer_id=customer_id).prefetch_related(
+                'tickets_set__flight_number_ref__origin_airport',
+                'tickets_set__flight_number_ref__destination_airport',
+                'tickets_set__flight_number_ref__airline_company_id'
+            ).all()
+            
+            # Create a list to store the booking details
+            booking_details = []
+
+            for booking in bookings:
+                for ticket in booking.tickets_set.all():
+                    flight = ticket.flight_number_ref
+                    origin_airport = flight.origin_airport
+                    destination_airport = flight.destination_airport
+                    airline = flight.airline_company_id
+
+                    detail = {
+                        "booking_date": booking.booking_date,
+                        "total_price": booking.total_price,
+                        "flight_number": flight.flight_number,
+                        "origin_airport": {
+                            "iata_code": origin_airport.iata_code,
+                            "country_code": origin_airport.country_code
+                        },
+                        "destination_airport": {
+                            "iata_code": destination_airport.iata_code,
+                            "country_code": destination_airport.country_code
+                        },
+                        "departure_time": flight.departure_time,
+                        "landing_time": flight.landing_time,
+                        "departure_terminal": flight.departure_terminal,
+                        "arrival_terminal": flight.arrival_terminal,
+                        "airline": {
+                            "name": airline.name,
+                            "iata_code": airline.iata_code
+                        },
+                        "cabin": ticket.cabin,
+                        "adult_traveler_count": ticket.adult_traveler_count,
+                        "child_traveler_count": ticket.child_traveler_count,
+                        "currency": ticket.currency
+                    }
+
+                    booking_details.append(detail)
+            
+            return booking_details
+
+        except Exception as e:
+            logger.error(f"Error fetching bookings for customer ID {customer_id}. Error: {str(e)}")
+            return None
 
 
 

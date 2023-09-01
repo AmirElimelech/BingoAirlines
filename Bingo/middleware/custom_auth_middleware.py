@@ -1,56 +1,30 @@
 
 import logging
-from ..models import DAL, Users  
 from django.contrib.auth.models import AnonymousUser
+from django.utils.deprecation import MiddlewareMixin
+from Bingo.backends import CustomUserAuthBackend
 
 logger = logging.getLogger(__name__)
 
-class CustomAuthMiddleware:
+class CustomAuthMiddleware(MiddlewareMixin):
 
-    """
-    Custom authentication middleware for BingoAirlines project.
-    """
-
-    def __init__(self, get_response):
-        self.get_response = get_response
-
-    def __call__(self, request):
-
-        # Allow requests to the admin panel ( added this to be able to login to admin panel because i i've added my own 
-        # Middleware )
-        if request.path.startswith('/admin/'):
-            return self.get_response(request)
-
-        # Default to AnonymousUser if no user is logged in
-        request.user = AnonymousUser()
+    def process_request(self, request):
+        logger.debug("1 CustomAuthMiddleware triggered")
         
-        # Check for a login token in the session
-        login_token_dict = request.session.get('login_token')
-        if login_token_dict:
-            # Extract the user_id from the login token
-            user_id = login_token_dict.get('user_id')
+        # If request path is for the admin panel or static files, bypass custom authentication.
+        if request.path.startswith('/admin/') or request.path.startswith('/static/'):
+            return None
+        
 
-            # Check if the user_id is present in the login token
-            if user_id:
-
-                # Retrieve the user from the database using DAL
-                dal_instance = DAL()
-                user = dal_instance.get_by_id(Users, user_id)
-                # Check if the user exists in the database
-                if user:
-                    # Set the user in the request object to the user retrieved from the database
-                    request.user = user
-                    logger.info(f"User {user.username} authenticated via token.")
-                    logger.info(f"{user.username} Is authenticated ? : {request.user.is_authenticated}")
-                    
-
-                else:
-                    logger.error(f"User with ID {user_id} from token not found in database.")
-            else:
-                logger.error("Login token present but user_id missing.")
+        backend = CustomUserAuthBackend()
+        login_token = request.session.get('login_token')
+        if login_token:
+            user_instance = backend.authenticate(request=request, user_id=login_token.get('user_id'))
         else:
-            logger.info("No login token found in the session.")
+            user_instance = None
+           
+        request.user = user_instance if user_instance else AnonymousUser()
+        logger.debug(f" Setting request.user to {request.user} with role {request.user.user_role.role_name if hasattr(request.user, 'user_role') else 'No role'}")
+    
 
-        response = self.get_response(request)
-        
-        return response
+

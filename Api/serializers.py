@@ -138,6 +138,48 @@ class BookingSerializer(serializers.ModelSerializer):
 
 
 
+
+class OriginDestinationAirportSerializer(serializers.Serializer):
+    iata_code = serializers.CharField()
+    country_code = serializers.CharField()
+
+class AirlineDetailSerializer(serializers.Serializer):
+    name = serializers.CharField()
+    iata_code = serializers.CharField()
+
+class BookingDetailSerializer(serializers.Serializer):
+    booking_date = serializers.DateTimeField()
+    total_price = serializers.DecimalField(max_digits=9, decimal_places=2)
+    flight_number = serializers.CharField()
+    origin_airport = OriginDestinationAirportSerializer()
+    destination_airport = OriginDestinationAirportSerializer()
+    departure_time = serializers.DateTimeField()
+    landing_time = serializers.DateTimeField()
+    departure_terminal = serializers.CharField()
+    arrival_terminal = serializers.CharField()
+    airline = AirlineDetailSerializer()
+    cabin = serializers.CharField()
+    adult_traveler_count = serializers.IntegerField()
+    child_traveler_count = serializers.IntegerField()
+    currency = serializers.CharField()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class TicketsSerializer(serializers.ModelSerializer):
     flight = FlightsSerializer(source='flight_number_ref')
     customer = serializers.StringRelatedField(source='customer_id')

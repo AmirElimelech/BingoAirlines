@@ -3,7 +3,7 @@ from ..utils.login_token import LoginToken
 from django.core.exceptions import ValidationError
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.hashers import make_password
-from ..models import DAL, Users, Airline_Companies, Flights, Countries , User_Roles  , Customers
+from ..models import DAL, Users, Airline_Companies, Flights, Countries , User_Roles  , Customers , Airport
 
 
 
@@ -35,14 +35,15 @@ class FacadeBase:
         
 
 
-    def get_flight_by_id(self, id):
+    def get_flight_by_id(self, flight_number):
 
         """
-        Retrieve a specific flight record from the database based on its ID.
+        Retrieve a specific flight record from the database based on its flight_number.
         """
-         
-        logging.info("getting Flight by id")
-        return self.DAL.get_by_id(Flights, id)
+            
+        logging.info("getting Flight by flight_number")
+        return self.DAL.get_by_id(Flights, flight_number, field_name="flight_number")
+
 
 
     
@@ -178,3 +179,20 @@ class FacadeBase:
         except Exception as e:
             logging.error(f"Unexpected Error during user creation: {e}")
             return {"status": "error", "message": "An unexpected error occurred during user creation."}
+
+
+    def get_all_airports(self):
+
+        """
+        Retrieve all airport records from the database.
+        """
+
+        logging.info("getting All Airports")
+        return self.DAL.get_all(Airport)
+    
+    def get_airport_by_iata_code(self, iata_code: str):
+        """
+        Retrieve a specific airport record from the database based on its iata_code.
+        """
+        logging.info(f"Getting Airport by iata_code: {iata_code}")
+        return self.DAL.get_by_id(Airport, iata_code, field_name="iata_code")

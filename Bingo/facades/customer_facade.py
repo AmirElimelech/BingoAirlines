@@ -255,4 +255,17 @@ class CustomerFacade(FacadeBase):
             raise
 
     
+    def get_my_bookings(self):
+
+        """
+        Retrieve all flight bookings associated with the current customer.
+        """
     
+        try:
+            # Get the related Customers record
+            customer = self.user.customers_set.first()  
+            return self.DAL.get_bookings_by_customer(customer.id)
+        except Exception as e:
+            logging.error(f"Error fetching bookings for the customer: {e}")
+            raise
+

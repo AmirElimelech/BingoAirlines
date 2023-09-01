@@ -29,5 +29,5 @@ urlpatterns = [
 ]
 
 
-if settings.DEBUG:  # Only serve media files in debug mode
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# if settings.DEBUG:  # Only serve media files in debug mode
+#     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

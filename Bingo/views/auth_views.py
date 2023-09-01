@@ -2,11 +2,13 @@
 
 import logging
 
+
 from django.urls import reverse
 from django.db import transaction
 from django.http import HttpResponseRedirect
 from django.shortcuts import render , redirect
 from django.core.exceptions import ValidationError
+from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth import logout as django_logout
 
 from Bingo.facades.airline_facade import AirlineFacade
@@ -232,6 +234,7 @@ def login_view(request):
     """
     Login view for the BingoAirlines project.
     """
+    
 
     try:
         login_token = request.session.get('login_token')
