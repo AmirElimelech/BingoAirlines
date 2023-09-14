@@ -19,22 +19,24 @@ logger = logging.getLogger(__name__)
 
 
 
-
 @login_required
 @api_view(['GET'])
 @check_permissions(IsAirlineCompany)
-def get_my_flights_api(request):
-
+def get_my_flights_api(request, flight_id=None):
     """
-    Get all flights of the logged in Airline Company.
+    Get all flights of the logged in Airline Company or a specific flight.
     """
-    
     try:
-        login_token = request.session.get('login_token')  # Extract the login token from the session
-        facade = AirlineFacade(request, request.user, login_token)  # Initialize the facade with the login token
-        flights = facade.get_my_flights()
+        login_token = request.session.get('login_token')
+        facade = AirlineFacade(request, request.user, login_token)
+        flights = facade.get_my_flights_new(flight_id)
 
-        serializer = FlightsSerializer(flights, many=True)
+        if flight_id:
+            # If fetching a single flight, don't use many=True
+            serializer = FlightsSerializer(flights)
+        else:
+            serializer = FlightsSerializer(flights, many=True)
+
         if not flights:
             logger.info(f"No flights found for airline company {request.user}.")
             return Response({"message": f"No flights found for airline company {request.user}."}, status=status.HTTP_200_OK)
@@ -47,20 +49,30 @@ def get_my_flights_api(request):
 
 
 
-@login_required
+
 @api_view(['POST'])
+@login_required
 @check_permissions(IsAirlineCompany)
 def add_flight_api(request):
-
     """
-    Add a flight to the database of the logged in Airline Company .
+    Add a flight to the database of the logged in Airline Company.
     """
-
     try:
         # Extract login token or user details from the request
         login_token_dict = request.session.get('login_token')
         facade = AirlineFacade(request, request.user, login_token_dict)
-        flight = facade.add_flight(request.data)
+
+        # Fetch the airline company associated with the logged-in user
+        airline_company = facade.validate_airline_privileges()
+
+        # Update the payload with the correct iata_code
+        updated_data = request.data
+        updated_data['airline_company_id'] = airline_company.iata_code
+
+        # Prepend the IATA code to the flight number
+        updated_data['flight_number'] = airline_company.iata_code + updated_data['flight_number']
+
+        flight = facade.add_flight(updated_data)
         serializer = FlightsSerializer(flight)
         logger.info("Successfully added flight.")
         return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -70,20 +82,29 @@ def add_flight_api(request):
 
 
 
-@login_required
+
 @api_view(['PUT'])
+@login_required
 @check_permissions(IsAirlineCompany)
 def update_flight_api(request):
 
     """
-    Update a flight in the database of the logged in Airline Company .
+    Update a flight in the database of the logged in Airline Company.
     """
 
     try:
         # Extract login token or user details from the request
         login_token_dict = request.session.get('login_token')
         facade = AirlineFacade(request, request.user, login_token_dict)
-        flight = facade.update_flight(request.data)
+
+        # Fetch the airline company associated with the logged-in user
+        airline_company = facade.validate_airline_privileges()
+
+        # Update the payload with the correct iata_code
+        updated_data = request.data
+        updated_data['airline_company_id'] = airline_company.iata_code
+
+        flight = facade.update_flight(updated_data)
         serializer = FlightsSerializer(flight)
         logger.info("Successfully updated flight.")
         return Response(serializer.data, status=status.HTTP_200_OK)
@@ -93,21 +114,25 @@ def update_flight_api(request):
 
 
 
-@login_required
+
 @api_view(['DELETE'])
+@login_required
 @check_permissions(IsAirlineCompany)
 def remove_flight_api(request, flight_id):
-
     """
-    Remove a flight from the database of the logged in Airline Company .
+    Remove a flight from the database of the logged in Airline Company.
     """
-
     try:
+        # Get the login_token_dict from the session
         login_token_dict = request.session.get('login_token')
-        facade = AirlineFacade(request, request.user , login_token_dict)
+        
+        # Initialize the AirlineFacade with the login_token_dict
+        facade = AirlineFacade(request, request.user, login_token_dict)
+        
         facade.remove_flight({"id": flight_id})
         logger.info(f"Successfully removed flight with ID: {flight_id}.")
         return Response({"message": "Flight successfully removed."}, status=status.HTTP_204_NO_CONTENT)
     except Exception as e:
         logger.error(f"Error removing flight: {str(e)}")
         return Response({"error": "Error removing flight."}, status=status.HTTP_400_BAD_REQUEST)
+

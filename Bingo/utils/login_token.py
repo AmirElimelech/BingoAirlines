@@ -14,8 +14,6 @@ logger = logging.getLogger(__name__)
 
 
 
-
-
 class LoginToken:
     def __init__(self, user_id, user_role):
         """

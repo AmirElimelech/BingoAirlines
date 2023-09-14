@@ -14,51 +14,13 @@ from django.contrib.auth.hashers import check_password
 
 logger = logging.getLogger(__name__)
 
-# class AnonymousFacade(FacadeBase):
-#     def __init__(self, request, login_token: LoginToken=None):
-#         super().__init__(request, login_token)
-
-#     def login(self, username, password):
-#         """
-#         Authenticate a user based on provided username and password.
-#         """
-#         try:
-#             user = self.DAL.get_user_by_username(username)
-
-#             if user is None:
-#                 raise ValidationError("User not found")
-#             if not check_password(password, user.password):
-#                 raise ValidationError("Incorrect password")
-            
-#             self.request.user = user
-
-#             # Determine the role of the user
-#             role = None
-#             if user.user_role.role_name == 'Customer':
-#                 role = 'customer'
-#             elif user.user_role.role_name == 'Airline Company':
-#                 role = 'airline company'
-#             elif user.user_role.role_name == 'Administrator':
-#                 role = 'administrator'
-
-#             login_token = LoginToken(user.id, role)
-
-#             return login_token
-
-#         except ValidationError as ve:
-#             logging.error(f"Validation error during login: {ve}")
-#             raise ve
-
-#         except Exception as e:
-#             logging.error(f"Unexpected error during login: {e}")
-#             raise
-
 
 class AnonymousFacade(FacadeBase):
     def __init__(self, request, login_token: LoginToken=None):
         super().__init__(request, login_token)
 
     def login(self, username, password):
+        
         """
         Authenticate a user based on provided username and password.
         """
@@ -77,7 +39,7 @@ class AnonymousFacade(FacadeBase):
             if user.user_role.role_name == 'Customer':
                 role = 'Customer'
             elif user.user_role.role_name == 'Airline Company':
-                role = 'Airline company'
+                role = 'Airline Company'
             elif user.user_role.role_name == 'Administrator':
                 role = 'Administrator'
 

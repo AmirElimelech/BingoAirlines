@@ -33,7 +33,7 @@ logger = logging.getLogger(__name__)
 
 CURRENCY_CHOICES = [('USD', 'USD'), ('EUR', 'EUR'), ('GBP', 'GBP'), ('ILS', 'ILS')]
 CABIN_CHOICES = [('ECONOMY', 'Economy'), ('BUSINESS', 'Business'), ('FIRST', 'First Class')]
-TERMINAL_CHOICES = [('1', '1'), ('2', '2'), ('3', '3') , ('4', '4')]
+
 
 
 
@@ -230,8 +230,8 @@ class Flights(models.Model):
     departure_time = models.DateTimeField(null=False)
     landing_time = models.DateTimeField(null=False)
     remaining_tickets = models.IntegerField(null=False, validators=[MinValueValidator(0)])
-    departure_terminal = models.CharField(max_length=2, choices=TERMINAL_CHOICES, null=True, blank=True)
-    arrival_terminal = models.CharField(max_length=2, choices=TERMINAL_CHOICES, null=True, blank=True)
+    departure_terminal = models.CharField(max_length=5, null=True, blank=True)
+    arrival_terminal = models.CharField(max_length=5, null=True, blank=True)
 
     def __str__(self):
         return f'Flight {self.flight_number}'
@@ -483,14 +483,10 @@ class DAL:
             logger.debug(f"Start of DAL update - instance: {instance}")
 
             for attr, value in kwargs.items():
-                logger.debug(f"Before updating attribute {attr} - instance: {instance}")
                 setattr(instance, attr, value)
-                logger.debug(f"After updating attribute {attr} - instance: {instance}")
 
 
-            logger.debug(f"Before saving instance to database - instance: {instance}")
             instance.save()
-            logger.debug(f"After saving instance to database - instance: {instance}")
 
             return instance
         except Exception as e:
@@ -532,6 +528,8 @@ class DAL:
         except Exception as e:
             logger.error(f"Error fetching instances of {model.__name__} based on query. Error: {str(e)}")
             return None
+        
+
     
     def get_airport_by_iata_code(iata_code: str) -> Optional[Airport]:
         """
@@ -547,127 +545,6 @@ class DAL:
             return None
         
         
-
-    def get_airlines_by_country(self, country_id):
-
-        """
-        Get all airlines for a given country ID
-        """
-        try:
-            return Airline_Companies.objects.filter(country_id=country_id)
-        except Exception as e:
-            logger.error(f"Error fetching airlines for country ID {country_id}. Error: {str(e)}")
-            return None
-        
-
-
-
-    def get_flights_by_origin_country_id(self, country_code):
-        """
-        Get all flights with a given origin country code
-        """
-        try:
-            return Flights.objects.filter(origin_airport__country_code=country_code)
-        except Exception as e:
-            logger.error(f"Error fetching flights with origin country code {country_code}. Error: {str(e)}")
-            return None
-
-
-
-
-    def get_flights_by_destination_country_id(self, country_code):
-        """
-        Get all flights with a given destination country code
-        """
-        try:
-            return Flights.objects.filter(destination_airport__country_code=country_code)
-        except Exception as e:
-            logger.error(f"Error fetching flights with destination country code {country_code}. Error: {str(e)}")
-            return None
-
-
-    def get_flights_by_departure_date(self, date):
-
-        """
-        Get all flights with a given departure date
-        """
-
-        try:
-            return Flights.objects.filter(departure_time=date)
-        except Exception as e:
-            logger.error(f"Error fetching flights with departure date {date}. Error: {str(e)}")
-            return None
-
-
-
-    def get_flights_by_landing_date(self, date):
-
-        """
-        Get all flights with a given landing date
-        """
-
-        try:
-            return Flights.objects.filter(landing_time=date)
-        except Exception as e:
-            logger.error(f"Error fetching flights with landing date {date}. Error: {str(e)}")
-            return None
-
-
-
-  
-        
-
-
-    def get_flights_by_customer(self, customer_id):
-        """
-        Get all flights for a given customer ID
-        """
-        try:
-            # Fetch all itineraries for the customer
-            bookings = Booking.objects.filter(customer_id=customer_id)
-
-            # Fetch all tickets that are part of these itineraries
-            tickets = Tickets.objects.filter(booking__in=bookings)
-
-            # Extract flight IDs from the tickets
-            flight_ids = [ticket.flight_id.id for ticket in tickets]
-
-            # Fetch all flights using the extracted flight IDs
-            flights = Flights.objects.filter(id__in=flight_ids)
-
-            return flights
-        except Exception as e:
-            logger.error(f"Error fetching flights for customer ID {customer_id}. Error: {str(e)}")
-            return None
-
-
-
-
-    def get_airline_by_username(self, username):
-
-        """
-        Get an airline company by its username
-        """
-
-        try:
-            return Airline_Companies.objects.get(user__username=username)
-        except Airline_Companies.DoesNotExist:
-            logger.error(f"Airline company not found with username {username}")
-            return None
-
-
-
-    def get_customer_by_username(self, username):
-
-        """
-        Get a customer by its username
-        """
-
-        try:
-            return Customers.objects.get(user__username=username)
-        except Customers.DoesNotExist:
-            logger.error(f"Customer not found with username {username}")
-            return None
 
 
 
@@ -685,7 +562,7 @@ class DAL:
 
   
 
-
+    # this methods works on saved flights from the database and not relying on the API to fetch flights! ( as a backup if the API is down )
     def get_flights_by_parameters(self, parameters):
         # Extracting parameters
         origin_airport_code = parameters.get('origin_airport')
@@ -742,122 +619,102 @@ class DAL:
         return flights
 
 
-            
 
+    def get_bookings_by_customer(self, customer_id, booking_id=None):
+        """
+        Get all bookings and their associated details for a given customer ID.
+        Optionally filter by booking_id.
+        """
+    
+        # Start the bookings query
+        bookings_query = Booking.objects.filter(customer_id=customer_id).prefetch_related(
+            'tickets_set__flight_number_ref__origin_airport',
+            'tickets_set__flight_number_ref__destination_airport',
+            'tickets_set__flight_number_ref__airline_company_id'
+        )
         
-    def get_bookings_by_customer(self, customer_id):
+        # If a booking_id is provided, further filter the query
+        if booking_id:
+            bookings_query = bookings_query.filter(id=booking_id)
+        
+        bookings = bookings_query.all()
+        
+        # Create a list to store the booking details
+        booking_details = []
 
-        """
-        Get all bookings and their associated details for a given customer ID
-        """
+        for booking in bookings:
+            for ticket in booking.tickets_set.all():
+                flight = ticket.flight_number_ref
+                origin_airport = flight.origin_airport
+                destination_airport = flight.destination_airport
+                airline = flight.airline_company_id
 
+                detail = {
+                    "id": booking.id,
+                    "booking_date": booking.booking_date,
+                    "total_price": booking.total_price,
+                    "flight_number": flight.flight_number,
+                    "origin_airport": {
+                        "iata_code": origin_airport.iata_code,
+                        "country_code": origin_airport.country_code
+                    },
+                    "destination_airport": {
+                        "iata_code": destination_airport.iata_code,
+                        "country_code": destination_airport.country_code
+                    },
+                    "departure_time": flight.departure_time,
+                    "landing_time": flight.landing_time,
+                    "departure_terminal": flight.departure_terminal,
+                    "arrival_terminal": flight.arrival_terminal,
+                    "airline": {
+                        "name": airline.name,
+                        "iata_code": airline.iata_code
+                    },
+                    "cabin": ticket.cabin,
+                    "adult_traveler_count": ticket.adult_traveler_count,
+                    "child_traveler_count": ticket.child_traveler_count,
+                    "currency": ticket.currency
+                }
+
+                booking_details.append(detail)
+        
+        return booking_details
+
+
+
+    def get_airport_name_by_iata(self, iata_code):
         try:
-            # Fetch bookings
-            bookings = Booking.objects.filter(customer_id=customer_id).prefetch_related(
-                'tickets_set__flight_number_ref__origin_airport',
-                'tickets_set__flight_number_ref__destination_airport',
-                'tickets_set__flight_number_ref__airline_company_id'
-            ).all()
-            
-            # Create a list to store the booking details
-            booking_details = []
-
-            for booking in bookings:
-                for ticket in booking.tickets_set.all():
-                    flight = ticket.flight_number_ref
-                    origin_airport = flight.origin_airport
-                    destination_airport = flight.destination_airport
-                    airline = flight.airline_company_id
-
-                    detail = {
-                        "booking_date": booking.booking_date,
-                        "total_price": booking.total_price,
-                        "flight_number": flight.flight_number,
-                        "origin_airport": {
-                            "iata_code": origin_airport.iata_code,
-                            "country_code": origin_airport.country_code
-                        },
-                        "destination_airport": {
-                            "iata_code": destination_airport.iata_code,
-                            "country_code": destination_airport.country_code
-                        },
-                        "departure_time": flight.departure_time,
-                        "landing_time": flight.landing_time,
-                        "departure_terminal": flight.departure_terminal,
-                        "arrival_terminal": flight.arrival_terminal,
-                        "airline": {
-                            "name": airline.name,
-                            "iata_code": airline.iata_code
-                        },
-                        "cabin": ticket.cabin,
-                        "adult_traveler_count": ticket.adult_traveler_count,
-                        "child_traveler_count": ticket.child_traveler_count,
-                        "currency": ticket.currency
-                    }
-
-                    booking_details.append(detail)
-            
-            return booking_details
-
+            airport = Airport.objects.get(iata_code=iata_code)
+            return airport.name
+        except Airport.DoesNotExist:
+            logger.error(f"No airport found with IATA code {iata_code}")
+            return None
         except Exception as e:
-            logger.error(f"Error fetching bookings for customer ID {customer_id}. Error: {str(e)}")
+            logger.error(f"Unexpected error in get_airport_name_by_iata: {str(e)}")
             return None
 
 
 
 
 
-
-
-
-
-    def get_flights_by_airline_id(self, airline_id):
-
+ 
+        
+    def get_flights_by_airline_id(self, airline_id, flight_id=None):
         """
-        Get all flights for a given airline ID
+        Get all flights or a specific flight for a given airline ID.
         """
-
         try:
-            return Flights.objects.filter(airline_company_id=airline_id)
+            if flight_id:
+                return Flights.objects.get(airline_company_id=airline_id, id=flight_id)
+            else:
+                return Flights.objects.filter(airline_company_id=airline_id)
+        except Flights.DoesNotExist:
+            logger.warning(f"No flights found for airline ID {airline_id} with flight ID {flight_id}.")
+            return None
         except Exception as e:
             logger.error(f"Error fetching flights for airline ID {airline_id}. Error: {str(e)}")
             return None
 
-
-
-    
-
-    def get_arrival_flights(self, country_code):
-        """
-        Get all arrival flights in the next 12 hours for a given country code
-        """
-        try:
-            next_12_hours = timezone.now() + timedelta(hours=12)
-            return Flights.objects.filter(
-                destination_airport__country_code=country_code,
-                landing_time__lte=next_12_hours
-            )
-        except Exception as e:
-            logger.error(f"Error fetching arrival flights for country code {country_code} within the next 12 hours. Error: {str(e)}")
-            return None
-
-
-
-
-    def get_departure_flights(self, country_code):
-        """
-        Get all departure flights in the next 12 hours for a given country code
-        """
-        try:
-            next_12_hours = timezone.now() + timedelta(hours=12)
-            return Flights.objects.filter(
-                origin_airport__country_code=country_code,
-                departure_time__lte=next_12_hours
-            )
-        except Exception as e:
-            logger.error(f"Error fetching departure flights for country code {country_code} within the next 12 hours. Error: {str(e)}")
-            return None
-    
 
 
 
@@ -878,3 +735,4 @@ class DAL:
         
 
 
+    

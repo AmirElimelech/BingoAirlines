@@ -2,13 +2,21 @@
 
 import logging
 from rest_framework import status
+from django.db import transaction
+from django.forms.utils import ErrorList
 from Api.permissions import IsAdministrator
-from rest_framework.response import   Response
-from rest_framework.decorators   import  api_view
-from Bingo.utils.login_token     import    LoginToken
+from rest_framework.response import Response
+from ..serializers import CustomersSerializer
+from rest_framework.decorators import api_view
+from Bingo.facades.facade_base import FacadeBase
 from Bingo.decorators import check_permissions , login_required
-from Bingo.facades.administrator_facade import      AdministratorFacade
-from ..serializers import AirlineCompaniesSerializer, CustomersSerializer, AdministratorsSerializer
+from Bingo.facades.administrator_facade import AdministratorFacade
+from Bingo.forms import UsersForm, CustomerForm, AirlineCompanyForm, AdministratorForm
+
+
+
+
+
 
 
 
@@ -17,28 +25,109 @@ logger = logging.getLogger(__name__)
 
 
 
-def get_login_token_from_request(request):
-
-    """
-    Extract the login token from the session data of the request.
-
-    Parameters:
-    - request: The HTTP request object.
-
-    Returns:
-    - LoginToken object if the token exists in the session, otherwise None.
-    """
-
-    login_token_dict = request.session.get('login_token')
-    if login_token_dict:
-        return LoginToken(user_id=login_token_dict['user_id'], user_role=login_token_dict['user_role'])
-    return None
 
 
 
-
+@api_view(['POST'])
 @login_required
+@check_permissions(IsAdministrator)
+def user_registration_api(request):
+    logger.debug(f"Received data: {request.data}")
+
+    allowed_roles = {
+        "Customer": 3,
+        "AirlineCompany": 2,
+        "Administrator": 1
+    }
+
+    user_role_param = request.data.get('user_role', None)
+
+    if user_role_param not in allowed_roles:
+        logger.error(f"Invalid user role received: {user_role_param}")
+        return Response({"message": f"Invalid user role: {user_role_param}"}, status=status.HTTP_400_BAD_REQUEST)
+    
+    request.data['user_role'] = allowed_roles[user_role_param]
+
+    user_form = UsersForm(request.data, request.FILES)
+    entity_form = None
+
+    if user_role_param == "Customer":
+        entity_form = CustomerForm(request.data)
+    elif user_role_param == "AirlineCompany":
+        entity_form = AirlineCompanyForm(request.data, request.FILES)
+    elif user_role_param == "Administrator":
+        entity_form = AdministratorForm(request.data)
+
+    try:
+        if user_form.is_valid() and (entity_form is None or entity_form.is_valid()):
+            user_data = {
+                "id": user_form.cleaned_data.get("id"),
+                "username": user_form.cleaned_data.get("username"),
+                "email": user_form.cleaned_data.get("email"),
+                "password": user_form.cleaned_data.get("password"),
+                "user_role": user_form.cleaned_data.get("user_role"),
+                "image": user_form.cleaned_data.get("image"),
+            }
+            
+            with transaction.atomic():
+                facade = FacadeBase(request)
+                user_instance = facade.create_new_user(user_data)
+
+                login_token_dict = request.session.get('login_token')
+                admin_facade = AdministratorFacade(request, user_instance, login_token_dict)
+
+                if user_role_param == "Customer":
+                    customer_data = {
+                        'user_id': user_instance.id,
+                        'first_name': entity_form.cleaned_data.get("first_name"),
+                        'last_name': entity_form.cleaned_data.get("last_name"),
+                        'address': entity_form.cleaned_data.get("address"),
+                        'phone_no': entity_form.cleaned_data.get("phone_no"),
+                        'credit_card_no': entity_form.cleaned_data.get("credit_card_no")
+                    }
+                    customer_instance = admin_facade.add_customer(customer_data)
+
+                elif user_role_param == "AirlineCompany":
+                    airline_data = {
+                        'user_id': user_instance.id,
+                        'iata_code': entity_form.cleaned_data.get("iata_code"),
+                        'name': entity_form.cleaned_data.get("name"),
+                        'country_id': entity_form.cleaned_data.get("country_id").id,
+                        'logo': entity_form.cleaned_data.get("logo"),
+                    }
+                    airline_instance = admin_facade.add_airline(airline_data)
+
+                elif user_role_param == "Administrator":
+                    admin_data = {
+                        'user_id': user_instance.id,
+                        'first_name': entity_form.cleaned_data.get("first_name"),
+                        'last_name': entity_form.cleaned_data.get("last_name"),
+                    }
+                    admin_instance = admin_facade.add_administrator(admin_data)
+
+            return Response({"message": f"Successfully created {user_role_param} instance."}, status=status.HTTP_201_CREATED)
+
+        else:
+            user_form_errors = ", ".join([f"{field}: {ErrorList(errors)}" for field, errors in user_form.errors.items()])
+            logger.error(f"User form errors: {user_form_errors}")
+
+            if entity_form:
+                entity_form_errors = ", ".join([f"{field}: {ErrorList(errors)}" for field, errors in entity_form.errors.items()])
+                logger.error(f"Entity form errors: {entity_form_errors}")
+
+            errors = {"user_errors": user_form.errors}
+            if entity_form:
+                errors["entity_errors"] = entity_form.errors
+            return Response(errors, status=status.HTTP_400_BAD_REQUEST)
+
+    except Exception as e:
+        logger.error(f"Unexpected error during registration: {e}")
+        return Response({"message": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+    
+
+
 @api_view(['GET'])
+@login_required
 @check_permissions(IsAdministrator)
 def get_all_customers_api(request):
 
@@ -46,7 +135,10 @@ def get_all_customers_api(request):
     Get all customers from the database.
     """
     try:
-        facade = AdministratorFacade(request, request.user, get_login_token_from_request(request))
+        # Extract the login token as a dictionary from the session
+        login_token_dict = request.session.get('login_token')
+
+        facade = AdministratorFacade(request, request.user, login_token_dict)
         customers = facade.get_all_customers()
         
         serializer = CustomersSerializer(customers, many=True)
@@ -63,162 +155,4 @@ def get_all_customers_api(request):
 
 
 
-
-@login_required
-@api_view(['POST'])
-@check_permissions(IsAdministrator)
-def add_airline_api(request):
-
-    """
-    Add a new airline to the database.
-    """
-
-    try:
-        # Get a mutable copy of the data dict from the request object.
-        # The original request.data object is immutable (cannot be changed once created !)
-        data = request.data.copy()
-
-        # If the 'country_id' key exists in the data, convert its value to an integer.
-        # This ensures that the 'country_id' is in the correct data type before further processing.
-        if 'country_id' in data:
-            data['country_id'] = int(data['country_id'])
-
-        # Similar to the previous step, but for 'user_id'.
-        if 'user_id' in data:
-            data['user_id'] = int(data['user_id'])
-
-        # Create an instance of the AdministratorFacade class, which likely contains business logic 
-        # or interacts with the database to perform operations related to administrators.
-        facade = AdministratorFacade(request, request.user, get_login_token_from_request(request))
-        
-        # Call the 'add_airline' method from the facade with the provided data to create a new airline.
-        # The result is likely an instance of the created airline.
-        airline = facade.add_airline(request.data)
-        
-        # Serialize the airline instance into a format suitable for sending in a response.
-        serializer = AirlineCompaniesSerializer(airline)
-
-
-        logger.info("Successfully added airline.")
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
-    except Exception as e:
-        logger.error(f"Error adding airline: {str(e)}")
-        return Response({"error": "Error adding airline."}, status=status.HTTP_400_BAD_REQUEST)
-
-
-
-
-
-@login_required
-@api_view(['POST'])
-@check_permissions(IsAdministrator)
-def add_customer_api(request):
-
-    """
-    Add a new customer to the database.
-    """
-
-    try:
-        # Initialize the AdministratorFacade with the current request, user, and login token
-        facade = AdministratorFacade(request, request.user, get_login_token_from_request(request))
-        
-        # Use the facade to add a new customer using the provided request data
-        customer = facade.add_customer(request.data)
-        serializer = CustomersSerializer(customer)
-        logger.info("Successfully added customer.")
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
-    except Exception as e:
-        logger.error(f"Error adding customer: {str(e)}")
-        return Response({"error": "Error adding customer."}, status=status.HTTP_400_BAD_REQUEST)
-
-
-
-
-
-@login_required
-@api_view(['POST'])
-@check_permissions(IsAdministrator)
-def add_administrator_api(request):
-
-    """
-    Add a new administrator to the database.
-    """
-
-    try:
-        facade = AdministratorFacade(request, request.user, get_login_token_from_request(request))
-        admin = facade.add_administrator(request.data)
-        serializer = AdministratorsSerializer(admin)
-        logger.info("Successfully added administrator.")
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
-    except Exception as e:
-        logger.error(f"Error adding administrator: {str(e)}")
-        return Response({"error": "Error adding administrator."}, status=status.HTTP_400_BAD_REQUEST)
-
-
-
-
-
-@login_required
-@api_view(['DELETE'])
-@check_permissions(IsAdministrator)
-def remove_airline_api(request, iata_code):
-
-    """
-    Remove an airline from the database.
-    """
-
-    try:
-        facade = AdministratorFacade(request, request.user, get_login_token_from_request(request))
-        facade.remove_airline({"iata_code": iata_code})
-        logger.info(f"Successfully removed airline with IATA code: {iata_code}.")
-        return Response({"message": "Airline successfully removed."}, status=status.HTTP_204_NO_CONTENT)
-    except Exception as e:
-        logger.error(f"Error removing airline: {str(e)}")
-        return Response({"error": "Error removing airline."}, status=status.HTTP_400_BAD_REQUEST)
-
-
-
-
-
-@login_required
-@api_view(['DELETE'])
-@check_permissions(IsAdministrator)
-def remove_customer_api(request, customer_id):
-
-    """
-    Remove a customer from the database.
-    """
-
-    try:
-        facade = AdministratorFacade(request, request.user, get_login_token_from_request(request))
-        facade.remove_customer({"id": customer_id})
-        logger.info(f"Successfully removed customer with ID: {customer_id}.")
-        return Response({"message": "Customer successfully removed."}, status=status.HTTP_204_NO_CONTENT)
-    except Exception as e:
-        logger.error(f"Error removing customer: {str(e)}")
-        return Response({"error": "Error removing customer."}, status=status.HTTP_400_BAD_REQUEST)
-
-
-
-
-
-
-
-@login_required
-@api_view(['DELETE'])
-@check_permissions(IsAdministrator)
-def remove_administrator_api(request, admin_id):
-
-    """
-    Remove an administrator from the database.
-    """
-    
-    try:
-        facade = AdministratorFacade(request, request.user, get_login_token_from_request(request))
-        facade.remove_administrator({"id": admin_id})
-        logger.info(f"Successfully removed administrator with ID: {admin_id}.")
-        return Response({"message": "Administrator successfully removed."}, status=status.HTTP_204_NO_CONTENT)
-    except Exception as e:
-        logger.error(f"Error removing administrator: {str(e)}")
-        return Response({"error": "Error removing administrator."}, status=status.HTTP_400_BAD_REQUEST)
 

@@ -26,13 +26,6 @@ SECRET_KEY = 'django-insecure-gnd5=4@9_an$)ccgc^ufcd9&v9eapp=4q*kwscd+=ms$pmz6iy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = [
-#     'localhost',
-#     '127.0.0.1',
-#     '192.168.1.248',
-# ]
-
-
 
 # Application definition
 
@@ -60,12 +53,9 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware', 
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-
-
-    
+    'django.middleware.csrf.CsrfViewMiddleware',    
     'django.contrib.auth.middleware.AuthenticationMiddleware', 
-    'Bingo.middleware.custom_auth_middleware.CustomAuthMiddleware',# << keep it lower than AuthenticationMiddleware
+    'Bingo.middleware.custom_auth_middleware.CustomAuthMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware', 
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -82,7 +72,7 @@ AUTH_USER_MODEL = 'Bingo.Users'
 
 
 
-# WORKING WITH NONE
+
 
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOW_METHODS = ['GET', 'POST', 'PUT', 'DELETE']
@@ -90,12 +80,14 @@ CORS_ALLOW_HEADERS = ['Content-Type', 'X-CSRFToken', 'Authorization']
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
+    "https://bingoairlines.com",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://192.168.1.248:3000",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
+    "https://bingoairlines.com",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://192.168.1.248:3000",
@@ -112,14 +104,11 @@ CORS_ALLOW_HEADERS = [
 
 CSRF_COOKIE_NAME = "csrftoken"
 CSRF_COOKIE_SAMESITE = 'None'
-CSRF_COOKIE_SECURE = True # Set to True in production and False in development
+CSRF_COOKIE_SECURE = False # Set to True in production and False in development
 SESSION_COOKIE_SAMESITE = 'None'
 SESSION_COOKIE_SECURE = True
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'
-CSRF_COOKIE_HTTPONLY = False # added new wanted to test it ! 
-
-
-
+CSRF_COOKIE_HTTPONLY = False 
 
 
 
@@ -193,54 +182,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10  # Set the number of items per page
 }
-
-# LOGGING = {
-#         'version': 1,
-#         'disable_existing_loggers': False,
-#         'formatters': {
-#             'verbose': {
-#                 'format': '{levelname} - {asctime} - {module} - {message}',
-#                 'style': '{',
-#             },
-#             'simple': {
-#                 'format': '{levelname} - {message}',
-#                 'style': '{',
-#             },
-#         },
-#         'handlers': {
-#             'console': {
-#                 'class': 'logging.StreamHandler',
-#                 'formatter': 'verbose',
-#             },
-#             'file': {
-#                 'level': 'DEBUG',
-#                 'class': 'logging.FileHandler',
-#                 'filename': 'logs/logger.log',
-#                 'formatter': 'verbose',
-#             },
-#         },
-#         'loggers': {
-#         'django': {
-#             'handlers': ['console', 'file'],
-#             'level': 'INFO',
-#             'propagate': False, 
-#         },
-#         'Bingo': {
-#             'handlers': ['console', 'file'],
-#             'level': 'DEBUG',
-#             'propagate': False,
-#         },
-#         'PIL': {
-#             'handlers': ['console', 'file'],
-#             'level': 'WARNING',
-#         },
-#         'root': {
-#         'handlers': ['console', 'file'],
-#         'level': 'DEBUG',
-#         },
-#     }
-# }
-
 
 
 
@@ -343,6 +284,9 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'Bingo/static/')
 ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 MEDIA_URL = '/Bingo/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'Bingo/static/images/')

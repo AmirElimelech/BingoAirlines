@@ -2,10 +2,9 @@
 import logging 
 from django.db.models import Q
 from rest_framework import status
-from django.db import transaction
-from django.shortcuts import render
 from django.http import JsonResponse
-from Bingo.decorators import login_required 
+from Bingo.decorators import login_required
+from django.middleware.csrf import get_token
 from rest_framework.response import Response
 from rest_framework.decorators import api_view 
 from Bingo.facades.facade_base import FacadeBase
@@ -14,12 +13,11 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth import logout as django_logout
 from Bingo.facades.anonymous_facade import AnonymousFacade
-from Bingo.models import Airport , DAL , User_Roles , Users , Customers , Airline_Companies , Administrators , validate_nine_digits    
+from Bingo.models import (Airport , DAL , User_Roles , Users , Customers 
+                     , Airline_Companies , Administrators , validate_nine_digits )  
 from ..serializers import    (FlightsSerializer, AirlineCompaniesSerializer, CountriesSerializer , 
-FlightsRawSQLSerializer , AirportSerializer )
-from django.contrib.auth import logout as django_logout
+                                                           FlightsRawSQLSerializer , AirportSerializer )
 
-from django.middleware.csrf import get_token
 
 
 
@@ -27,7 +25,7 @@ logger = logging.getLogger(__name__)
 
 
 
-
+####################################### User Views #########################################
 
 @api_view(['POST'])
 def user_registration_api(request):
@@ -104,11 +102,6 @@ def user_registration_api(request):
 
 
 
-
-
-
-
-
 @api_view(["GET"])
 def initialize_session(request):
     """
@@ -120,73 +113,6 @@ def initialize_session(request):
 
 
 
-# @api_view(["POST"])
-# def login_view_api(request):
-#     """Login view for the BingoAirlines project."""
-
-#     if request.method != "POST":
-#         return JsonResponse({"error": "Method not allowed"}, status=405)
-
-#     try:
-#         csrf_token = get_token(request)
-#         logging.debug(f"login_view_api - CSRF Token sent to client: {csrf_token}")
-
-#         username = request.POST['username']
-#         password = request.POST['password']
-#         facade = AnonymousFacade(request)
-        
-#         login_token = facade.login(username, password)
-#         user_role = Users.objects.get(id=login_token.user_id).user_role.role_name
-
-#         # Fetching customer details based on the logged-in user
-#         customer_details = {}
-#         if login_token.user_role == "Customer":
-#             user_instance = Users.objects.get(username=username)
-#             customer = Customers.objects.get(user_id=user_instance)
-#             customer_details = {
-#                 "customer_id": customer.id,
-#                 "first_name": customer.first_name,
-#                 "last_name": customer.last_name,
-#                 "address": customer.address,
-#                 "phone_no": customer.phone_no,
-#                 "credit_card_no": customer.credit_card_no
-#             }
-
-
-    
-        
-#         # Set session data after database operations
-#         request.session['login_token'] = {'user_id': login_token.user_id, 'user_role': login_token.user_role}
-#         # now loggin.info the request.session['login_token']
-#         logging.info(f"login_view_api - Setting login token in session: {request.session['login_token']}")
-
-#         logging.info(f"login_view_api - Welcome {username}! Successfully logged in as {login_token.user_role}.")
-
-#         return JsonResponse({
-#             "detail": "Login successful", 
-#             "status": "success",
-#             "username": username,
-#             "id": str(login_token.user_id),
-#             "customer_id": customer.id,
-#             "user_role": user_role,
-#             **customer_details 
-        
-           
-#         }, status=200)
-
-#     except ValidationError as e:
-#         error_message = str(e)
-#         logger.error(f"Login error: {error_message}")
-#         return JsonResponse({"error": error_message}, status=400)
-#     except Exception as e:
-#         error_message = "An unexpected error occurred during login."
-#         logger.error(f"Unexpected login error: {str(e)}")
-#         return JsonResponse({"error": error_message}, status=500)
-
-
-
-
-# UPDATED WORKING 100% i need to add more details to the oether user roles 
 @api_view(["POST"])
 def login_view_api(request):
     """Login view for the BingoAirlines project."""
@@ -228,20 +154,12 @@ def login_view_api(request):
         elif login_token.user_role == "Airline Company":
             user_instance = Users.objects.get(username=username)
             airline = Airline_Companies.objects.get(user_id=user_instance)
-            # Add any airline details you want to return here
-            # response_data.update({
-            #     "airline_id": airline.id,
-            #     ...
-            # })
+            
 
         elif login_token.user_role == "Administrator":
             user_instance = Users.objects.get(username=username)
             administrator = Administrators.objects.get(user_id=user_instance)
-            # Add any administrator details you want to return here
-            # response_data.update({
-            #     "administrator_id": administrator.id,
-            #     ...
-            # })
+           
 
         # Set session data after database operations
         request.session['login_token'] = {'user_id': login_token.user_id, 'user_role': login_token.user_role}
@@ -262,12 +180,7 @@ def login_view_api(request):
 
 
 
-
-
-
-
-
-
+@login_required
 @api_view(['GET'])
 def logout_view_api(request): 
     """
@@ -300,12 +213,33 @@ def logout_view_api(request):
 
 
 
+
 @api_view(['GET'])
 def get_user_image_url_api(request, user_id):
     """
-    Get the user's image URL by their ID
+    Get the user's image URL so it can be shown in the UI for the logged in user.
     """
+    
+    # Extracting login token from the session
+    login_token = request.session.get('login_token', None)
+    logger.info(f"get_user_image_url_api - Login token from session: {login_token}")
+
     try:
+        dal = DAL()
+
+        # If the length of the user_id is not 9 digits, treat it as a customer ID
+        if len(user_id) != 9:
+            try:
+                customer = dal.get_by_id(Customers, user_id)
+                if not customer:
+                    logger.warning(f"get_user_image_url_api - No customer found with ID: {user_id}")
+                    return Response({"error": "Customer not found."}, status=404)
+                
+                user_id = customer.user_id.id
+            except Exception as e:
+                logger.error(f"get_user_image_url_api - An error occurred while trying to fetch user ID for customer ID: {user_id}. Error: {str(e)}")
+                return Response({"error": "Internal server error while fetching user ID from customer."}, status=500)
+        
         # Use validate_nine_digits to validate user_id
         try:
             validate_nine_digits(user_id)
@@ -313,14 +247,10 @@ def get_user_image_url_api(request, user_id):
             logger.warning(f"get_user_image_url_api - Invalid user ID format received: {user_id}")
             return Response({"error": "Invalid user ID format. Ensure it's 9 digits long."}, status=400)
         
-        dal = DAL()
-        logger.debug(f"get_user_image_url_api - Before DAL get by id inside get_user_image_url_api - request.user: {request.user}")
         user = dal.get_by_id(Users, user_id)
-        logger.debug(f"get_user_image_url_api - After DAL get by id inside get_user_image_url_api- request.user: {request.user}")
         
         if user:
             logger.info(f"get_user_image_url_api - Successfully fetched image URL for user ID: {user_id}")
-            logger.info(f"get_user_image_url_api - request user after fetching image -> request.user: {request.user}")
             return Response({"image_url": user.image_url}, status=200)
         else:
             logger.warning(f"get_user_image_url_api - No user found with ID: {user_id}")
@@ -333,49 +263,16 @@ def get_user_image_url_api(request, user_id):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+####################################### Generic Views #########################################
 
 @csrf_exempt
 @api_view(['GET'])
-def autocomplete_api(request):
+def autocomplete_api(request):   
+
+    """
+    Get a list of airports matching the query string , used as a helper to search for airports in the UI
+
+    """
 
 
     q = request.GET.get('q', '')

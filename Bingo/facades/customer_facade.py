@@ -1,10 +1,12 @@
 
+import decimal
 import logging
 from django.utils import timezone
 from .facade_base import FacadeBase
+from django.core.mail import send_mail
 from ..utils.login_token import LoginToken
 from django.core.exceptions import ValidationError
-from ..models import Customers, Tickets, Flights , Booking
+from ..models import Customers, Tickets, Flights , Booking , Airport , Airline_Companies , Booking , DAL
 
 
 
@@ -24,6 +26,10 @@ class CustomerFacade(FacadeBase):
         super().__init__(request, login_token)
         self.user = user
 
+
+################################ Helper and Auth Methods ################################
+
+
     def validate_customer_privileges(self):
 
         """
@@ -35,6 +41,59 @@ class CustomerFacade(FacadeBase):
         if user_role != "customer":
             logging.info("User does not have the necessary privileges to perform this operation.")
             raise PermissionError("You do not have the necessary privileges to perform this operation.")
+        
+
+
+
+    def validate_booking_data(self, data):
+        """
+        Validate the booking data provided.
+        """
+
+        # Check for booking_date
+        if not data.get("booking_date"):
+            raise ValidationError("Booking date is required.")
+
+        # Validate total_price
+        total_price = data.get('total_price', None)
+        if total_price is None or not isinstance(total_price, (float, decimal.Decimal)):
+            raise ValidationError("Total price should be a valid number.")
+
+        # Check for flight_number
+        if not data.get("flight_number"):
+            raise ValidationError("Flight number is required.")
+
+        # Validate origin and destination airport codes
+        origin_airport = data.get("origin_airport", {})
+        destination_airport = data.get("destination_airport", {})
+
+        if not origin_airport.get("iataCode") or not destination_airport.get("iataCode"):
+            raise ValidationError("Both origin and destination airport codes are required.")
+        
+
+
+
+    def send_email_to_user(self, subject, message, recipient_email):
+        try:
+            send_mail(
+                subject,
+                '',  # Empty plain text message
+                'Bingo Airlines Info <BingoAirlines.info@gmail.com>',
+                [recipient_email],
+                fail_silently=False,
+                html_message=message  # Send the message as HTML content
+            )
+            logging.info(f"Successfully sent email to {recipient_email}")
+        except Exception as e:
+            logging.error(f"Error sending email to {recipient_email}: {e}")
+
+
+
+
+
+
+
+################################### CUSTOMER Methods  ###################################
 
 
     def update_customer(self, customer):
@@ -76,54 +135,7 @@ class CustomerFacade(FacadeBase):
 
 
 
-    # def add_ticket(self, ticket):
-    #     """
-    #     Add a new flight ticket for the customer after ensuring flight availability and validating the ticket information.
-    #     """
-    #     try:
-    #         # Retrieve the Flights instance using the provided flight number
-    #         flight_instance = self.DAL.get_by_id(Flights, ticket["flight_number_ref"], field_name="flight_number")
 
-    #         logging.info(f"Flight instance: {flight_instance}")
-            
-    #         if not flight_instance:
-    #             raise ValidationError("Flight not found.")
-                
-    #         if flight_instance.remaining_tickets <= 0:
-    #             raise ValidationError("Sorry, this flight is fully booked.")
-            
-    #         # Get the customer instance associated with the user
-    #         customer_instance = Customers.objects.get(user_id=self.user)
-    #         if not customer_instance:
-    #             raise ValidationError("Associated customer record not found for the authenticated user.")
-            
-    #         # Ensure customer doesn't have a ticket for the same flight
-    #         existing_ticket = self.DAL.get_tickets_by_customer(customer_instance.id).filter(flight_number_ref=flight_instance).first()
-    #         if existing_ticket:
-    #             raise ValidationError("You already have a ticket for this flight.")
-                
-    #         # Retrieve the Booking instance using the provided booking ID
-    #         booking_instance = self.DAL.get_by_id(Booking, ticket["Booking"])
-    #         if not booking_instance:
-    #             raise ValidationError("Associated booking record not found.")
-            
-    #         # Replace the 'flight_number_ref' in the ticket dictionary with the flight instance
-    #         ticket["flight_number_ref"] = flight_instance
-    #         # Replace the 'Booking' in the ticket dictionary with the booking instance
-    #         ticket["Booking"] = booking_instance
-            
-    #         # Add the customer instance to the ticket dictionary
-    #         ticket["customer_id"] = customer_instance
-
-    #         return self.DAL.add(Tickets, **ticket)
-            
-    #     except ValidationError as ve:
-    #         logger.error(f"Validation Error: {ve}")
-    #         raise ve
-            
-    #     except Exception as e:
-    #         logger.error(f"Unexpected error while adding ticket: {e}")
-    #         raise e
 
 
     def add_ticket(self, ticket):
@@ -201,6 +213,7 @@ class CustomerFacade(FacadeBase):
         departed, and increment the number of tickets on the flight, and save the flight . 
     
         """
+
         try:
             ticket_instance = self.DAL.get_by_id(Tickets, ticket_id)
 
@@ -254,18 +267,104 @@ class CustomerFacade(FacadeBase):
             logging.error(f"Error fetching tickets for the customer: {e}")
             raise
 
-    
-    def get_my_bookings(self):
 
+
+
+    def get_my_bookings(self, booking_id=None):
         """
-        Retrieve all flight bookings associated with the current customer.
+        Retrieve all flight bookings or a single booking associated with the current customer.
         """
+        bookings_details = self.DAL.get_bookings_by_customer(self.user.customers_set.first().id, booking_id)
+        return bookings_details
+
+
     
+
+
+
+
+    def create_booking(self, data):
+        # Validate data
+        self.validate_booking_data(data)
+
         try:
-            # Get the related Customers record
-            customer = self.user.customers_set.first()  
-            return self.DAL.get_bookings_by_customer(customer.id)
+            # Assuming that the customer is associated with the logged-in user
+            customer_instance = self.DAL.get_by_id(Customers, self.user.id, "user_id")
+
+            # Create or update Flight instance
+            flight_instance = self.DAL.get_by_id(Flights, data["flight_number"], "flight_number")
+        
+            if not flight_instance:
+                origin_airport_instance = self.DAL.get_by_id(Airport, data["origin_airport"]["iataCode"], "iata_code")
+                destination_airport_instance = self.DAL.get_by_id(Airport, data["destination_airport"]["iataCode"], "iata_code")
+                airline_company_instance = self.DAL.get_by_id(Airline_Companies, data["airline"]["iataCode"], "iata_code")
+
+                flight_instance = self.DAL.add(
+                    Flights, 
+                    flight_number=data["flight_number"],
+                    origin_airport=origin_airport_instance,
+                    destination_airport=destination_airport_instance,
+                    departure_time=data["departure_time"],
+                    landing_time=data["landing_time"],
+                    departure_terminal=data.get("departure_terminal"),  # Using .get() to handle optional fields
+                    arrival_terminal=data.get("arrival_terminal"),
+                    airline_company_id=airline_company_instance,
+                    remaining_tickets=data["remaining_tickets"]  # Assuming new flights have the provided number of tickets
+                )
+
+            # Create Booking instance
+            booking_instance = self.DAL.add(
+                Booking, 
+                booking_date=data["booking_date"], 
+                total_price=data["total_price"], 
+                customer=customer_instance
+            )
+
+            # Create Ticket instance
+            ticket_instance = self.DAL.add(
+                Tickets, 
+                flight_number_ref=flight_instance,
+                customer_id=customer_instance,
+                Booking=booking_instance,
+                currency=data["currency"],
+                cabin=data["cabin"],
+                adult_traveler_count=data["adult_traveler_count"],
+                child_traveler_count=data["child_traveler_count"]
+            )
+
+            return {"message": "Booking successfully created."}
+
         except Exception as e:
-            logging.error(f"Error fetching bookings for the customer: {e}")
-            raise
+            raise ValueError(f"Error creating booking: {str(e)}")
+
+
+
+        
+
+    
+
+    def delete_booking(self, booking_id):
+        try:
+            # Initialize the DAL
+            dal = DAL()
+
+            # Use DAL's get_by_id method to fetch the booking
+            booking = dal.get_by_id(Booking, booking_id)
+
+            # Fetch the associated customer for the current user
+            associated_customer = dal.get_by_id(Customers, self.user.id, field_name="user_id")
+
+            # Check if booking belongs to the customer
+            if booking and booking.customer == associated_customer:
+                # Use the DAL remove method to delete the booking
+                dal.remove(booking)
+                logger.info(f"Successfully deleted booking {booking_id}")
+                return True
+            else:
+                logger.error(f"Booking {booking_id} not found or does not belong to customer {self.user.username}")
+                return False
+                
+        except Exception as e:
+            logger.error(f"Error deleting booking {booking_id}: {str(e)}") 
+            return False
 

@@ -2,9 +2,7 @@ import logging
 from .facade_base import FacadeBase
 from ..utils.login_token import LoginToken
 from django.core.exceptions import ValidationError
-from ..models import Customers, Airline_Companies, Administrators , Users , Countries
-
-
+from ..models import Customers, Airline_Companies, Administrators , Users , Countries , DAL
 
 
 logger = logging.getLogger(__name__)
@@ -48,11 +46,12 @@ class AdministratorFacade(FacadeBase):
                 raise PermissionError("Login token is missing.")
         
             # Retrieve the user role from the login token
-            user_role = self.login_token.user_role
+            user_role = self.login_token.get('user_role', None)
+
 
             # Ensure that the user role is 'administrator'
-            if user_role != "administrator":
-                logging.info("User does not have the necessary privileges to perform this operation.")
+            if user_role != "Administrator":
+                logging.error("User does not have the necessary privileges to perform this operation.")
                 raise PermissionError("You do not have the necessary privileges to perform this operation.")
         
         except PermissionError as pe:
@@ -331,4 +330,10 @@ class AdministratorFacade(FacadeBase):
         except Exception as e:
             logging.error(f"Unexpected error while removing administrator: {e}")
             raise
+
+
+
+
+
+
 

@@ -8,58 +8,6 @@ from .models import Users, Customers, Airline_Companies, Administrators
 
 logger = logging.getLogger(__name__)
 
-
-
-
-
-
-# class LoginForm(forms.Form):
-#     username = forms.CharField(
-#         label='Username',
-#         max_length=150,
-#         widget=forms.TextInput(attrs={'placeholder': 'Enter your name'})
-#     )
-#     password = forms.CharField(
-#         label='Password',
-#         widget=forms.PasswordInput(attrs={'placeholder': 'Enter your password'})
-#     )
-
-#     def clean(self):
-#         try:
-#             cleaned_data = super().clean()
-#             return cleaned_data
-#         except Exception as e:
-#             logger.error(f"Error during cleaning data in LoginForm: {e}")
-#             raise e
-
-#     def clean_username(self):
-#         try:
-#             username = self.cleaned_data.get("username")
-#             # You can add more validation logic for username here if needed
-#             return username
-#         except forms.ValidationError as ve:
-#             logger.warning(f"ValidationError in clean_username of LoginForm: {ve}")
-#             raise ve
-#         except Exception as e:
-#             logger.error(f"Unexpected error in clean_username of LoginForm: {e}")
-#             raise e
-
-#     def clean_password(self):
-#         try:
-#             password = self.cleaned_data.get("password")
-#             # You can add more validation logic for password here if needed
-#             return password
-#         except forms.ValidationError as ve:
-#             logger.warning(f"ValidationError in clean_password of LoginForm: {ve}")
-#             raise ve
-#         except Exception as e:
-#             logger.error(f"Unexpected error in clean_password of LoginForm: {e}")
-#             raise e
-
-
-
-
-
 class UsersForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput())
 

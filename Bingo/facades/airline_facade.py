@@ -1,9 +1,10 @@
 
 import logging
+from datetime import datetime
 from .facade_base import FacadeBase
 from ..utils.login_token import LoginToken 
 from django.core.exceptions import ValidationError
-from ..models import Airline_Companies, Flights , Countries , Airport
+from ..models import Airline_Companies, Flights , Airport
 
  
 
@@ -43,8 +44,8 @@ class AirlineFacade(FacadeBase):
         Returns the associated airline company for the user if valid.
         """
         try:
-            user_role = self.login_token.user_role
-            if user_role != "airline company":
+            user_role = self.login_token.user_role            
+            if user_role != "Airline Company":
                 logging.info("User does not have the necessary privileges to perform this operation.")
                 raise PermissionError("You do not have the necessary privileges to perform this operation.")
 
@@ -75,22 +76,29 @@ class AirlineFacade(FacadeBase):
 
 
 
+
     def validate_flight_data(self, flight):
         """
         Validate the provided flight data for correctness.
 
         :param flight: Dictionary containing flight details.
         :raises ValidationError: If the flight data is not valid.
+
         """
 
         try:
             # Ensure the number of remaining tickets is positive
-            if flight.get("remaining_tickets") <= 0:
+            remaining_tickets = int(flight.get("remaining_tickets"))
+            if remaining_tickets <= 0:
                 logging.info("Number of remaining tickets should be greater than 0.")
                 raise ValidationError("Number of remaining tickets should be greater than 0.")
 
             # Ensure the landing time is after the departure time
-            if flight.get("landing_time") <= flight.get("departure_time"):
+            time_format = '%Y-%m-%dT%H:%M:%S%z'  # Adjusted format to match the received time format
+            landing_time = datetime.strptime(flight.get("landing_time"), time_format)
+            departure_time = datetime.strptime(flight.get("departure_time"), time_format)
+
+            if landing_time <= departure_time:
                 logging.info("Landing time can't be before or equal to departure time.")
                 raise ValidationError("Landing time can't be before or equal to departure time.")
 
@@ -102,39 +110,6 @@ class AirlineFacade(FacadeBase):
             raise
 
 
-
-
-    def get_my_flights(self):
-        """
-        Retrieve all the flights associated with the airline company linked to the current user.
-
-        :return: Flights associated with the airline company.
-        :raises Exception: If the user is not associated with an airline company.
-        """
-
-        try:
-            # Ensure the user has the correct privileges to access this method
-            self.validate_airline_privileges()
-            logging.info("Getting flights for the airline company associated with the user.")
-            
-            # Get the associated airline company for the user
-            airline_company = self.user.airline_companies_set.first()
-            logging.info(f"Associated airline company for user {self.user.username}: {airline_company}")
-            
-            # Check if the user is associated with an airline company
-            if not airline_company:
-                logging.error("User is not associated with an airline company.")
-                raise Exception("User is not associated with an airline company.")
-            
-            # Return flights for the associated airline company
-            return self.DAL.get_flights_by_airline_id(airline_company.iata_code)
-        
-        except ValidationError as ve:
-            logging.error(f"Validation error while retrieving flights: {ve}")
-            raise ve
-        except Exception as e:
-            logging.error(f"Unexpected error during flight retrieval: {e}")
-            raise
 
 
     def add_flight(self, flight):
@@ -199,6 +174,7 @@ class AirlineFacade(FacadeBase):
         :raises PermissionError: If the user tries to update a flight not associated with their airline company.
         :raises ValidationError: If the data provided for the flight is invalid or if the flight is not found.
         """
+        
 
         try:
             # Retrieve the flight instance using DAL
@@ -211,6 +187,7 @@ class AirlineFacade(FacadeBase):
 
             # Ensure the user has the correct privileges to access this method
             self.validate_airline_privileges()
+            
             # Validate the flight data provided
             self.validate_flight_data(flight)
 
@@ -225,6 +202,11 @@ class AirlineFacade(FacadeBase):
                 if not airline_company_instance:
                     raise ValidationError(f"No airline company found with iata_code {flight.get('airline_company_id')}")
                 flight["airline_company_id"] = airline_company_instance
+
+            #converting the date strings to datetime objects before updating the flight
+            flight["departure_time"] = datetime.strptime(flight["departure_time"], '%Y-%m-%dT%H:%M:%S%z')
+            flight["landing_time"] = datetime.strptime(flight["landing_time"], '%Y-%m-%dT%H:%M:%S%z')
+
 
             # Fetch the Airport instances for the given IATA codes
             if "origin_airport" in flight:
@@ -299,5 +281,37 @@ class AirlineFacade(FacadeBase):
 
 
 
+
+    def get_my_flights_new(self, flight_id=None):
+        """
+        Retrieve all the flights or a specific flight associated with the airline company linked to the current user.
+
+        :param flight_id: Optional flight ID to fetch a specific flight.
+        :return: Flights associated with the airline company or a specific flight.
+        :raises Exception: If the user is not associated with an airline company.
+        """
+        try:
+            # Ensure the user has the correct privileges to access this method
+            self.validate_airline_privileges()
+            logging.info("Getting flights for the airline company associated with the user.")
+            
+            # Get the associated airline company for the user
+            airline_company = self.user.airline_companies_set.first()
+            logging.info(f"Associated airline company for user {self.user.username}: {airline_company}")
+            
+            # Check if the user is associated with an airline company
+            if not airline_company:
+                logging.error("User is not associated with an airline company.")
+                raise Exception("User is not associated with an airline company.")
+            
+            # Return flights for the associated airline company
+            return self.DAL.get_flights_by_airline_id(airline_company.iata_code, flight_id)
+        
+        except ValidationError as ve:
+            logging.error(f"Validation error while retrieving flights: {ve}")
+            raise ve
+        except Exception as e:
+            logging.error(f"Unexpected error during flight retrieval: {e}")
+            raise
 
 
